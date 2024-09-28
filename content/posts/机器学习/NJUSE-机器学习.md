@@ -1,0 +1,39 @@
+---
+title: "NJUSE-机器学习"
+date: 2024-08-16T16:39:18-08:00
+categories: 
+- "机器学习"
+featureimage: https://runzblog.oss-cn-hangzhou.aliyuncs.com/postimg/202409271712083.png
+summary: "精度矩阵是二分类下的混淆矩阵 `TRUE`/`FALSE`: 预测结果与实际相符/不符 `POSITIVE`/`NEGATIVE`: 预测为真(阳性)/假(阴性)"
+---
+
+# 1-机器学习之概要
+
+## 评价指标
+
+### 混淆矩阵、精度矩阵
+
+精度矩阵是二分类下的混淆矩阵
+
+### 精度矩阵下的名词
+
+`TRUE`/`FALSE`: 预测结果与实际相符/不符
+
+`POSITIVE`/`NEGATIVE`: 预测为真(阳性)/假(阴性)
+
+### 算术指标
+
+![image-20240816164523881](https://runzblog.oss-cn-hangzhou.aliyuncs.com/postimg/202409271712083.png)
+
+- Accuracy 精度 
+    - 预测正确的比例
+
+- Sensitivity 敏感率 
+    - 同查全率
+
+- Specificity 特异率
+    - 阴性里预测正确的比例
+- Precision 查准率
+    - 预测为阳性中真的阳了的比例
+- Recall 查全率
+    - 所有阳性中预测出来的比例
