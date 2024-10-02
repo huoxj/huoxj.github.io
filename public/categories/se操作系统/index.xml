@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>SE操作系统 on Runz&#39;s blog</title>
+    <link>https://huoxj.github.io/categories/se%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/</link>
+    <description>Recent content in SE操作系统 on Runz&#39;s blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh</language>
+    <managingEditor>huoxj_runz@gmail.com (Runz Liu)</managingEditor>
+    <webMaster>huoxj_runz@gmail.com (Runz Liu)</webMaster>
+    <copyright>@ 2024 Runz Liu</copyright>
+    <lastBuildDate>Fri, 24 May 2024 09:53:23 -0800</lastBuildDate><atom:link href="https://huoxj.github.io/categories/se%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Ex6 信号量与PV操作习题</title>
+      <link>https://huoxj.github.io/posts/se%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/ex6-%E4%BF%A1%E5%8F%B7%E9%87%8F%E4%B8%8Epv%E6%93%8D%E4%BD%9C%E4%B9%A0%E9%A2%98/</link>
+      <pubDate>Fri, 24 May 2024 09:53:23 -0800</pubDate>
+      <author>huoxj_runz@gmail.com (Runz Liu)</author>
+      <guid>https://huoxj.github.io/posts/se%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/ex6-%E4%BF%A1%E5%8F%B7%E9%87%8F%E4%B8%8Epv%E6%93%8D%E4%BD%9C%E4%B9%A0%E9%A2%98/</guid>
+      <description>rmutex的理解 : waiting customers</description>
+      
+    </item>
+    
+    <item>
+      <title>Lab3</title>
+      <link>https://huoxj.github.io/posts/se%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/lab3/</link>
+      <pubDate>Wed, 22 May 2024 08:20:13 -0800</pubDate>
+      <author>huoxj_runz@gmail.com (Runz Liu)</author>
+      <guid>https://huoxj.github.io/posts/se%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/lab3/</guid>
+      <description>中断向量是确定中断服务程序的位置。包含段基址和偏移量。 把每个中断服务程序进行编号，一个号代表一个中断服务程序，就是中断类型码，是计算机用来查找中断向量用的。(0-255) 一片专门用来存放所有的中断&amp;hellip;</description>
+      
+    </item>
+    
+    <item>
+      <title>C5 文件管理</title>
+      <link>https://huoxj.github.io/posts/se%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/c5-%E6%96%87%E4%BB%B6%E7%AE%A1%E7%90%86/</link>
+      <pubDate>Thu, 16 May 2024 20:45:32 -0800</pubDate>
+      <author>huoxj_runz@gmail.com (Runz Liu)</author>
+      <guid>https://huoxj.github.io/posts/se%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/c5-%E6%96%87%E4%BB%B6%E7%AE%A1%E7%90%86/</guid>
+      <description>卷：介质的物理单位 块：主存储器和辅助存储器进行信息交换的物理单位，也叫 文件中的数据是一串没有结构的字符流，比如一串字符串组成的文件 若干逻辑记录信息所组成的记录流文件。是逻辑上的一坨信息的单位 这&amp;hellip;</description>
+      
+    </item>
+    
+    <item>
+      <title>C4 设备管理</title>
+      <link>https://huoxj.github.io/posts/se%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/c4-%E8%AE%BE%E5%A4%87%E7%AE%A1%E7%90%86/</link>
+      <pubDate>Tue, 07 May 2024 20:09:42 -0800</pubDate>
+      <author>huoxj_runz@gmail.com (Runz Liu)</author>
+      <guid>https://huoxj.github.io/posts/se%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/c4-%E8%AE%BE%E5%A4%87%E7%AE%A1%E7%90%86/</guid>
+      <description>&lt;ol&gt;
+&lt;li&gt;解决设备和CPU的不匹配，使两者充分工作 2. 设备的具体操作细节，配置驱动程序，提供 ：改善设备效率，尤其是磁盘 ：用统一标准来管理所有设备 从低到高为 位于OS底层，和设备联系紧密 数据传输&amp;hellip;&lt;/li&gt;
+&lt;/ol&gt;
+</description>
+      
+    </item>
+    
+    <item>
+      <title>C3 存储管理</title>
+      <link>https://huoxj.github.io/posts/se%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/c3-%E5%AD%98%E5%82%A8%E7%AE%A1%E7%90%86/</link>
+      <pubDate>Thu, 25 Apr 2024 09:54:02 -0800</pubDate>
+      <author>huoxj_runz@gmail.com (Runz Liu)</author>
+      <guid>https://huoxj.github.io/posts/se%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/c3-%E5%AD%98%E5%82%A8%E7%AE%A1%E7%90%86/</guid>
+      <description>| 0 | 4k | 12k | 28k | 44k | 92k | &amp;hellip; | | &amp;mdash;&amp;mdash;- | OS区(4k) | 分区1(8k) | 分区2(16k) | 分区3(16k) | 分区4(2&amp;hellip;</description>
+      
+    </item>
+    
+    <item>
+      <title>C2 处理器管理</title>
+      <link>https://huoxj.github.io/posts/se%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/c2-%E5%A4%84%E7%90%86%E5%99%A8%E7%AE%A1%E7%90%86/</link>
+      <pubDate>Mon, 22 Apr 2024 14:50:20 -0800</pubDate>
+      <author>huoxj_runz@gmail.com (Runz Liu)</author>
+      <guid>https://huoxj.github.io/posts/se%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/c2-%E5%A4%84%E7%90%86%E5%99%A8%E7%AE%A1%E7%90%86/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>C1 计算机操作系统概述</title>
+      <link>https://huoxj.github.io/posts/se%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/c1-%E8%AE%A1%E7%AE%97%E6%9C%BA%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E6%A6%82%E8%BF%B0/</link>
+      <pubDate>Mon, 22 Apr 2024 14:17:37 -0800</pubDate>
+      <author>huoxj_runz@gmail.com (Runz Liu)</author>
+      <guid>https://huoxj.github.io/posts/se%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/c1-%E8%AE%A1%E7%AE%97%E6%9C%BA%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E6%A6%82%E8%BF%B0/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>C0 绪论</title>
+      <link>https://huoxj.github.io/posts/se%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/c0-%E7%BB%AA%E8%AE%BA/</link>
+      <pubDate>Mon, 22 Apr 2024 14:07:17 -0800</pubDate>
+      <author>huoxj_runz@gmail.com (Runz Liu)</author>
+      <guid>https://huoxj.github.io/posts/se%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/c0-%E7%BB%AA%E8%AE%BA/</guid>
+      <description></description>
+      
+    </item>
+    
+  </channel>
+</rss>

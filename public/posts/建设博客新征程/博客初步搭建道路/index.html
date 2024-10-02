@@ -1,0 +1,1030 @@
+<!DOCTYPE html>
+<html lang="zh-cn" dir="ltr" class="scroll-smooth" data-default-appearance="dark"
+  data-auto-appearance="true"><head>
+  <meta charset="utf-8" />
+  
+  <meta http-equiv="content-language" content="zh" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  
+  <title>博客初步搭建道路 &middot; Runz&#39;s blog</title>
+  <meta name="title" content="博客初步搭建道路 &middot; Runz&#39;s blog" />
+  
+  <meta name="description" content="写博客这件事，从初三开始打竞赛就已经提上日程了。当时很草率地创建了一个洛谷博客，然后一篇文章都没有www。后来又存在各种阻力，例如高中的学业压力、只有周末接触电子设备的机会。但对博客与日俱增的需求的动..." />
+  
+  
+  
+  <link rel="canonical" href="https://huoxj.github.io/posts/%E5%BB%BA%E8%AE%BE%E5%8D%9A%E5%AE%A2%E6%96%B0%E5%BE%81%E7%A8%8B/%E5%8D%9A%E5%AE%A2%E5%88%9D%E6%AD%A5%E6%90%AD%E5%BB%BA%E9%81%93%E8%B7%AF/" />
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <link type="text/css" rel="stylesheet" href="/css/main.bundle.min.fe35e6b981b34abb6477263d92133a5db952b6c46117d0dfe2c37dcb5fa8af38c1e30b9a8f298ca9a7c0c2d72d729504664fda9f784a31c7f40f1f393fc843fc.css"
+    integrity="sha512-/jXmuYGzSrtkdyY9khM6XblStsRhF9Df4sN9y1&#43;orzjB4wuajymMqafAwtctcpUEZk/an3hKMcf0Dx85P8hD/A==" />
+  
+  
+  <script type="text/javascript" src="/js/appearance.min.516a16745bea5a9bd011138d254cc0fd3973cd55ce6e15f3dec763e7c7c2c7448f8fe7b54cca811cb821b0c7e12cd161caace1dd794ac3d34d40937cbcc9ee12.js"
+    integrity="sha512-UWoWdFvqWpvQERONJUzA/TlzzVXObhXz3sdj58fCx0SPj&#43;e1TMqBHLghsMfhLNFhyqzh3XlKw9NNQJN8vMnuEg=="></script>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <script defer type="text/javascript" id="script-bundle" src="/js/main.bundle.min.8613168837e35f3f882df60a8a810e212d581a4eea26eeb2554e527c6eab9e57acc03a2533cbd5c6084f825ce3a655953923f21e1de2e6b8014eddf510fa58e7.js"
+    integrity="sha512-hhMWiDfjXz&#43;ILfYKioEOIS1YGk7qJu6yVU5SfG6rnleswDolM8vVxghPglzjplWVOSPyHh3i5rgBTt31EPpY5w==" data-copy="" data-copied=""></script>
+  
+  
+  
+  <script src="/lib/zoom/zoom.min.fcbc7f7b3dcea96e3b5570cd322c5d7a12d5351c87f9889b1c31745a2cc711df58f6b70795a86d50e63813b236ade916668332c10a70a4ce26f7c0878f525fce.js" integrity="sha512-/Lx/ez3OqW47VXDNMixdehLVNRyH&#43;YibHDF0WizHEd9Y9rcHlahtUOY4E7I2rekWZoMywQpwpM4m98CHj1Jfzg=="></script>
+  
+  
+  
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+  <link rel="manifest" href="/site.webmanifest" />
+  
+  
+  
+  
+  
+  
+  
+  <meta property="og:url" content="https://huoxj.github.io/posts/%E5%BB%BA%E8%AE%BE%E5%8D%9A%E5%AE%A2%E6%96%B0%E5%BE%81%E7%A8%8B/%E5%8D%9A%E5%AE%A2%E5%88%9D%E6%AD%A5%E6%90%AD%E5%BB%BA%E9%81%93%E8%B7%AF/">
+  <meta property="og:site_name" content="Runz&#39;s blog">
+  <meta property="og:title" content="博客初步搭建道路">
+  <meta property="og:description" content="写博客这件事，从初三开始打竞赛就已经提上日程了。当时很草率地创建了一个洛谷博客，然后一篇文章都没有www。后来又存在各种阻力，例如高中的学业压力、只有周末接触电子设备的机会。但对博客与日俱增的需求的动…">
+  <meta property="og:locale" content="zh">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2024-09-28T10:21:59-08:00">
+    <meta property="article:modified_time" content="2024-09-28T10:21:59-08:00">
+
+  
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="博客初步搭建道路">
+  <meta name="twitter:description" content="写博客这件事，从初三开始打竞赛就已经提上日程了。当时很草率地创建了一个洛谷博客，然后一篇文章都没有www。后来又存在各种阻力，例如高中的学业压力、只有周末接触电子设备的机会。但对博客与日俱增的需求的动…">
+
+  
+  <script type="application/ld+json">
+  [{
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "articleSection": "",
+    "name": "博客初步搭建道路",
+    "headline": "博客初步搭建道路",
+    
+    "abstract": "写博客这件事，从初三开始打竞赛就已经提上日程了。当时很草率地创建了一个洛谷博客，然后一篇文章都没有www。后来又存在各种阻力，例如高中的学业压力、只有周末接触电子设备的机会。但对博客与日俱增的需求的动\u0026hellip;",
+    "inLanguage": "zh",
+    "url" : "https:\/\/huoxj.github.io\/posts\/%E5%BB%BA%E8%AE%BE%E5%8D%9A%E5%AE%A2%E6%96%B0%E5%BE%81%E7%A8%8B\/%E5%8D%9A%E5%AE%A2%E5%88%9D%E6%AD%A5%E6%90%AD%E5%BB%BA%E9%81%93%E8%B7%AF\/",
+    "author" : {
+      "@type": "Person",
+      "name": "Runz Liu"
+    },
+    "copyrightYear": "2024",
+    "dateCreated": "2024-09-28T10:21:59-08:00",
+    "datePublished": "2024-09-28T10:21:59-08:00",
+    
+    "dateModified": "2024-09-28T10:21:59-08:00",
+    
+    
+    
+    "mainEntityOfPage": "true",
+    "wordCount": "1450"
+  }]
+  </script>
+
+
+  
+  
+  <meta name="author" content="Runz Liu" />
+  
+  
+  
+  <link href="mailto:221850148@smail.nju.edu.cn" rel="me" />
+  
+  
+  <link href="https://github.com/huoxj" rel="me" />
+  
+  
+  <link href="https://steamcommunity.com/profiles/huorunz" rel="me" />
+  
+  
+  <link href="https://space.bilibili.com/166337394" rel="me" />
+  
+  
+  
+  
+
+<script src="/lib/jquery/jquery.slim.min.03cb160e3cfdb2667a2e2c80d283bebcf63ff8bbc4b629c9ab2babf6fae1d0c07ad470edae783efa4fabda2ac01c58d60e63b98b3c336be8208460f08f4354f5.js" integrity="sha512-A8sWDjz9smZ6LiyA0oO&#43;vPY/&#43;LvEtinJqyur9vrh0MB61HDtrng&#43;&#43;k&#43;r2irAHFjWDmO5izwza&#43;gghGDwj0NU9Q=="></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+
+  
+  
+  <meta name="theme-color"/>
+  
+  
+</head>
+<body
+  class="flex flex-col h-screen px-6 m-auto text-lg leading-7 max-w-7xl bg-neutral text-neutral-900 dark:bg-neutral-800 dark:text-neutral sm:px-14 md:px-24 lg:px-32 scrollbar-thin scrollbar-track-neutral-200 scrollbar-thumb-neutral-400 dark:scrollbar-track-neutral-800 dark:scrollbar-thumb-neutral-600">
+  <div id="the-top" class="absolute flex self-center">
+    <a class="px-3 py-1 text-sm -translate-y-8 rounded-b-lg bg-primary-200 focus:translate-y-0 dark:bg-neutral-600"
+      href="#main-content"><span
+        class="font-bold text-primary-600 ltr:pr-2 rtl:pl-2 dark:text-primary-400">&darr;</span>跳过正文</a>
+  </div>
+  
+  
+  <div style="min-height: 100px;"></div>
+<div class="fixed inset-x-0 pl-[24px] pr-[24px]" style="z-index:100">
+  <div id="menu-blur" class="absolute opacity-0 inset-x-0 top-0 h-full single_hero_background nozoom backdrop-blur-2xl shadow-2xl"></div>
+  <div class="relative max-w-[64rem] ml-auto mr-auto">
+    <div style="padding-left:0;padding-right:0;padding-top:2px;padding-bottom:3px"
+    class="main-menu flex items-center justify-between px-4 py-6 sm:px-6 md:justify-start space-x-3">
+    
+    <div class="flex flex-1 items-center justify-between">
+        <nav class="flex space-x-3">
+
+            
+            <a href="/" class="text-base font-medium text-gray-500 hover:text-gray-900">Runz&rsquo;s blog</a>
+            
+
+        </nav>
+        <nav class="hidden md:flex items-center space-x-5 md:ml-12 h-12">
+
+            
+            
+            
+  <a href="/posts/"  class="flex items-center text-gray-500 hover:text-primary-600 dark:hover:text-primary-400">
+    
+    <p class="text-base font-medium" title="">
+        文章
+    </p>
+</a>
+
+
+
+            
+            
+  <a href="/categories/"  class="flex items-center text-gray-500 hover:text-primary-600 dark:hover:text-primary-400">
+    
+    <p class="text-base font-medium" title="">
+        分类
+    </p>
+</a>
+
+
+
+            
+            
+  <a href="/about/"  class="flex items-center text-gray-500 hover:text-primary-600 dark:hover:text-primary-400">
+    
+    <p class="text-base font-medium" title="">
+        关于
+    </p>
+</a>
+
+
+
+            
+            
+
+            
+
+
+            
+            <button id="search-button" aria-label="Search" class="text-base hover:text-primary-600 dark:hover:text-primary-400"
+                title="">
+                
+
+  <span class="relative block icon">
+    <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="search" class="svg-inline--fa fa-search fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z"/></svg>
+
+  </span>
+
+
+            </button>
+            
+
+
+            
+            
+            <div
+                class="ltr:mr-14 rtl:ml-14 flex items-center">
+                <button id="appearance-switcher" aria-label="Dark mode switcher" type="button" class="text-base hover:text-primary-600 dark:hover:text-primary-400">
+                    <div class="flex items-center justify-center dark:hidden">
+                        
+
+  <span class="relative block icon">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M32 256c0-123.8 100.3-224 223.8-224c11.36 0 29.7 1.668 40.9 3.746c9.616 1.777 11.75 14.63 3.279 19.44C245 86.5 211.2 144.6 211.2 207.8c0 109.7 99.71 193 208.3 172.3c9.561-1.805 16.28 9.324 10.11 16.95C387.9 448.6 324.8 480 255.8 480C132.1 480 32 379.6 32 256z"/></svg>
+
+  </span>
+
+
+                    </div>
+                    <div class="items-center justify-center hidden dark:flex">
+                        
+
+  <span class="relative block icon">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M256 159.1c-53.02 0-95.1 42.98-95.1 95.1S202.1 351.1 256 351.1s95.1-42.98 95.1-95.1S309 159.1 256 159.1zM509.3 347L446.1 255.1l63.15-91.01c6.332-9.125 1.104-21.74-9.826-23.72l-109-19.7l-19.7-109c-1.975-10.93-14.59-16.16-23.72-9.824L256 65.89L164.1 2.736c-9.125-6.332-21.74-1.107-23.72 9.824L121.6 121.6L12.56 141.3C1.633 143.2-3.596 155.9 2.736 164.1L65.89 256l-63.15 91.01c-6.332 9.125-1.105 21.74 9.824 23.72l109 19.7l19.7 109c1.975 10.93 14.59 16.16 23.72 9.824L256 446.1l91.01 63.15c9.127 6.334 21.75 1.107 23.72-9.822l19.7-109l109-19.7C510.4 368.8 515.6 356.1 509.3 347zM256 383.1c-70.69 0-127.1-57.31-127.1-127.1c0-70.69 57.31-127.1 127.1-127.1s127.1 57.3 127.1 127.1C383.1 326.7 326.7 383.1 256 383.1z"/></svg>
+
+  </span>
+
+
+                    </div>
+                </button>
+            </div>
+            
+
+        </nav>
+        <div class="flex md:hidden items-center space-x-5 md:ml-12 h-12">
+
+            <span></span>
+
+            
+
+
+            
+            <button id="search-button-mobile" aria-label="Search" class="text-base hover:text-primary-600 dark:hover:text-primary-400"
+                title="">
+                
+
+  <span class="relative block icon">
+    <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="search" class="svg-inline--fa fa-search fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z"/></svg>
+
+  </span>
+
+
+            </button>
+            
+
+            
+            
+            <button id="appearance-switcher-mobile" aria-label="Dark mode switcher" type="button" class="text-base hover:text-primary-600 dark:hover:text-primary-400" style="margin-right:5px">
+                <div class="flex items-center justify-center dark:hidden">
+                    
+
+  <span class="relative block icon">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M32 256c0-123.8 100.3-224 223.8-224c11.36 0 29.7 1.668 40.9 3.746c9.616 1.777 11.75 14.63 3.279 19.44C245 86.5 211.2 144.6 211.2 207.8c0 109.7 99.71 193 208.3 172.3c9.561-1.805 16.28 9.324 10.11 16.95C387.9 448.6 324.8 480 255.8 480C132.1 480 32 379.6 32 256z"/></svg>
+
+  </span>
+
+
+                </div>
+                <div class="items-center justify-center hidden dark:flex">
+                    
+
+  <span class="relative block icon">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M256 159.1c-53.02 0-95.1 42.98-95.1 95.1S202.1 351.1 256 351.1s95.1-42.98 95.1-95.1S309 159.1 256 159.1zM509.3 347L446.1 255.1l63.15-91.01c6.332-9.125 1.104-21.74-9.826-23.72l-109-19.7l-19.7-109c-1.975-10.93-14.59-16.16-23.72-9.824L256 65.89L164.1 2.736c-9.125-6.332-21.74-1.107-23.72 9.824L121.6 121.6L12.56 141.3C1.633 143.2-3.596 155.9 2.736 164.1L65.89 256l-63.15 91.01c-6.332 9.125-1.105 21.74 9.824 23.72l109 19.7l19.7 109c1.975 10.93 14.59 16.16 23.72 9.824L256 446.1l91.01 63.15c9.127 6.334 21.75 1.107 23.72-9.822l19.7-109l109-19.7C510.4 368.8 515.6 356.1 509.3 347zM256 383.1c-70.69 0-127.1-57.31-127.1-127.1c0-70.69 57.31-127.1 127.1-127.1s127.1 57.3 127.1 127.1C383.1 326.7 326.7 383.1 256 383.1z"/></svg>
+
+  </span>
+
+
+                </div>
+            </button>
+            
+
+        </div>
+    </div>
+    <div class="-my-2 -mr-2 md:hidden">
+
+        <label id="menu-button" class="block">
+            
+            <div class="cursor-pointer hover:text-primary-600 dark:hover:text-primary-400">
+                
+
+  <span class="relative block icon">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M0 96C0 78.33 14.33 64 32 64H416C433.7 64 448 78.33 448 96C448 113.7 433.7 128 416 128H32C14.33 128 0 113.7 0 96zM0 256C0 238.3 14.33 224 32 224H416C433.7 224 448 238.3 448 256C448 273.7 433.7 288 416 288H32C14.33 288 0 273.7 0 256zM416 448H32C14.33 448 0 433.7 0 416C0 398.3 14.33 384 32 384H416C433.7 384 448 398.3 448 416C448 433.7 433.7 448 416 448z"/></svg>
+
+  </span>
+
+
+            </div>
+            <div id="menu-wrapper" style="padding-top:5px;"
+                class="fixed inset-0 z-30 invisible w-screen h-screen m-0 overflow-auto transition-opacity opacity-0 cursor-default bg-neutral-100/50 backdrop-blur-sm dark:bg-neutral-900/50">
+                <ul
+                    class="flex space-y-2 mt-3 flex-col items-end w-full px-6 py-6 mx-auto overflow-visible list-none ltr:text-right rtl:text-left max-w-7xl">
+
+                    <li id="menu-close-button">
+                        <span
+                            class="cursor-pointer inline-block align-text-bottom hover:text-primary-600 dark:hover:text-primary-400">
+
+  <span class="relative block icon">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path fill="currentColor" d="M310.6 361.4c12.5 12.5 12.5 32.75 0 45.25C304.4 412.9 296.2 416 288 416s-16.38-3.125-22.62-9.375L160 301.3L54.63 406.6C48.38 412.9 40.19 416 32 416S15.63 412.9 9.375 406.6c-12.5-12.5-12.5-32.75 0-45.25l105.4-105.4L9.375 150.6c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0L160 210.8l105.4-105.4c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25l-105.4 105.4L310.6 361.4z"/></svg>
+
+  </span>
+
+</span>
+                    </li>
+
+                    
+
+                    
+  <li class="mt-1">
+    <a href="/posts/"  class="flex items-center text-gray-500 hover:text-primary-600 dark:hover:text-primary-400">
+        
+        <p class="text-bg font-bg" title="">
+            文章
+        </p>
+    </a>
+</li>
+
+
+
+
+                    
+
+                    
+  <li class="mt-1">
+    <a href="/categories/"  class="flex items-center text-gray-500 hover:text-primary-600 dark:hover:text-primary-400">
+        
+        <p class="text-bg font-bg" title="">
+            分类
+        </p>
+    </a>
+</li>
+
+
+
+
+                    
+
+                    
+  <li class="mt-1">
+    <a href="/about/"  class="flex items-center text-gray-500 hover:text-primary-600 dark:hover:text-primary-400">
+        
+        <p class="text-bg font-bg" title="">
+            关于
+        </p>
+    </a>
+</li>
+
+
+
+
+                    
+
+                </ul>
+                
+                
+
+            </div>
+        </label>
+    </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+<script>
+  window.addEventListener('scroll', function (e) {
+    var scroll = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop || 0;
+    var background_blur = document.getElementById('menu-blur');
+    background_blur.style.opacity = (scroll / 300);
+  });
+</script>
+
+  
+  <div class="relative flex flex-col grow">
+    <main id="main-content" class="grow">
+      
+
+
+<article>
+  
+  
+  
+  
+  
+  
+
+
+
+<div id="hero" class="h-[150px] md:h-[200px]"></div>
+
+
+
+    
+    <div class="fixed inset-x-0 top-0 h-[800px] single_hero_background nozoom"
+    style="background-image:url(/202409281119985_12958691971763166804_hu11391239783319746670.png);">
+    
+
+
+    <div class="absolute inset-0 bg-gradient-to-t from-neutral dark:from-neutral-800 to-transparent mix-blend-normal">
+    </div>
+    <div
+        class="absolute inset-0 opacity-60 bg-gradient-to-t from-neutral dark:from-neutral-800 to-neutral-100 dark:to-neutral-800 mix-blend-normal">
+    </div>
+</div>
+
+<div id="background-blur" class="fixed opacity-0 inset-x-0 top-0 h-full single_hero_background nozoom backdrop-blur-2xl"></div>
+<script>
+    window.addEventListener('scroll', function (e) {
+        var scroll = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop || 0;
+        var background_blur = document.getElementById('background-blur');
+        background_blur.style.opacity = (scroll / 300)
+    });
+</script>
+
+  
+  
+
+  <header id="single_header" class="mt-5 max-w-prose">
+    
+    <h1 class="mt-0 text-4xl font-extrabold text-neutral-900 dark:text-neutral">
+      博客初步搭建道路
+    </h1>
+    <div class="mt-1 mb-6 text-base text-neutral-500 dark:text-neutral-400 print:hidden">
+      
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="flex flex-row flex-wrap items-center">
+  
+  
+  <time datetime="2024-09-28T10:21:59-08:00">28 September 2024</time><span class="px-2 text-primary-500">&middot;</span><span>1450 字</span><span class="px-2 text-primary-500">&middot;</span><span title="预计阅读">3 分钟</span>
+  
+
+  
+  
+</div>
+
+
+
+
+
+<div class="flex flex-row flex-wrap items-center">
+  
+  
+  
+  
+  
+  
+  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/categories/%E5%BB%BA%E8%AE%BE%E5%8D%9A%E5%AE%A2%E6%96%B0%E5%BE%81%E7%A8%8B/&#34;,'_self');">
+    <span class="flex" style="cursor: pointer;">
+  <span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
+    建设博客新征程
+  </span>
+</span>
+  </span>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+</div>
+
+
+
+
+    </div>
+
+    
+    
+    
+    
+    
+
+    
+
+    
+
+  </header>
+  
+  <section class="flex flex-col max-w-full mt-0 prose dark:prose-invert lg:flex-row">
+    
+     <div
+      class="order-first lg:ml-auto px-0 lg:order-last ltr:lg:pl-8 rtl:lg:pr-8">
+      <div class="toc ltr:pl-5 rtl:pr-5 print:hidden lg:sticky lg:top-[140px]">
+
+         <details open id="TOCView"
+  class="toc-right mt-0 overflow-y-scroll overscroll-contain scrollbar-thin scrollbar-track-neutral-200 scrollbar-thumb-neutral-400 dark:scrollbar-track-neutral-800 dark:scrollbar-thumb-neutral-600 rounded-lg ltr:-ml-5 ltr:pl-5 rtl:-mr-5 rtl:pr-5 hidden lg:block">
+  <summary
+    class="block py-1 text-lg font-semibold cursor-pointer bg-neutral-100 text-neutral-800 ltr:-ml-5 ltr:pl-5 rtl:-mr-5 rtl:pr-5 dark:bg-neutral-700 dark:text-neutral-100 lg:hidden">
+    目录
+  </summary>
+  <div
+    class="min-w-[220px] py-2 border-dotted ltr:-ml-5 ltr:border-l ltr:pl-5 rtl:-mr-5 rtl:border-r rtl:pr-5 dark:border-neutral-600">
+    <nav id="TableOfContents">
+  <ul>
+    <li><a href="#日益增长的博客需要">日益增长的博客需要</a></li>
+    <li><a href="#博客搭建初期探索">博客搭建初期探索</a>
+      <ul>
+        <li><a href="#自建自部署博客">自建、自部署博客</a></li>
+        <li><a href="#wordpress">WordPress</a></li>
+        <li><a href="#静态博客框架">静态博客框架</a></li>
+      </ul>
+    </li>
+    <li><a href="#使用hugo搭建博客">使用Hugo搭建博客</a>
+      <ul>
+        <li><a href="#基本信息配置">基本信息配置</a></li>
+        <li><a href="#内容目录结构">内容目录结构</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+  </div>
+</details>
+<details class="toc-inside mt-0 overflow-hidden rounded-lg ltr:-ml-5 ltr:pl-5 rtl:-mr-5 rtl:pr-5 lg:hidden">
+  <summary
+    class="py-1 text-lg font-semibold cursor-pointer bg-neutral-100 text-neutral-800 ltr:-ml-5 ltr:pl-5 rtl:-mr-5 rtl:pr-5 dark:bg-neutral-700 dark:text-neutral-100 lg:hidden">
+    目录
+  </summary>
+  <div
+    class="py-2 border-dotted border-neutral-300 ltr:-ml-5 ltr:border-l ltr:pl-5 rtl:-mr-5 rtl:border-r rtl:pr-5 dark:border-neutral-600">
+    <nav id="TableOfContents">
+  <ul>
+    <li><a href="#日益增长的博客需要">日益增长的博客需要</a></li>
+    <li><a href="#博客搭建初期探索">博客搭建初期探索</a>
+      <ul>
+        <li><a href="#自建自部署博客">自建、自部署博客</a></li>
+        <li><a href="#wordpress">WordPress</a></li>
+        <li><a href="#静态博客框架">静态博客框架</a></li>
+      </ul>
+    </li>
+    <li><a href="#使用hugo搭建博客">使用Hugo搭建博客</a>
+      <ul>
+        <li><a href="#基本信息配置">基本信息配置</a></li>
+        <li><a href="#内容目录结构">内容目录结构</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+  </div>
+</details>
+
+<script>
+
+  var margin = 200;
+  var marginError = 50;
+
+  (function () {
+    var $window = $(window);
+    var $toc = $('#TOCView');
+    var tocHeight = $toc.height();
+
+    function onResize() {
+      var windowAndMarginHeight = $window.height() - margin;
+      if(tocHeight >= windowAndMarginHeight) {
+        $toc.css("overflow-y", "scroll")
+        $toc.css("max-height", (windowAndMarginHeight + marginError) + "px")
+      } else {
+        $toc.css("overflow-y", "hidden")
+        $toc.css("max-height", "9999999px")
+      }
+    }
+
+    $window.on('resize', onResize);
+    $(document).ready(onResize);
+  })();
+
+
+
+</script>
+   </div>
+      </div>
+      
+
+      <div class="min-w-0 min-h-0 max-w-fit">
+        
+        
+
+
+        <div class="article-content max-w-prose mb-20">
+          
+
+<h2 class="relative group">日益增长的博客需要 
+    <div id="%E6%97%A5%E7%9B%8A%E5%A2%9E%E9%95%BF%E7%9A%84%E5%8D%9A%E5%AE%A2%E9%9C%80%E8%A6%81" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#%E6%97%A5%E7%9B%8A%E5%A2%9E%E9%95%BF%E7%9A%84%E5%8D%9A%E5%AE%A2%E9%9C%80%E8%A6%81" aria-label="锚点">#</a>
+    </span>        
+    
+</h2>
+<p>写博客这件事，从初三开始打竞赛就已经提上日程了。当时很草率地创建了一个洛谷博客，然后一篇文章都没有www。后来又存在各种阻力，例如高中的学业压力、只有周末接触电子设备的机会。但对博客与日俱增的需求的动力也在对冲这些阻力。从一开始只是希望总结竞赛算法，到现在的记录学业、技术、生活等等方面的需求。于是在大三开学刚转完专业能够摸鱼之际，我真正开始着手于部署一个能暂且满足以上需要的博客。</p>
+
+
+<h2 class="relative group">博客搭建初期探索 
+    <div id="%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E5%88%9D%E6%9C%9F%E6%8E%A2%E7%B4%A2" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E5%88%9D%E6%9C%9F%E6%8E%A2%E7%B4%A2" aria-label="锚点">#</a>
+    </span>        
+    
+</h2>
+
+
+<h3 class="relative group">自建、自部署博客 
+    <div id="%E8%87%AA%E5%BB%BA%E8%87%AA%E9%83%A8%E7%BD%B2%E5%8D%9A%E5%AE%A2" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#%E8%87%AA%E5%BB%BA%E8%87%AA%E9%83%A8%E7%BD%B2%E5%8D%9A%E5%AE%A2" aria-label="锚点">#</a>
+    </span>        
+    
+</h3>
+<p>为什么会考虑自己搭建博客框架、自己部署，原因如下：</p>
+<ul>
+<li>有一台 阿里云ECS，宿舍有一台小服务器。可以锻炼部署能力，发扬折磨精神。顺便玩一下之前没怎么接触过的 Nginx</li>
+<li>系统性地修补我支离破碎的前端知识，磨练后端技术，增加项目经历。以后干不下去了可以搞开发。</li>
+<li>自建博客对日后变化的需求友好，可以随时迭代满足需要。而且能保证满足审美。</li>
+</ul>
+<p>这几个原因看着很踏实，但是当我一开始写了我才发现自己根本没有这个时间和精力。光这一点便难以支撑了😭。</p>
+<blockquote>
+<p>日后对这一方案的评价：可以像 <a href="jyywiki.cn">jyy wiki</a> 写纯html没css的博客。但还是需要一点时间。</p>
+</blockquote>
+
+
+<h3 class="relative group">WordPress 
+    <div id="wordpress" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#wordpress" aria-label="锚点">#</a>
+    </span>        
+    
+</h3>
+<p>上一方案破产之后，我转而尝试他人已经写好的框架。要说这个世界上最著名的自建网站框架，WordPress肯定是首屈一指的，于是我在宿舍的小服务器上搭建了WordPress，过程还是很简单的，网上教程多如牛毛。</p>
+<p>于我而言，WordPress的优点有三：</p>
+<ul>
+<li>搭建方便。尤其是用 Docker，起两个容器就行了</li>
+<li>美化方便。WordPress主题数不胜数，并且很多主题可以在后台用GUI自定义一些元素。</li>
+<li>管理方便。WordPress后台功能齐全，界面还说的过去。</li>
+</ul>
+<p>缺点也有几个：</p>
+<ul>
+<li>如果要开https，得每三个月续一次证书（虽然有工具可以自动化）</li>
+<li>功能太多了，图形界面用起来压力很大。想尽量简洁和轻量</li>
+<li>服务器反向代理时，我无法解决跨域请求资源的问题，我太菜了🤡</li>
+</ul>
+<p>总之，用起来哪哪都有一点不舒服。但是我感觉WordPress这个框架整体还是相当强大的，用不下去的主要原因除了上述缺点，更多的是我当时不太愿意深入研究这个框架。说不定我以后会用WordPress。</p>
+
+
+<h3 class="relative group">静态博客框架 
+    <div id="%E9%9D%99%E6%80%81%E5%8D%9A%E5%AE%A2%E6%A1%86%E6%9E%B6" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#%E9%9D%99%E6%80%81%E5%8D%9A%E5%AE%A2%E6%A1%86%E6%9E%B6" aria-label="锚点">#</a>
+    </span>        
+    
+</h3>
+<p>上面两个方案都是自部署的方案。除此之外便是托管部署了，比如 <code>Vercel</code> 和 <code>Github Pages</code> 这种。我真正愿意考虑这个方案的一大契机，是我的很多优秀学长的博客都是这个方案搭建的，而且看起来效果相当好。</p>
+<p>学长普遍是 <code>Hexo</code> 框架 + <code>Github Pages</code> 搭建。我也照做。当我在查阅 <code>Hexo</code> 框架的文档和资料时，了解到了另一个叫<code>Hugo</code>的框架。</p>
+<p>经过对比，我选择了<code>Hugo</code>框架。<code>Hugo</code>框架是基于<code>Go</code>语言实现的，比<code>Hexo</code>的<code>Node.js</code>编译快很多。但是于我而言最主要的原因还是我在<code>Hugo</code>的官方主题库里找到了心仪的主题<a href="https://github.com/nunocoracao/blowfish" target="_blank">BLowFish</a>。</p>
+<p>最后，我习惯<code>Typora</code>编写文本，所以顺便配了<code>阿里云oss</code>做图床。再结合一些其他的需求，我目前的方案总结如下（PPT画的，不要在意拼写检查）：</p>
+<p>
+  <figure>
+    <img class="my-0 rounded-md" loading="lazy" src="https://runzblog.oss-cn-hangzhou.aliyuncs.com/postimg/202409281119985.png" alt="image-20240928111917937" />
+    
+  </figure>
+</p>
+<blockquote>
+<p>顺便一提，这样的技术栈图我还蛮喜欢的</p>
+</blockquote>
+
+
+<h2 class="relative group">使用Hugo搭建博客 
+    <div id="%E4%BD%BF%E7%94%A8hugo%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#%E4%BD%BF%E7%94%A8hugo%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2" aria-label="锚点">#</a>
+    </span>        
+    
+</h2>
+
+
+<h3 class="relative group">基本信息配置 
+    <div id="%E5%9F%BA%E6%9C%AC%E4%BF%A1%E6%81%AF%E9%85%8D%E7%BD%AE" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#%E5%9F%BA%E6%9C%AC%E4%BF%A1%E6%81%AF%E9%85%8D%E7%BD%AE" aria-label="锚点">#</a>
+    </span>        
+    
+</h3>
+<p>基本信息配置主要在<code>hugo.toml</code>这个文件里。我的主题还有诸如<code>params.toml</code>、<code>menus.zh-cn.toml</code>等配置文件。所以这都根据具体主题而定。不过基本按照Hugo文档、主题提供的文档以及自己稍微理解一下就能顺利配置博客的基本信息了。我后面主要介绍一些难点和进阶的部分。</p>
+
+
+<h3 class="relative group">内容目录结构 
+    <div id="%E5%86%85%E5%AE%B9%E7%9B%AE%E5%BD%95%E7%BB%93%E6%9E%84" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#%E5%86%85%E5%AE%B9%E7%9B%AE%E5%BD%95%E7%BB%93%E6%9E%84" aria-label="锚点">#</a>
+    </span>        
+    
+</h3>
+<blockquote>
+<p>可以参考<a href="https://gohugo.io/content-management/organization/" target="_blank">Content organization | Hugo (gohugo.io)</a></p>
+</blockquote>
+<p>这部分是我比较诟病这类静态网页框架的一点，你的文章结构必须按照静态网页url里的结构来组织。比较正规的文件结构是这样的：</p>
+
+          
+          
+          
+        </div>
+        
+        
+
+          
+
+          
+
+          
+
+        
+
+        
+        
+
+          
+      </div>
+     
+      
+      
+        
+        
+          
+          
+        
+      <script>
+        var oid = "views_posts\\建设博客新征程\\博客初步搭建道路.md"
+        var oid_likes = "likes_posts\\建设博客新征程\\博客初步搭建道路.md"
+      </script>
+      
+      
+      <script type="text/javascript" src="/js/page.min.0860cf4e04fa2d72cc33ddba263083464d48f67de06114529043cb4623319efed4f484fd7f1730df5abea0e2da6f3538855634081d02f2d6e920b956f063e823.js" integrity="sha512-CGDPTgT6LXLMM926JjCDRk1I9n3gYRRSkEPLRiMxnv7U9IT9fxcw31q&#43;oOLabzU4hVY0CB0C8tbpILlW8GPoIw=="></script>
+      
+  
+    </section>
+  <footer class="pt-8 max-w-prose print:hidden">
+
+    
+  
+    
+    
+    
+    <div class="pt-8">
+      <hr class="border-dotted border-neutral-300 dark:border-neutral-600" />
+      <div class="flex justify-between pt-3">
+        <span>
+          
+            <a class="flex group mr-3" href="/posts/%E6%9C%89%E6%84%8F%E6%80%9D%E7%9A%84%E6%8A%98%E8%85%BE/%E4%BD%BF%E7%94%A8vmware%E7%BB%99%E7%89%A9%E7%90%86%E7%A1%AC%E7%9B%98%E8%A3%85%E7%B3%BB%E7%BB%9F/">
+              <span
+                class="mr-3 text-neutral-700 group-hover:text-primary-600 ltr:inline rtl:hidden dark:text-neutral dark:group-hover:text-primary-400"
+                >&larr;</span
+              >
+              <span
+                class="ml-3 text-neutral-700 group-hover:text-primary-600 ltr:hidden rtl:inline dark:text-neutral dark:group-hover:text-primary-400"
+                >&rarr;</span
+              >
+              <span class="flex flex-col">
+                <span
+                  class="mt-[0.1rem] leading-6 group-hover:underline group-hover:decoration-primary-500"
+                  >使用VMware给物理硬盘装系统</span
+                >
+                <span class="mt-[0.1rem] text-xs text-neutral-500 dark:text-neutral-400">
+                  
+                    <time datetime="2024-09-27T17:06:04-08:00">27 September 2024</time>
+                  
+                </span>
+              </span>
+            </a>
+          
+        </span>
+        <span>
+          
+            <a class="flex text-right group ml-3" href="/posts/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/%E5%86%B3%E7%AD%96%E6%A0%91/">
+              <span class="flex flex-col">
+                <span
+                  class="mt-[0.1rem] leading-6 group-hover:underline group-hover:decoration-primary-500"
+                  >决策树</span
+                >
+                <span class="mt-[0.1rem] text-xs text-neutral-500 dark:text-neutral-400">
+                  
+                    <time datetime="2024-09-30T08:54:34-08:00">30 September 2024</time>
+                  
+                </span>
+              </span>
+              <span
+                class="ml-3 text-neutral-700 group-hover:text-primary-600 ltr:inline rtl:hidden dark:text-neutral dark:group-hover:text-primary-400"
+                >&rarr;</span
+              >
+              <span
+                class="mr-3 text-neutral-700 group-hover:text-primary-600 ltr:hidden rtl:inline dark:text-neutral dark:group-hover:text-primary-400"
+                >&larr;</span
+              >
+            </a>
+          
+        </span>
+      </div>
+    </div>
+  
+
+
+    
+  </footer>
+</article>
+
+      <div id="top-scroller" class="pointer-events-none absolute top-[110vh] bottom-0 w-12 ltr:right-0 rtl:left-0">
+  <a href="#the-top"
+    class="pointer-events-auto sticky top-[calc(100vh-5.5rem)] flex h-12 w-12 mb-16 items-center justify-center rounded-full bg-neutral/50 text-xl text-neutral-700 hover:text-primary-600 dark:bg-neutral-800/50 dark:text-neutral dark:hover:text-primary-400"
+    aria-label="返回顶部" title="返回顶部">
+    &uarr;
+  </a>
+</div>
+    </main><footer id="site-footer" class="py-10 print:hidden">
+  
+  
+    
+  
+  <div class="flex items-center justify-between">
+
+    
+    
+    <p class="text-sm text-neutral-500 dark:text-neutral-400">
+      @ 2024 Runz Liu
+    </p>
+    
+
+    
+    
+    <p class="text-xs text-neutral-500 dark:text-neutral-400">
+      
+      
+      由 <a class="hover:underline hover:decoration-primary-400 hover:text-primary-500"
+        href="https://gohugo.io/" target="_blank" rel="noopener noreferrer">Hugo</a> &amp; <a class="hover:underline hover:decoration-primary-400 hover:text-primary-500"
+        href="https://blowfish.page/" target="_blank" rel="noopener noreferrer">Blowfish</a> 强力驱动
+    </p>
+    
+
+  </div>
+  <script>
+    
+    mediumZoom(document.querySelectorAll("img:not(.nozoom)"), {
+      margin: 24,
+      background: 'rgba(0,0,0,0.5)',
+      scrollOffset: 0,
+    })
+    
+  </script>
+  
+  
+  <script type="text/javascript" src="/js/process.min.ee03488f19c93c2efb199e2e3014ea5f3cb2ce7d45154adb3399a158cac27ca52831db249ede5bb602700ef87eb02434139de0858af1818ab0fb4182472204a4.js" integrity="sha512-7gNIjxnJPC77GZ4uMBTqXzyyzn1FFUrbM5mhWMrCfKUoMdsknt5btgJwDvh&#43;sCQ0E53ghYrxgYqw&#43;0GCRyIEpA=="></script>
+  
+  
+</footer>
+<div
+  id="search-wrapper"
+  class="invisible fixed inset-0 flex h-screen w-screen cursor-default flex-col bg-neutral-500/50 p-4 backdrop-blur-sm dark:bg-neutral-900/50 sm:p-6 md:p-[10vh] lg:p-[12vh]"
+  data-url="https://huoxj.github.io/"
+  style="z-index:500"
+>
+  <div
+    id="search-modal"
+    class="flex flex-col w-full max-w-3xl min-h-0 mx-auto border rounded-md shadow-lg top-20 border-neutral-200 bg-neutral dark:border-neutral-700 dark:bg-neutral-800"
+  >
+    <header class="relative z-10 flex items-center justify-between flex-none px-2">
+      <form class="flex items-center flex-auto min-w-0">
+        <div class="flex items-center justify-center w-8 h-8 text-neutral-400">
+          
+
+  <span class="relative block icon">
+    <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="search" class="svg-inline--fa fa-search fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z"/></svg>
+
+  </span>
+
+
+        </div>
+        <input
+          type="search"
+          id="search-query"
+          class="flex flex-auto h-12 mx-1 bg-transparent appearance-none focus:outline-dotted focus:outline-2 focus:outline-transparent"
+          placeholder="搜索"
+          tabindex="0"
+        />
+      </form>
+      <button
+        id="close-search-button"
+        class="flex items-center justify-center w-8 h-8 text-neutral-700 hover:text-primary-600 dark:text-neutral dark:hover:text-primary-400"
+        title="关闭 (Esc)"
+      >
+        
+
+  <span class="relative block icon">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path fill="currentColor" d="M310.6 361.4c12.5 12.5 12.5 32.75 0 45.25C304.4 412.9 296.2 416 288 416s-16.38-3.125-22.62-9.375L160 301.3L54.63 406.6C48.38 412.9 40.19 416 32 416S15.63 412.9 9.375 406.6c-12.5-12.5-12.5-32.75 0-45.25l105.4-105.4L9.375 150.6c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0L160 210.8l105.4-105.4c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25l-105.4 105.4L310.6 361.4z"/></svg>
+
+  </span>
+
+
+      </button>
+    </header>
+    <section class="flex-auto px-2 overflow-auto">
+      <ul id="search-results">
+        
+      </ul>
+    </section>
+  </div>
+</div>
+
+  </div>
+</body>
+
+</html>
