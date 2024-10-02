@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="zh-cn" dir="ltr" class="scroll-smooth" data-default-appearance="dark"
-  data-auto-appearance="true"><head>
+  data-auto-appearance="true"><head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
   <meta charset="utf-8" />
   
   <meta http-equiv="content-language" content="zh" />
@@ -15,7 +15,7 @@
   
   
   
-  <link rel="canonical" href="https://huoxj.github.io/posts/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/%E5%86%B3%E7%AD%96%E6%A0%91/" />
+  <link rel="canonical" href="http://localhost:1313/posts/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/%E5%86%B3%E7%AD%96%E6%A0%91/" />
   
   
   
@@ -68,7 +68,7 @@
   
   
   
-  <meta property="og:url" content="https://huoxj.github.io/posts/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/%E5%86%B3%E7%AD%96%E6%A0%91/">
+  <meta property="og:url" content="http://localhost:1313/posts/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/%E5%86%B3%E7%AD%96%E6%A0%91/">
   <meta property="og:site_name" content="Runz&#39;s blog">
   <meta property="og:title" content="决策树">
   <meta property="og:description" content="决策树就是一颗 if-else 树。树的每一个结点代表一个决策（测试），同时也代表了这个决策所对应的一个样本空间。我们的目标就是通过多次产生 if-else 分支，尽可能地让决策树的叶子结点只…">
@@ -94,7 +94,7 @@
     
     "abstract": "决策树就是一颗 \u003ccode\u003eif-else\u003c\/code\u003e 树。树的每一个结点代表一个决策（测试），同时也代表了这个决策所对应的一个样本空间。我们的目标就是通过多次产生 \u003ccode\u003eif-else\u003c\/code\u003e 分支，尽可能地让决策树的叶子结点只\u0026hellip;",
     "inLanguage": "zh",
-    "url" : "https:\/\/huoxj.github.io\/posts\/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0\/%E5%86%B3%E7%AD%96%E6%A0%91\/",
+    "url" : "http:\/\/localhost:1313\/posts\/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0\/%E5%86%B3%E7%AD%96%E6%A0%91\/",
     "author" : {
       "@type": "Person",
       "name": "Runz Liu"
@@ -108,7 +108,7 @@
     
     
     "mainEntityOfPage": "true",
-    "wordCount": "2964"
+    "wordCount": "2969"
   }]
   </script>
 
@@ -419,6 +419,20 @@
 
 
 
+
+<link rel="preload" href="https://cdn.jsdelivr.net/npm/katex@0.13.11/dist/katex.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.13.11/dist/katex.min.css">
+</noscript>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.13.11/dist/katex.min.js" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.13.11/dist/contrib/auto-render.min.js" crossorigin="anonymous"
+onload="renderMathInElement(document.body, {
+        delimiters: [
+        { left: '$$', right: '$$', display: true },
+        { left: '$', right: '$', display: false },
+        { left: '\$', right: '\$', display: false }
+        ]
+    });"></script>
   </div>
 </div>
 <script>
@@ -522,7 +536,7 @@
 <div class="flex flex-row flex-wrap items-center">
   
   
-  <time datetime="2024-09-30T08:54:34-08:00">30 September 2024</time><span class="px-2 text-primary-500">&middot;</span><span>2964 字</span><span class="px-2 text-primary-500">&middot;</span><span title="预计阅读">6 分钟</span>
+  <time datetime="2024-09-30T08:54:34-08:00">30 September 2024</time><span class="px-2 text-primary-500">&middot;</span><span>2969 字</span><span class="px-2 text-primary-500">&middot;</span><span title="预计阅读">6 分钟</span>
   
 
   
@@ -833,16 +847,15 @@
     
 </h4>
 <p>基本方法就是将连续属性变成离散属性。常用的方法是二分法。</p>
-<p>对连续属性$A$，取合适的值$x$。通过如下函数，我们能得到一个离散属性$B={X, Y}$。</p>
-<p>$$
-b=f(a)=\left{
-\begin{aligned}
-X, a\le x \
-Y, a\gt x
-\end{aligned}
-\right.
-$$</p>
-<p>取合适的值一般会取中位数。</p>
+<p>对连续属性$A$，取合适的值$x$。通过如下函数，我们能得到一个离散属性$B=\{X, Y\}$。</p>
+$$
+b=f(a)=\left\{
+  \begin{aligned}
+  X, a\le x \\
+  Y, a\gt x
+  \end{aligned}
+  \right.
+$$<p>取合适的值一般会取中位数。</p>
 <p>
   <figure>
     <img class="my-0 rounded-md" loading="lazy" src="https://runzblog.oss-cn-hangzhou.aliyuncs.com/postimg/202409301008219.png" alt="" />
@@ -922,17 +935,15 @@ $$</p>
 </blockquote>
 <p>假定当前样本集合$D$中第$k$类样本所占的比例为$p_k$
 定义<strong>信息熵</strong>如下：</p>
-<p>$$Ent(D)=-\sum_{k=1}^{|y|}p_klog_2p_k$$</p>
-<blockquote>
+$$Ent(D)=-\sum_{k=1}^{|y|}p_klog_2p_k$$<blockquote>
 <p>信息熵是度量样本集合“纯度”最常用的一种指标</p>
 </blockquote>
 <p>说人话，<strong>样本集合越杂，信息熵越大</strong>。</p>
-<p>假设离散属性$a$的取值集合为${a^1,a^2,&hellip;,a^V}$，$D^v$是$D$中在$a$上取值等于$a^v$的样本集合。
+<p>假设离散属性$a$的取值集合为$\{a^1,a^2,...,a^V\}$，$D^v$是$D$中在$a$上取值等于$a^v$的样本集合。
 由此定义以属性$a$对$D$进行划分的<strong>信息增益</strong>为：</p>
-<p>$$
-Gain(D,a)=Ent(D)-\sum_{v=1}^{V}\frac{|D^v|}{|D|}Ent(D^v)
-$$</p>
-<p>可以看到，信息增益就是以属性$a$划分前后的信息熵差值来定义的。而划分后的信息熵是按样本数为权重求和来的。</p>
+$$
+	Gain(D,a)=Ent(D)-\sum_{v=1}^{V}\frac{|D^v|}{|D|}Ent(D^v)
+$$<p>可以看到，信息增益就是以属性$a$划分前后的信息熵差值来定义的。而划分后的信息熵是按样本数为权重求和来的。</p>
 <p>信息增益越大，说明以这个属性划分后信息熵减小得越多，划分后的子样本空间最纯。所以我们对所有属性中<strong>增益最大</strong>的进行划分就好了。</p>
 
 
@@ -974,21 +985,19 @@ $$</p>
 </blockquote>
 <p>基尼指数<strong>本质</strong>反映了从$D$中随机抽取两个样例，其类别标记不一致的概率。</p>
 <p>定义如下：</p>
-<p>$$
+$$
 \begin{equation}
-\begin{aligned}
-Gini(D) &amp;= \sum^{|y|}<em>{k=1}\sum</em>{k^{&rsquo;}\neq k}p_kp_{k^{&rsquo;}} \
-&amp;= 1-\sum^{|y|}<em>{k=1}p_k^2 \
-&amp;= 1-\sum^{|y|}</em>{k=1}(\frac{|D^k|}{|D|})^2
-\end{aligned}
-\end{equation}
-$$</p>
-<p>其中，$p_k$是样本点属于第$k$类的概率，$D^k$是样本集合$D$中属于第$k$类的样本子集。</p>
+	\begin{aligned}
+		Gini(D) &= \sum^{|y|}_{k=1}\sum_{k^{'}\neq k}p_kp_{k^{'}} \\
+				&= 1-\sum^{|y|}_{k=1}p_k^2 \\
+				&= 1-\sum^{|y|}_{k=1}(\frac{|D^k|}{|D|})^2
+	\end{aligned}
+  \end{equation}
+$$<p>其中，$p_k$是样本点属于第$k$类的概率，$D^k$是样本集合$D$中属于第$k$类的样本子集。</p>
 <p>而属性$a$划分下的基尼指数为：</p>
-<p>$$
-Gini_index(D,a)=\sum_{v=1}^{V}\frac{|D^v|}{|D|}Gini(D^v)
-$$</p>
-<p>即按样本数对基尼指数加权平均求和。同样地，我们取$Gini_index$最小那个属性就行了。</p>
+$$
+	Gini\_index(D,a)=\sum_{v=1}^{V}\frac{|D^v|}{|D|}Gini(D^v)
+$$<p>即按样本数对基尼指数加权平均求和。同样地，我们取$Gini\_index$最小那个属性就行了。</p>
 
 
 <h2 class="relative group">剪枝 
@@ -1090,7 +1099,7 @@ $$</p>
 <p>详细一点：</p>
 <ol>
 <li>
-<p>我们考虑要剪枝的结点$k$，以$k$为根节点的子树有叶子${l_1, l_2, l_3&hellip;l_n}$</p>
+<p>我们考虑要剪枝的结点$k$，以$k$为根节点的子树有叶子$\{l_1, l_2, l_3...l_n\}$</p>
 </li>
 <li>
 <p>从 1 到 n，将这棵子树坍缩成叶子，并根据验证集评估整颗决策树。</p>
@@ -1512,7 +1521,7 @@ Accuracy: 0.9473684210526315
 <div
   id="search-wrapper"
   class="invisible fixed inset-0 flex h-screen w-screen cursor-default flex-col bg-neutral-500/50 p-4 backdrop-blur-sm dark:bg-neutral-900/50 sm:p-6 md:p-[10vh] lg:p-[12vh]"
-  data-url="https://huoxj.github.io/"
+  data-url="http://localhost:1313/"
   style="z-index:500"
 >
   <div

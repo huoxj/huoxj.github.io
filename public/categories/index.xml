@@ -2,110 +2,110 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Runz&#39;s blog</title>
-    <link>https://huoxj.github.io/categories/</link>
+    <link>http://localhost:1313/categories/</link>
     <description>Recent content on Runz&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh</language>
     <managingEditor>huoxj_runz@gmail.com (Runz Liu)</managingEditor>
     <webMaster>huoxj_runz@gmail.com (Runz Liu)</webMaster>
     <copyright>@ 2024 Runz Liu</copyright>
-    <lastBuildDate>Mon, 30 Sep 2024 08:54:34 -0800</lastBuildDate><atom:link href="https://huoxj.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 30 Sep 2024 08:54:34 -0800</lastBuildDate><atom:link href="http://localhost:1313/categories/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>机器学习</title>
-      <link>https://huoxj.github.io/categories/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/</link>
+      <link>http://localhost:1313/categories/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/</link>
       <pubDate>Mon, 30 Sep 2024 08:54:34 -0800</pubDate>
       <author>huoxj_runz@gmail.com (Runz Liu)</author>
-      <guid>https://huoxj.github.io/categories/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/</guid>
+      <guid>http://localhost:1313/categories/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>建设博客新征程</title>
-      <link>https://huoxj.github.io/categories/%E5%BB%BA%E8%AE%BE%E5%8D%9A%E5%AE%A2%E6%96%B0%E5%BE%81%E7%A8%8B/</link>
+      <link>http://localhost:1313/categories/%E5%BB%BA%E8%AE%BE%E5%8D%9A%E5%AE%A2%E6%96%B0%E5%BE%81%E7%A8%8B/</link>
       <pubDate>Sat, 28 Sep 2024 10:21:59 -0800</pubDate>
       <author>huoxj_runz@gmail.com (Runz Liu)</author>
-      <guid>https://huoxj.github.io/categories/%E5%BB%BA%E8%AE%BE%E5%8D%9A%E5%AE%A2%E6%96%B0%E5%BE%81%E7%A8%8B/</guid>
+      <guid>http://localhost:1313/categories/%E5%BB%BA%E8%AE%BE%E5%8D%9A%E5%AE%A2%E6%96%B0%E5%BE%81%E7%A8%8B/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>有意思的折腾</title>
-      <link>https://huoxj.github.io/categories/%E6%9C%89%E6%84%8F%E6%80%9D%E7%9A%84%E6%8A%98%E8%85%BE/</link>
+      <link>http://localhost:1313/categories/%E6%9C%89%E6%84%8F%E6%80%9D%E7%9A%84%E6%8A%98%E8%85%BE/</link>
       <pubDate>Fri, 27 Sep 2024 17:06:04 -0800</pubDate>
       <author>huoxj_runz@gmail.com (Runz Liu)</author>
-      <guid>https://huoxj.github.io/categories/%E6%9C%89%E6%84%8F%E6%80%9D%E7%9A%84%E6%8A%98%E8%85%BE/</guid>
+      <guid>http://localhost:1313/categories/%E6%9C%89%E6%84%8F%E6%80%9D%E7%9A%84%E6%8A%98%E8%85%BE/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>操作系统设计与实现</title>
-      <link>https://huoxj.github.io/categories/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%AE%9E%E7%8E%B0/</link>
+      <link>http://localhost:1313/categories/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%AE%9E%E7%8E%B0/</link>
       <pubDate>Wed, 04 Sep 2024 10:53:08 -0800</pubDate>
       <author>huoxj_runz@gmail.com (Runz Liu)</author>
-      <guid>https://huoxj.github.io/categories/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%AE%9E%E7%8E%B0/</guid>
+      <guid>http://localhost:1313/categories/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%AE%9E%E7%8E%B0/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>随记</title>
-      <link>https://huoxj.github.io/categories/%E9%9A%8F%E8%AE%B0/</link>
+      <link>http://localhost:1313/categories/%E9%9A%8F%E8%AE%B0/</link>
       <pubDate>Wed, 14 Aug 2024 10:49:05 -0800</pubDate>
       <author>huoxj_runz@gmail.com (Runz Liu)</author>
-      <guid>https://huoxj.github.io/categories/%E9%9A%8F%E8%AE%B0/</guid>
+      <guid>http://localhost:1313/categories/%E9%9A%8F%E8%AE%B0/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>毛概</title>
-      <link>https://huoxj.github.io/categories/%E6%AF%9B%E6%A6%82/</link>
+      <link>http://localhost:1313/categories/%E6%AF%9B%E6%A6%82/</link>
       <pubDate>Sun, 23 Jun 2024 13:44:55 -0800</pubDate>
       <author>huoxj_runz@gmail.com (Runz Liu)</author>
-      <guid>https://huoxj.github.io/categories/%E6%AF%9B%E6%A6%82/</guid>
+      <guid>http://localhost:1313/categories/%E6%AF%9B%E6%A6%82/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>SE操作系统</title>
-      <link>https://huoxj.github.io/categories/se%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/</link>
+      <link>http://localhost:1313/categories/se%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/</link>
       <pubDate>Fri, 24 May 2024 09:53:23 -0800</pubDate>
       <author>huoxj_runz@gmail.com (Runz Liu)</author>
-      <guid>https://huoxj.github.io/categories/se%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/</guid>
+      <guid>http://localhost:1313/categories/se%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>软工II大作业-蓝鲸商城</title>
-      <link>https://huoxj.github.io/categories/%E8%BD%AF%E5%B7%A5ii%E5%A4%A7%E4%BD%9C%E4%B8%9A-%E8%93%9D%E9%B2%B8%E5%95%86%E5%9F%8E/</link>
+      <link>http://localhost:1313/categories/%E8%BD%AF%E5%B7%A5ii%E5%A4%A7%E4%BD%9C%E4%B8%9A-%E8%93%9D%E9%B2%B8%E5%95%86%E5%9F%8E/</link>
       <pubDate>Tue, 21 May 2024 22:41:47 -0800</pubDate>
       <author>huoxj_runz@gmail.com (Runz Liu)</author>
-      <guid>https://huoxj.github.io/categories/%E8%BD%AF%E5%B7%A5ii%E5%A4%A7%E4%BD%9C%E4%B8%9A-%E8%93%9D%E9%B2%B8%E5%95%86%E5%9F%8E/</guid>
+      <guid>http://localhost:1313/categories/%E8%BD%AF%E5%B7%A5ii%E5%A4%A7%E4%BD%9C%E4%B8%9A-%E8%93%9D%E9%B2%B8%E5%95%86%E5%9F%8E/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>编译原理</title>
-      <link>https://huoxj.github.io/categories/%E7%BC%96%E8%AF%91%E5%8E%9F%E7%90%86/</link>
+      <link>http://localhost:1313/categories/%E7%BC%96%E8%AF%91%E5%8E%9F%E7%90%86/</link>
       <pubDate>Sat, 11 May 2024 15:06:51 -0800</pubDate>
       <author>huoxj_runz@gmail.com (Runz Liu)</author>
-      <guid>https://huoxj.github.io/categories/%E7%BC%96%E8%AF%91%E5%8E%9F%E7%90%86/</guid>
+      <guid>http://localhost:1313/categories/%E7%BC%96%E8%AF%91%E5%8E%9F%E7%90%86/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>数据库管理基础</title>
-      <link>https://huoxj.github.io/categories/%E6%95%B0%E6%8D%AE%E5%BA%93%E7%AE%A1%E7%90%86%E5%9F%BA%E7%A1%80/</link>
+      <link>http://localhost:1313/categories/%E6%95%B0%E6%8D%AE%E5%BA%93%E7%AE%A1%E7%90%86%E5%9F%BA%E7%A1%80/</link>
       <pubDate>Mon, 22 Apr 2024 19:18:04 -0800</pubDate>
       <author>huoxj_runz@gmail.com (Runz Liu)</author>
-      <guid>https://huoxj.github.io/categories/%E6%95%B0%E6%8D%AE%E5%BA%93%E7%AE%A1%E7%90%86%E5%9F%BA%E7%A1%80/</guid>
+      <guid>http://localhost:1313/categories/%E6%95%B0%E6%8D%AE%E5%BA%93%E7%AE%A1%E7%90%86%E5%9F%BA%E7%A1%80/</guid>
       <description></description>
       
     </item>
