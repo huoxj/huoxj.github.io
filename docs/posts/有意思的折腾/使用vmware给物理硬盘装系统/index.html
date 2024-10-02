@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="zh-cn" dir="ltr" class="scroll-smooth" data-default-appearance="dark"
-  data-auto-appearance="true"><head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  data-auto-appearance="true"><head>
   <meta charset="utf-8" />
   
   <meta http-equiv="content-language" content="zh" />
@@ -15,7 +15,7 @@
   
   
   
-  <link rel="canonical" href="http://localhost:1313/posts/%E6%9C%89%E6%84%8F%E6%80%9D%E7%9A%84%E6%8A%98%E8%85%BE/%E4%BD%BF%E7%94%A8vmware%E7%BB%99%E7%89%A9%E7%90%86%E7%A1%AC%E7%9B%98%E8%A3%85%E7%B3%BB%E7%BB%9F/" />
+  <link rel="canonical" href="https://huoxj.github.io/posts/%E6%9C%89%E6%84%8F%E6%80%9D%E7%9A%84%E6%8A%98%E8%85%BE/%E4%BD%BF%E7%94%A8vmware%E7%BB%99%E7%89%A9%E7%90%86%E7%A1%AC%E7%9B%98%E8%A3%85%E7%B3%BB%E7%BB%9F/" />
   
   
   
@@ -68,7 +68,7 @@
   
   
   
-  <meta property="og:url" content="http://localhost:1313/posts/%E6%9C%89%E6%84%8F%E6%80%9D%E7%9A%84%E6%8A%98%E8%85%BE/%E4%BD%BF%E7%94%A8vmware%E7%BB%99%E7%89%A9%E7%90%86%E7%A1%AC%E7%9B%98%E8%A3%85%E7%B3%BB%E7%BB%9F/">
+  <meta property="og:url" content="https://huoxj.github.io/posts/%E6%9C%89%E6%84%8F%E6%80%9D%E7%9A%84%E6%8A%98%E8%85%BE/%E4%BD%BF%E7%94%A8vmware%E7%BB%99%E7%89%A9%E7%90%86%E7%A1%AC%E7%9B%98%E8%A3%85%E7%B3%BB%E7%BB%9F/">
   <meta property="og:site_name" content="Runz&#39;s blog">
   <meta property="og:title" content="使用VMware给物理硬盘装系统">
   <meta property="og:description" content="由于手贱不小心删了Ubuntu自带的Python，服务器上的Ubuntu Server炸了。。。只能重新装一遍系统。但是我懒得做启动U盘了，所以索性直接在VMware里把系统给装起来。 只需要先下好你…">
@@ -94,7 +94,7 @@
     
     "abstract": "由于手贱不小心删了Ubuntu自带的Python，服务器上的Ubuntu Server炸了。。。只能重新装一遍系统。但是我懒得做启动U盘了，所以索性直接在VMware里把系统给装起来。 只需要先下好你\u0026hellip;",
     "inLanguage": "zh",
-    "url" : "http:\/\/localhost:1313\/posts\/%E6%9C%89%E6%84%8F%E6%80%9D%E7%9A%84%E6%8A%98%E8%85%BE\/%E4%BD%BF%E7%94%A8vmware%E7%BB%99%E7%89%A9%E7%90%86%E7%A1%AC%E7%9B%98%E8%A3%85%E7%B3%BB%E7%BB%9F\/",
+    "url" : "https:\/\/huoxj.github.io\/posts\/%E6%9C%89%E6%84%8F%E6%80%9D%E7%9A%84%E6%8A%98%E8%85%BE\/%E4%BD%BF%E7%94%A8vmware%E7%BB%99%E7%89%A9%E7%90%86%E7%A1%AC%E7%9B%98%E8%A3%85%E7%B3%BB%E7%BB%9F\/",
     "author" : {
       "@type": "Person",
       "name": "Runz Liu"
@@ -420,9 +420,19 @@
 
 
 
+<link rel="preload" href="https://cdn.jsdelivr.net/npm/katex@0.13.11/dist/katex.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.13.11/dist/katex.min.css">
-<script defer src="https://cdn.jsdelivr.net/npm/katex@0.13.11/dist/katex.min.js"></script>
-<script defer src="https://cdn.jsdelivr.net/npm/katex@0.13.11/dist/contrib/auto-render.min.js" onload="renderMathInElement(document.body);"></script>
+</noscript>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.13.11/dist/katex.min.js" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.13.11/dist/contrib/auto-render.min.js" crossorigin="anonymous"
+onload="renderMathInElement(document.body, {
+        delimiters: [
+        { left: '$$', right: '$$', display: true },
+        { left: '$', right: '$', display: false },
+        { left: '\$', right: '\$', display: false }
+        ]
+    });"></script>
   </div>
 </div>
 <script>
@@ -930,7 +940,7 @@ I/O控制器选VMware推荐的<code>LSI Logic</code>，其他的应该也没差�
 <div
   id="search-wrapper"
   class="invisible fixed inset-0 flex h-screen w-screen cursor-default flex-col bg-neutral-500/50 p-4 backdrop-blur-sm dark:bg-neutral-900/50 sm:p-6 md:p-[10vh] lg:p-[12vh]"
-  data-url="http://localhost:1313/"
+  data-url="https://huoxj.github.io/"
   style="z-index:500"
 >
   <div

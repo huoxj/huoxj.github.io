@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="zh-cn" dir="ltr" class="scroll-smooth" data-default-appearance="dark"
-  data-auto-appearance="true"><head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  data-auto-appearance="true"><head>
   <meta charset="utf-8" />
   
   <meta http-equiv="content-language" content="zh" />
@@ -15,7 +15,7 @@
   
   
   
-  <link rel="canonical" href="http://localhost:1313/posts/se%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/ex6-%E4%BF%A1%E5%8F%B7%E9%87%8F%E4%B8%8Epv%E6%93%8D%E4%BD%9C%E4%B9%A0%E9%A2%98/" />
+  <link rel="canonical" href="https://huoxj.github.io/posts/se%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/ex6-%E4%BF%A1%E5%8F%B7%E9%87%8F%E4%B8%8Epv%E6%93%8D%E4%BD%9C%E4%B9%A0%E9%A2%98/" />
   
   
   
@@ -68,7 +68,7 @@
   
   
   
-  <meta property="og:url" content="http://localhost:1313/posts/se%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/ex6-%E4%BF%A1%E5%8F%B7%E9%87%8F%E4%B8%8Epv%E6%93%8D%E4%BD%9C%E4%B9%A0%E9%A2%98/">
+  <meta property="og:url" content="https://huoxj.github.io/posts/se%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/ex6-%E4%BF%A1%E5%8F%B7%E9%87%8F%E4%B8%8Epv%E6%93%8D%E4%BD%9C%E4%B9%A0%E9%A2%98/">
   <meta property="og:site_name" content="Runz&#39;s blog">
   <meta property="og:title" content="Ex6 信号量与PV操作习题">
   <meta property="og:description" content="rmutex的理解 : waiting customers">
@@ -94,7 +94,7 @@
     
     "abstract": "rmutex的理解 : waiting customers",
     "inLanguage": "zh",
-    "url" : "http:\/\/localhost:1313\/posts\/se%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F\/ex6-%E4%BF%A1%E5%8F%B7%E9%87%8F%E4%B8%8Epv%E6%93%8D%E4%BD%9C%E4%B9%A0%E9%A2%98\/",
+    "url" : "https:\/\/huoxj.github.io\/posts\/se%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F\/ex6-%E4%BF%A1%E5%8F%B7%E9%87%8F%E4%B8%8Epv%E6%93%8D%E4%BD%9C%E4%B9%A0%E9%A2%98\/",
     "author" : {
       "@type": "Person",
       "name": "Runz Liu"
@@ -420,9 +420,19 @@
 
 
 
+<link rel="preload" href="https://cdn.jsdelivr.net/npm/katex@0.13.11/dist/katex.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.13.11/dist/katex.min.css">
-<script defer src="https://cdn.jsdelivr.net/npm/katex@0.13.11/dist/katex.min.js"></script>
-<script defer src="https://cdn.jsdelivr.net/npm/katex@0.13.11/dist/contrib/auto-render.min.js" onload="renderMathInElement(document.body);"></script>
+</noscript>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.13.11/dist/katex.min.js" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.13.11/dist/contrib/auto-render.min.js" crossorigin="anonymous"
+onload="renderMathInElement(document.body, {
+        delimiters: [
+        { left: '$$', right: '$$', display: true },
+        { left: '$', right: '$', display: false },
+        { left: '\$', right: '\$', display: false }
+        ]
+    });"></script>
   </div>
 </div>
 <script>
@@ -918,7 +928,7 @@
 <div
   id="search-wrapper"
   class="invisible fixed inset-0 flex h-screen w-screen cursor-default flex-col bg-neutral-500/50 p-4 backdrop-blur-sm dark:bg-neutral-900/50 sm:p-6 md:p-[10vh] lg:p-[12vh]"
-  data-url="http://localhost:1313/"
+  data-url="https://huoxj.github.io/"
   style="z-index:500"
 >
   <div

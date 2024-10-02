@@ -2,20 +2,20 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>数据库管理基础 on Runz&#39;s blog</title>
-    <link>http://localhost:1313/categories/%E6%95%B0%E6%8D%AE%E5%BA%93%E7%AE%A1%E7%90%86%E5%9F%BA%E7%A1%80/</link>
+    <link>https://huoxj.github.io/categories/%E6%95%B0%E6%8D%AE%E5%BA%93%E7%AE%A1%E7%90%86%E5%9F%BA%E7%A1%80/</link>
     <description>Recent content in 数据库管理基础 on Runz&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh</language>
     <managingEditor>huoxj_runz@gmail.com (Runz Liu)</managingEditor>
     <webMaster>huoxj_runz@gmail.com (Runz Liu)</webMaster>
     <copyright>@ 2024 Runz Liu</copyright>
-    <lastBuildDate>Mon, 22 Apr 2024 19:18:04 -0800</lastBuildDate><atom:link href="http://localhost:1313/categories/%E6%95%B0%E6%8D%AE%E5%BA%93%E7%AE%A1%E7%90%86%E5%9F%BA%E7%A1%80/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 22 Apr 2024 19:18:04 -0800</lastBuildDate><atom:link href="https://huoxj.github.io/categories/%E6%95%B0%E6%8D%AE%E5%BA%93%E7%AE%A1%E7%90%86%E5%9F%BA%E7%A1%80/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>C3-SQL</title>
-      <link>http://localhost:1313/posts/%E6%95%B0%E6%8D%AE%E5%BA%93%E7%AE%A1%E7%90%86%E5%9F%BA%E7%A1%80/c3-sql/</link>
+      <link>https://huoxj.github.io/posts/%E6%95%B0%E6%8D%AE%E5%BA%93%E7%AE%A1%E7%90%86%E5%9F%BA%E7%A1%80/c3-sql/</link>
       <pubDate>Mon, 22 Apr 2024 19:18:04 -0800</pubDate>
       <author>huoxj_runz@gmail.com (Runz Liu)</author>
-      <guid>http://localhost:1313/posts/%E6%95%B0%E6%8D%AE%E5%BA%93%E7%AE%A1%E7%90%86%E5%9F%BA%E7%A1%80/c3-sql/</guid>
+      <guid>https://huoxj.github.io/posts/%E6%95%B0%E6%8D%AE%E5%BA%93%E7%AE%A1%E7%90%86%E5%9F%BA%E7%A1%80/c3-sql/</guid>
       <description>&lt;code&gt;CREATE SCHEMA AUTHORIZATION &lt;/code&gt; &lt;code&gt;DROP SCHEMA &lt;/code&gt; &lt;code&gt;sql CREATE TABLE ( [] [,同上] [,]) &lt;/code&gt; ```sql e.g. CR&amp;hellip;</description>
       
     </item>
