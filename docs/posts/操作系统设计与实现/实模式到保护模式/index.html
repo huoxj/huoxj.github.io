@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="zh-cn" dir="ltr" class="scroll-smooth" data-default-appearance="dark"
-  data-auto-appearance="true"><head>
+  data-auto-appearance="true"><head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
   <meta charset="utf-8" />
   
   <meta http-equiv="content-language" content="zh" />
@@ -15,7 +15,7 @@
   
   
   
-  <link rel="canonical" href="https://huoxj.github.io/posts/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%AE%9E%E7%8E%B0/%E5%AE%9E%E6%A8%A1%E5%BC%8F%E5%88%B0%E4%BF%9D%E6%8A%A4%E6%A8%A1%E5%BC%8F/" />
+  <link rel="canonical" href="http://localhost:1313/posts/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%AE%9E%E7%8E%B0/%E5%AE%9E%E6%A8%A1%E5%BC%8F%E5%88%B0%E4%BF%9D%E6%8A%A4%E6%A8%A1%E5%BC%8F/" />
   
   
   
@@ -68,7 +68,7 @@
   
   
   
-  <meta property="og:url" content="https://huoxj.github.io/posts/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%AE%9E%E7%8E%B0/%E5%AE%9E%E6%A8%A1%E5%BC%8F%E5%88%B0%E4%BF%9D%E6%8A%A4%E6%A8%A1%E5%BC%8F/">
+  <meta property="og:url" content="http://localhost:1313/posts/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%AE%9E%E7%8E%B0/%E5%AE%9E%E6%A8%A1%E5%BC%8F%E5%88%B0%E4%BF%9D%E6%8A%A4%E6%A8%A1%E5%BC%8F/">
   <meta property="og:site_name" content="Runz&#39;s blog">
   <meta property="og:title" content="实模式到保护模式">
   <meta property="og:description" content="实模式到保护模式这个过程已经接触过很多次了。最早从软院OS实验的例行检查里背过相关内容，然后便不无意外地忘掉了。这次在OSDI课上又涉及到了这部分内容，趁此机会重温一下并写一个通俗易懂的笔记，以便以后…">
@@ -94,7 +94,7 @@
     
     "abstract": "实模式到保护模式这个过程已经接触过很多次了。最早从软院OS实验的例行检查里背过相关内容，然后便不无意外地忘掉了。这次在OSDI课上又涉及到了这部分内容，趁此机会重温一下并写一个通俗易懂的笔记，以便以后\u0026hellip;",
     "inLanguage": "zh",
-    "url" : "https:\/\/huoxj.github.io\/posts\/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%AE%9E%E7%8E%B0\/%E5%AE%9E%E6%A8%A1%E5%BC%8F%E5%88%B0%E4%BF%9D%E6%8A%A4%E6%A8%A1%E5%BC%8F\/",
+    "url" : "http:\/\/localhost:1313\/posts\/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%AE%9E%E7%8E%B0\/%E5%AE%9E%E6%A8%A1%E5%BC%8F%E5%88%B0%E4%BF%9D%E6%8A%A4%E6%A8%A1%E5%BC%8F\/",
     "author" : {
       "@type": "Person",
       "name": "Runz Liu"
@@ -419,6 +419,10 @@
 
 
 
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.13.11/dist/katex.min.css">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.13.11/dist/katex.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.13.11/dist/contrib/auto-render.min.js" onload="renderMathInElement(document.body);"></script>
   </div>
 </div>
 <script>
@@ -807,8 +811,7 @@
 </h3>
 <p>保护模式比实模式牛的地方之一就是实现了段式内存管理。我们都知道段式内存管理本质就是个二维寻址。</p>
 <p>保护模式下的<strong>寻址方式</strong>如下：</p>
-<p>$$逻辑地址 = 段选择子_{16bits} \implies 段基址_{32bits} + 段内偏移_{32bits}$$</p>
-<p><code>段选择子</code>，可以根据字面意思理解记忆，就是记录选择了哪个段的东西。它存放在<code>段寄存器</code>中。</p>
+$$逻辑地址 = 段选择子_{16bits} \implies 段基址_{32bits} + 段内偏移_{32bits}$$<p><code>段选择子</code>，可以根据字面意思理解记忆，就是记录选择了哪个段的东西。它存放在<code>段寄存器</code>中。</p>
 <p>所以怎么从<code>段选择子</code>拿到<code>段基址</code>呢？这就要靠**<code>段表</code>**了。</p>
 <p>段表细节见后面小标题，这里只需要知道通过<code>段选择子</code>能找到段表中正确的项，而这个项(有名字，叫<code>段描述符</code>)含有我们想要的很多信息，主要就是<code>段基址</code>。</p>
 <blockquote>
@@ -1062,7 +1065,7 @@ RPL - REQUESTOR&#39;S PRIVILEGE LEVEL
 <div
   id="search-wrapper"
   class="invisible fixed inset-0 flex h-screen w-screen cursor-default flex-col bg-neutral-500/50 p-4 backdrop-blur-sm dark:bg-neutral-900/50 sm:p-6 md:p-[10vh] lg:p-[12vh]"
-  data-url="https://huoxj.github.io/"
+  data-url="http://localhost:1313/"
   style="z-index:500"
 >
   <div
