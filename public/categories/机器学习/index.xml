@@ -9,7 +9,17 @@
     <managingEditor>huoxj_runz@gmail.com (Runz Liu)</managingEditor>
     <webMaster>huoxj_runz@gmail.com (Runz Liu)</webMaster>
     <copyright>@ 2024 Runz Liu</copyright>
-    <lastBuildDate>Mon, 30 Sep 2024 08:54:34 -0800</lastBuildDate><atom:link href="https://huoxj.github.io/categories/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 25 Oct 2024 20:03:20 -0800</lastBuildDate><atom:link href="https://huoxj.github.io/categories/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>K 邻近分类器</title>
+      <link>https://huoxj.github.io/posts/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/k-%E9%82%BB%E8%BF%91%E5%88%86%E7%B1%BB%E5%99%A8/</link>
+      <pubDate>Fri, 25 Oct 2024 20:03:20 -0800</pubDate>
+      <author>huoxj_runz@gmail.com (Runz Liu)</author>
+      <guid>https://huoxj.github.io/posts/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/k-%E9%82%BB%E8%BF%91%E5%88%86%E7%B1%BB%E5%99%A8/</guid>
+      <description>对测试样本，找训练样本中最近的 $k$ 个，这 $k$ 个样本中标签最多的就是测试样本的类。 k-NN 的 $k=1$ 的特殊情况。</description>
+      
+    </item>
+    
     <item>
       <title>决策树</title>
       <link>https://huoxj.github.io/posts/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/%E5%86%B3%E7%AD%96%E6%A0%91/</link>
@@ -26,7 +36,7 @@
       <pubDate>Fri, 16 Aug 2024 16:39:18 -0800</pubDate>
       <author>huoxj_runz@gmail.com (Runz Liu)</author>
       <guid>https://huoxj.github.io/posts/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/%E6%A6%82%E8%A6%81/</guid>
-      <description>精度矩阵是二分类下的混淆矩阵 &lt;code&gt;TRUE&lt;/code&gt;/&lt;code&gt;FALSE&lt;/code&gt;: 预测结果与实际相符/不符 &lt;code&gt;POSITIVE&lt;/code&gt;/&lt;code&gt;NEGATIVE&lt;/code&gt;: 预测为真(阳性)/假(阴性)</description>
+      <description>精度矩阵是二分类下的混淆矩阵 &lt;code&gt;TRUE&lt;/code&gt;/&lt;code&gt;FALSE&lt;/code&gt;: 预测结果与实际相符/不符 &lt;code&gt;POSITIVE&lt;/code&gt;/&lt;code&gt;NEGATIVE&lt;/code&gt;: 预测为真(阳性)/假(阴性) 对于两个样本</description>
       
     </item>
     

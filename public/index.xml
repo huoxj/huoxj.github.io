@@ -9,7 +9,97 @@
     <managingEditor>huoxj_runz@gmail.com (Runz Liu)</managingEditor>
     <webMaster>huoxj_runz@gmail.com (Runz Liu)</webMaster>
     <copyright>@ 2024 Runz Liu</copyright>
-    <lastBuildDate>Tue, 08 Oct 2024 15:03:29 -0800</lastBuildDate><atom:link href="https://huoxj.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 10 Nov 2024 15:55:56 -0800</lastBuildDate><atom:link href="https://huoxj.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>读论文-YOLO v1</title>
+      <link>https://huoxj.github.io/posts/%E8%8A%9D%E5%A3%AB%E6%94%B6%E5%AE%B9%E6%89%80/%E8%AF%BB%E8%AE%BA%E6%96%87-yolo-v1/</link>
+      <pubDate>Fri, 08 Nov 2024 21:56:06 -0800</pubDate>
+      <author>huoxj_runz@gmail.com (Runz Liu)</author>
+      <guid>https://huoxj.github.io/posts/%E8%8A%9D%E5%A3%AB%E6%94%B6%E5%AE%B9%E6%89%80/%E8%AF%BB%E8%AE%BA%E6%96%87-yolo-v1/</guid>
+      <description>大创要做一个基于两个特征矩阵的信号分割与分类（不知道该不该这么描述），精确度要求不高，但对实时性要求比较高。我想到了借鉴 YOLO 来解决这个问题，所以顺便就来读一下 YOLO 初代的论文，太复杂了猪&amp;hellip;</description>
+      
+    </item>
+    
+    <item>
+      <title>Asst1</title>
+      <link>https://huoxj.github.io/posts/cs149-%E5%B9%B6%E8%A1%8C%E8%AE%A1%E7%AE%97/asst1/</link>
+      <pubDate>Fri, 08 Nov 2024 09:40:53 -0800</pubDate>
+      <author>huoxj_runz@gmail.com (Runz Liu)</author>
+      <guid>https://huoxj.github.io/posts/cs149-%E5%B9%B6%E8%A1%8C%E8%AE%A1%E7%AE%97/asst1/</guid>
+      <description>使用 &lt;code&gt;std::thread&lt;/code&gt; 来绘制分形图像。 默认策略是将图像分成高度相同的几块，每一块分给一个线程画。 这样其实做不到负载均衡，因为每一块画的工作量是不同的。 特别是 view1，很明显发现画&amp;hellip;</description>
+      
+    </item>
+    
+    <item>
+      <title>小米路由器 4Av2 刷 Openwrt 并开启 NAT6</title>
+      <link>https://huoxj.github.io/posts/%E6%9C%89%E6%84%8F%E6%80%9D%E7%9A%84%E6%8A%98%E8%85%BE/%E5%B0%8F%E7%B1%B3%E8%B7%AF%E7%94%B1%E5%99%A8-4av2-%E5%88%B7-openwrt-%E5%B9%B6%E5%BC%80%E5%90%AF-nat6/</link>
+      <pubDate>Sun, 03 Nov 2024 23:09:37 -0800</pubDate>
+      <author>huoxj_runz@gmail.com (Runz Liu)</author>
+      <guid>https://huoxj.github.io/posts/%E6%9C%89%E6%84%8F%E6%80%9D%E7%9A%84%E6%8A%98%E8%85%BE/%E5%B0%8F%E7%B1%B3%E8%B7%AF%E7%94%B1%E5%99%A8-4av2-%E5%88%B7-openwrt-%E5%B9%B6%E5%BC%80%E5%90%AF-nat6/</guid>
+      <description>网络环境是&lt;code&gt;南京大学鼓楼校区校园网&lt;/code&gt;。仙林应该是差不多的。 设备是&lt;code&gt;小米路由器 4A v2&lt;/code&gt;。这个设备导致我装 Openwrt 的过程相当坎坷 TAT，再也不贪便宜买低端设备了。 Breed 是一种 &amp;hellip;</description>
+      
+    </item>
+    
+    <item>
+      <title>K 邻近分类器</title>
+      <link>https://huoxj.github.io/posts/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/k-%E9%82%BB%E8%BF%91%E5%88%86%E7%B1%BB%E5%99%A8/</link>
+      <pubDate>Fri, 25 Oct 2024 20:03:20 -0800</pubDate>
+      <author>huoxj_runz@gmail.com (Runz Liu)</author>
+      <guid>https://huoxj.github.io/posts/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/k-%E9%82%BB%E8%BF%91%E5%88%86%E7%B1%BB%E5%99%A8/</guid>
+      <description>对测试样本，找训练样本中最近的 $k$ 个，这 $k$ 个样本中标签最多的就是测试样本的类。 k-NN 的 $k=1$ 的特殊情况。</description>
+      
+    </item>
+    
+    <item>
+      <title>关键字</title>
+      <link>https://huoxj.github.io/posts/c&#43;&#43;%E6%8B%BE%E9%81%97/%E5%85%B3%E9%94%AE%E5%AD%97/</link>
+      <pubDate>Sun, 20 Oct 2024 23:29:02 -0800</pubDate>
+      <author>huoxj_runz@gmail.com (Runz Liu)</author>
+      <guid>https://huoxj.github.io/posts/c&#43;&#43;%E6%8B%BE%E9%81%97/%E5%85%B3%E9%94%AE%E5%AD%97/</guid>
+      <description>字面意思，给类型取别名。 ```cpp int main() { typedef int size_t; size_t s = 3; fun(); } int fun() { size_t t = 2&amp;hellip;</description>
+      
+    </item>
+    
+    <item>
+      <title>类型解释</title>
+      <link>https://huoxj.github.io/posts/c&#43;&#43;%E6%8B%BE%E9%81%97/%E7%B1%BB%E5%9E%8B%E8%A7%A3%E9%87%8A/</link>
+      <pubDate>Sun, 13 Oct 2024 10:15:01 -0800</pubDate>
+      <author>huoxj_runz@gmail.com (Runz Liu)</author>
+      <guid>https://huoxj.github.io/posts/c&#43;&#43;%E6%8B%BE%E9%81%97/%E7%B1%BB%E5%9E%8B%E8%A7%A3%E9%87%8A/</guid>
+      <description>写这部分是为了： 记住要： 推荐这个网站，能帮你把 C 类型声明翻译成自然语言： 本文中，我们只关心如下几种说明符，因为这几种说明符是最困难的部分： ```text 括号括住的部分 &amp;gt; 后缀说明符 &amp;gt;&amp;hellip;</description>
+      
+    </item>
+    
+    <item>
+      <title>String</title>
+      <link>https://huoxj.github.io/posts/c&#43;&#43;%E6%8B%BE%E9%81%97/string/</link>
+      <pubDate>Sat, 12 Oct 2024 11:20:30 -0800</pubDate>
+      <author>huoxj_runz@gmail.com (Runz Liu)</author>
+      <guid>https://huoxj.github.io/posts/c&#43;&#43;%E6%8B%BE%E9%81%97/string/</guid>
+      <description>在以前打竞赛的时候，基本都是用字符数组配合&lt;code&gt;string.h&lt;/code&gt;里的函数去处理字符串。现在开始系统地接触C++，所以来记录一下&lt;code&gt;string&lt;/code&gt;类的知识。 &lt;code&gt;string&lt;/code&gt; 是 C+格的字符串类，也是一种&amp;hellip;</description>
+      
+    </item>
+    
+    <item>
+      <title>指针、引用与数组</title>
+      <link>https://huoxj.github.io/posts/c&#43;&#43;%E6%8B%BE%E9%81%97/%E6%8C%87%E9%92%88%E5%BC%95%E7%94%A8%E4%B8%8E%E6%95%B0%E7%BB%84/</link>
+      <pubDate>Sat, 12 Oct 2024 10:43:45 -0800</pubDate>
+      <author>huoxj_runz@gmail.com (Runz Liu)</author>
+      <guid>https://huoxj.github.io/posts/c&#43;&#43;%E6%8B%BE%E9%81%97/%E6%8C%87%E9%92%88%E5%BC%95%E7%94%A8%E4%B8%8E%E6%95%B0%E7%BB%84/</guid>
+      <description>以我的粗浅且可能有很大错误的理解，引用就是有着一些限制、有一些封装的指针，这些限制在编译器层面解决，底层就是以指针形式实现。 限制在如下几点： 引用带来的方便： 指针是指向一块内存首地址的变量。指针的&amp;hellip;</description>
+      
+    </item>
+    
+    <item>
+      <title>STL</title>
+      <link>https://huoxj.github.io/posts/c&#43;&#43;%E6%8B%BE%E9%81%97/stl/</link>
+      <pubDate>Sat, 12 Oct 2024 10:43:24 -0800</pubDate>
+      <author>huoxj_runz@gmail.com (Runz Liu)</author>
+      <guid>https://huoxj.github.io/posts/c&#43;&#43;%E6%8B%BE%E9%81%97/stl/</guid>
+      <description>STL 有五大组件： 序列容器实现能按顺序访问的数据结构。 动态数组。 双端队列。 双向链表。 C 风格的固定大小的数组。 单向链表。性能比 &lt;code&gt;list&lt;/code&gt; 略好，基本和 C 中的链表无异。 可动态调整&amp;hellip;</description>
+      
+    </item>
+    
     <item>
       <title>专题定位</title>
       <link>https://huoxj.github.io/posts/%E7%AE%97%E6%B3%95%E4%B8%8E%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/%E4%B8%93%E9%A2%98%E5%AE%9A%E4%BD%8D/</link>
@@ -96,7 +186,7 @@
       <pubDate>Fri, 16 Aug 2024 16:39:18 -0800</pubDate>
       <author>huoxj_runz@gmail.com (Runz Liu)</author>
       <guid>https://huoxj.github.io/posts/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/%E6%A6%82%E8%A6%81/</guid>
-      <description>精度矩阵是二分类下的混淆矩阵 &lt;code&gt;TRUE&lt;/code&gt;/&lt;code&gt;FALSE&lt;/code&gt;: 预测结果与实际相符/不符 &lt;code&gt;POSITIVE&lt;/code&gt;/&lt;code&gt;NEGATIVE&lt;/code&gt;: 预测为真(阳性)/假(阴性)</description>
+      <description>精度矩阵是二分类下的混淆矩阵 &lt;code&gt;TRUE&lt;/code&gt;/&lt;code&gt;FALSE&lt;/code&gt;: 预测结果与实际相符/不符 &lt;code&gt;POSITIVE&lt;/code&gt;/&lt;code&gt;NEGATIVE&lt;/code&gt;: 预测为真(阳性)/假(阴性) 对于两个样本</description>
       
     </item>
     

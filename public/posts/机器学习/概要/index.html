@@ -11,7 +11,7 @@
   <title>概要 &middot; Runz&#39;s blog</title>
   <meta name="title" content="概要 &middot; Runz&#39;s blog" />
   
-  <meta name="description" content="精度矩阵是二分类下的混淆矩阵 `TRUE`/`FALSE`: 预测结果与实际相符/不符 `POSITIVE`/`NEGATIVE`: 预测为真(阳性)/假(阴性)" />
+  <meta name="description" content="精度矩阵是二分类下的混淆矩阵 `TRUE`/`FALSE`: 预测结果与实际相符/不符 `POSITIVE`/`NEGATIVE`: 预测为真(阳性)/假(阴性) 对于两个样本 " />
   
   
   
@@ -71,7 +71,7 @@
   <meta property="og:url" content="https://huoxj.github.io/posts/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/%E6%A6%82%E8%A6%81/">
   <meta property="og:site_name" content="Runz&#39;s blog">
   <meta property="og:title" content="概要">
-  <meta property="og:description" content="精度矩阵是二分类下的混淆矩阵 TRUE/FALSE: 预测结果与实际相符/不符 POSITIVE/NEGATIVE: 预测为真(阳性)/假(阴性)">
+  <meta property="og:description" content="精度矩阵是二分类下的混淆矩阵 TRUE/FALSE: 预测结果与实际相符/不符 POSITIVE/NEGATIVE: 预测为真(阳性)/假(阴性) 对于两个样本">
   <meta property="og:locale" content="zh">
   <meta property="og:type" content="article">
     <meta property="article:section" content="posts">
@@ -81,7 +81,7 @@
   
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="概要">
-  <meta name="twitter:description" content="精度矩阵是二分类下的混淆矩阵 TRUE/FALSE: 预测结果与实际相符/不符 POSITIVE/NEGATIVE: 预测为真(阳性)/假(阴性)">
+  <meta name="twitter:description" content="精度矩阵是二分类下的混淆矩阵 TRUE/FALSE: 预测结果与实际相符/不符 POSITIVE/NEGATIVE: 预测为真(阳性)/假(阴性) 对于两个样本">
 
   
   <script type="application/ld+json">
@@ -92,7 +92,7 @@
     "name": "概要",
     "headline": "概要",
     
-    "abstract": "精度矩阵是二分类下的混淆矩阵 \u003ccode\u003eTRUE\u003c\/code\u003e\/\u003ccode\u003eFALSE\u003c\/code\u003e: 预测结果与实际相符\/不符 \u003ccode\u003ePOSITIVE\u003c\/code\u003e\/\u003ccode\u003eNEGATIVE\u003c\/code\u003e: 预测为真(阳性)\/假(阴性)",
+    "abstract": "精度矩阵是二分类下的混淆矩阵 \u003ccode\u003eTRUE\u003c\/code\u003e\/\u003ccode\u003eFALSE\u003c\/code\u003e: 预测结果与实际相符\/不符 \u003ccode\u003ePOSITIVE\u003c\/code\u003e\/\u003ccode\u003eNEGATIVE\u003c\/code\u003e: 预测为真(阳性)\/假(阴性) 对于两个样本",
     "inLanguage": "zh",
     "url" : "https:\/\/huoxj.github.io\/posts\/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0\/%E6%A6%82%E8%A6%81\/",
     "author" : {
@@ -108,7 +108,7 @@
     
     
     "mainEntityOfPage": "true",
-    "wordCount": "136"
+    "wordCount": "194"
   }]
   </script>
 
@@ -536,7 +536,7 @@ onload="renderMathInElement(document.body, {
 <div class="flex flex-row flex-wrap items-center">
   
   
-  <time datetime="2024-08-16T16:39:18-08:00">16 August 2024</time><span class="px-2 text-primary-500">&middot;</span><span>136 字</span><span class="px-2 text-primary-500">&middot;</span><span title="预计阅读">1 分钟</span>
+  <time datetime="2024-08-16T16:39:18-08:00">16 August 2024</time><span class="px-2 text-primary-500">&middot;</span><span>194 字</span><span class="px-2 text-primary-500">&middot;</span><span title="预计阅读">1 分钟</span>
   
 
   
@@ -613,6 +613,11 @@ onload="renderMathInElement(document.body, {
         <li><a href="#算术指标">算术指标</a></li>
       </ul>
     </li>
+    <li><a href="#统计学基本概念">统计学基本概念</a>
+      <ul>
+        <li><a href="#距离度量函数">距离度量函数</a></li>
+      </ul>
+    </li>
   </ul>
 </nav>
   </div>
@@ -631,6 +636,11 @@ onload="renderMathInElement(document.body, {
         <li><a href="#混淆矩阵精度矩阵">混淆矩阵、精度矩阵</a></li>
         <li><a href="#精度矩阵下的名词">精度矩阵下的名词</a></li>
         <li><a href="#算术指标">算术指标</a></li>
+      </ul>
+    </li>
+    <li><a href="#统计学基本概念">统计学基本概念</a>
+      <ul>
+        <li><a href="#距离度量函数">距离度量函数</a></li>
       </ul>
     </li>
   </ul>
@@ -765,6 +775,44 @@ onload="renderMathInElement(document.body, {
 </ul>
 </li>
 </ul>
+
+
+<h2 class="relative group">统计学基本概念 
+    <div id="%E7%BB%9F%E8%AE%A1%E5%AD%A6%E5%9F%BA%E6%9C%AC%E6%A6%82%E5%BF%B5" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#%E7%BB%9F%E8%AE%A1%E5%AD%A6%E5%9F%BA%E6%9C%AC%E6%A6%82%E5%BF%B5" aria-label="锚点">#</a>
+    </span>        
+    
+</h2>
+
+
+<h3 class="relative group">距离度量函数 
+    <div id="%E8%B7%9D%E7%A6%BB%E5%BA%A6%E9%87%8F%E5%87%BD%E6%95%B0" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#%E8%B7%9D%E7%A6%BB%E5%BA%A6%E9%87%8F%E5%87%BD%E6%95%B0" aria-label="锚点">#</a>
+    </span>        
+    
+</h3>
+<p>对于两个样本 $x_i,x_j\in R^d$</p>
+<ul>
+<li>欧式距离                $d(x_i, x_j)= \sqrt{(x_i-x_j)^T(x_i-x_j)}=||x_i-x_j||_2$</li>
+<li>曼哈顿距离            $d(x_i, x_j)=||x_i-x_j||_1$</li>
+<li>切比雪夫距离        $d(x_i, x_j)=||x_i-x_j||_\infty$</li>
+<li>余弦距离               $d(x_i, x_j)=\frac{x_i^Tx_j}{||x_i||\ ||x_j||}$</li>
+<li>马式距离               $d(x_i, x_j)=\sqrt{(x_i-x_j)^TM(x_i-x_j)}$</li>
+</ul>
+<p>
+  <figure>
+    <img class="my-0 rounded-md" loading="lazy" src="https://runzblog.oss-cn-hangzhou.aliyuncs.com/postimg/202410252021162.png" alt="" />
+    
+  </figure>
+</p>
 
           
           
