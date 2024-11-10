@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>C&#43;&#43;拾遗 on Runz&#39;s blog</title>
+    <link>https://huoxj.github.io/categories/c&#43;&#43;%E6%8B%BE%E9%81%97/</link>
+    <description>Recent content in C&#43;&#43;拾遗 on Runz&#39;s blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh</language>
+    <managingEditor>huoxj_runz@gmail.com (Runz Liu)</managingEditor>
+    <webMaster>huoxj_runz@gmail.com (Runz Liu)</webMaster>
+    <copyright>@ 2024 Runz Liu</copyright>
+    <lastBuildDate>Sun, 20 Oct 2024 23:29:02 -0800</lastBuildDate><atom:link href="https://huoxj.github.io/categories/c++%E6%8B%BE%E9%81%97/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>关键字</title>
+      <link>https://huoxj.github.io/posts/c&#43;&#43;%E6%8B%BE%E9%81%97/%E5%85%B3%E9%94%AE%E5%AD%97/</link>
+      <pubDate>Sun, 20 Oct 2024 23:29:02 -0800</pubDate>
+      <author>huoxj_runz@gmail.com (Runz Liu)</author>
+      <guid>https://huoxj.github.io/posts/c&#43;&#43;%E6%8B%BE%E9%81%97/%E5%85%B3%E9%94%AE%E5%AD%97/</guid>
+      <description>字面意思，给类型取别名。 ```cpp int main() { typedef int size_t; size_t s = 3; fun(); } int fun() { size_t t = 2&amp;hellip;</description>
+      
+    </item>
+    
+    <item>
+      <title>类型解释</title>
+      <link>https://huoxj.github.io/posts/c&#43;&#43;%E6%8B%BE%E9%81%97/%E7%B1%BB%E5%9E%8B%E8%A7%A3%E9%87%8A/</link>
+      <pubDate>Sun, 13 Oct 2024 10:15:01 -0800</pubDate>
+      <author>huoxj_runz@gmail.com (Runz Liu)</author>
+      <guid>https://huoxj.github.io/posts/c&#43;&#43;%E6%8B%BE%E9%81%97/%E7%B1%BB%E5%9E%8B%E8%A7%A3%E9%87%8A/</guid>
+      <description>写这部分是为了： 记住要： 推荐这个网站，能帮你把 C 类型声明翻译成自然语言： 本文中，我们只关心如下几种说明符，因为这几种说明符是最困难的部分： ```text 括号括住的部分 &amp;gt; 后缀说明符 &amp;gt;&amp;hellip;</description>
+      
+    </item>
+    
+    <item>
+      <title>String</title>
+      <link>https://huoxj.github.io/posts/c&#43;&#43;%E6%8B%BE%E9%81%97/string/</link>
+      <pubDate>Sat, 12 Oct 2024 11:20:30 -0800</pubDate>
+      <author>huoxj_runz@gmail.com (Runz Liu)</author>
+      <guid>https://huoxj.github.io/posts/c&#43;&#43;%E6%8B%BE%E9%81%97/string/</guid>
+      <description>在以前打竞赛的时候，基本都是用字符数组配合&lt;code&gt;string.h&lt;/code&gt;里的函数去处理字符串。现在开始系统地接触C++，所以来记录一下&lt;code&gt;string&lt;/code&gt;类的知识。 &lt;code&gt;string&lt;/code&gt; 是 C+格的字符串类，也是一种&amp;hellip;</description>
+      
+    </item>
+    
+    <item>
+      <title>指针、引用与数组</title>
+      <link>https://huoxj.github.io/posts/c&#43;&#43;%E6%8B%BE%E9%81%97/%E6%8C%87%E9%92%88%E5%BC%95%E7%94%A8%E4%B8%8E%E6%95%B0%E7%BB%84/</link>
+      <pubDate>Sat, 12 Oct 2024 10:43:45 -0800</pubDate>
+      <author>huoxj_runz@gmail.com (Runz Liu)</author>
+      <guid>https://huoxj.github.io/posts/c&#43;&#43;%E6%8B%BE%E9%81%97/%E6%8C%87%E9%92%88%E5%BC%95%E7%94%A8%E4%B8%8E%E6%95%B0%E7%BB%84/</guid>
+      <description>以我的粗浅且可能有很大错误的理解，引用就是有着一些限制、有一些封装的指针，这些限制在编译器层面解决，底层就是以指针形式实现。 限制在如下几点： 引用带来的方便： 指针是指向一块内存首地址的变量。指针的&amp;hellip;</description>
+      
+    </item>
+    
+    <item>
+      <title>STL</title>
+      <link>https://huoxj.github.io/posts/c&#43;&#43;%E6%8B%BE%E9%81%97/stl/</link>
+      <pubDate>Sat, 12 Oct 2024 10:43:24 -0800</pubDate>
+      <author>huoxj_runz@gmail.com (Runz Liu)</author>
+      <guid>https://huoxj.github.io/posts/c&#43;&#43;%E6%8B%BE%E9%81%97/stl/</guid>
+      <description>STL 有五大组件： 序列容器实现能按顺序访问的数据结构。 动态数组。 双端队列。 双向链表。 C 风格的固定大小的数组。 单向链表。性能比 &lt;code&gt;list&lt;/code&gt; 略好，基本和 C 中的链表无异。 可动态调整&amp;hellip;</description>
+      
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>CS149-并行计算 on Runz&#39;s blog</title>
+    <link>https://huoxj.github.io/categories/cs149-%E5%B9%B6%E8%A1%8C%E8%AE%A1%E7%AE%97/</link>
+    <description>Recent content in CS149-并行计算 on Runz&#39;s blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh</language>
+    <managingEditor>huoxj_runz@gmail.com (Runz Liu)</managingEditor>
+    <webMaster>huoxj_runz@gmail.com (Runz Liu)</webMaster>
+    <copyright>@ 2024 Runz Liu</copyright>
+    <lastBuildDate>Fri, 08 Nov 2024 09:40:53 -0800</lastBuildDate><atom:link href="https://huoxj.github.io/categories/cs149-%E5%B9%B6%E8%A1%8C%E8%AE%A1%E7%AE%97/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Asst1</title>
+      <link>https://huoxj.github.io/posts/cs149-%E5%B9%B6%E8%A1%8C%E8%AE%A1%E7%AE%97/asst1/</link>
+      <pubDate>Fri, 08 Nov 2024 09:40:53 -0800</pubDate>
+      <author>huoxj_runz@gmail.com (Runz Liu)</author>
+      <guid>https://huoxj.github.io/posts/cs149-%E5%B9%B6%E8%A1%8C%E8%AE%A1%E7%AE%97/asst1/</guid>
+      <description>使用 &lt;code&gt;std::thread&lt;/code&gt; 来绘制分形图像。 默认策略是将图像分成高度相同的几块，每一块分给一个线程画。 这样其实做不到负载均衡，因为每一块画的工作量是不同的。 特别是 view1，很明显发现画&amp;hellip;</description>
+      
+    </item>
+    
+  </channel>
+</rss>
