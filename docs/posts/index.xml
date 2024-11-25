@@ -9,7 +9,77 @@
     <managingEditor>huoxj_runz@gmail.com (Runz Liu)</managingEditor>
     <webMaster>huoxj_runz@gmail.com (Runz Liu)</webMaster>
     <copyright>@ 2024 Runz Liu</copyright>
-    <lastBuildDate>Sun, 10 Nov 2024 15:55:56 -0800</lastBuildDate><atom:link href="https://huoxj.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 25 Nov 2024 14:28:54 -0800</lastBuildDate><atom:link href="https://huoxj.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>南京-幕府山-24-11</title>
+      <link>https://huoxj.github.io/posts/%E6%B8%B8%E8%AE%B0/%E5%8D%97%E4%BA%AC-%E5%B9%95%E5%BA%9C%E5%B1%B1-24-11/</link>
+      <pubDate>Thu, 21 Nov 2024 15:37:11 -0800</pubDate>
+      <author>huoxj_runz@gmail.com (Runz Liu)</author>
+      <guid>https://huoxj.github.io/posts/%E6%B8%B8%E8%AE%B0/%E5%8D%97%E4%BA%AC-%E5%B9%95%E5%BA%9C%E5%B1%B1-24-11/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>OO-继承与派生</title>
+      <link>https://huoxj.github.io/posts/c&#43;&#43;%E6%8B%BE%E9%81%97/oo-%E7%BB%A7%E6%89%BF%E4%B8%8E%E6%B4%BE%E7%94%9F/</link>
+      <pubDate>Thu, 21 Nov 2024 12:36:40 -0800</pubDate>
+      <author>huoxj_runz@gmail.com (Runz Liu)</author>
+      <guid>https://huoxj.github.io/posts/c&#43;&#43;%E6%8B%BE%E9%81%97/oo-%E7%BB%A7%E6%89%BF%E4%B8%8E%E6%B4%BE%E7%94%9F/</guid>
+      <description>考试必考。所以在网上找一些笔记，记下有价值的部分以供复习。 继承和派生这对名词基本是一个意思，只是各自用语习惯不一样： OO 是 Java 学的，所以我倾向于第一种表达。 C+神奇地提供了三种继承方式&amp;hellip;</description>
+      
+    </item>
+    
+    <item>
+      <title>OO 杂项</title>
+      <link>https://huoxj.github.io/posts/c&#43;&#43;%E6%8B%BE%E9%81%97/oo-%E6%9D%82%E9%A1%B9/</link>
+      <pubDate>Wed, 20 Nov 2024 10:34:25 -0800</pubDate>
+      <author>huoxj_runz@gmail.com (Runz Liu)</author>
+      <guid>https://huoxj.github.io/posts/c&#43;&#43;%E6%8B%BE%E9%81%97/oo-%E6%9D%82%E9%A1%B9/</guid>
+      <description>&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-cpp&#34; data-lang=&#34;cpp&#34;&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>杂项</title>
+      <link>https://huoxj.github.io/posts/c&#43;&#43;%E6%8B%BE%E9%81%97/%E6%9D%82%E9%A1%B9/</link>
+      <pubDate>Sun, 17 Nov 2024 20:12:19 -0800</pubDate>
+      <author>huoxj_runz@gmail.com (Runz Liu)</author>
+      <guid>https://huoxj.github.io/posts/c&#43;&#43;%E6%8B%BE%E9%81%97/%E6%9D%82%E9%A1%B9/</guid>
+      <description>RAII： Resource acquisition is initialization 将资源管理交给其本身的思想。 尽量使用对象的生命周期来管理资源，初始化时调用构造函数进行资源分配，离开作用域时&amp;hellip;</description>
+      
+    </item>
+    
+    <item>
+      <title>可变参数</title>
+      <link>https://huoxj.github.io/posts/c&#43;&#43;%E6%8B%BE%E9%81%97/%E5%8F%AF%E5%8F%98%E5%8F%82%E6%95%B0/</link>
+      <pubDate>Fri, 15 Nov 2024 17:22:58 -0800</pubDate>
+      <author>huoxj_runz@gmail.com (Runz Liu)</author>
+      <guid>https://huoxj.github.io/posts/c&#43;&#43;%E6%8B%BE%E9%81%97/%E5%8F%AF%E5%8F%98%E5%8F%82%E6%95%B0/</guid>
+      <description>向函数传不定个数的参数就是可变参数。标识符为 &lt;code&gt;...&lt;/code&gt;。 举例： &lt;code&gt;c int printf(const char *format, ...); &lt;/code&gt; C 中使用可变参数需要引入头文件 `st&amp;hellip;</description>
+      
+    </item>
+    
+    <item>
+      <title>更新计划</title>
+      <link>https://huoxj.github.io/posts/c&#43;&#43;%E6%8B%BE%E9%81%97/%E6%9B%B4%E6%96%B0%E8%AE%A1%E5%88%92/</link>
+      <pubDate>Fri, 15 Nov 2024 17:07:29 -0800</pubDate>
+      <author>huoxj_runz@gmail.com (Runz Liu)</author>
+      <guid>https://huoxj.github.io/posts/c&#43;&#43;%E6%8B%BE%E9%81%97/%E6%9B%B4%E6%96%B0%E8%AE%A1%E5%88%92/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>C&#43;&#43;11-移动语义与右值引用</title>
+      <link>https://huoxj.github.io/posts/c&#43;&#43;%E6%8B%BE%E9%81%97/c&#43;&#43;11-%E7%A7%BB%E5%8A%A8%E8%AF%AD%E4%B9%89%E4%B8%8E%E5%8F%B3%E5%80%BC%E5%BC%95%E7%94%A8/</link>
+      <pubDate>Sun, 10 Nov 2024 15:55:56 -0800</pubDate>
+      <author>huoxj_runz@gmail.com (Runz Liu)</author>
+      <guid>https://huoxj.github.io/posts/c&#43;&#43;%E6%8B%BE%E9%81%97/c&#43;&#43;11-%E7%A7%BB%E5%8A%A8%E8%AF%AD%E4%B9%89%E4%B8%8E%E5%8F%B3%E5%80%BC%E5%BC%95%E7%94%A8/</guid>
+      <description></description>
+      
+    </item>
+    
     <item>
       <title>读论文-YOLO v1</title>
       <link>https://huoxj.github.io/posts/%E8%8A%9D%E5%A3%AB%E6%94%B6%E5%AE%B9%E6%89%80/%E8%AF%BB%E8%AE%BA%E6%96%87-yolo-v1/</link>
@@ -96,7 +166,7 @@
       <pubDate>Sat, 12 Oct 2024 10:43:24 -0800</pubDate>
       <author>huoxj_runz@gmail.com (Runz Liu)</author>
       <guid>https://huoxj.github.io/posts/c&#43;&#43;%E6%8B%BE%E9%81%97/stl/</guid>
-      <description>STL 有五大组件： 序列容器实现能按顺序访问的数据结构。 动态数组。 双端队列。 双向链表。 C 风格的固定大小的数组。 单向链表。性能比 &lt;code&gt;list&lt;/code&gt; 略好，基本和 C 中的链表无异。 可动态调整&amp;hellip;</description>
+      <description>STL 有五大组件： 序列容器实现能按顺序访问的数据结构。 有如下容器： 省略返回类型以及一些无关紧要的参数类型。 没有头部加入和删除元素。 insert，erase 和 clear 复杂度 $O(n&amp;hellip;</description>
       
     </item>
     

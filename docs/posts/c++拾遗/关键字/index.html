@@ -108,7 +108,7 @@
     
     
     "mainEntityOfPage": "true",
-    "wordCount": "162"
+    "wordCount": "314"
   }]
   </script>
 
@@ -536,7 +536,7 @@ onload="renderMathInElement(document.body, {
 <div class="flex flex-row flex-wrap items-center">
   
   
-  <time datetime="2024-10-20T23:29:02-08:00">20 October 2024</time><span class="px-2 text-primary-500">&middot;</span><span>162 字</span><span class="px-2 text-primary-500">&middot;</span><span title="预计阅读">1 分钟</span>
+  <time datetime="2024-10-20T23:29:02-08:00">20 October 2024</time><span class="px-2 text-primary-500">&middot;</span><span>314 字</span><span class="px-2 text-primary-500">&middot;</span><span title="预计阅读">1 分钟</span>
   
 
   
@@ -614,6 +614,12 @@ onload="renderMathInElement(document.body, {
         <li><a href="#函数指针别名">函数指针别名</a></li>
       </ul>
     </li>
+    <li><a href="#sizeof">sizeof</a>
+      <ul>
+        <li><a href="#sizeof-无括号">sizeof 无括号</a></li>
+        <li><a href="#sizeof-1">sizeof()</a></li>
+      </ul>
+    </li>
   </ul>
 </nav>
   </div>
@@ -633,6 +639,12 @@ onload="renderMathInElement(document.body, {
         <li><a href="#类型别名">类型别名</a></li>
         <li><a href="#结构体别名">结构体别名</a></li>
         <li><a href="#函数指针别名">函数指针别名</a></li>
+      </ul>
+    </li>
+    <li><a href="#sizeof">sizeof</a>
+      <ul>
+        <li><a href="#sizeof-无括号">sizeof 无括号</a></li>
+        <li><a href="#sizeof-1">sizeof()</a></li>
       </ul>
     </li>
   </ul>
@@ -772,6 +784,50 @@ TODO</p>
 </h3>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cpp" data-lang="cpp"><span class="line"><span class="cl"><span class="k">typedef</span> <span class="kt">void</span><span class="o">*</span><span class="p">(</span><span class="o">*</span><span class="n">Fun</span><span class="p">)</span> 
 </span></span></code></pre></div>
+
+<h2 class="relative group">sizeof 
+    <div id="sizeof" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#sizeof" aria-label="锚点">#</a>
+    </span>        
+    
+</h2>
+<p>sizeof 有两种。一种带括号的，另一种不带。</p>
+
+
+<h3 class="relative group">sizeof 无括号 
+    <div id="sizeof-%E6%97%A0%E6%8B%AC%E5%8F%B7" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#sizeof-%E6%97%A0%E6%8B%AC%E5%8F%B7" aria-label="锚点">#</a>
+    </span>        
+    
+</h3>
+<p>返回所给类型的字节数。后面只能跟类型名。</p>
+
+
+<h3 class="relative group">sizeof() 
+    <div id="sizeof-1" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#sizeof-1" aria-label="锚点">#</a>
+    </span>        
+    
+</h3>
+<p>返回括号中变量所占字节数。</p>
+<p>可以理解为在识别了这个变量的类型后，再使用无括号的 sizeof 返回这个类型占的字节数。</p>
+<p>注意：</p>
+<ul>
+<li>指向数组首元素的指针传入时，只会返回 4。因为传入的是指针变量而不是数组变量（e.g. <code>int*</code>  和 <code>int[5]</code>）</li>
+</ul>
+
           
           
           

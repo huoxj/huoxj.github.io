@@ -108,7 +108,7 @@
     
     
     "mainEntityOfPage": "true",
-    "wordCount": "518"
+    "wordCount": "1480"
   }]
   </script>
 
@@ -536,7 +536,7 @@ onload="renderMathInElement(document.body, {
 <div class="flex flex-row flex-wrap items-center">
   
   
-  <time datetime="2024-11-08T09:40:53-08:00">8 November 2024</time><span class="px-2 text-primary-500">&middot;</span><span>518 字</span><span class="px-2 text-primary-500">&middot;</span><span title="预计阅读">2 分钟</span>
+  <time datetime="2024-11-08T09:40:53-08:00">8 November 2024</time><span class="px-2 text-primary-500">&middot;</span><span>1480 字</span><span class="px-2 text-primary-500">&middot;</span><span title="预计阅读">3 分钟</span>
   
 
   
@@ -606,11 +606,23 @@ onload="renderMathInElement(document.body, {
     class="min-w-[220px] py-2 border-dotted ltr:-ml-5 ltr:border-l ltr:pl-5 rtl:-mr-5 rtl:border-r rtl:pr-5 dark:border-neutral-600">
     <nav id="TableOfContents">
   <ul>
-    <li><a href="#prog1">Prog1</a>
+    <li><a href="#prog1-mandelbrot_threads">Prog1-mandelbrot_threads</a>
       <ul>
         <li><a href="#默认策略">默认策略</a></li>
         <li><a href="#均衡策略">均衡策略</a></li>
         <li><a href="#核心与线程">核心与线程</a></li>
+      </ul>
+    </li>
+    <li><a href="#prog3-mandelbrot_ispc">Prog3-mandelbrot_ispc</a>
+      <ul>
+        <li><a href="#ispc-在-vscode-中的配置">ISPC 在 VSCode 中的配置</a></li>
+        <li><a href="#ispc-基础">ISPC 基础</a></li>
+      </ul>
+    </li>
+    <li><a href="#prog4--sqrt">Prog4- sqrt</a>
+      <ul>
+        <li><a href="#task1">Task1</a></li>
+        <li><a href="#task2">Task2</a></li>
       </ul>
     </li>
   </ul>
@@ -626,11 +638,23 @@ onload="renderMathInElement(document.body, {
     class="py-2 border-dotted border-neutral-300 ltr:-ml-5 ltr:border-l ltr:pl-5 rtl:-mr-5 rtl:border-r rtl:pr-5 dark:border-neutral-600">
     <nav id="TableOfContents">
   <ul>
-    <li><a href="#prog1">Prog1</a>
+    <li><a href="#prog1-mandelbrot_threads">Prog1-mandelbrot_threads</a>
       <ul>
         <li><a href="#默认策略">默认策略</a></li>
         <li><a href="#均衡策略">均衡策略</a></li>
         <li><a href="#核心与线程">核心与线程</a></li>
+      </ul>
+    </li>
+    <li><a href="#prog3-mandelbrot_ispc">Prog3-mandelbrot_ispc</a>
+      <ul>
+        <li><a href="#ispc-在-vscode-中的配置">ISPC 在 VSCode 中的配置</a></li>
+        <li><a href="#ispc-基础">ISPC 基础</a></li>
+      </ul>
+    </li>
+    <li><a href="#prog4--sqrt">Prog4- sqrt</a>
+      <ul>
+        <li><a href="#task1">Task1</a></li>
+        <li><a href="#task2">Task2</a></li>
       </ul>
     </li>
   </ul>
@@ -678,13 +702,13 @@ onload="renderMathInElement(document.body, {
         <div class="article-content max-w-prose mb-20">
           
 
-<h2 class="relative group">Prog1 
-    <div id="prog1" class="anchor"></div>
+<h2 class="relative group">Prog1-mandelbrot_threads 
+    <div id="prog1-mandelbrot_threads" class="anchor"></div>
     
     <span
         class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
         <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
-            style="text-decoration-line: none !important;" href="#prog1" aria-label="锚点">#</a>
+            style="text-decoration-line: none !important;" href="#prog1-mandelbrot_threads" aria-label="锚点">#</a>
     </span>        
     
 </h2>
@@ -780,7 +804,157 @@ onload="renderMathInElement(document.body, {
   </figure>
 </p>
 <p>但也存在少量架构中线程有独立的 L1 cache。</p>
+<p>从高层次往低层次：</p>
+<p>系统级线程 - 逻辑处理器 - 物理内核</p>
 
+
+<h2 class="relative group">Prog3-mandelbrot_ispc 
+    <div id="prog3-mandelbrot_ispc" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#prog3-mandelbrot_ispc" aria-label="锚点">#</a>
+    </span>        
+    
+</h2>
+
+
+<h3 class="relative group">ISPC 在 VSCode 中的配置 
+    <div id="ispc-%E5%9C%A8-vscode-%E4%B8%AD%E7%9A%84%E9%85%8D%E7%BD%AE" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#ispc-%E5%9C%A8-vscode-%E4%B8%AD%E7%9A%84%E9%85%8D%E7%BD%AE" aria-label="锚点">#</a>
+    </span>        
+    
+</h3>
+<p>这部分作业我挪到 WSL 上面做了，因为我的 Linux 机子处理器没有 AVX2 指令集。ISPC 只能在有这个指令集的机器上做。</p>
+<p>首先得保证有 ISPC 编译环境。</p>
+<p>然后，在 VSCode 上写 ISPC，要安装 ISPC 扩展。</p>
+<p>
+  <figure>
+    <img class="my-0 rounded-md" loading="lazy" src="https://runzblog.oss-cn-hangzhou.aliyuncs.com/postimg/202411212101487.png" alt="" />
+    
+  </figure>
+</p>
+<p>这个扩展还要求安装 C# 环境。</p>
+<p>
+  <figure>
+    <img class="my-0 rounded-md" loading="lazy" src="https://runzblog.oss-cn-hangzhou.aliyuncs.com/postimg/202411212102084.png" alt="" />
+    
+  </figure>
+</p>
+<p><a href="https://www.mono-project.com/download/stable/" target="_blank">Download - Stable | Mono</a> 按网页里的引导来配就行。Ubuntu 上一通 apt 就装好哩。</p>
+<p>最后，在 ISPC 插件设置中配置平台与 ISPC 编译器路径即可。我只改了蓝色的这两项，改完重启下 VSCode，插件就可以正常工作了。</p>
+<p>
+  <figure>
+    <img class="my-0 rounded-md" loading="lazy" src="https://runzblog.oss-cn-hangzhou.aliyuncs.com/postimg/202411212105190.png" alt="" />
+    
+  </figure>
+</p>
+
+
+<h3 class="relative group">ISPC 基础 
+    <div id="ispc-%E5%9F%BA%E7%A1%80" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#ispc-%E5%9F%BA%E7%A1%80" aria-label="锚点">#</a>
+    </span>        
+    
+</h3>
+<p>正式介绍 —— ISPC。</p>
+<p>实验文档说，ISPC 程序的每一个实例都是在 SIMD 单元里并行执行的。每一个实例都有两个隐含的变量：<code>programIndex</code> 和 <code>programCount</code>。前者是此实例的序号，后者是实例数。</p>
+<p>对于一个求向量和的代码：</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cpp" data-lang="cpp"><span class="line"><span class="cl"><span class="k">const</span> <span class="kt">int</span> <span class="n">TOTAL_VALUES</span> <span class="o">=</span> <span class="mi">1024</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="kt">float</span> <span class="n">a</span><span class="p">[</span><span class="n">TOTAL_VALUES</span><span class="p">];</span>
+</span></span><span class="line"><span class="cl"><span class="kt">float</span> <span class="n">b</span><span class="p">[</span><span class="n">TOTAL_VALUES</span><span class="p">];</span>
+</span></span><span class="line"><span class="cl"><span class="kt">float</span> <span class="n">c</span><span class="p">[</span><span class="n">TOTAL_VALUES</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl"> 
+</span></span><span class="line"><span class="cl"><span class="k">for</span><span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">TOTAL_VALUES</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">	<span class="n">c</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">=</span> <span class="n">a</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">+</span> <span class="n">b</span><span class="p">[</span><span class="n">i</span><span class="p">];</span>
+</span></span></code></pre></div><p>对应 ISPC 代码：</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cpp" data-lang="cpp"><span class="line"><span class="cl"><span class="k">export</span> <span class="nf">sum1</span><span class="p">(</span><span class="n">uniform</span> <span class="kt">int</span> <span class="n">N</span><span class="p">,</span> <span class="n">uniform</span> <span class="kt">float</span><span class="o">*</span> <span class="n">a</span><span class="p">,</span> <span class="n">uniform</span> <span class="kt">float</span><span class="o">*</span> <span class="n">b</span><span class="p">,</span> <span class="n">uniform</span> <span class="kt">float</span><span class="o">*</span> <span class="n">c</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">	<span class="k">for</span><span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">N</span><span class="p">;</span> <span class="n">i</span><span class="o">+=</span> <span class="n">programCount</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">		<span class="n">c</span><span class="p">[</span><span class="n">programIndex</span> <span class="o">+</span> <span class="n">i</span><span class="p">]</span> <span class="o">=</span> <span class="n">a</span><span class="p">[</span><span class="n">programIndex</span> <span class="o">+</span> <span class="n">i</span><span class="p">]</span> <span class="o">+</span> <span class="n">b</span><span class="p">[</span><span class="n">programIndex</span> <span class="o">+</span> <span class="n">i</span><span class="p">];</span>
+</span></span><span class="line"><span class="cl">	<span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></div><blockquote>
+<p>export 使这个函数能直接被 C/C++ 代码调用
+uniform 标识的参数表示对所有实例都相同</p>
+</blockquote>
+<p>可以看到，每个实例负责相邻的 N 个分量的求和。</p>
+<p>但是，ISPC 并不希望你详细到指定每个实例干什么工作。不该以“每个实例负责相邻的 N 个分量的和” 设计程序，而是以“求和的工作可以分解成每个分量求和的工作” 来设计程序。如下：</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cpp" data-lang="cpp"><span class="line"><span class="cl"><span class="k">export</span> <span class="nf">sum2</span><span class="p">(</span><span class="n">uniform</span> <span class="kt">int</span> <span class="n">N</span><span class="p">,</span> <span class="n">uniform</span> <span class="kt">float</span><span class="o">*</span> <span class="n">a</span><span class="p">,</span> <span class="n">uniform</span> <span class="kt">float</span><span class="o">*</span> <span class="n">b</span><span class="p">,</span> <span class="n">uniform</span> <span class="kt">float</span><span class="o">*</span> <span class="n">c</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">	<span class="n">foreach</span> <span class="p">(</span><span class="n">i</span> <span class="o">=</span> <span class="mi">0</span> <span class="p">...</span> <span class="n">N</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">		<span class="n">c</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">=</span> <span class="n">a</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">+</span> <span class="n">b</span><span class="p">[</span><span class="n">i</span><span class="p">];</span>
+</span></span><span class="line"><span class="cl">	<span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></div><p>通过 ISPC 的 foreach 来实现。</p>
+<p>大任务分解成每个分量求和的小任务时，这些小任务之间是互不影响的，所以执行的顺序也没有要求。我们在 sum1 中将相邻的分量放在一个实例中求和因此没有任何必要。所以通过 foreach 让 ISPC 自己决定小任务执行的顺序就行，程序会变得简洁一些。</p>
+
+
+<h2 class="relative group">Prog4- sqrt 
+    <div id="prog4--sqrt" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#prog4--sqrt" aria-label="锚点">#</a>
+    </span>        
+    
+</h2>
+
+
+<h3 class="relative group">Task1 
+    <div id="task1" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#task1" aria-label="锚点">#</a>
+    </span>        
+    
+</h3>
+<p>运行一下 sqrt 的代码。</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="o">[</span>sqrt serial<span class="o">]</span>:          <span class="o">[</span>613.685<span class="o">]</span> ms
+</span></span><span class="line"><span class="cl"><span class="o">[</span>sqrt ispc<span class="o">]</span>:            <span class="o">[</span>127.356<span class="o">]</span> ms
+</span></span><span class="line"><span class="cl"><span class="o">[</span>sqrt task ispc<span class="o">]</span>:       <span class="o">[</span>9.783<span class="o">]</span> ms
+</span></span><span class="line"><span class="cl">                                <span class="o">(</span>4.82x speedup from ISPC<span class="o">)</span>
+</span></span><span class="line"><span class="cl">                                <span class="o">(</span>62.73x speedup from task ISPC<span class="o">)</span>
+</span></span></code></pre></div><p>和 prog3 类似，ISPC 理论 8 倍加速和 task 的 threads * 8 倍加速都没达到。应该也是负载均衡的问题。我们在 task2 里继续探索。</p>
+
+
+<h3 class="relative group">Task2 
+    <div id="task2" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#task2" aria-label="锚点">#</a>
+    </span>        
+    
+</h3>
+<p>任务2要求通过修改输入的 value 数组，来实现最大的和最小的加速比。</p>
+<p>并行任务中，最大的两个开销是 (1) 运算开销 和 (2) 调度开销。前者占比越大加速比越大。后者为 0 时基本可以达到理论加速比。</p>
+<p>所以 value 数组设置为 1 和 2.999，可以实现运算开销占比最大化和最小化。</p>
+<p>设置为 1：</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="o">[</span>sqrt serial<span class="o">]</span>:          <span class="o">[</span>10.802<span class="o">]</span> ms
+</span></span><span class="line"><span class="cl"><span class="o">[</span>sqrt ispc<span class="o">]</span>:            <span class="o">[</span>5.868<span class="o">]</span> ms
+</span></span><span class="line"><span class="cl"><span class="o">[</span>sqrt task ispc<span class="o">]</span>:       <span class="o">[</span>6.237<span class="o">]</span> ms
+</span></span><span class="line"><span class="cl">                                <span class="o">(</span>1.84x speedup from ISPC<span class="o">)</span>
+</span></span><span class="line"><span class="cl">                                <span class="o">(</span>1.73x speedup from task ISPC<span class="o">)</span>
+</span></span></code></pre></div><p>可以看到，加速比小了很多。</p>
+<p>设置为 2.999：</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="o">[</span>sqrt serial<span class="o">]</span>:          <span class="o">[</span>1306.762<span class="o">]</span> ms
+</span></span><span class="line"><span class="cl"><span class="o">[</span>sqrt ispc<span class="o">]</span>:            <span class="o">[</span>188.561<span class="o">]</span> ms
+</span></span><span class="line"><span class="cl"><span class="o">[</span>sqrt task ispc<span class="o">]</span>:       <span class="o">[</span>15.588<span class="o">]</span> ms
+</span></span><span class="line"><span class="cl">                                <span class="o">(</span>6.93x speedup from ISPC<span class="o">)</span>
+</span></span><span class="line"><span class="cl">                                <span class="o">(</span>83.83x speedup from task ISPC<span class="o">)</span>
+</span></span></code></pre></div>
           
           
           
