@@ -1,0 +1,1506 @@
+<!DOCTYPE html>
+<html lang="zh-cn" dir="ltr" class="scroll-smooth" data-default-appearance="dark"
+  data-auto-appearance="true"><head>
+  <meta charset="utf-8" />
+  
+  <meta http-equiv="content-language" content="zh" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  
+  <title>Lec-3 交互设计原则与目标 &middot; Runz&#39;s blog</title>
+  <meta name="title" content="Lec-3 交互设计原则与目标 &middot; Runz&#39;s blog" />
+  
+  <meta name="description" content="不知道为什么没有 Lec-2，往年这个标题是 Lec-2 来着，但是今年老师发的 PPT 直接跳过 2 了。具体什么情况无从知晓，因为上课根本没听嘛。 --- 交互框架是提供理解或定义某种事务的一种结..." />
+  
+  
+  
+  <link rel="canonical" href="https://huoxj.github.io/posts/%E4%BA%BA%E6%9C%BA%E4%BA%A4%E4%BA%92/lec-3-%E4%BA%A4%E4%BA%92%E8%AE%BE%E8%AE%A1%E5%8E%9F%E5%88%99%E4%B8%8E%E7%9B%AE%E6%A0%87/" />
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <link type="text/css" rel="stylesheet" href="/css/main.bundle.min.fe35e6b981b34abb6477263d92133a5db952b6c46117d0dfe2c37dcb5fa8af38c1e30b9a8f298ca9a7c0c2d72d729504664fda9f784a31c7f40f1f393fc843fc.css"
+    integrity="sha512-/jXmuYGzSrtkdyY9khM6XblStsRhF9Df4sN9y1&#43;orzjB4wuajymMqafAwtctcpUEZk/an3hKMcf0Dx85P8hD/A==" />
+  
+  
+  <script type="text/javascript" src="/js/appearance.min.516a16745bea5a9bd011138d254cc0fd3973cd55ce6e15f3dec763e7c7c2c7448f8fe7b54cca811cb821b0c7e12cd161caace1dd794ac3d34d40937cbcc9ee12.js"
+    integrity="sha512-UWoWdFvqWpvQERONJUzA/TlzzVXObhXz3sdj58fCx0SPj&#43;e1TMqBHLghsMfhLNFhyqzh3XlKw9NNQJN8vMnuEg=="></script>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <script defer type="text/javascript" id="script-bundle" src="/js/main.bundle.min.8613168837e35f3f882df60a8a810e212d581a4eea26eeb2554e527c6eab9e57acc03a2533cbd5c6084f825ce3a655953923f21e1de2e6b8014eddf510fa58e7.js"
+    integrity="sha512-hhMWiDfjXz&#43;ILfYKioEOIS1YGk7qJu6yVU5SfG6rnleswDolM8vVxghPglzjplWVOSPyHh3i5rgBTt31EPpY5w==" data-copy="" data-copied=""></script>
+  
+  
+  
+  <script src="/lib/zoom/zoom.min.fcbc7f7b3dcea96e3b5570cd322c5d7a12d5351c87f9889b1c31745a2cc711df58f6b70795a86d50e63813b236ade916668332c10a70a4ce26f7c0878f525fce.js" integrity="sha512-/Lx/ez3OqW47VXDNMixdehLVNRyH&#43;YibHDF0WizHEd9Y9rcHlahtUOY4E7I2rekWZoMywQpwpM4m98CHj1Jfzg=="></script>
+  
+  
+  
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+  <link rel="manifest" href="/site.webmanifest" />
+  
+  
+  
+  
+  
+  
+  
+  <meta property="og:url" content="https://huoxj.github.io/posts/%E4%BA%BA%E6%9C%BA%E4%BA%A4%E4%BA%92/lec-3-%E4%BA%A4%E4%BA%92%E8%AE%BE%E8%AE%A1%E5%8E%9F%E5%88%99%E4%B8%8E%E7%9B%AE%E6%A0%87/">
+  <meta property="og:site_name" content="Runz&#39;s blog">
+  <meta property="og:title" content="Lec-3 交互设计原则与目标">
+  <meta property="og:description" content="不知道为什么没有 Lec-2，往年这个标题是 Lec-2 来着，但是今年老师发的 PPT 直接跳过 2 了。具体什么情况无从知晓，因为上课根本没听嘛。 — 交互框架是提供理解或定义某种事务的一种结…">
+  <meta property="og:locale" content="zh">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2024-11-25T10:04:15-08:00">
+    <meta property="article:modified_time" content="2024-11-25T10:04:15-08:00">
+
+  
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Lec-3 交互设计原则与目标">
+  <meta name="twitter:description" content="不知道为什么没有 Lec-2，往年这个标题是 Lec-2 来着，但是今年老师发的 PPT 直接跳过 2 了。具体什么情况无从知晓，因为上课根本没听嘛。 — 交互框架是提供理解或定义某种事务的一种结…">
+
+  
+  <script type="application/ld+json">
+  [{
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "articleSection": "",
+    "name": "Lec-3 交互设计原则与目标",
+    "headline": "Lec-3 交互设计原则与目标",
+    
+    "abstract": "不知道为什么没有 Lec-2，往年这个标题是 Lec-2 来着，但是今年老师发的 PPT 直接跳过 2 了。具体什么情况无从知晓，因为上课根本没听嘛。 \u0026mdash; 交互框架是提供理解或定义某种事务的一种结\u0026hellip;",
+    "inLanguage": "zh",
+    "url" : "https:\/\/huoxj.github.io\/posts\/%E4%BA%BA%E6%9C%BA%E4%BA%A4%E4%BA%92\/lec-3-%E4%BA%A4%E4%BA%92%E8%AE%BE%E8%AE%A1%E5%8E%9F%E5%88%99%E4%B8%8E%E7%9B%AE%E6%A0%87\/",
+    "author" : {
+      "@type": "Person",
+      "name": "Runz Liu"
+    },
+    "copyrightYear": "2024",
+    "dateCreated": "2024-11-25T10:04:15-08:00",
+    "datePublished": "2024-11-25T10:04:15-08:00",
+    
+    "dateModified": "2024-11-25T10:04:15-08:00",
+    
+    
+    
+    "mainEntityOfPage": "true",
+    "wordCount": "2387"
+  }]
+  </script>
+
+
+  
+  
+  <meta name="author" content="Runz Liu" />
+  
+  
+  
+  <link href="mailto:221850148@smail.nju.edu.cn" rel="me" />
+  
+  
+  <link href="https://github.com/huoxj" rel="me" />
+  
+  
+  <link href="https://steamcommunity.com/profiles/huorunz" rel="me" />
+  
+  
+  <link href="https://space.bilibili.com/166337394" rel="me" />
+  
+  
+  
+  
+
+<script src="/lib/jquery/jquery.slim.min.03cb160e3cfdb2667a2e2c80d283bebcf63ff8bbc4b629c9ab2babf6fae1d0c07ad470edae783efa4fabda2ac01c58d60e63b98b3c336be8208460f08f4354f5.js" integrity="sha512-A8sWDjz9smZ6LiyA0oO&#43;vPY/&#43;LvEtinJqyur9vrh0MB61HDtrng&#43;&#43;k&#43;r2irAHFjWDmO5izwza&#43;gghGDwj0NU9Q=="></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+
+  
+  
+  <meta name="theme-color"/>
+  
+  
+</head>
+
+
+<link rel="preload" href="https://cdn.jsdelivr.net/npm/katex@0.13.11/dist/katex.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.13.11/dist/katex.min.css">
+</noscript>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.13.11/dist/katex.min.js" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.13.11/dist/contrib/auto-render.min.js" crossorigin="anonymous"
+onload="renderMathInElement(document.body, {
+        delimiters: [
+        { left: '$$', right: '$$', display: true },
+        { left: '$', right: '$', display: false },
+        { left: '\$', right: '\$', display: false }
+        ]
+    });"></script>
+
+<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+  <meta name="referrer" content="no-referrer-when-downgrade"><body
+  class="flex flex-col h-screen px-6 m-auto text-lg leading-7 max-w-7xl bg-neutral text-neutral-900 dark:bg-neutral-800 dark:text-neutral sm:px-14 md:px-24 lg:px-32 scrollbar-thin scrollbar-track-neutral-200 scrollbar-thumb-neutral-400 dark:scrollbar-track-neutral-800 dark:scrollbar-thumb-neutral-600">
+  <div id="the-top" class="absolute flex self-center">
+    <a class="px-3 py-1 text-sm -translate-y-8 rounded-b-lg bg-primary-200 focus:translate-y-0 dark:bg-neutral-600"
+      href="#main-content"><span
+        class="font-bold text-primary-600 ltr:pr-2 rtl:pl-2 dark:text-primary-400">&darr;</span>跳过正文</a>
+  </div>
+  
+  
+  <div style="min-height: 100px;"></div>
+<div class="fixed inset-x-0 pl-[24px] pr-[24px]" style="z-index:100">
+  <div id="menu-blur" class="absolute opacity-0 inset-x-0 top-0 h-full single_hero_background nozoom backdrop-blur-2xl shadow-2xl"></div>
+  <div class="relative max-w-[64rem] ml-auto mr-auto">
+    <div style="padding-left:0;padding-right:0;padding-top:2px;padding-bottom:3px"
+    class="main-menu flex items-center justify-between px-4 py-6 sm:px-6 md:justify-start space-x-3">
+    
+    <div class="flex flex-1 items-center justify-between">
+        <nav class="flex space-x-3">
+
+            
+            <a href="/" class="text-base font-medium text-gray-500 hover:text-gray-900">Runz&rsquo;s blog</a>
+            
+
+        </nav>
+        <nav class="hidden md:flex items-center space-x-5 md:ml-12 h-12">
+
+            
+            
+            
+  <a href="/posts/"  class="flex items-center text-gray-500 hover:text-primary-600 dark:hover:text-primary-400">
+    
+    <p class="text-base font-medium" title="">
+        文章
+    </p>
+</a>
+
+
+
+            
+            
+  <a href="/categories/"  class="flex items-center text-gray-500 hover:text-primary-600 dark:hover:text-primary-400">
+    
+    <p class="text-base font-medium" title="">
+        分类
+    </p>
+</a>
+
+
+
+            
+            
+  <a href="/about/"  class="flex items-center text-gray-500 hover:text-primary-600 dark:hover:text-primary-400">
+    
+    <p class="text-base font-medium" title="">
+        关于
+    </p>
+</a>
+
+
+
+            
+            
+
+            
+
+
+            
+            <button id="search-button" aria-label="Search" class="text-base hover:text-primary-600 dark:hover:text-primary-400"
+                title="">
+                
+
+  <span class="relative block icon">
+    <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="search" class="svg-inline--fa fa-search fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z"/></svg>
+
+  </span>
+
+
+            </button>
+            
+
+
+            
+            
+            <div
+                class="ltr:mr-14 rtl:ml-14 flex items-center">
+                <button id="appearance-switcher" aria-label="Dark mode switcher" type="button" class="text-base hover:text-primary-600 dark:hover:text-primary-400">
+                    <div class="flex items-center justify-center dark:hidden">
+                        
+
+  <span class="relative block icon">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M32 256c0-123.8 100.3-224 223.8-224c11.36 0 29.7 1.668 40.9 3.746c9.616 1.777 11.75 14.63 3.279 19.44C245 86.5 211.2 144.6 211.2 207.8c0 109.7 99.71 193 208.3 172.3c9.561-1.805 16.28 9.324 10.11 16.95C387.9 448.6 324.8 480 255.8 480C132.1 480 32 379.6 32 256z"/></svg>
+
+  </span>
+
+
+                    </div>
+                    <div class="items-center justify-center hidden dark:flex">
+                        
+
+  <span class="relative block icon">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M256 159.1c-53.02 0-95.1 42.98-95.1 95.1S202.1 351.1 256 351.1s95.1-42.98 95.1-95.1S309 159.1 256 159.1zM509.3 347L446.1 255.1l63.15-91.01c6.332-9.125 1.104-21.74-9.826-23.72l-109-19.7l-19.7-109c-1.975-10.93-14.59-16.16-23.72-9.824L256 65.89L164.1 2.736c-9.125-6.332-21.74-1.107-23.72 9.824L121.6 121.6L12.56 141.3C1.633 143.2-3.596 155.9 2.736 164.1L65.89 256l-63.15 91.01c-6.332 9.125-1.105 21.74 9.824 23.72l109 19.7l19.7 109c1.975 10.93 14.59 16.16 23.72 9.824L256 446.1l91.01 63.15c9.127 6.334 21.75 1.107 23.72-9.822l19.7-109l109-19.7C510.4 368.8 515.6 356.1 509.3 347zM256 383.1c-70.69 0-127.1-57.31-127.1-127.1c0-70.69 57.31-127.1 127.1-127.1s127.1 57.3 127.1 127.1C383.1 326.7 326.7 383.1 256 383.1z"/></svg>
+
+  </span>
+
+
+                    </div>
+                </button>
+            </div>
+            
+
+        </nav>
+        <div class="flex md:hidden items-center space-x-5 md:ml-12 h-12">
+
+            <span></span>
+
+            
+
+
+            
+            <button id="search-button-mobile" aria-label="Search" class="text-base hover:text-primary-600 dark:hover:text-primary-400"
+                title="">
+                
+
+  <span class="relative block icon">
+    <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="search" class="svg-inline--fa fa-search fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z"/></svg>
+
+  </span>
+
+
+            </button>
+            
+
+            
+            
+            <button id="appearance-switcher-mobile" aria-label="Dark mode switcher" type="button" class="text-base hover:text-primary-600 dark:hover:text-primary-400" style="margin-right:5px">
+                <div class="flex items-center justify-center dark:hidden">
+                    
+
+  <span class="relative block icon">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M32 256c0-123.8 100.3-224 223.8-224c11.36 0 29.7 1.668 40.9 3.746c9.616 1.777 11.75 14.63 3.279 19.44C245 86.5 211.2 144.6 211.2 207.8c0 109.7 99.71 193 208.3 172.3c9.561-1.805 16.28 9.324 10.11 16.95C387.9 448.6 324.8 480 255.8 480C132.1 480 32 379.6 32 256z"/></svg>
+
+  </span>
+
+
+                </div>
+                <div class="items-center justify-center hidden dark:flex">
+                    
+
+  <span class="relative block icon">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M256 159.1c-53.02 0-95.1 42.98-95.1 95.1S202.1 351.1 256 351.1s95.1-42.98 95.1-95.1S309 159.1 256 159.1zM509.3 347L446.1 255.1l63.15-91.01c6.332-9.125 1.104-21.74-9.826-23.72l-109-19.7l-19.7-109c-1.975-10.93-14.59-16.16-23.72-9.824L256 65.89L164.1 2.736c-9.125-6.332-21.74-1.107-23.72 9.824L121.6 121.6L12.56 141.3C1.633 143.2-3.596 155.9 2.736 164.1L65.89 256l-63.15 91.01c-6.332 9.125-1.105 21.74 9.824 23.72l109 19.7l19.7 109c1.975 10.93 14.59 16.16 23.72 9.824L256 446.1l91.01 63.15c9.127 6.334 21.75 1.107 23.72-9.822l19.7-109l109-19.7C510.4 368.8 515.6 356.1 509.3 347zM256 383.1c-70.69 0-127.1-57.31-127.1-127.1c0-70.69 57.31-127.1 127.1-127.1s127.1 57.3 127.1 127.1C383.1 326.7 326.7 383.1 256 383.1z"/></svg>
+
+  </span>
+
+
+                </div>
+            </button>
+            
+
+        </div>
+    </div>
+    <div class="-my-2 -mr-2 md:hidden">
+
+        <label id="menu-button" class="block">
+            
+            <div class="cursor-pointer hover:text-primary-600 dark:hover:text-primary-400">
+                
+
+  <span class="relative block icon">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M0 96C0 78.33 14.33 64 32 64H416C433.7 64 448 78.33 448 96C448 113.7 433.7 128 416 128H32C14.33 128 0 113.7 0 96zM0 256C0 238.3 14.33 224 32 224H416C433.7 224 448 238.3 448 256C448 273.7 433.7 288 416 288H32C14.33 288 0 273.7 0 256zM416 448H32C14.33 448 0 433.7 0 416C0 398.3 14.33 384 32 384H416C433.7 384 448 398.3 448 416C448 433.7 433.7 448 416 448z"/></svg>
+
+  </span>
+
+
+            </div>
+            <div id="menu-wrapper" style="padding-top:5px;"
+                class="fixed inset-0 z-30 invisible w-screen h-screen m-0 overflow-auto transition-opacity opacity-0 cursor-default bg-neutral-100/50 backdrop-blur-sm dark:bg-neutral-900/50">
+                <ul
+                    class="flex space-y-2 mt-3 flex-col items-end w-full px-6 py-6 mx-auto overflow-visible list-none ltr:text-right rtl:text-left max-w-7xl">
+
+                    <li id="menu-close-button">
+                        <span
+                            class="cursor-pointer inline-block align-text-bottom hover:text-primary-600 dark:hover:text-primary-400">
+
+  <span class="relative block icon">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path fill="currentColor" d="M310.6 361.4c12.5 12.5 12.5 32.75 0 45.25C304.4 412.9 296.2 416 288 416s-16.38-3.125-22.62-9.375L160 301.3L54.63 406.6C48.38 412.9 40.19 416 32 416S15.63 412.9 9.375 406.6c-12.5-12.5-12.5-32.75 0-45.25l105.4-105.4L9.375 150.6c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0L160 210.8l105.4-105.4c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25l-105.4 105.4L310.6 361.4z"/></svg>
+
+  </span>
+
+</span>
+                    </li>
+
+                    
+
+                    
+  <li class="mt-1">
+    <a href="/posts/"  class="flex items-center text-gray-500 hover:text-primary-600 dark:hover:text-primary-400">
+        
+        <p class="text-bg font-bg" title="">
+            文章
+        </p>
+    </a>
+</li>
+
+
+
+
+                    
+
+                    
+  <li class="mt-1">
+    <a href="/categories/"  class="flex items-center text-gray-500 hover:text-primary-600 dark:hover:text-primary-400">
+        
+        <p class="text-bg font-bg" title="">
+            分类
+        </p>
+    </a>
+</li>
+
+
+
+
+                    
+
+                    
+  <li class="mt-1">
+    <a href="/about/"  class="flex items-center text-gray-500 hover:text-primary-600 dark:hover:text-primary-400">
+        
+        <p class="text-bg font-bg" title="">
+            关于
+        </p>
+    </a>
+</li>
+
+
+
+
+                    
+
+                </ul>
+                
+                
+
+            </div>
+        </label>
+    </div>
+</div>
+
+
+
+
+  </div>
+</div>
+<script>
+  window.addEventListener('scroll', function (e) {
+    var scroll = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop || 0;
+    var background_blur = document.getElementById('menu-blur');
+    background_blur.style.opacity = (scroll / 300);
+  });
+</script>
+
+  
+  <div class="relative flex flex-col grow">
+    <main id="main-content" class="grow">
+      
+
+
+<article>
+  
+  
+  
+  
+  
+  
+
+
+
+<div id="hero" class="h-[150px] md:h-[200px]"></div>
+
+
+
+    
+    <div class="fixed inset-x-0 top-0 h-[800px] single_hero_background nozoom"
+    style="background-image:url(/202411251017185_4372877145069881403_hu15737518634462242785.png);">
+    
+
+
+    <div class="absolute inset-0 bg-gradient-to-t from-neutral dark:from-neutral-800 to-transparent mix-blend-normal">
+    </div>
+    <div
+        class="absolute inset-0 opacity-60 bg-gradient-to-t from-neutral dark:from-neutral-800 to-neutral-100 dark:to-neutral-800 mix-blend-normal">
+    </div>
+</div>
+
+<div id="background-blur" class="fixed opacity-0 inset-x-0 top-0 h-full single_hero_background nozoom backdrop-blur-2xl"></div>
+<script>
+    window.addEventListener('scroll', function (e) {
+        var scroll = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop || 0;
+        var background_blur = document.getElementById('background-blur');
+        background_blur.style.opacity = (scroll / 300)
+    });
+</script>
+
+  
+  
+
+  <header id="single_header" class="mt-5 max-w-prose">
+    
+    <h1 class="mt-0 text-4xl font-extrabold text-neutral-900 dark:text-neutral">
+      Lec-3 交互设计原则与目标
+    </h1>
+    <div class="mt-1 mb-6 text-base text-neutral-500 dark:text-neutral-400 print:hidden">
+      
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="flex flex-row flex-wrap items-center">
+  
+  
+  <time datetime="2024-11-25T10:04:15-08:00">25 November 2024</time><span class="px-2 text-primary-500">&middot;</span><span>2387 字</span><span class="px-2 text-primary-500">&middot;</span><span title="预计阅读">5 分钟</span>
+  
+
+  
+  
+</div>
+
+
+
+
+
+<div class="flex flex-row flex-wrap items-center">
+  
+  
+  
+  
+  
+  
+  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/categories/%E4%BA%BA%E6%9C%BA%E4%BA%A4%E4%BA%92/&#34;,'_self');">
+    <span class="flex" style="cursor: pointer;">
+  <span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
+    人机交互
+  </span>
+</span>
+  </span>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+</div>
+
+
+
+
+    </div>
+
+    
+    
+    
+    
+    
+
+    
+
+    
+
+  </header>
+  
+  <section class="flex flex-col max-w-full mt-0 prose dark:prose-invert lg:flex-row">
+    
+     <div
+      class="order-first lg:ml-auto px-0 lg:order-last ltr:lg:pl-8 rtl:lg:pr-8">
+      <div class="toc ltr:pl-5 rtl:pr-5 print:hidden lg:sticky lg:top-[140px]">
+
+         <details open id="TOCView"
+  class="toc-right mt-0 overflow-y-scroll overscroll-contain scrollbar-thin scrollbar-track-neutral-200 scrollbar-thumb-neutral-400 dark:scrollbar-track-neutral-800 dark:scrollbar-thumb-neutral-600 rounded-lg ltr:-ml-5 ltr:pl-5 rtl:-mr-5 rtl:pr-5 hidden lg:block">
+  <summary
+    class="block py-1 text-lg font-semibold cursor-pointer bg-neutral-100 text-neutral-800 ltr:-ml-5 ltr:pl-5 rtl:-mr-5 rtl:pr-5 dark:bg-neutral-700 dark:text-neutral-100 lg:hidden">
+    目录
+  </summary>
+  <div
+    class="min-w-[220px] py-2 border-dotted ltr:-ml-5 ltr:border-l ltr:pl-5 rtl:-mr-5 rtl:border-r rtl:pr-5 dark:border-neutral-600">
+    <nav id="TableOfContents">
+  <ul>
+    <li><a href="#交互框架">交互框架</a></li>
+    <li><a href="#ecc-框架---执行--评估活动周期">ECC 框架 - 执行 / 评估活动周期</a>
+      <ul>
+        <li><a href="#模型基础">模型基础</a></li>
+        <li><a href="#图示">图示</a></li>
+        <li><a href="#作用与意义">作用与意义</a></li>
+      </ul>
+    </li>
+    <li><a href="#扩展-ecc-模型">扩展 ECC 模型</a>
+      <ul>
+        <li><a href="#图示-1">图示</a></li>
+        <li><a href="#作用">作用</a></li>
+      </ul>
+    </li>
+    <li><a href="#可用性目标">可用性目标</a>
+      <ul>
+        <li><a href="#背景">背景</a></li>
+        <li><a href="#指标">指标</a>
+          <ul>
+            <li><a href="#易学性-learnability">易学性 learnability</a></li>
+            <li><a href="#易记性-memorability">易记性 memorability</a></li>
+            <li><a href="#效用性-utility">效用性 utility</a></li>
+            <li><a href="#高效率-efficiency">高效率 efficiency</a></li>
+            <li><a href="#安全性-safety">安全性 safety</a></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+    <li><a href="#用户体验目标">用户体验目标</a>
+      <ul>
+        <li><a href="#用户体验-vs-可用性">用户体验 vs 可用性</a></li>
+        <li><a href="#矛盾如何化解-超越可用性">矛盾如何化解-超越可用性</a></li>
+      </ul>
+    </li>
+    <li><a href="#简易可用性工程">简易可用性工程</a>
+      <ul>
+        <li><a href="#过程">过程</a></li>
+      </ul>
+    </li>
+    <li><a href="#设计规则">设计规则</a>
+      <ul>
+        <li><a href="#基本规则">基本规则</a></li>
+        <li><a href="#黄金规则">黄金规则</a></li>
+        <li><a href="#十条启发式规则">十条启发式规则</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+  </div>
+</details>
+<details class="toc-inside mt-0 overflow-hidden rounded-lg ltr:-ml-5 ltr:pl-5 rtl:-mr-5 rtl:pr-5 lg:hidden">
+  <summary
+    class="py-1 text-lg font-semibold cursor-pointer bg-neutral-100 text-neutral-800 ltr:-ml-5 ltr:pl-5 rtl:-mr-5 rtl:pr-5 dark:bg-neutral-700 dark:text-neutral-100 lg:hidden">
+    目录
+  </summary>
+  <div
+    class="py-2 border-dotted border-neutral-300 ltr:-ml-5 ltr:border-l ltr:pl-5 rtl:-mr-5 rtl:border-r rtl:pr-5 dark:border-neutral-600">
+    <nav id="TableOfContents">
+  <ul>
+    <li><a href="#交互框架">交互框架</a></li>
+    <li><a href="#ecc-框架---执行--评估活动周期">ECC 框架 - 执行 / 评估活动周期</a>
+      <ul>
+        <li><a href="#模型基础">模型基础</a></li>
+        <li><a href="#图示">图示</a></li>
+        <li><a href="#作用与意义">作用与意义</a></li>
+      </ul>
+    </li>
+    <li><a href="#扩展-ecc-模型">扩展 ECC 模型</a>
+      <ul>
+        <li><a href="#图示-1">图示</a></li>
+        <li><a href="#作用">作用</a></li>
+      </ul>
+    </li>
+    <li><a href="#可用性目标">可用性目标</a>
+      <ul>
+        <li><a href="#背景">背景</a></li>
+        <li><a href="#指标">指标</a>
+          <ul>
+            <li><a href="#易学性-learnability">易学性 learnability</a></li>
+            <li><a href="#易记性-memorability">易记性 memorability</a></li>
+            <li><a href="#效用性-utility">效用性 utility</a></li>
+            <li><a href="#高效率-efficiency">高效率 efficiency</a></li>
+            <li><a href="#安全性-safety">安全性 safety</a></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+    <li><a href="#用户体验目标">用户体验目标</a>
+      <ul>
+        <li><a href="#用户体验-vs-可用性">用户体验 vs 可用性</a></li>
+        <li><a href="#矛盾如何化解-超越可用性">矛盾如何化解-超越可用性</a></li>
+      </ul>
+    </li>
+    <li><a href="#简易可用性工程">简易可用性工程</a>
+      <ul>
+        <li><a href="#过程">过程</a></li>
+      </ul>
+    </li>
+    <li><a href="#设计规则">设计规则</a>
+      <ul>
+        <li><a href="#基本规则">基本规则</a></li>
+        <li><a href="#黄金规则">黄金规则</a></li>
+        <li><a href="#十条启发式规则">十条启发式规则</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+  </div>
+</details>
+
+<script>
+
+  var margin = 200;
+  var marginError = 50;
+
+  (function () {
+    var $window = $(window);
+    var $toc = $('#TOCView');
+    var tocHeight = $toc.height();
+
+    function onResize() {
+      var windowAndMarginHeight = $window.height() - margin;
+      if(tocHeight >= windowAndMarginHeight) {
+        $toc.css("overflow-y", "scroll")
+        $toc.css("max-height", (windowAndMarginHeight + marginError) + "px")
+      } else {
+        $toc.css("overflow-y", "hidden")
+        $toc.css("max-height", "9999999px")
+      }
+    }
+
+    $window.on('resize', onResize);
+    $(document).ready(onResize);
+  })();
+
+
+
+</script>
+   </div>
+      </div>
+      
+
+      <div class="min-w-0 min-h-0 max-w-fit">
+        
+        
+
+
+        <div class="article-content max-w-prose mb-20">
+          <p>不知道为什么没有 Lec-2，往年这个标题是 Lec-2 来着，但是今年老师发的 PPT 直接跳过 2 了。具体什么情况无从知晓，因为上课根本没听嘛。</p>
+<hr>
+
+
+<h2 class="relative group">交互框架 
+    <div id="%E4%BA%A4%E4%BA%92%E6%A1%86%E6%9E%B6" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#%E4%BA%A4%E4%BA%92%E6%A1%86%E6%9E%B6" aria-label="锚点">#</a>
+    </span>        
+    
+</h2>
+<p>交互框架是提供理解或定义某种事务的一种结构。</p>
+<p>说白了，就是给交互建模得到的框架。</p>
+
+
+<h2 class="relative group">ECC 框架 - 执行 / 评估活动周期 
+    <div id="ecc-%E6%A1%86%E6%9E%B6---%E6%89%A7%E8%A1%8C--%E8%AF%84%E4%BC%B0%E6%B4%BB%E5%8A%A8%E5%91%A8%E6%9C%9F" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#ecc-%E6%A1%86%E6%9E%B6---%E6%89%A7%E8%A1%8C--%E8%AF%84%E4%BC%B0%E6%B4%BB%E5%8A%A8%E5%91%A8%E6%9C%9F" aria-label="锚点">#</a>
+    </span>        
+    
+</h2>
+<p>一种具体的交互框架。PPT 上说是最有名的。</p>
+
+
+<h3 class="relative group">模型基础 
+    <div id="%E6%A8%A1%E5%9E%8B%E5%9F%BA%E7%A1%80" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#%E6%A8%A1%E5%9E%8B%E5%9F%BA%E7%A1%80" aria-label="锚点">#</a>
+    </span>        
+    
+</h3>
+<p>ECC 定义了<strong>活动</strong>的四个组成部分：</p>
+<ul>
+<li>目标(Goal)</li>
+<li>执行(Execution)</li>
+<li>客观因素(World)</li>
+<li>评估(Evaluation)</li>
+</ul>
+<blockquote>
+<p>目标就是交互要达到的目的，意图可以理解为实现目标的一系列活动。一个目标可以对应多个意图。目标≠意图(Intention)</p>
+</blockquote>
+
+
+<h3 class="relative group">图示 
+    <div id="%E5%9B%BE%E7%A4%BA" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#%E5%9B%BE%E7%A4%BA" aria-label="锚点">#</a>
+    </span>        
+    
+</h3>
+<p>
+  <figure>
+    <img class="my-0 rounded-md" loading="lazy" src="https://runzblog.oss-cn-hangzhou.aliyuncs.com/postimg/202411251017185.png" alt="" />
+    
+  </figure>
+</p>
+<p>图中，每个循环代表一个动作。</p>
+<p>执行阶段：</p>
+<ul>
+<li>形成目标</li>
+<li>形成意图</li>
+<li>明确动作</li>
+<li>执行动作
+评估阶段</li>
+<li>感知系统状态</li>
+<li>解释系统状态</li>
+<li>评估输出</li>
+</ul>
+
+
+<h3 class="relative group">作用与意义 
+    <div id="%E4%BD%9C%E7%94%A8%E4%B8%8E%E6%84%8F%E4%B9%89" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#%E4%BD%9C%E7%94%A8%E4%B8%8E%E6%84%8F%E4%B9%89" aria-label="锚点">#</a>
+    </span>        
+    
+</h3>
+<p>ECC 模型可以解释为什么有些交互设计得有问题。因为我们可以从两个阶段进行分析了。</p>
+<p>在执行阶段出现问题，叫<strong>执行隔阂</strong>；</p>
+<ul>
+<li>用户为达到目标而<em>做出的动作</em>，与系统<em>允许的动作</em>之间有差别</li>
+</ul>
+<p>评估阶段，<strong>评估隔阂</strong>。</p>
+<ul>
+<li>系统状态的<em>实际表现</em>，与<em>用户预期</em>之间有差别</li>
+</ul>
+<p>因此，我们分别能从两个阶段知道：</p>
+<ul>
+<li>如何才能够使用户简单地确定哪些活动是被允许的</li>
+<li>如何确定系统是否处于期望的运行状态等问题
+也即 ECC 模型的意义所在。圆上这段第一句话了。</li>
+</ul>
+
+
+<h2 class="relative group">扩展 ECC 模型 
+    <div id="%E6%89%A9%E5%B1%95-ecc-%E6%A8%A1%E5%9E%8B" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#%E6%89%A9%E5%B1%95-ecc-%E6%A8%A1%E5%9E%8B" aria-label="锚点">#</a>
+    </span>        
+    
+</h2>
+<p>EEC模型不能描述人与系统通过界面进行的通信。</p>
+
+
+<h3 class="relative group">图示 
+    <div id="%E5%9B%BE%E7%A4%BA-1" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#%E5%9B%BE%E7%A4%BA-1" aria-label="锚点">#</a>
+    </span>        
+    
+</h3>
+<p>
+  <figure>
+    <img class="my-0 rounded-md" loading="lazy" src="https://runzblog.oss-cn-hangzhou.aliyuncs.com/postimg/202411251029727.png" alt="" />
+    
+  </figure>
+</p>
+<p>扩展 ECC 模型将交互抽象成了<strong>语言的翻译</strong>过程。</p>
+<p>S I O U 意义如下：</p>
+<table>
+  <thead>
+      <tr>
+          <th style="text-align: left">$S$</th>
+          <th style="text-align: left">$U$</th>
+          <th style="text-align: left">$I$</th>
+          <th style="text-align: left">$O$</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: left">系统</td>
+          <td style="text-align: left">用户</td>
+          <td style="text-align: left">输入</td>
+          <td style="text-align: left">输出</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">内核（核心）语言</td>
+          <td style="text-align: left">任务语言</td>
+          <td style="text-align: left">输入语言</td>
+          <td style="text-align: left">输出语言</td>
+      </tr>
+  </tbody>
+</table>
+<p>箭头表示翻译过程；图示左侧是系统，右侧是用户。</p>
+
+
+<h3 class="relative group">作用 
+    <div id="%E4%BD%9C%E7%94%A8" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#%E4%BD%9C%E7%94%A8" aria-label="锚点">#</a>
+    </span>        
+    
+</h3>
+<p>让设计人员更好地设计系统（废话），具体来说，要简化两个过程的翻译：</p>
+<p>执行阶段：</p>
+<ul>
+<li>应保证从输入到系统的翻译是容易的。即 $I\rightarrow S$ 过程。
+评估阶段：</li>
+<li>应保证用户观察系统输出是容易的。即 $O\rightarrow U$ 过程。</li>
+</ul>
+<hr>
+<blockquote>
+<p>设计目标</p>
+</blockquote>
+
+
+<h2 class="relative group">可用性目标 
+    <div id="%E5%8F%AF%E7%94%A8%E6%80%A7%E7%9B%AE%E6%A0%87" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#%E5%8F%AF%E7%94%A8%E6%80%A7%E7%9B%AE%E6%A0%87" aria-label="锚点">#</a>
+    </span>        
+    
+</h2>
+
+
+<h3 class="relative group">背景 
+    <div id="%E8%83%8C%E6%99%AF" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#%E8%83%8C%E6%99%AF" aria-label="锚点">#</a>
+    </span>        
+    
+</h3>
+<p>省流：用户在变，用户的观念在变，开发方式在变。</p>
+<p>这能考？</p>
+
+
+<h3 class="relative group">指标 
+    <div id="%E6%8C%87%E6%A0%87" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#%E6%8C%87%E6%A0%87" aria-label="锚点">#</a>
+    </span>        
+    
+</h3>
+<p><strong>易学性、易记性、安全性、效用性和高效率。</strong></p>
+<p>应该很重要。</p>
+
+
+<h4 class="relative group">易学性 learnability 
+    <div id="%E6%98%93%E5%AD%A6%E6%80%A7-learnability" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#%E6%98%93%E5%AD%A6%E6%80%A7-learnability" aria-label="锚点">#</a>
+    </span>        
+    
+</h4>
+<blockquote>
+<p>使用系统的难易。</p>
+</blockquote>
+<p>关键问题是：用户准备<strong>花多少时间</strong>，<strong>学习</strong>并能够执行某种<strong>任务</strong>。</p>
+<p>请君脑补一下学习曲线的图。</p>
+
+
+<h4 class="relative group">易记性 memorability 
+    <div id="%E6%98%93%E8%AE%B0%E6%80%A7-memorability" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#%E6%98%93%E8%AE%B0%E6%80%A7-memorability" aria-label="锚点">#</a>
+    </span>        
+    
+</h4>
+<blockquote>
+<p>记住如何使用的难易。</p>
+</blockquote>
+<p>易记性的影响因素大致如下：</p>
+<ul>
+<li><strong>意义</strong>：使用有意义的图标、命令名和菜单；</li>
+<li><strong>位置</strong>：将特定对象放在某个特殊位置；</li>
+<li><strong>分组</strong>：对事物按照逻辑进行恰当的分组；</li>
+<li><strong>惯例</strong>：尽可能使用通用的对象或符号；</li>
+<li><strong>冗余</strong>：使用多种感知通道对信息进行编码。</li>
+</ul>
+<p>以及使用<strong>启发</strong>。即通过用户已有的经验帮助提高易记性。<em>e.g. Adobe 全家桶</em></p>
+
+
+<h4 class="relative group">效用性 utility 
+    <div id="%E6%95%88%E7%94%A8%E6%80%A7-utility" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#%E6%95%88%E7%94%A8%E6%80%A7-utility" aria-label="锚点">#</a>
+    </span>        
+    
+</h4>
+<blockquote>
+<p>产品是否提供了正确的功能。</p>
+</blockquote>
+<p>比如，计算器只能算加减法（</p>
+
+
+<h4 class="relative group">高效率 efficiency 
+    <div id="%E9%AB%98%E6%95%88%E7%8E%87-efficiency" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#%E9%AB%98%E6%95%88%E7%8E%87-efficiency" aria-label="锚点">#</a>
+    </span>        
+    
+</h4>
+<blockquote>
+<p>产品对用户执行任务的支持程度</p>
+</blockquote>
+<p>人话，就是用户的<strong>熟练度</strong>与<strong>完成任务效率</strong>的关系。</p>
+<p>注意，并不是指产品的运行效率！！！</p>
+<p>
+  <figure>
+    <img class="my-0 rounded-md" loading="lazy" src="https://runzblog.oss-cn-hangzhou.aliyuncs.com/postimg/202411251106130.png" alt="" />
+    
+  </figure>
+
+（这图年龄估计比我大了。。。）</p>
+
+
+<h4 class="relative group">安全性 safety 
+    <div id="%E5%AE%89%E5%85%A8%E6%80%A7-safety" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#%E5%AE%89%E5%85%A8%E6%80%A7-safety" aria-label="锚点">#</a>
+    </span>        
+    
+</h4>
+<blockquote>
+<p>避免用户发生危险和陷入不好的情形</p>
+</blockquote>
+<ul>
+<li>第一个层面和工效学相关，如在特殊环境中允许远程操控计算机</li>
+<li>第二个层面指帮助任何用户在任何情况下避免因<strong>偶然执行不必要的行动</strong>而造成的危险
+<ul>
+<li>减少按钮等组件被误启动的风险</li>
+<li>提供出错时的恢复方法</li>
+</ul>
+</li>
+</ul>
+
+
+<h2 class="relative group">用户体验目标 
+    <div id="%E7%94%A8%E6%88%B7%E4%BD%93%E9%AA%8C%E7%9B%AE%E6%A0%87" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#%E7%94%A8%E6%88%B7%E4%BD%93%E9%AA%8C%E7%9B%AE%E6%A0%87" aria-label="锚点">#</a>
+    </span>        
+    
+</h2>
+<p>这主要包括用户使用交互系统的<strong>主观</strong>满意度。</p>
+
+
+<h3 class="relative group">用户体验 vs 可用性 
+    <div id="%E7%94%A8%E6%88%B7%E4%BD%93%E9%AA%8C-vs-%E5%8F%AF%E7%94%A8%E6%80%A7" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#%E7%94%A8%E6%88%B7%E4%BD%93%E9%AA%8C-vs-%E5%8F%AF%E7%94%A8%E6%80%A7" aria-label="锚点">#</a>
+    </span>        
+    
+</h3>
+<ul>
+<li>主观 vs 客观</li>
+<li>矛盾：二者有时不可兼得。</li>
+</ul>
+<blockquote>
+<ul>
+<li>许多玩家喜欢找最具挑战、非简单的游戏：违反可用性</li>
+<li>设计 既安全又有趣的过程控制系统 是不可能的。</li>
+</ul>
+</blockquote>
+
+
+<h3 class="relative group">矛盾如何化解-超越可用性 
+    <div id="%E7%9F%9B%E7%9B%BE%E5%A6%82%E4%BD%95%E5%8C%96%E8%A7%A3-%E8%B6%85%E8%B6%8A%E5%8F%AF%E7%94%A8%E6%80%A7" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#%E7%9F%9B%E7%9B%BE%E5%A6%82%E4%BD%95%E5%8C%96%E8%A7%A3-%E8%B6%85%E8%B6%8A%E5%8F%AF%E7%94%A8%E6%80%A7" aria-label="锚点">#</a>
+    </span>        
+    
+</h3>
+<ul>
+<li>应该更多地关注用户体验而非可用性</li>
+<li>以说服为目的的设计关键主要是采用巧妙和令人愉快的方式令人信任和感到舒服</li>
+</ul>
+<hr>
+
+
+<h2 class="relative group">简易可用性工程 
+    <div id="%E7%AE%80%E6%98%93%E5%8F%AF%E7%94%A8%E6%80%A7%E5%B7%A5%E7%A8%8B" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#%E7%AE%80%E6%98%93%E5%8F%AF%E7%94%A8%E6%80%A7%E5%B7%A5%E7%A8%8B" aria-label="锚点">#</a>
+    </span>        
+    
+</h2>
+<p>以提高产品的可用性为目标的先进的产品开发方法论。</p>
+
+
+<h3 class="relative group">过程 
+    <div id="%E8%BF%87%E7%A8%8B" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#%E8%BF%87%E7%A8%8B" aria-label="锚点">#</a>
+    </span>        
+    
+</h3>
+<p>完整过程（直接忽略）：</p>
+<ul>
+<li>了解用户</li>
+<li>竞争性分析</li>
+<li>设定可用性目标</li>
+<li>用户参与的设计</li>
+<li>迭代设计</li>
+<li>产品发布后的工作</li>
+</ul>
+<p><strong>简化过程</strong>（四种主要技术）：</p>
+<ul>
+<li>用户和任务观察
+<ul>
+<li>了解产品的目标用户</li>
+</ul>
+</li>
+<li>场景（scenario）
+<ul>
+<li>一种简便易行的原型</li>
+<li>水平原型：重界面整体性，轻功能深度</li>
+<li>垂直原型：重功能深度，轻界面整体性</li>
+</ul>
+</li>
+<li>简化的边做边说（thinking aloud）
+<ul>
+<li>最有价值！（上课的时候就做了）</li>
+</ul>
+</li>
+<li>启发式评估
+<ul>
+<li>让多个不同的人来进行经验性评估</li>
+<li>5名专家能够发现约80%的可用性问题</li>
+</ul>
+</li>
+</ul>
+<hr>
+
+
+<h2 class="relative group">设计规则 
+    <div id="%E8%AE%BE%E8%AE%A1%E8%A7%84%E5%88%99" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#%E8%AE%BE%E8%AE%A1%E8%A7%84%E5%88%99" aria-label="锚点">#</a>
+    </span>        
+    
+</h2>
+<p>设计规则是经验性的，需要灵活运用。</p>
+
+
+<h3 class="relative group">基本规则 
+    <div id="%E5%9F%BA%E6%9C%AC%E8%A7%84%E5%88%99" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#%E5%9F%BA%E6%9C%AC%E8%A7%84%E5%88%99" aria-label="锚点">#</a>
+    </span>        
+    
+</h3>
+<ul>
+<li><strong>可学习性</strong>：新用户能用它开始有效的交互并能获得最大的性能</li>
+<li><strong>灵活性</strong>：用户和系统能以多种方式交换信息</li>
+<li><strong>健壮性</strong>：在决定成就和目标评估方面对用户提供的支持程度</li>
+</ul>
+
+
+<h3 class="relative group">黄金规则 
+    <div id="%E9%BB%84%E9%87%91%E8%A7%84%E5%88%99" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#%E9%BB%84%E9%87%91%E8%A7%84%E5%88%99" aria-label="锚点">#</a>
+    </span>        
+    
+</h3>
+<ul>
+<li><strong>尽可能保证一致</strong>：一致性让界面变得熟悉和可预测。</li>
+<li><strong>符合普遍可用性</strong>：充分考虑用户操作的熟练程度（<strong>例如新手用户和专家用户</strong>）、年龄范围、身体状况（如是否有残疾）等多方面的不同需求。</li>
+<li><strong>提供信息丰富的反馈</strong>：对常用操作，则反馈信息可以相对简短；对不常用操作，系统的反馈信息就应该丰富一些。</li>
+<li><strong>设计说明对话框以生成结束信息</strong>：让用户知道什么时候他们已经完成了任务。</li>
+<li><strong>预防并处理错误</strong>：用户错误能够在清晰的指导下进行恢复。</li>
+<li><strong>让操作容易撤销</strong>：减轻用户的焦虑情绪，并鼓励用户尝试新的选项。</li>
+<li><strong>支持内部控制点</strong>：鼓励用户成为行为的主动者而不是响应者。</li>
+<li><strong>减轻短时记忆负担</strong>：界面显示尽可能简单，要确保提供用户足够的学习代码、记忆操作方法和操作序列的时间，并提供适当的在线帮助信息。</li>
+</ul>
+
+
+<h3 class="relative group">十条启发式规则 
+    <div id="%E5%8D%81%E6%9D%A1%E5%90%AF%E5%8F%91%E5%BC%8F%E8%A7%84%E5%88%99" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#%E5%8D%81%E6%9D%A1%E5%90%AF%E5%8F%91%E5%BC%8F%E8%A7%84%E5%88%99" aria-label="锚点">#</a>
+    </span>        
+    
+</h3>
+<ol>
+<li><strong>系统状态的可见度</strong>：对于用时较长的操作（如，长于 3−5 秒）,需要给出显式的反馈；</li>
+<li><strong>系统和现实世界的吻合</strong>：界面上的语言要使用用户熟悉的词汇、短语和概念，信息应当遵循自然的逻辑顺序出现；</li>
+<li><strong>用户享有控制权和自主权</strong>：对于由于错误而做出的选择，提供一个“返回方法”；</li>
+<li><strong>一致性和标准化</strong>：产品内部对同一功能使用的术语和形式一致；</li>
+<li><strong>避免出错</strong>：产品应当经过精细设计，减少高危操作，避免用户犯错；</li>
+<li><strong>依赖识别而非记忆</strong>：用户应当经常被提示，而不是被要求记住；</li>
+<li><strong>使用的灵活性和高效性</strong>：充分考虑不同类型用户的使用偏好和使用技巧；</li>
+<li><strong>审美感和最小化设计</strong>：少即是多；</li>
+<li><strong>帮助用户识别、诊断和恢复错误</strong>：提供明确的错误信息，以及用户可以采取的行动，而不是错误代码；</li>
+<li><strong>帮助和文档</strong>：提供帮助和文档，以便用户可以找到所需的信息。文档的表述应当是非技术的。</li>
+</ol>
+
+          
+          
+          
+        </div>
+        
+        
+
+          
+
+          
+
+          
+
+        
+
+        
+        
+
+          
+      </div>
+     
+      
+      
+        
+        
+          
+          
+        
+      <script>
+        var oid = "views_posts\\人机交互\\Lec-3 交互设计原则与目标.md"
+        var oid_likes = "likes_posts\\人机交互\\Lec-3 交互设计原则与目标.md"
+      </script>
+      
+      
+      <script type="text/javascript" src="/js/page.min.0860cf4e04fa2d72cc33ddba263083464d48f67de06114529043cb4623319efed4f484fd7f1730df5abea0e2da6f3538855634081d02f2d6e920b956f063e823.js" integrity="sha512-CGDPTgT6LXLMM926JjCDRk1I9n3gYRRSkEPLRiMxnv7U9IT9fxcw31q&#43;oOLabzU4hVY0CB0C8tbpILlW8GPoIw=="></script>
+      
+  
+    </section>
+  <footer class="pt-8 max-w-prose print:hidden">
+
+    
+  
+    
+    
+    
+    <div class="pt-8">
+      <hr class="border-dotted border-neutral-300 dark:border-neutral-600" />
+      <div class="flex justify-between pt-3">
+        <span>
+          
+            <a class="flex group mr-3" href="/posts/%E4%BA%BA%E6%9C%BA%E4%BA%A4%E4%BA%92/lec-1-%E4%BA%BA%E6%9C%BA%E4%BA%A4%E4%BA%92%E6%A6%82%E8%BF%B0/">
+              <span
+                class="mr-3 text-neutral-700 group-hover:text-primary-600 ltr:inline rtl:hidden dark:text-neutral dark:group-hover:text-primary-400"
+                >&larr;</span
+              >
+              <span
+                class="ml-3 text-neutral-700 group-hover:text-primary-600 ltr:hidden rtl:inline dark:text-neutral dark:group-hover:text-primary-400"
+                >&rarr;</span
+              >
+              <span class="flex flex-col">
+                <span
+                  class="mt-[0.1rem] leading-6 group-hover:underline group-hover:decoration-primary-500"
+                  >Lec-1 人机交互概述</span
+                >
+                <span class="mt-[0.1rem] text-xs text-neutral-500 dark:text-neutral-400">
+                  
+                    <time datetime="2024-11-25T09:46:53-08:00">25 November 2024</time>
+                  
+                </span>
+              </span>
+            </a>
+          
+        </span>
+        <span>
+          
+            <a class="flex text-right group ml-3" href="/posts/%E4%BA%BA%E6%9C%BA%E4%BA%A4%E4%BA%92/lec-4-%E8%AF%84%E4%BC%B0%E7%9A%84%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/">
+              <span class="flex flex-col">
+                <span
+                  class="mt-[0.1rem] leading-6 group-hover:underline group-hover:decoration-primary-500"
+                  >Lec-4 评估的基础知识</span
+                >
+                <span class="mt-[0.1rem] text-xs text-neutral-500 dark:text-neutral-400">
+                  
+                    <time datetime="2024-11-25T14:28:54-08:00">25 November 2024</time>
+                  
+                </span>
+              </span>
+              <span
+                class="ml-3 text-neutral-700 group-hover:text-primary-600 ltr:inline rtl:hidden dark:text-neutral dark:group-hover:text-primary-400"
+                >&rarr;</span
+              >
+              <span
+                class="mr-3 text-neutral-700 group-hover:text-primary-600 ltr:hidden rtl:inline dark:text-neutral dark:group-hover:text-primary-400"
+                >&larr;</span
+              >
+            </a>
+          
+        </span>
+      </div>
+    </div>
+  
+
+
+    
+  </footer>
+</article>
+
+      <div id="top-scroller" class="pointer-events-none absolute top-[110vh] bottom-0 w-12 ltr:right-0 rtl:left-0">
+  <a href="#the-top"
+    class="pointer-events-auto sticky top-[calc(100vh-5.5rem)] flex h-12 w-12 mb-16 items-center justify-center rounded-full bg-neutral/50 text-xl text-neutral-700 hover:text-primary-600 dark:bg-neutral-800/50 dark:text-neutral dark:hover:text-primary-400"
+    aria-label="返回顶部" title="返回顶部">
+    &uarr;
+  </a>
+</div>
+    </main><footer id="site-footer" class="py-10 print:hidden">
+  
+  
+    
+  
+  <div class="flex items-center justify-between">
+
+    
+    
+    <p class="text-sm text-neutral-500 dark:text-neutral-400">
+      @ 2024 Runz Liu
+    </p>
+    
+
+    <div class="flex-col items-center space-x-4">
+      
+      
+      <p class="text-xs text-neutral-500 dark:text-neutral-400">
+        
+        
+        由 <a class="hover:underline hover:decoration-primary-400 hover:text-primary-500"
+          href="https://gohugo.io/" target="_blank" rel="noopener noreferrer">Hugo</a> &amp; <a class="hover:underline hover:decoration-primary-400 hover:text-primary-500"
+          href="https://blowfish.page/" target="_blank" rel="noopener noreferrer">Blowfish</a> 强力驱动
+      </p>
+      
+      
+      
+      
+        <div class="busuanzi-footer text-xs text-neutral-500 dark:text-neutral-400">
+          <span id="busuanzi_container_site_uv">
+            Total Visitors: <span id="busuanzi_value_site_uv"></span>
+          </span>
+        </div>
+      
+    </div> 
+
+
+  </div>
+  <script>
+    
+    mediumZoom(document.querySelectorAll("img:not(.nozoom)"), {
+      margin: 24,
+      background: 'rgba(0,0,0,0.5)',
+      scrollOffset: 0,
+    })
+    
+  </script>
+  
+  
+  <script type="text/javascript" src="/js/process.min.ee03488f19c93c2efb199e2e3014ea5f3cb2ce7d45154adb3399a158cac27ca52831db249ede5bb602700ef87eb02434139de0858af1818ab0fb4182472204a4.js" integrity="sha512-7gNIjxnJPC77GZ4uMBTqXzyyzn1FFUrbM5mhWMrCfKUoMdsknt5btgJwDvh&#43;sCQ0E53ghYrxgYqw&#43;0GCRyIEpA=="></script>
+  
+  
+</footer>
+<div
+  id="search-wrapper"
+  class="invisible fixed inset-0 flex h-screen w-screen cursor-default flex-col bg-neutral-500/50 p-4 backdrop-blur-sm dark:bg-neutral-900/50 sm:p-6 md:p-[10vh] lg:p-[12vh]"
+  data-url="https://huoxj.github.io/"
+  style="z-index:500"
+>
+  <div
+    id="search-modal"
+    class="flex flex-col w-full max-w-3xl min-h-0 mx-auto border rounded-md shadow-lg top-20 border-neutral-200 bg-neutral dark:border-neutral-700 dark:bg-neutral-800"
+  >
+    <header class="relative z-10 flex items-center justify-between flex-none px-2">
+      <form class="flex items-center flex-auto min-w-0">
+        <div class="flex items-center justify-center w-8 h-8 text-neutral-400">
+          
+
+  <span class="relative block icon">
+    <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="search" class="svg-inline--fa fa-search fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z"/></svg>
+
+  </span>
+
+
+        </div>
+        <input
+          type="search"
+          id="search-query"
+          class="flex flex-auto h-12 mx-1 bg-transparent appearance-none focus:outline-dotted focus:outline-2 focus:outline-transparent"
+          placeholder="搜索"
+          tabindex="0"
+        />
+      </form>
+      <button
+        id="close-search-button"
+        class="flex items-center justify-center w-8 h-8 text-neutral-700 hover:text-primary-600 dark:text-neutral dark:hover:text-primary-400"
+        title="关闭 (Esc)"
+      >
+        
+
+  <span class="relative block icon">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path fill="currentColor" d="M310.6 361.4c12.5 12.5 12.5 32.75 0 45.25C304.4 412.9 296.2 416 288 416s-16.38-3.125-22.62-9.375L160 301.3L54.63 406.6C48.38 412.9 40.19 416 32 416S15.63 412.9 9.375 406.6c-12.5-12.5-12.5-32.75 0-45.25l105.4-105.4L9.375 150.6c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0L160 210.8l105.4-105.4c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25l-105.4 105.4L310.6 361.4z"/></svg>
+
+  </span>
+
+
+      </button>
+    </header>
+    <section class="flex-auto px-2 overflow-auto">
+      <ul id="search-results">
+        
+      </ul>
+    </section>
+  </div>
+</div>
+
+  </div>
+</body>
+
+</html>

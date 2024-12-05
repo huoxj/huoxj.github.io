@@ -9,7 +9,17 @@
     <managingEditor>huoxj_runz@gmail.com (Runz Liu)</managingEditor>
     <webMaster>huoxj_runz@gmail.com (Runz Liu)</webMaster>
     <copyright>@ 2024 Runz Liu</copyright>
-    <lastBuildDate>Fri, 25 Oct 2024 20:03:20 -0800</lastBuildDate><atom:link href="https://huoxj.github.io/categories/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 02 Dec 2024 20:29:40 -0800</lastBuildDate><atom:link href="https://huoxj.github.io/categories/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Pytorch DataLoader 加速</title>
+      <link>https://huoxj.github.io/posts/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/pytorch-dataloader-%E5%8A%A0%E9%80%9F/</link>
+      <pubDate>Mon, 02 Dec 2024 20:29:40 -0800</pubDate>
+      <author>huoxj_runz@gmail.com (Runz Liu)</author>
+      <guid>https://huoxj.github.io/posts/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/pytorch-dataloader-%E5%8A%A0%E9%80%9F/</guid>
+      <description>在训练机器学习作业的 ResNet 网络时，发现每一个 epoch 之前都会卡上十几二十秒才开始 模型真正的训练。具体表现如下： 一句话概括，是每个 epoch 前占用了绝大部分时间。 看下面两张图，&amp;hellip;</description>
+      
+    </item>
+    
     <item>
       <title>K 邻近分类器</title>
       <link>https://huoxj.github.io/posts/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/k-%E9%82%BB%E8%BF%91%E5%88%86%E7%B1%BB%E5%99%A8/</link>

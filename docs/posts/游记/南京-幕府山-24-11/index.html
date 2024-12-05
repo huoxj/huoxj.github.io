@@ -166,7 +166,24 @@
   
   
 </head>
-<body
+
+
+<link rel="preload" href="https://cdn.jsdelivr.net/npm/katex@0.13.11/dist/katex.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.13.11/dist/katex.min.css">
+</noscript>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.13.11/dist/katex.min.js" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.13.11/dist/contrib/auto-render.min.js" crossorigin="anonymous"
+onload="renderMathInElement(document.body, {
+        delimiters: [
+        { left: '$$', right: '$$', display: true },
+        { left: '$', right: '$', display: false },
+        { left: '\$', right: '\$', display: false }
+        ]
+    });"></script>
+
+<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+  <meta name="referrer" content="no-referrer-when-downgrade"><body
   class="flex flex-col h-screen px-6 m-auto text-lg leading-7 max-w-7xl bg-neutral text-neutral-900 dark:bg-neutral-800 dark:text-neutral sm:px-14 md:px-24 lg:px-32 scrollbar-thin scrollbar-track-neutral-200 scrollbar-thumb-neutral-400 dark:scrollbar-track-neutral-800 dark:scrollbar-thumb-neutral-600">
   <div id="the-top" class="absolute flex self-center">
     <a class="px-3 py-1 text-sm -translate-y-8 rounded-b-lg bg-primary-200 focus:translate-y-0 dark:bg-neutral-600"
@@ -416,21 +433,6 @@
 
 
 
-
-
-<link rel="preload" href="https://cdn.jsdelivr.net/npm/katex@0.13.11/dist/katex.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-<noscript>
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.13.11/dist/katex.min.css">
-</noscript>
-<script defer src="https://cdn.jsdelivr.net/npm/katex@0.13.11/dist/katex.min.js" crossorigin="anonymous"></script>
-<script defer src="https://cdn.jsdelivr.net/npm/katex@0.13.11/dist/contrib/auto-render.min.js" crossorigin="anonymous"
-onload="renderMathInElement(document.body, {
-        delimiters: [
-        { left: '$$', right: '$$', display: true },
-        { left: '$', right: '$', display: false },
-        { left: '\$', right: '\$', display: false }
-        ]
-    });"></script>
   </div>
 </div>
 <script>
@@ -750,6 +752,28 @@ onload="renderMathInElement(document.body, {
         </span>
         <span>
           
+            <a class="flex text-right group ml-3" href="/posts/%E4%BA%BA%E6%9C%BA%E4%BA%A4%E4%BA%92/lec-1-%E4%BA%BA%E6%9C%BA%E4%BA%A4%E4%BA%92%E6%A6%82%E8%BF%B0/">
+              <span class="flex flex-col">
+                <span
+                  class="mt-[0.1rem] leading-6 group-hover:underline group-hover:decoration-primary-500"
+                  >Lec-1 人机交互概述</span
+                >
+                <span class="mt-[0.1rem] text-xs text-neutral-500 dark:text-neutral-400">
+                  
+                    <time datetime="2024-11-25T09:46:53-08:00">25 November 2024</time>
+                  
+                </span>
+              </span>
+              <span
+                class="ml-3 text-neutral-700 group-hover:text-primary-600 ltr:inline rtl:hidden dark:text-neutral dark:group-hover:text-primary-400"
+                >&rarr;</span
+              >
+              <span
+                class="mr-3 text-neutral-700 group-hover:text-primary-600 ltr:hidden rtl:inline dark:text-neutral dark:group-hover:text-primary-400"
+                >&larr;</span
+              >
+            </a>
+          
         </span>
       </div>
     </div>
@@ -781,16 +805,28 @@ onload="renderMathInElement(document.body, {
     </p>
     
 
-    
-    
-    <p class="text-xs text-neutral-500 dark:text-neutral-400">
+    <div class="flex-col items-center space-x-4">
       
       
-      由 <a class="hover:underline hover:decoration-primary-400 hover:text-primary-500"
-        href="https://gohugo.io/" target="_blank" rel="noopener noreferrer">Hugo</a> &amp; <a class="hover:underline hover:decoration-primary-400 hover:text-primary-500"
-        href="https://blowfish.page/" target="_blank" rel="noopener noreferrer">Blowfish</a> 强力驱动
-    </p>
-    
+      <p class="text-xs text-neutral-500 dark:text-neutral-400">
+        
+        
+        由 <a class="hover:underline hover:decoration-primary-400 hover:text-primary-500"
+          href="https://gohugo.io/" target="_blank" rel="noopener noreferrer">Hugo</a> &amp; <a class="hover:underline hover:decoration-primary-400 hover:text-primary-500"
+          href="https://blowfish.page/" target="_blank" rel="noopener noreferrer">Blowfish</a> 强力驱动
+      </p>
+      
+      
+      
+      
+        <div class="busuanzi-footer text-xs text-neutral-500 dark:text-neutral-400">
+          <span id="busuanzi_container_site_uv">
+            Total Visitors: <span id="busuanzi_value_site_uv"></span>
+          </span>
+        </div>
+      
+    </div> 
+
 
   </div>
   <script>

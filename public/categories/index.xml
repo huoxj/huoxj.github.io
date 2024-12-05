@@ -9,7 +9,37 @@
     <managingEditor>huoxj_runz@gmail.com (Runz Liu)</managingEditor>
     <webMaster>huoxj_runz@gmail.com (Runz Liu)</webMaster>
     <copyright>@ 2024 Runz Liu</copyright>
-    <lastBuildDate>Thu, 21 Nov 2024 15:37:11 -0800</lastBuildDate><atom:link href="https://huoxj.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 02 Dec 2024 20:29:40 -0800</lastBuildDate><atom:link href="https://huoxj.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>机器学习</title>
+      <link>https://huoxj.github.io/categories/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/</link>
+      <pubDate>Mon, 02 Dec 2024 20:29:40 -0800</pubDate>
+      <author>huoxj_runz@gmail.com (Runz Liu)</author>
+      <guid>https://huoxj.github.io/categories/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Python</title>
+      <link>https://huoxj.github.io/categories/python/</link>
+      <pubDate>Thu, 28 Nov 2024 14:30:20 -0800</pubDate>
+      <author>huoxj_runz@gmail.com (Runz Liu)</author>
+      <guid>https://huoxj.github.io/categories/python/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>人机交互</title>
+      <link>https://huoxj.github.io/categories/%E4%BA%BA%E6%9C%BA%E4%BA%A4%E4%BA%92/</link>
+      <pubDate>Mon, 25 Nov 2024 14:28:54 -0800</pubDate>
+      <author>huoxj_runz@gmail.com (Runz Liu)</author>
+      <guid>https://huoxj.github.io/categories/%E4%BA%BA%E6%9C%BA%E4%BA%A4%E4%BA%92/</guid>
+      <description></description>
+      
+    </item>
+    
     <item>
       <title>游记</title>
       <link>https://huoxj.github.io/categories/%E6%B8%B8%E8%AE%B0/</link>
@@ -56,16 +86,6 @@
       <pubDate>Sun, 03 Nov 2024 23:09:37 -0800</pubDate>
       <author>huoxj_runz@gmail.com (Runz Liu)</author>
       <guid>https://huoxj.github.io/categories/%E6%9C%89%E6%84%8F%E6%80%9D%E7%9A%84%E6%8A%98%E8%85%BE/</guid>
-      <description></description>
-      
-    </item>
-    
-    <item>
-      <title>机器学习</title>
-      <link>https://huoxj.github.io/categories/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/</link>
-      <pubDate>Fri, 25 Oct 2024 20:03:20 -0800</pubDate>
-      <author>huoxj_runz@gmail.com (Runz Liu)</author>
-      <guid>https://huoxj.github.io/categories/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/</guid>
       <description></description>
       
     </item>

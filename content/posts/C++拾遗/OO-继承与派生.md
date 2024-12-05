@@ -36,7 +36,7 @@ class child3: private parent{};
 
 比如 protected 继承会将父类中 public 的成员变成 protected。
 
->这个机制很难评。没见过有谁用 public 以外的继承方式的。
+>这个机制很难评。没见过用 public 以外的继承方式的。
 
 ### 修改父类成员的访问权限
 
@@ -64,13 +64,13 @@ private:
 
 主要注意以下情景：
 
-- 子类同名成员变量访问权限更低
+- 子类同名成员变量访问权限低于父类时
 ```cpp
-class parent{
+parent{
 public:
 	int a;
 };
-class child: public parent{
+child{
 private:
 	int a;
 }
@@ -79,6 +79,81 @@ child c;
 c.a;         // cannot access a.
 c.parent.a;  // ok
 ```
+
+- 子类与父类不会发生函数重载
+```cpp
+parent{
+	void foo(int a);
+};
+child{
+	void foo(double a);
+}
+
+child c;
+int a;
+c.foo(a);          // double
+c.parent::foo(a);  // int
+```
+
+## 构造函数
+
+构造函数无法继承。
+
+要手动调用父类构造函数实现初始化，必须在**成员初始化表**里调用。
+
+```cpp
+parent{
+public:
+	parent(){};
+	parent(int a){...};
+}
+
+child{
+public:
+	child(int a, int b): parent(a), ...;
+}
+```
+
+否则（没有手动调用父类构造函数），子类会调用父类默认构造函数。
+
+## 析构函数
+
+子类无法显式调用父类的析构函数。
+
+至于调用顺序：子类析构 之后 父类析构。与构造的顺序相反。
+
+## 多继承
+
+```cpp
+class child: public parent1, private parent2, protected parent3 {};
+```
+
+### 成员访问
+
+对于多继承中同名的成员，访问其成员时要加上类名和域解析符。
+
+```cpp
+child: parent1, parent2{};
+
+child c;
+c.parent1::a;
+c.parent2::a;
+```
+
+### 虚继承
+
+菱形继承中，子类可能同时继承了有相同父类的两个类，这样子类就会得到这个间接父类的两个副本。
+
+通过虚继承，子类可以只保留一份间接父类的成员。
+
+```cpp
+class grand{};
+class parent1: public grand{};
+class parent2: public grand{};
+class child: public parent1, virtual public parent2{};
+```
+
+
 
 ## 参考
 

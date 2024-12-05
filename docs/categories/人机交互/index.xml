@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>人机交互 on Runz&#39;s blog</title>
+    <link>https://huoxj.github.io/categories/%E4%BA%BA%E6%9C%BA%E4%BA%A4%E4%BA%92/</link>
+    <description>Recent content in 人机交互 on Runz&#39;s blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh</language>
+    <managingEditor>huoxj_runz@gmail.com (Runz Liu)</managingEditor>
+    <webMaster>huoxj_runz@gmail.com (Runz Liu)</webMaster>
+    <copyright>@ 2024 Runz Liu</copyright>
+    <lastBuildDate>Mon, 25 Nov 2024 14:28:54 -0800</lastBuildDate><atom:link href="https://huoxj.github.io/categories/%E4%BA%BA%E6%9C%BA%E4%BA%A4%E4%BA%92/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Lec-4 评估的基础知识</title>
+      <link>https://huoxj.github.io/posts/%E4%BA%BA%E6%9C%BA%E4%BA%A4%E4%BA%92/lec-4-%E8%AF%84%E4%BC%B0%E7%9A%84%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/</link>
+      <pubDate>Mon, 25 Nov 2024 14:28:54 -0800</pubDate>
+      <author>huoxj_runz@gmail.com (Runz Liu)</author>
+      <guid>https://huoxj.github.io/posts/%E4%BA%BA%E6%9C%BA%E4%BA%A4%E4%BA%92/lec-4-%E8%AF%84%E4%BC%B0%E7%9A%84%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/</guid>
+      <description>&amp;mdash; &amp;mdash; 设计人员非正式地向用户或顾问了解反馈信息，以证实设计构思是否符合用户需要。 ：快速 ：在评估人员的密切控制之下实行 理解用户的实际工作情形以及技术对他们的影响。 ：在自然工作环境中进行&amp;hellip;</description>
+      
+    </item>
+    
+    <item>
+      <title>Lec-3 交互设计原则与目标</title>
+      <link>https://huoxj.github.io/posts/%E4%BA%BA%E6%9C%BA%E4%BA%A4%E4%BA%92/lec-3-%E4%BA%A4%E4%BA%92%E8%AE%BE%E8%AE%A1%E5%8E%9F%E5%88%99%E4%B8%8E%E7%9B%AE%E6%A0%87/</link>
+      <pubDate>Mon, 25 Nov 2024 10:04:15 -0800</pubDate>
+      <author>huoxj_runz@gmail.com (Runz Liu)</author>
+      <guid>https://huoxj.github.io/posts/%E4%BA%BA%E6%9C%BA%E4%BA%A4%E4%BA%92/lec-3-%E4%BA%A4%E4%BA%92%E8%AE%BE%E8%AE%A1%E5%8E%9F%E5%88%99%E4%B8%8E%E7%9B%AE%E6%A0%87/</guid>
+      <description>不知道为什么没有 Lec-2，往年这个标题是 Lec-2 来着，但是今年老师发的 PPT 直接跳过 2 了。具体什么情况无从知晓，因为上课根本没听嘛。 &amp;mdash; 交互框架是提供理解或定义某种事务的一种结&amp;hellip;</description>
+      
+    </item>
+    
+    <item>
+      <title>Lec-1 人机交互概述</title>
+      <link>https://huoxj.github.io/posts/%E4%BA%BA%E6%9C%BA%E4%BA%A4%E4%BA%92/lec-1-%E4%BA%BA%E6%9C%BA%E4%BA%A4%E4%BA%92%E6%A6%82%E8%BF%B0/</link>
+      <pubDate>Mon, 25 Nov 2024 09:46:53 -0800</pubDate>
+      <author>huoxj_runz@gmail.com (Runz Liu)</author>
+      <guid>https://huoxj.github.io/posts/%E4%BA%BA%E6%9C%BA%E4%BA%A4%E4%BA%92/lec-1-%E4%BA%BA%E6%9C%BA%E4%BA%A4%E4%BA%92%E6%A6%82%E8%BF%B0/</guid>
+      <description>By ACM 孤立地从一个学科出发不可能设计出有效的交互式系统</description>
+      
+    </item>
+    
+  </channel>
+</rss>
