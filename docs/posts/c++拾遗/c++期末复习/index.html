@@ -1,0 +1,2311 @@
+<!DOCTYPE html>
+<html lang="zh-cn" dir="ltr" class="scroll-smooth" data-default-appearance="dark"
+  data-auto-appearance="true"><head>
+  <meta charset="utf-8" />
+  
+  <meta http-equiv="content-language" content="zh" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  
+  <title>C&#43;&#43;期末复习 &middot; Runz&#39;s blog</title>
+  <meta name="title" content="C&#43;&#43;期末复习 &middot; Runz&#39;s blog" />
+  
+  <meta name="description" content="根据上课 PPT 和同学与学长的笔记整理而成。 先跳过。。。 {{}} 副作用，就是一个过程是否会修改参与的变量的性质。 在表达式中，有副作用的运算符：`=` `&#43;=` `&#43;&#43;` `&lt;&lt;` 等等 无副..." />
+  
+  
+  
+  <link rel="canonical" href="https://huoxj.github.io/posts/c&#43;&#43;%E6%8B%BE%E9%81%97/c&#43;&#43;%E6%9C%9F%E6%9C%AB%E5%A4%8D%E4%B9%A0/" />
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <link type="text/css" rel="stylesheet" href="/css/main.bundle.min.fe35e6b981b34abb6477263d92133a5db952b6c46117d0dfe2c37dcb5fa8af38c1e30b9a8f298ca9a7c0c2d72d729504664fda9f784a31c7f40f1f393fc843fc.css"
+    integrity="sha512-/jXmuYGzSrtkdyY9khM6XblStsRhF9Df4sN9y1&#43;orzjB4wuajymMqafAwtctcpUEZk/an3hKMcf0Dx85P8hD/A==" />
+  
+  
+  <script type="text/javascript" src="/js/appearance.min.516a16745bea5a9bd011138d254cc0fd3973cd55ce6e15f3dec763e7c7c2c7448f8fe7b54cca811cb821b0c7e12cd161caace1dd794ac3d34d40937cbcc9ee12.js"
+    integrity="sha512-UWoWdFvqWpvQERONJUzA/TlzzVXObhXz3sdj58fCx0SPj&#43;e1TMqBHLghsMfhLNFhyqzh3XlKw9NNQJN8vMnuEg=="></script>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <script defer type="text/javascript" id="script-bundle" src="/js/main.bundle.min.8613168837e35f3f882df60a8a810e212d581a4eea26eeb2554e527c6eab9e57acc03a2533cbd5c6084f825ce3a655953923f21e1de2e6b8014eddf510fa58e7.js"
+    integrity="sha512-hhMWiDfjXz&#43;ILfYKioEOIS1YGk7qJu6yVU5SfG6rnleswDolM8vVxghPglzjplWVOSPyHh3i5rgBTt31EPpY5w==" data-copy="" data-copied=""></script>
+  
+  
+  
+  <script src="/lib/zoom/zoom.min.fcbc7f7b3dcea96e3b5570cd322c5d7a12d5351c87f9889b1c31745a2cc711df58f6b70795a86d50e63813b236ade916668332c10a70a4ce26f7c0878f525fce.js" integrity="sha512-/Lx/ez3OqW47VXDNMixdehLVNRyH&#43;YibHDF0WizHEd9Y9rcHlahtUOY4E7I2rekWZoMywQpwpM4m98CHj1Jfzg=="></script>
+  
+  
+  
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+  <link rel="manifest" href="/site.webmanifest" />
+  
+  
+  
+  
+  
+  
+  
+  <meta property="og:url" content="https://huoxj.github.io/posts/c&#43;&#43;%E6%8B%BE%E9%81%97/c&#43;&#43;%E6%9C%9F%E6%9C%AB%E5%A4%8D%E4%B9%A0/">
+  <meta property="og:site_name" content="Runz&#39;s blog">
+  <meta property="og:title" content="C&#43;&#43;期末复习">
+  <meta property="og:description" content="根据上课 PPT 和同学与学长的笔记整理而成。 先跳过。。。 {{}} 副作用，就是一个过程是否会修改参与的变量的性质。 在表达式中，有副作用的运算符：= &#43;= &#43;&#43; &lt;&lt; 等等 无副…">
+  <meta property="og:locale" content="zh">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2024-12-24T14:21:51-08:00">
+    <meta property="article:modified_time" content="2024-12-24T14:21:51-08:00">
+
+  
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="C&#43;&#43;期末复习">
+  <meta name="twitter:description" content="根据上课 PPT 和同学与学长的笔记整理而成。 先跳过。。。 {{}} 副作用，就是一个过程是否会修改参与的变量的性质。 在表达式中，有副作用的运算符：= &#43;= &#43;&#43; &lt;&lt; 等等 无副…">
+
+  
+  <script type="application/ld+json">
+  [{
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "articleSection": "",
+    "name": "C\u002b\u002b期末复习",
+    "headline": "C\u002b\u002b期末复习",
+    
+    "abstract": "根据上课 PPT 和同学与学长的笔记整理而成。 先跳过。。。 {{}} 副作用，就是一个过程是否会修改参与的变量的性质。 在表达式中，有副作用的运算符：\u003ccode\u003e=\u003c\/code\u003e \u003ccode\u003e\u002b=\u003c\/code\u003e \u003ccode\u003e\u002b\u002b\u003c\/code\u003e \u003ccode\u003e\u0026lt;\u0026lt;\u003c\/code\u003e 等等 无副\u0026hellip;",
+    "inLanguage": "zh",
+    "url" : "https:\/\/huoxj.github.io\/posts\/c\u002b\u002b%E6%8B%BE%E9%81%97\/c\u002b\u002b%E6%9C%9F%E6%9C%AB%E5%A4%8D%E4%B9%A0\/",
+    "author" : {
+      "@type": "Person",
+      "name": "Runz Liu"
+    },
+    "copyrightYear": "2024",
+    "dateCreated": "2024-12-24T14:21:51-08:00",
+    "datePublished": "2024-12-24T14:21:51-08:00",
+    
+    "dateModified": "2024-12-24T14:21:51-08:00",
+    
+    
+    
+    "mainEntityOfPage": "true",
+    "wordCount": "4339"
+  }]
+  </script>
+
+
+  
+  
+  <meta name="author" content="Runz Liu" />
+  
+  
+  
+  <link href="mailto:221850148@smail.nju.edu.cn" rel="me" />
+  
+  
+  <link href="https://github.com/huoxj" rel="me" />
+  
+  
+  <link href="https://steamcommunity.com/profiles/huorunz" rel="me" />
+  
+  
+  <link href="https://space.bilibili.com/166337394" rel="me" />
+  
+  
+  
+  
+
+<script src="/lib/jquery/jquery.slim.min.03cb160e3cfdb2667a2e2c80d283bebcf63ff8bbc4b629c9ab2babf6fae1d0c07ad470edae783efa4fabda2ac01c58d60e63b98b3c336be8208460f08f4354f5.js" integrity="sha512-A8sWDjz9smZ6LiyA0oO&#43;vPY/&#43;LvEtinJqyur9vrh0MB61HDtrng&#43;&#43;k&#43;r2irAHFjWDmO5izwza&#43;gghGDwj0NU9Q=="></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+
+  
+  
+  <meta name="theme-color"/>
+  
+  
+</head>
+
+
+<link rel="preload" href="https://cdn.jsdelivr.net/npm/katex@0.13.11/dist/katex.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.13.11/dist/katex.min.css">
+</noscript>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.13.11/dist/katex.min.js" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.13.11/dist/contrib/auto-render.min.js" crossorigin="anonymous"
+onload="renderMathInElement(document.body, {
+        delimiters: [
+        { left: '$$', right: '$$', display: true },
+        { left: '$', right: '$', display: false },
+        { left: '\$', right: '\$', display: false }
+        ]
+    });"></script>
+
+<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+  <meta name="referrer" content="no-referrer-when-downgrade"><body
+  class="flex flex-col h-screen px-6 m-auto text-lg leading-7 max-w-7xl bg-neutral text-neutral-900 dark:bg-neutral-800 dark:text-neutral sm:px-14 md:px-24 lg:px-32 scrollbar-thin scrollbar-track-neutral-200 scrollbar-thumb-neutral-400 dark:scrollbar-track-neutral-800 dark:scrollbar-thumb-neutral-600">
+  <div id="the-top" class="absolute flex self-center">
+    <a class="px-3 py-1 text-sm -translate-y-8 rounded-b-lg bg-primary-200 focus:translate-y-0 dark:bg-neutral-600"
+      href="#main-content"><span
+        class="font-bold text-primary-600 ltr:pr-2 rtl:pl-2 dark:text-primary-400">&darr;</span>跳过正文</a>
+  </div>
+  
+  
+  <div style="min-height: 100px;"></div>
+<div class="fixed inset-x-0 pl-[24px] pr-[24px]" style="z-index:100">
+  <div id="menu-blur" class="absolute opacity-0 inset-x-0 top-0 h-full single_hero_background nozoom backdrop-blur-2xl shadow-2xl"></div>
+  <div class="relative max-w-[64rem] ml-auto mr-auto">
+    <div style="padding-left:0;padding-right:0;padding-top:2px;padding-bottom:3px"
+    class="main-menu flex items-center justify-between px-4 py-6 sm:px-6 md:justify-start space-x-3">
+    
+    <div class="flex flex-1 items-center justify-between">
+        <nav class="flex space-x-3">
+
+            
+            <a href="/" class="text-base font-medium text-gray-500 hover:text-gray-900">Runz&rsquo;s blog</a>
+            
+
+        </nav>
+        <nav class="hidden md:flex items-center space-x-5 md:ml-12 h-12">
+
+            
+            
+            
+  <a href="/posts/"  class="flex items-center text-gray-500 hover:text-primary-600 dark:hover:text-primary-400">
+    
+    <p class="text-base font-medium" title="">
+        文章
+    </p>
+</a>
+
+
+
+            
+            
+  <a href="/categories/"  class="flex items-center text-gray-500 hover:text-primary-600 dark:hover:text-primary-400">
+    
+    <p class="text-base font-medium" title="">
+        分类
+    </p>
+</a>
+
+
+
+            
+            
+  <a href="/about/"  class="flex items-center text-gray-500 hover:text-primary-600 dark:hover:text-primary-400">
+    
+    <p class="text-base font-medium" title="">
+        关于
+    </p>
+</a>
+
+
+
+            
+            
+
+            
+
+
+            
+            <button id="search-button" aria-label="Search" class="text-base hover:text-primary-600 dark:hover:text-primary-400"
+                title="">
+                
+
+  <span class="relative block icon">
+    <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="search" class="svg-inline--fa fa-search fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z"/></svg>
+
+  </span>
+
+
+            </button>
+            
+
+
+            
+            
+            <div
+                class="ltr:mr-14 rtl:ml-14 flex items-center">
+                <button id="appearance-switcher" aria-label="Dark mode switcher" type="button" class="text-base hover:text-primary-600 dark:hover:text-primary-400">
+                    <div class="flex items-center justify-center dark:hidden">
+                        
+
+  <span class="relative block icon">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M32 256c0-123.8 100.3-224 223.8-224c11.36 0 29.7 1.668 40.9 3.746c9.616 1.777 11.75 14.63 3.279 19.44C245 86.5 211.2 144.6 211.2 207.8c0 109.7 99.71 193 208.3 172.3c9.561-1.805 16.28 9.324 10.11 16.95C387.9 448.6 324.8 480 255.8 480C132.1 480 32 379.6 32 256z"/></svg>
+
+  </span>
+
+
+                    </div>
+                    <div class="items-center justify-center hidden dark:flex">
+                        
+
+  <span class="relative block icon">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M256 159.1c-53.02 0-95.1 42.98-95.1 95.1S202.1 351.1 256 351.1s95.1-42.98 95.1-95.1S309 159.1 256 159.1zM509.3 347L446.1 255.1l63.15-91.01c6.332-9.125 1.104-21.74-9.826-23.72l-109-19.7l-19.7-109c-1.975-10.93-14.59-16.16-23.72-9.824L256 65.89L164.1 2.736c-9.125-6.332-21.74-1.107-23.72 9.824L121.6 121.6L12.56 141.3C1.633 143.2-3.596 155.9 2.736 164.1L65.89 256l-63.15 91.01c-6.332 9.125-1.105 21.74 9.824 23.72l109 19.7l19.7 109c1.975 10.93 14.59 16.16 23.72 9.824L256 446.1l91.01 63.15c9.127 6.334 21.75 1.107 23.72-9.822l19.7-109l109-19.7C510.4 368.8 515.6 356.1 509.3 347zM256 383.1c-70.69 0-127.1-57.31-127.1-127.1c0-70.69 57.31-127.1 127.1-127.1s127.1 57.3 127.1 127.1C383.1 326.7 326.7 383.1 256 383.1z"/></svg>
+
+  </span>
+
+
+                    </div>
+                </button>
+            </div>
+            
+
+        </nav>
+        <div class="flex md:hidden items-center space-x-5 md:ml-12 h-12">
+
+            <span></span>
+
+            
+
+
+            
+            <button id="search-button-mobile" aria-label="Search" class="text-base hover:text-primary-600 dark:hover:text-primary-400"
+                title="">
+                
+
+  <span class="relative block icon">
+    <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="search" class="svg-inline--fa fa-search fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z"/></svg>
+
+  </span>
+
+
+            </button>
+            
+
+            
+            
+            <button id="appearance-switcher-mobile" aria-label="Dark mode switcher" type="button" class="text-base hover:text-primary-600 dark:hover:text-primary-400" style="margin-right:5px">
+                <div class="flex items-center justify-center dark:hidden">
+                    
+
+  <span class="relative block icon">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M32 256c0-123.8 100.3-224 223.8-224c11.36 0 29.7 1.668 40.9 3.746c9.616 1.777 11.75 14.63 3.279 19.44C245 86.5 211.2 144.6 211.2 207.8c0 109.7 99.71 193 208.3 172.3c9.561-1.805 16.28 9.324 10.11 16.95C387.9 448.6 324.8 480 255.8 480C132.1 480 32 379.6 32 256z"/></svg>
+
+  </span>
+
+
+                </div>
+                <div class="items-center justify-center hidden dark:flex">
+                    
+
+  <span class="relative block icon">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M256 159.1c-53.02 0-95.1 42.98-95.1 95.1S202.1 351.1 256 351.1s95.1-42.98 95.1-95.1S309 159.1 256 159.1zM509.3 347L446.1 255.1l63.15-91.01c6.332-9.125 1.104-21.74-9.826-23.72l-109-19.7l-19.7-109c-1.975-10.93-14.59-16.16-23.72-9.824L256 65.89L164.1 2.736c-9.125-6.332-21.74-1.107-23.72 9.824L121.6 121.6L12.56 141.3C1.633 143.2-3.596 155.9 2.736 164.1L65.89 256l-63.15 91.01c-6.332 9.125-1.105 21.74 9.824 23.72l109 19.7l19.7 109c1.975 10.93 14.59 16.16 23.72 9.824L256 446.1l91.01 63.15c9.127 6.334 21.75 1.107 23.72-9.822l19.7-109l109-19.7C510.4 368.8 515.6 356.1 509.3 347zM256 383.1c-70.69 0-127.1-57.31-127.1-127.1c0-70.69 57.31-127.1 127.1-127.1s127.1 57.3 127.1 127.1C383.1 326.7 326.7 383.1 256 383.1z"/></svg>
+
+  </span>
+
+
+                </div>
+            </button>
+            
+
+        </div>
+    </div>
+    <div class="-my-2 -mr-2 md:hidden">
+
+        <label id="menu-button" class="block">
+            
+            <div class="cursor-pointer hover:text-primary-600 dark:hover:text-primary-400">
+                
+
+  <span class="relative block icon">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M0 96C0 78.33 14.33 64 32 64H416C433.7 64 448 78.33 448 96C448 113.7 433.7 128 416 128H32C14.33 128 0 113.7 0 96zM0 256C0 238.3 14.33 224 32 224H416C433.7 224 448 238.3 448 256C448 273.7 433.7 288 416 288H32C14.33 288 0 273.7 0 256zM416 448H32C14.33 448 0 433.7 0 416C0 398.3 14.33 384 32 384H416C433.7 384 448 398.3 448 416C448 433.7 433.7 448 416 448z"/></svg>
+
+  </span>
+
+
+            </div>
+            <div id="menu-wrapper" style="padding-top:5px;"
+                class="fixed inset-0 z-30 invisible w-screen h-screen m-0 overflow-auto transition-opacity opacity-0 cursor-default bg-neutral-100/50 backdrop-blur-sm dark:bg-neutral-900/50">
+                <ul
+                    class="flex space-y-2 mt-3 flex-col items-end w-full px-6 py-6 mx-auto overflow-visible list-none ltr:text-right rtl:text-left max-w-7xl">
+
+                    <li id="menu-close-button">
+                        <span
+                            class="cursor-pointer inline-block align-text-bottom hover:text-primary-600 dark:hover:text-primary-400">
+
+  <span class="relative block icon">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path fill="currentColor" d="M310.6 361.4c12.5 12.5 12.5 32.75 0 45.25C304.4 412.9 296.2 416 288 416s-16.38-3.125-22.62-9.375L160 301.3L54.63 406.6C48.38 412.9 40.19 416 32 416S15.63 412.9 9.375 406.6c-12.5-12.5-12.5-32.75 0-45.25l105.4-105.4L9.375 150.6c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0L160 210.8l105.4-105.4c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25l-105.4 105.4L310.6 361.4z"/></svg>
+
+  </span>
+
+</span>
+                    </li>
+
+                    
+
+                    
+  <li class="mt-1">
+    <a href="/posts/"  class="flex items-center text-gray-500 hover:text-primary-600 dark:hover:text-primary-400">
+        
+        <p class="text-bg font-bg" title="">
+            文章
+        </p>
+    </a>
+</li>
+
+
+
+
+                    
+
+                    
+  <li class="mt-1">
+    <a href="/categories/"  class="flex items-center text-gray-500 hover:text-primary-600 dark:hover:text-primary-400">
+        
+        <p class="text-bg font-bg" title="">
+            分类
+        </p>
+    </a>
+</li>
+
+
+
+
+                    
+
+                    
+  <li class="mt-1">
+    <a href="/about/"  class="flex items-center text-gray-500 hover:text-primary-600 dark:hover:text-primary-400">
+        
+        <p class="text-bg font-bg" title="">
+            关于
+        </p>
+    </a>
+</li>
+
+
+
+
+                    
+
+                </ul>
+                
+                
+
+            </div>
+        </label>
+    </div>
+</div>
+
+
+
+
+  </div>
+</div>
+<script>
+  window.addEventListener('scroll', function (e) {
+    var scroll = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop || 0;
+    var background_blur = document.getElementById('menu-blur');
+    background_blur.style.opacity = (scroll / 300);
+  });
+</script>
+
+  
+  <div class="relative flex flex-col grow">
+    <main id="main-content" class="grow">
+      
+
+
+<article>
+  
+  
+  
+  
+  
+  
+
+
+
+<div id="hero" class="h-[150px] md:h-[200px]"></div>
+
+
+
+    
+    <div class="fixed inset-x-0 top-0 h-[800px] single_hero_background nozoom"
+    style="background-image:url(/background1_17498871172177212679_hu5472899767506092558.jpg);">
+    
+
+
+    <div class="absolute inset-0 bg-gradient-to-t from-neutral dark:from-neutral-800 to-transparent mix-blend-normal">
+    </div>
+    <div
+        class="absolute inset-0 opacity-60 bg-gradient-to-t from-neutral dark:from-neutral-800 to-neutral-100 dark:to-neutral-800 mix-blend-normal">
+    </div>
+</div>
+
+<div id="background-blur" class="fixed opacity-0 inset-x-0 top-0 h-full single_hero_background nozoom backdrop-blur-2xl"></div>
+<script>
+    window.addEventListener('scroll', function (e) {
+        var scroll = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop || 0;
+        var background_blur = document.getElementById('background-blur');
+        background_blur.style.opacity = (scroll / 300)
+    });
+</script>
+
+  
+  
+
+  <header id="single_header" class="mt-5 max-w-prose">
+    
+    <h1 class="mt-0 text-4xl font-extrabold text-neutral-900 dark:text-neutral">
+      C++期末复习
+    </h1>
+    <div class="mt-1 mb-6 text-base text-neutral-500 dark:text-neutral-400 print:hidden">
+      
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="flex flex-row flex-wrap items-center">
+  
+  
+  <time datetime="2024-12-24T14:21:51-08:00">24 December 2024</time><span class="px-2 text-primary-500">&middot;</span><span>4339 字</span><span class="px-2 text-primary-500">&middot;</span><span title="预计阅读">9 分钟</span>
+  
+
+  
+  
+</div>
+
+
+
+
+
+<div class="flex flex-row flex-wrap items-center">
+  
+  
+  
+  
+  
+  
+  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/categories/c&#43;&#43;%E6%8B%BE%E9%81%97/&#34;,'_self');">
+    <span class="flex" style="cursor: pointer;">
+  <span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
+    C&#43;&#43;拾遗
+  </span>
+</span>
+  </span>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+</div>
+
+
+
+
+    </div>
+
+    
+    
+    
+    
+    
+
+    
+
+    
+
+  </header>
+  
+  <section class="flex flex-col max-w-full mt-0 prose dark:prose-invert lg:flex-row">
+    
+     <div
+      class="order-first lg:ml-auto px-0 lg:order-last ltr:lg:pl-8 rtl:lg:pr-8">
+      <div class="toc ltr:pl-5 rtl:pr-5 print:hidden lg:sticky lg:top-[140px]">
+
+         <details open id="TOCView"
+  class="toc-right mt-0 overflow-y-scroll overscroll-contain scrollbar-thin scrollbar-track-neutral-200 scrollbar-thumb-neutral-400 dark:scrollbar-track-neutral-800 dark:scrollbar-thumb-neutral-600 rounded-lg ltr:-ml-5 ltr:pl-5 rtl:-mr-5 rtl:pr-5 hidden lg:block">
+  <summary
+    class="block py-1 text-lg font-semibold cursor-pointer bg-neutral-100 text-neutral-800 ltr:-ml-5 ltr:pl-5 rtl:-mr-5 rtl:pr-5 dark:bg-neutral-700 dark:text-neutral-100 lg:hidden">
+    目录
+  </summary>
+  <div
+    class="min-w-[220px] py-2 border-dotted ltr:-ml-5 ltr:border-l ltr:pl-5 rtl:-mr-5 rtl:border-r rtl:pr-5 dark:border-neutral-600">
+    <nav id="TableOfContents">
+  <ul>
+    <li><a href="#介绍">介绍</a>
+      <ul>
+        <li><a href="#c-历史">C++ 历史</a></li>
+      </ul>
+    </li>
+    <li><a href="#结构化编程部分">结构化编程部分</a>
+      <ul>
+        <li><a href="#强制类型转换">强制类型转换</a></li>
+        <li><a href="#表达式的副作用">表达式的副作用</a></li>
+        <li><a href="#decltype">decltype</a>
+          <ul>
+            <li><a href="#参考">参考</a></li>
+          </ul>
+        </li>
+        <li><a href="#聚合初始化">聚合初始化</a></li>
+        <li><a href="#union-实现多态">Union 实现多态</a></li>
+        <li><a href="#struct-对齐">Struct 对齐</a></li>
+        <li><a href="#cincout-输入输出操纵符">cin/cout 输入/输出操纵符</a></li>
+        <li><a href="#tuple">Tuple</a>
+          <ul>
+            <li><a href="#参考-1">参考</a></li>
+          </ul>
+        </li>
+        <li><a href="#optional">Optional</a>
+          <ul>
+            <li><a href="#参考-2">参考</a></li>
+          </ul>
+        </li>
+        <li><a href="#pair">Pair</a></li>
+        <li><a href="#variant">Variant</a>
+          <ul>
+            <li><a href="#参考-3">参考</a></li>
+          </ul>
+        </li>
+        <li><a href="#any">Any</a></li>
+        <li><a href="#newdelete">new/delete</a></li>
+        <li><a href="#raii-与智能指针">RAII 与智能指针</a></li>
+        <li><a href="#c-数组特性">C 数组特性</a></li>
+        <li><a href="#指针作为函数参数">指针作为函数参数</a></li>
+        <li><a href="#函数指针">函数指针</a></li>
+        <li><a href="#函数执行机制">函数执行机制</a>
+          <ul>
+            <li><a href="#函数调用约定">函数调用约定</a></li>
+            <li><a href="#参考-4">参考</a></li>
+          </ul>
+        </li>
+        <li><a href="#格式化串攻击">格式化串攻击</a></li>
+        <li><a href="#函数重载">函数重载</a></li>
+        <li><a href="#默认参数">默认参数</a></li>
+        <li><a href="#内联函数">内联函数</a></li>
+        <li><a href="#namespace">Namespace</a></li>
+        <li><a href="#编译预处理">编译预处理</a>
+          <ul>
+            <li><a href="#include">include</a></li>
+            <li><a href="#define">define</a></li>
+            <li><a href="#pragma">pragma</a></li>
+          </ul>
+        </li>
+        <li><a href="#泛型">泛型</a>
+          <ul>
+            <li><a href="#concept">concept</a></li>
+            <li><a href="#sfinae">SFINAE</a></li>
+            <li><a href="#参考-5">参考</a></li>
+          </ul>
+        </li>
+        <li><a href="#元编程-meta-programming--constexpr">元编程 Meta programming / constexpr</a></li>
+      </ul>
+    </li>
+    <li><a href="#面向对象部分">面向对象部分</a>
+      <ul>
+        <li><a href="#面向对象概念">面向对象概念</a></li>
+        <li><a href="#构造函数">构造函数</a>
+          <ul>
+            <li><a href="#构造函数-1">构造函数</a></li>
+            <li><a href="#没有自定义构造函数时">没有自定义构造函数时</a></li>
+          </ul>
+        </li>
+        <li><a href="#成员初始化表">成员初始化表</a></li>
+        <li><a href="#析构函数">析构函数</a></li>
+        <li><a href="#拷贝函数">拷贝函数</a></li>
+        <li><a href="#拷贝构造函数">拷贝构造函数</a></li>
+        <li><a href="#移动构造函数">移动构造函数</a></li>
+        <li><a href="#动态内存">动态内存</a></li>
+        <li><a href="#const-成员">const 成员</a></li>
+        <li><a href="#static-成员">static 成员</a></li>
+        <li><a href="#友元">友元</a></li>
+        <li><a href="#继承概念">继承概念</a></li>
+        <li><a href="#heading"></a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+  </div>
+</details>
+<details class="toc-inside mt-0 overflow-hidden rounded-lg ltr:-ml-5 ltr:pl-5 rtl:-mr-5 rtl:pr-5 lg:hidden">
+  <summary
+    class="py-1 text-lg font-semibold cursor-pointer bg-neutral-100 text-neutral-800 ltr:-ml-5 ltr:pl-5 rtl:-mr-5 rtl:pr-5 dark:bg-neutral-700 dark:text-neutral-100 lg:hidden">
+    目录
+  </summary>
+  <div
+    class="py-2 border-dotted border-neutral-300 ltr:-ml-5 ltr:border-l ltr:pl-5 rtl:-mr-5 rtl:border-r rtl:pr-5 dark:border-neutral-600">
+    <nav id="TableOfContents">
+  <ul>
+    <li><a href="#介绍">介绍</a>
+      <ul>
+        <li><a href="#c-历史">C++ 历史</a></li>
+      </ul>
+    </li>
+    <li><a href="#结构化编程部分">结构化编程部分</a>
+      <ul>
+        <li><a href="#强制类型转换">强制类型转换</a></li>
+        <li><a href="#表达式的副作用">表达式的副作用</a></li>
+        <li><a href="#decltype">decltype</a>
+          <ul>
+            <li><a href="#参考">参考</a></li>
+          </ul>
+        </li>
+        <li><a href="#聚合初始化">聚合初始化</a></li>
+        <li><a href="#union-实现多态">Union 实现多态</a></li>
+        <li><a href="#struct-对齐">Struct 对齐</a></li>
+        <li><a href="#cincout-输入输出操纵符">cin/cout 输入/输出操纵符</a></li>
+        <li><a href="#tuple">Tuple</a>
+          <ul>
+            <li><a href="#参考-1">参考</a></li>
+          </ul>
+        </li>
+        <li><a href="#optional">Optional</a>
+          <ul>
+            <li><a href="#参考-2">参考</a></li>
+          </ul>
+        </li>
+        <li><a href="#pair">Pair</a></li>
+        <li><a href="#variant">Variant</a>
+          <ul>
+            <li><a href="#参考-3">参考</a></li>
+          </ul>
+        </li>
+        <li><a href="#any">Any</a></li>
+        <li><a href="#newdelete">new/delete</a></li>
+        <li><a href="#raii-与智能指针">RAII 与智能指针</a></li>
+        <li><a href="#c-数组特性">C 数组特性</a></li>
+        <li><a href="#指针作为函数参数">指针作为函数参数</a></li>
+        <li><a href="#函数指针">函数指针</a></li>
+        <li><a href="#函数执行机制">函数执行机制</a>
+          <ul>
+            <li><a href="#函数调用约定">函数调用约定</a></li>
+            <li><a href="#参考-4">参考</a></li>
+          </ul>
+        </li>
+        <li><a href="#格式化串攻击">格式化串攻击</a></li>
+        <li><a href="#函数重载">函数重载</a></li>
+        <li><a href="#默认参数">默认参数</a></li>
+        <li><a href="#内联函数">内联函数</a></li>
+        <li><a href="#namespace">Namespace</a></li>
+        <li><a href="#编译预处理">编译预处理</a>
+          <ul>
+            <li><a href="#include">include</a></li>
+            <li><a href="#define">define</a></li>
+            <li><a href="#pragma">pragma</a></li>
+          </ul>
+        </li>
+        <li><a href="#泛型">泛型</a>
+          <ul>
+            <li><a href="#concept">concept</a></li>
+            <li><a href="#sfinae">SFINAE</a></li>
+            <li><a href="#参考-5">参考</a></li>
+          </ul>
+        </li>
+        <li><a href="#元编程-meta-programming--constexpr">元编程 Meta programming / constexpr</a></li>
+      </ul>
+    </li>
+    <li><a href="#面向对象部分">面向对象部分</a>
+      <ul>
+        <li><a href="#面向对象概念">面向对象概念</a></li>
+        <li><a href="#构造函数">构造函数</a>
+          <ul>
+            <li><a href="#构造函数-1">构造函数</a></li>
+            <li><a href="#没有自定义构造函数时">没有自定义构造函数时</a></li>
+          </ul>
+        </li>
+        <li><a href="#成员初始化表">成员初始化表</a></li>
+        <li><a href="#析构函数">析构函数</a></li>
+        <li><a href="#拷贝函数">拷贝函数</a></li>
+        <li><a href="#拷贝构造函数">拷贝构造函数</a></li>
+        <li><a href="#移动构造函数">移动构造函数</a></li>
+        <li><a href="#动态内存">动态内存</a></li>
+        <li><a href="#const-成员">const 成员</a></li>
+        <li><a href="#static-成员">static 成员</a></li>
+        <li><a href="#友元">友元</a></li>
+        <li><a href="#继承概念">继承概念</a></li>
+        <li><a href="#heading"></a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+  </div>
+</details>
+
+<script>
+
+  var margin = 200;
+  var marginError = 50;
+
+  (function () {
+    var $window = $(window);
+    var $toc = $('#TOCView');
+    var tocHeight = $toc.height();
+
+    function onResize() {
+      var windowAndMarginHeight = $window.height() - margin;
+      if(tocHeight >= windowAndMarginHeight) {
+        $toc.css("overflow-y", "scroll")
+        $toc.css("max-height", (windowAndMarginHeight + marginError) + "px")
+      } else {
+        $toc.css("overflow-y", "hidden")
+        $toc.css("max-height", "9999999px")
+      }
+    }
+
+    $window.on('resize', onResize);
+    $(document).ready(onResize);
+  })();
+
+
+
+</script>
+   </div>
+      </div>
+      
+
+      <div class="min-w-0 min-h-0 max-w-fit">
+        
+        
+
+
+        <div class="article-content max-w-prose mb-20">
+          <p>根据上课 PPT 和同学与学长的笔记整理而成。</p>
+
+
+<h2 class="relative group">介绍 
+    <div id="%E4%BB%8B%E7%BB%8D" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#%E4%BB%8B%E7%BB%8D" aria-label="锚点">#</a>
+    </span>        
+    
+</h2>
+
+
+<h3 class="relative group">C++ 历史 
+    <div id="c-%E5%8E%86%E5%8F%B2" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#c-%E5%8E%86%E5%8F%B2" aria-label="锚点">#</a>
+    </span>        
+    
+</h3>
+<p>先跳过。。。</p>
+
+
+<h2 class="relative group">结构化编程部分 
+    <div id="%E7%BB%93%E6%9E%84%E5%8C%96%E7%BC%96%E7%A8%8B%E9%83%A8%E5%88%86" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#%E7%BB%93%E6%9E%84%E5%8C%96%E7%BC%96%E7%A8%8B%E9%83%A8%E5%88%86" aria-label="锚点">#</a>
+    </span>        
+    
+</h2>
+
+
+<h3 class="relative group">强制类型转换 
+    <div id="%E5%BC%BA%E5%88%B6%E7%B1%BB%E5%9E%8B%E8%BD%AC%E6%8D%A2" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#%E5%BC%BA%E5%88%B6%E7%B1%BB%E5%9E%8B%E8%BD%AC%E6%8D%A2" aria-label="锚点">#</a>
+    </span>        
+    
+</h3>
+
+<section class="space-y-10 w-full">
+    
+    
+</section>
+
+
+<h3 class="relative group">表达式的副作用 
+    <div id="%E8%A1%A8%E8%BE%BE%E5%BC%8F%E7%9A%84%E5%89%AF%E4%BD%9C%E7%94%A8" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#%E8%A1%A8%E8%BE%BE%E5%BC%8F%E7%9A%84%E5%89%AF%E4%BD%9C%E7%94%A8" aria-label="锚点">#</a>
+    </span>        
+    
+</h3>
+<p>副作用，就是一个过程是否会修改参与的变量的性质。</p>
+<p>在表达式中，有副作用的运算符：<code>=</code> <code>+=</code> <code>++</code> <code>&lt;&lt;</code> 等等
+无副作用的运算符：<code>+</code> <code>&amp;&amp;</code> 等等</p>
+<hr>
+
+
+<h3 class="relative group">decltype 
+    <div id="decltype" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#decltype" aria-label="锚点">#</a>
+    </span>        
+    
+</h3>
+<p>和 auto 有相似之处。</p>
+<p>auto 和 decltype 都用在声明变量上，都是基于 RTTI 机制实现的。</p>
+<p>auto 是对<strong>初始化</strong>的右值进行类型推导，然后给声明的变量确定类型、赋值。</p>
+<p>decltype 是对传入的参数类型进行类型推导，然后本身就作为这个类型的名称。</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cpp" data-lang="cpp"><span class="line"><span class="cl"><span class="kt">int</span> <span class="n">x</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="kt">int</span><span class="o">&amp;</span> <span class="n">ref</span> <span class="o">=</span> <span class="n">x</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="k">auto</span> <span class="n">ref1</span> <span class="o">=</span> <span class="n">x</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="k">decltype</span><span class="p">(</span><span class="n">ref</span><span class="p">)</span> <span class="n">ref2</span> <span class="o">=</span> <span class="n">x</span><span class="p">;</span>  <span class="c1">// equals to &#34;int&amp; ref2 = x&#34;
+</span></span></span></code></pre></div><p>既然本身就作为这个类型的名称，我们也可以结合 using 和 typedef：</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cpp" data-lang="cpp"><span class="line"><span class="cl"><span class="kt">int</span> <span class="n">x</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="kt">int</span><span class="o">&amp;</span> <span class="n">ref</span> <span class="o">=</span> <span class="n">x</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="k">using</span> <span class="n">int_ref</span> <span class="o">=</span> <span class="k">decltype</span><span class="p">(</span><span class="n">ref</span><span class="p">);</span>
+</span></span></code></pre></div>
+
+<h4 class="relative group">参考 
+    <div id="%E5%8F%82%E8%80%83" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#%E5%8F%82%E8%80%83" aria-label="锚点">#</a>
+    </span>        
+    
+</h4>
+<p><a href="https://www.cnblogs.com/QG-whz/p/4952980.html" target="_blank">C++11特性：decltype关键字 - melonstreet - 博客园</a></p>
+
+
+<h3 class="relative group">聚合初始化 
+    <div id="%E8%81%9A%E5%90%88%E5%88%9D%E5%A7%8B%E5%8C%96" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#%E8%81%9A%E5%90%88%E5%88%9D%E5%A7%8B%E5%8C%96" aria-label="锚点">#</a>
+    </span>        
+    
+</h3>
+<p>聚合初始化的规则比较复杂，考试应该不涉及。下面简单举几个例子：</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cpp" data-lang="cpp"><span class="line"><span class="cl"><span class="kt">int</span><span class="p">[]</span> <span class="n">arr</span> <span class="o">=</span> <span class="p">{</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">};</span>
+</span></span><span class="line"><span class="cl"><span class="kt">int</span><span class="p">[</span><span class="mi">5</span><span class="p">]</span> <span class="n">arr1</span> <span class="o">=</span> <span class="p">{</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">};</span>
+</span></span><span class="line"><span class="cl"><span class="n">vector</span><span class="o">&lt;</span><span class="kt">int</span><span class="o">&gt;</span> <span class="n">arr2</span><span class="p">{</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">};</span>
+</span></span><span class="line"><span class="cl"><span class="n">vector</span><span class="o">&lt;</span><span class="n">vector</span><span class="o">&lt;</span><span class="kt">int</span><span class="o">&gt;&gt;</span> <span class="n">arr3</span><span class="p">{{</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">},</span> <span class="p">{</span><span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">},</span> <span class="p">{</span><span class="mi">6</span><span class="p">}};</span>
+</span></span></code></pre></div>
+
+<h3 class="relative group">Union 实现多态 
+    <div id="union-%E5%AE%9E%E7%8E%B0%E5%A4%9A%E6%80%81" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#union-%E5%AE%9E%E7%8E%B0%E5%A4%9A%E6%80%81" aria-label="锚点">#</a>
+    </span>        
+    
+</h3>
+<p>父类联合体包含所有子类结构体。然后记得给子类加上类型的枚举。</p>
+<p>例子中的声明顺序只是为了方便查看，不用在意是否能编译通过。</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cpp" data-lang="cpp"><span class="line"><span class="cl"><span class="c1">// Base
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="k">union</span> <span class="nc">FIGURE</span>
+</span></span><span class="line"><span class="cl"><span class="p">{</span>
+</span></span><span class="line"><span class="cl">	<span class="n">FIGURE_TYPE</span> <span class="n">t</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">	<span class="n">Line</span> <span class="n">line</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">	<span class="n">Rectangle</span> <span class="n">rect</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">	<span class="n">Ellipse</span> <span class="n">ellipse</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="p">};</span>
+</span></span><span class="line"><span class="cl"><span class="c1">// Derived
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="k">struct</span> <span class="nc">Line</span><span class="p">{</span>
+</span></span><span class="line"><span class="cl">	<span class="n">FIGURE_TYPE</span> <span class="n">t</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">	<span class="kt">int</span> <span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="p">};</span>
+</span></span><span class="line"><span class="cl"><span class="k">struct</span> <span class="nc">Ellipse</span>
+</span></span><span class="line"><span class="cl"><span class="p">{</span> 
+</span></span><span class="line"><span class="cl">	<span class="n">FIGURE_TYPE</span> <span class="n">t</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">	<span class="kt">int</span> <span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">r</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="p">};</span>
+</span></span><span class="line"><span class="cl"><span class="k">struct</span> <span class="nc">Rectangle</span><span class="p">{</span>
+</span></span><span class="line"><span class="cl">	<span class="n">FIGURE_TYPE</span> <span class="n">t</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">	<span class="kt">int</span> <span class="n">left</span><span class="p">,</span> <span class="n">top</span><span class="p">,</span> <span class="n">right</span><span class="p">,</span> <span class="n">bottom</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="p">};</span>
+</span></span></code></pre></div>
+
+<h3 class="relative group">Struct 对齐 
+    <div id="struct-%E5%AF%B9%E9%BD%90" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#struct-%E5%AF%B9%E9%BD%90" aria-label="锚点">#</a>
+    </span>        
+    
+</h3>
+<p>先讨论没有 <code>#pragma pack</code>  的情况，如何确定 struct 的对齐与大小。</p>
+<p>首先有如下规则：</p>
+<ul>
+<li>结构体的成员<strong>声明的顺序</strong>就是在<strong>内存中的顺序</strong></li>
+<li>某一个成员相较于 struct 开头的偏移量，必须是自身大小的整数倍</li>
+<li>整个结构体大小必须是最大成员大小的整数倍</li>
+</ul>
+<p>第一条规则，确定了成员的顺序就是声明的顺序。</p>
+<p>我们按照声明的顺序，一个一个地应用第二条规则。不满足规则的，就补齐。</p>
+<p>最后，看满不满足第三条规则。不满足就补齐。</p>
+<p>有了 pragma 之后，每个数据成员的对齐，按照#pragma pack指定的数值和自身对齐模数中较小的那个。</p>
+<hr>
+
+
+<h3 class="relative group">cin/cout 输入/输出操纵符 
+    <div id="cincout-%E8%BE%93%E5%85%A5%E8%BE%93%E5%87%BA%E6%93%8D%E7%BA%B5%E7%AC%A6" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#cincout-%E8%BE%93%E5%85%A5%E8%BE%93%E5%87%BA%E6%93%8D%E7%BA%B5%E7%AC%A6" aria-label="锚点">#</a>
+    </span>        
+    
+</h3>
+<p>操纵符是令代码能以 operator&laquo; 或 operator&raquo; 控制输入/输出流的帮助函数。</p>
+<p>包括的一些感觉比较重要的操纵符如下
+输入用：</p>
+<ul>
+<li><code>skipws</code></li>
+<li><code>get_time</code>
+输出用</li>
+<li><code>showbase</code> <code>setbase</code></li>
+<li><code>uppercase</code></li>
+<li><code>dec</code> <code>hex</code> <code>oct</code></li>
+<li><code>setprecision</code></li>
+<li><code>setw</code></li>
+<li><code>put_time</code></li>
+</ul>
+<p>可以翻阅 cppreference -&gt; 输入输出库 -&gt; 输入输出操纵符</p>
+
+
+<h3 class="relative group">Tuple 
+    <div id="tuple" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#tuple" aria-label="锚点">#</a>
+    </span>        
+    
+</h3>
+<p>大名叫 <code>std::tuple</code>。元组。能保存任意数量的任意类型的成员变量。可以看成一个类型安全、使用灵活便捷的结构体。</p>
+<p>头文件 <code>&lt;tuple&gt;</code></p>
+<p>tuple 是静态的，需要在声明的时候就确定要保存哪些类型：</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cpp" data-lang="cpp"><span class="line"><span class="cl"><span class="n">std</span><span class="o">::</span><span class="n">tuple</span><span class="o">&lt;</span><span class="kt">int</span><span class="p">,</span> <span class="kt">double</span><span class="p">,</span> <span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="p">,</span> <span class="kt">char</span><span class="o">&gt;</span> <span class="n">t</span><span class="p">;</span>
+</span></span></code></pre></div><p>初始化：</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cpp" data-lang="cpp"><span class="line"><span class="cl"><span class="c1">// constructor
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="n">std</span><span class="o">::</span><span class="n">tuple</span><span class="o">&lt;</span><span class="kt">int</span><span class="p">,</span> <span class="kt">double</span><span class="p">,</span> <span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="p">,</span> <span class="kt">char</span><span class="o">&gt;</span> <span class="n">t</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mf">2.0</span><span class="p">,</span> <span class="s">&#34;hello&#34;</span><span class="p">,</span> <span class="sc">&#39;c&#39;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="c1">// make_tuple
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="n">t</span> <span class="o">=</span> <span class="n">make_tuple</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mf">2.0</span><span class="p">,</span> <span class="s">&#34;hello&#34;</span><span class="p">,</span> <span class="sc">&#39;c&#39;</span><span class="p">);</span>
+</span></span></code></pre></div><p>使用 <code>std::get&lt;&gt;</code> 获取元素：</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cpp" data-lang="cpp"><span class="line"><span class="cl"><span class="kt">int</span> <span class="n">first</span> <span class="o">=</span> <span class="n">std</span><span class="o">::</span><span class="n">get</span><span class="o">&lt;</span><span class="mi">0</span><span class="o">&gt;</span><span class="p">(</span><span class="n">t</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="n">std</span><span class="o">::</span><span class="n">get</span><span class="o">&lt;</span><span class="n">i</span><span class="o">&gt;</span><span class="p">(</span><span class="n">t</span><span class="p">);</span> <span class="c1">// Wrong!!! Cannot use variable
+</span></span></span></code></pre></div><p>使用 <code>std::tie</code> 解包：</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cpp" data-lang="cpp"><span class="line"><span class="cl"><span class="kt">int</span> <span class="n">a</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="kt">double</span> <span class="n">b</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="n">std</span><span class="o">::</span><span class="n">string</span> <span class="n">c</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="kt">char</span> <span class="n">d</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="n">std</span><span class="o">::</span><span class="n">tie</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">,</span> <span class="n">c</span><span class="p">,</span> <span class="n">d</span><span class="p">)</span> <span class="o">=</span> <span class="n">t</span><span class="p">;</span>
+</span></span></code></pre></div><p>使用 <code>std::tuple_size</code> 获取 tuple 元素个数：</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cpp" data-lang="cpp"><span class="line"><span class="cl"><span class="kt">int</span> <span class="n">el_count</span> <span class="o">=</span> <span class="n">std</span><span class="o">::</span><span class="n">tuple_size</span><span class="o">&lt;</span><span class="k">decltype</span><span class="p">(</span><span class="n">t</span><span class="p">)</span><span class="o">&gt;::</span><span class="n">value</span><span class="p">;</span>
+</span></span></code></pre></div>
+
+<h4 class="relative group">参考 
+    <div id="%E5%8F%82%E8%80%83-1" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#%E5%8F%82%E8%80%83-1" aria-label="锚点">#</a>
+    </span>        
+    
+</h4>
+<p><a href="https://www.cnblogs.com/RioTian/p/14325292.html" target="_blank">C++ tuple（STL tuple）模板用法详解 - RioTian - 博客园</a></p>
+<p><a href="https://blog.csdn.net/sevenjoin/article/details/88420885" target="_blank">C++ tuple元组的基本用法(总结)-CSDN博客</a></p>
+
+
+<h3 class="relative group">Optional 
+    <div id="optional" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#optional" aria-label="锚点">#</a>
+    </span>        
+    
+</h3>
+<p>和 java 的 optional 如出一辙。大致是为了包装函数返回值而生的。</p>
+<p>头文件 <code>&lt;optinal&gt;</code></p>
+<p>optional 可以理解为包含了两个信息：函数运行信息（成功，失败）、函数返回值</p>
+<p>声明 optional：</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cpp" data-lang="cpp"><span class="line"><span class="cl"><span class="n">std</span><span class="o">::</span><span class="n">optional</span><span class="o">&lt;</span><span class="n">T</span><span class="o">&gt;</span> <span class="n">opt</span><span class="p">;</span>         <span class="c1">// 不包含值的 optional
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="n">nullopt</span><span class="p">;</span>                      <span class="c1">// 不包含值的 optional，宏定义好了
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="n">std</span><span class="o">::</span><span class="n">optional</span><span class="o">&lt;</span><span class="n">T</span><span class="o">&gt;</span> <span class="n">opt</span><span class="p">(</span><span class="n">value</span><span class="p">);</span>  <span class="c1">// 包含 value
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="n">make_optional</span><span class="o">&lt;</span><span class="n">T</span><span class="o">&gt;</span><span class="p">(</span><span class="n">value</span><span class="p">);</span>      <span class="c1">// make 方法
+</span></span></span></code></pre></div><p>函数失败：</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cpp" data-lang="cpp"><span class="line"><span class="cl"><span class="k">return</span> <span class="n">nullopt</span><span class="p">;</span>
+</span></span></code></pre></div><p>函数成功，返回 result：</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cpp" data-lang="cpp"><span class="line"><span class="cl"><span class="k">return</span> <span class="n">make_optional</span><span class="o">&lt;</span><span class="n">T</span><span class="o">&gt;</span><span class="p">(</span><span class="n">result</span><span class="p">);</span>
+</span></span></code></pre></div><p>函数调用方：
+使用 <code>has_value</code> 检查函数返回是否为空（函数执行是否失败）
+如果成功，可以直接将 optional 当成结果来取值。注意，这里 value 类似迭代器，是一个指向结果的指针。</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cpp" data-lang="cpp"><span class="line"><span class="cl"><span class="k">auto</span> <span class="n">result</span> <span class="o">=</span> <span class="n">foo</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl"><span class="k">if</span><span class="p">(</span><span class="o">!</span><span class="n">result</span><span class="p">.</span><span class="n">has_value</span><span class="p">())</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">	<span class="n">cout</span><span class="o">&lt;&lt;</span> <span class="s">&#34;failed&#34;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="k">else</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">	<span class="n">result</span><span class="o">-&gt;</span><span class="n">xxx</span> <span class="p">...;</span>       <span class="c1">// 直接将 optional 对象当成返回结果的指针用
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="p">}</span>
+</span></span></code></pre></div>
+
+<h4 class="relative group">参考 
+    <div id="%E5%8F%82%E8%80%83-2" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#%E5%8F%82%E8%80%83-2" aria-label="锚点">#</a>
+    </span>        
+    
+</h4>
+<p><a href="https://zhuanlan.zhihu.com/p/64985296" target="_blank">C++17 新特性之 std::optional（上） - 知乎</a></p>
+<p><a href="https://blog.csdn.net/haokan123456789/article/details/136099479" target="_blank">C++三剑客之std::optional(一) : 使用详解_c++ optional-CSDN博客</a></p>
+
+
+<h3 class="relative group">Pair 
+    <div id="pair" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#pair" aria-label="锚点">#</a>
+    </span>        
+    
+</h3>
+<p>特化的 tuple。只能放两个元素。</p>
+<p>头文件 <code>&lt;utility&gt;</code></p>
+<p>用 first 和 second 来访问两个元素。</p>
+<p>make_pair 来创建一个 pair。通过 tie 来解包。和 tuple 一毛一样。</p>
+
+
+<h3 class="relative group">Variant 
+    <div id="variant" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#variant" aria-label="锚点">#</a>
+    </span>        
+    
+</h3>
+<p>类型安全的 union。但不允许包含引用、数组、void。</p>
+<p>头文件 <code>&lt;variant&gt;</code></p>
+<p>创建与访问：</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cpp" data-lang="cpp"><span class="line"><span class="cl"><span class="n">std</span><span class="o">::</span><span class="n">variant</span><span class="o">&lt;</span><span class="kt">int</span><span class="p">,</span> <span class="kt">float</span><span class="p">,</span> <span class="n">std</span><span class="o">::</span><span class="kt">double</span><span class="o">&gt;</span> <span class="n">var</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="n">var</span> <span class="o">=</span> <span class="s">&#34;abc&#34;</span><span class="p">;</span>  <span class="c1">// or var.emplace(&#34;abc&#34;)
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="n">std</span><span class="o">::</span><span class="n">get</span><span class="o">&lt;</span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="o">&gt;</span><span class="p">(</span><span class="n">var</span><span class="p">);</span>  <span class="c1">// &#34;abc&#34;
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="n">std</span><span class="o">::</span><span class="n">get</span><span class="o">&lt;</span><span class="kt">int</span><span class="o">&gt;</span><span class="p">(</span><span class="n">var</span><span class="p">);</span>          <span class="c1">// exception std::bad_variant_access
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>
+</span></span><span class="line"><span class="cl"><span class="n">var</span> <span class="o">=</span> <span class="mf">0.1f</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="k">const</span> <span class="k">auto</span> <span class="n">intPtr</span> <span class="o">=</span> <span class="n">std</span><span class="o">::</span><span class="n">get_if</span><span class="o">&lt;</span><span class="kt">float</span><span class="o">&gt;</span><span class="p">(</span><span class="o">&amp;</span><span class="n">var</span><span class="p">)</span>  <span class="c1">// safe get
+</span></span></span></code></pre></div><p>检查当前是否持有某类型：</p>
+<p>使用 <code>std::holds_alternative</code></p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cpp" data-lang="cpp"><span class="line"><span class="cl"><span class="k">if</span><span class="p">(</span><span class="n">std</span><span class="o">::</span><span class="n">holds_alternative</span><span class="o">&lt;</span><span class="kt">int</span><span class="o">&gt;</span><span class="p">(</span><span class="n">var</span><span class="p">))</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">	<span class="n">std</span><span class="o">::</span><span class="n">cout</span><span class="o">&lt;&lt;</span><span class="s">&#34;var holds int&#34;</span><span class="o">&lt;&lt;</span><span class="n">endl</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></div><p>空状态：</p>
+<p>即 variant 什么都没放的 “无值” 状态。用 <code>std::monostate</code> 表示</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cpp" data-lang="cpp"><span class="line"><span class="cl"><span class="n">std</span><span class="o">::</span><span class="n">variant</span><span class="o">&lt;</span><span class="n">std</span><span class="o">::</span><span class="n">monostate</span><span class="p">,</span> <span class="kt">int</span><span class="o">&gt;</span> <span class="n">var</span><span class="p">;</span>
+</span></span></code></pre></div>
+
+<h4 class="relative group">参考 
+    <div id="%E5%8F%82%E8%80%83-3" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#%E5%8F%82%E8%80%83-3" aria-label="锚点">#</a>
+    </span>        
+    
+</h4>
+<p><a href="https://www.cnblogs.com/linxmouse/p/18436326" target="_blank">C++17 std::variant 详解：概念、用法和实现细节 - 非法关键字 - 博客园</a></p>
+
+
+<h3 class="relative group">Any 
+    <div id="any" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#any" aria-label="锚点">#</a>
+    </span>        
+    
+</h3>
+<p>类型安全的，能存放任意类型数据的容器(void*)。</p>
+<p>头文件 <code>any</code></p>
+<p>声明与赋值：</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cpp" data-lang="cpp"><span class="line"><span class="cl"><span class="n">std</span><span class="o">::</span><span class="n">any</span> <span class="n">a</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="n">a</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span>           <span class="c1">// store an integer
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="n">a</span><span class="p">.</span><span class="n">emplace</span><span class="p">(</span><span class="mi">1</span><span class="p">);</span>    <span class="c1">// same effect as above
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="n">a</span> <span class="o">=</span> <span class="n">make_any</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>  <span class="c1">// make method
+</span></span></span></code></pre></div><p>取出使用：</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cpp" data-lang="cpp"><span class="line"><span class="cl"><span class="n">a</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="n">std</span><span class="o">::</span><span class="n">any_cast</span><span class="o">&lt;</span><span class="kt">int</span><span class="o">&gt;</span><span class="p">(</span><span class="n">a</span><span class="p">);</span>    <span class="c1">// returns 1
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="n">std</span><span class="o">::</span><span class="n">any_cast</span><span class="o">&lt;</span><span class="kt">char</span><span class="o">&gt;</span><span class="p">(</span><span class="n">a</span><span class="p">);</span>   <span class="c1">// throw std::bad_any_cast exception
+</span></span></span></code></pre></div><p>检查是否有值：</p>
+<p>使用 <code>has_value</code> 成员函数。返回 bool。</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cpp" data-lang="cpp"><span class="line"><span class="cl"><span class="n">std</span><span class="o">::</span><span class="n">any</span> <span class="n">a</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="n">a</span><span class="p">.</span><span class="n">has_value</span><span class="p">();</span>  <span class="c1">// false
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="n">a</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="n">a</span><span class="p">.</span><span class="n">has_value</span><span class="p">();</span>  <span class="c1">// true
+</span></span></span></code></pre></div><p>检查所存储元素类型：</p>
+<p>使用 type 成员函数。返回成员类型的 typeid</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cpp" data-lang="cpp"><span class="line"><span class="cl"><span class="n">a</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="n">a</span><span class="p">.</span><span class="n">type</span><span class="p">()</span> <span class="o">==</span> <span class="k">typeid</span><span class="p">(</span><span class="kt">int</span><span class="p">)</span>  <span class="c1">// true
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="n">a</span><span class="p">.</span><span class="n">type</span><span class="p">()</span> <span class="o">==</span> <span class="k">typeid</span><span class="p">(</span><span class="kt">char</span><span class="p">)</span> <span class="c1">// false
+</span></span></span></code></pre></div>
+
+<h3 class="relative group">new/delete 
+    <div id="newdelete" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#newdelete" aria-label="锚点">#</a>
+    </span>        
+    
+</h3>
+<p>在使用 new 创建数组时，前 4 个字节会存放声明的数组长度。</p>
+<p>方便 delete[] 时，知道要释放多少空间。</p>
+
+
+<h3 class="relative group">RAII 与智能指针 
+    <div id="raii-%E4%B8%8E%E6%99%BA%E8%83%BD%E6%8C%87%E9%92%88" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#raii-%E4%B8%8E%E6%99%BA%E8%83%BD%E6%8C%87%E9%92%88" aria-label="锚点">#</a>
+    </span>        
+    
+</h3>
+
+<section class="space-y-10 w-full">
+    
+    
+</section>
+<hr>
+
+
+<h3 class="relative group">C 数组特性 
+    <div id="c-%E6%95%B0%E7%BB%84%E7%89%B9%E6%80%A7" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#c-%E6%95%B0%E7%BB%84%E7%89%B9%E6%80%A7" aria-label="锚点">#</a>
+    </span>        
+    
+</h3>
+
+<section class="space-y-10 w-full">
+    
+    
+</section>
+
+
+<h3 class="relative group">指针作为函数参数 
+    <div id="%E6%8C%87%E9%92%88%E4%BD%9C%E4%B8%BA%E5%87%BD%E6%95%B0%E5%8F%82%E6%95%B0" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#%E6%8C%87%E9%92%88%E4%BD%9C%E4%B8%BA%E5%87%BD%E6%95%B0%E5%8F%82%E6%95%B0" aria-label="锚点">#</a>
+    </span>        
+    
+</h3>
+<p>为什么</p>
+<ul>
+<li>提高传输效率，不用拷贝传递的实参</li>
+<li>使用函数的副作用，改变传入参数的值。如果不想要副作用，可以加 const</li>
+</ul>
+
+
+<h3 class="relative group">函数指针 
+    <div id="%E5%87%BD%E6%95%B0%E6%8C%87%E9%92%88" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#%E5%87%BD%E6%95%B0%E6%8C%87%E9%92%88" aria-label="锚点">#</a>
+    </span>        
+    
+</h3>
+<p>没啥讲的。方便实现函数的动态调用。然后就是 lambda 函数。</p>
+<p>函数指针的解析，看：</p>
+
+<section class="space-y-10 w-full">
+    
+    
+</section>
+
+
+<h3 class="relative group">函数执行机制 
+    <div id="%E5%87%BD%E6%95%B0%E6%89%A7%E8%A1%8C%E6%9C%BA%E5%88%B6" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#%E5%87%BD%E6%95%B0%E6%89%A7%E8%A1%8C%E6%9C%BA%E5%88%B6" aria-label="锚点">#</a>
+    </span>        
+    
+</h3>
+<p>如下只是大致的步骤，会根据具体的函数调用约定而有些许不同。</p>
+<ul>
+<li>建立被调用函数的栈空间</li>
+<li>参数传递：
+<ul>
+<li>值传递 (call by value)</li>
+<li>引用传递 (call by reference)</li>
+</ul>
+</li>
+<li>保存调用函数的运行状态
+<ul>
+<li>返回地址</li>
+<li>调用者的 ebp</li>
+</ul>
+</li>
+<li>将控制转交被调函数
+<ul>
+<li>设置新的 ebp 和 esp</li>
+</ul>
+</li>
+<li>恢复上下文
+<ul>
+<li>恢复调用者 ebp</li>
+<li>恢复返回地址</li>
+</ul>
+</li>
+</ul>
+
+
+<h4 class="relative group">函数调用约定 
+    <div id="%E5%87%BD%E6%95%B0%E8%B0%83%E7%94%A8%E7%BA%A6%E5%AE%9A" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#%E5%87%BD%E6%95%B0%E8%B0%83%E7%94%A8%E7%BA%A6%E5%AE%9A" aria-label="锚点">#</a>
+    </span>        
+    
+</h4>
+<p>函数调用约定回答了如下问题：</p>
+<ul>
+<li>当参数个数多于一个时，按照什么顺序把参数压入堆栈</li>
+<li>函数调用后，由谁来把堆栈恢复原装</li>
+</ul>
+
+
+<h5 class="relative group">stdcall 
+    <div id="stdcall" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#stdcall" aria-label="锚点">#</a>
+    </span>        
+    
+</h5>
+<p>pascal 风格的调用约定。</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cpp" data-lang="cpp"><span class="line"><span class="cl"><span class="kt">int</span> <span class="kr">__stdcall</span> <span class="nf">foo</span><span class="p">(</span><span class="kt">int</span> <span class="n">a</span><span class="p">,</span> <span class="kt">int</span> <span class="n">b</span><span class="p">);</span>
+</span></span></code></pre></div><ul>
+<li>参数从右向左压栈</li>
+<li>函数自己恢复堆栈
+例子中，被调用者 foo 的返回的汇编为 <code>ret 8</code>，表示清除 a 和 b 参数占的堆栈</li>
+<li>函数名的标签变为 <code>_</code> + <code>函数名</code> + <code>@</code> + <code>参数大小</code>
+例子中，函数的标签为 <code>_foo@8</code></li>
+</ul>
+
+
+<h5 class="relative group">cdecl 
+    <div id="cdecl" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#cdecl" aria-label="锚点">#</a>
+    </span>        
+    
+</h5>
+<p>C 调用约定。是 C 语言默认的调用约定。</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-c" data-lang="c"><span class="line"><span class="cl"><span class="kt">int</span> <span class="kr">__cdecl</span> <span class="nf">foo</span><span class="p">(</span><span class="kt">int</span> <span class="n">a</span><span class="p">,</span> <span class="kt">int</span> <span class="n">b</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="kt">int</span> <span class="nf">foo</span><span class="p">(</span><span class="kt">int</span> <span class="n">a</span><span class="p">,</span> <span class="kt">int</span> <span class="n">b</span><span class="p">);</span>            <span class="c1">// default is cdecl
+</span></span></span></code></pre></div><ul>
+<li>参数从右往左压栈</li>
+<li>调用者恢复堆栈
+被调用者直接用 <code>ret</code> 返回，不恢复堆栈。
+调用者在 <code>call foo</code> 之后，使用 <code>add esp, 8</code> 来恢复两个 int 参数的堆栈。</li>
+<li>函数名标签 <code>_</code> + <code>函数名</code></li>
+</ul>
+<p>这种调用约定能支持可变参数。可变参数在声明里面是放在最右边的，这样保证了左边的参数先入栈，能通过 ebp 确定，从而确认可变参数。并且调用者可以根据自己传的参数大小来恢复堆栈。</p>
+
+
+<h5 class="relative group">fastcall 
+    <div id="fastcall" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#fastcall" aria-label="锚点">#</a>
+    </span>        
+    
+</h5>
+<p>和 stdcall 类似，但是更 fast，因为用到了寄存器。</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cpp" data-lang="cpp"><span class="line"><span class="cl"><span class="kt">int</span> <span class="kr">__fastcall</span> <span class="nf">foo</span><span class="p">(</span><span class="kt">int</span> <span class="n">a</span><span class="p">,</span> <span class="kt">int</span> <span class="n">b</span><span class="p">);</span>
+</span></span></code></pre></div><ul>
+<li>第一个和第二个声明的大小小于等于 DWORD 的参数，通过 ecx 和 edx 传
+例子中，a 和 b 分别放到 ecx 和 edx 中。然后就没有参数需要压栈了。</li>
+<li>其他的参数还是按 stdcall 的方式压栈</li>
+<li>被调用者清理堆栈</li>
+</ul>
+
+
+<h5 class="relative group">thiscall 
+    <div id="thiscall" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#thiscall" aria-label="锚点">#</a>
+    </span>        
+    
+</h5>
+<p>C++ 默认的调用约定。特殊处理了 this 指针。</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cpp" data-lang="cpp"><span class="line"><span class="cl"><span class="kt">int</span> <span class="nf">foo</span><span class="p">(</span><span class="kt">int</span> <span class="n">a</span><span class="p">,</span> <span class="kt">int</span> <span class="n">b</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="kt">int</span> <span class="n">__thiscall</span> <span class="nf">foo</span><span class="p">(</span><span class="kt">int</span> <span class="n">a</span><span class="p">,</span> <span class="kt">int</span> <span class="n">b</span><span class="p">);</span>  <span class="c1">// wrong! no need for &#39;__thiscall&#39;
+</span></span></span></code></pre></div><ul>
+<li>参数从右向左压栈</li>
+<li>参数个数确定的情况下，this 指针通过 ecx 传递；有可变参数，this 指针最后被入栈</li>
+<li>参数个数确定，被调用者清理堆栈；可变参数，调用者清理堆栈</li>
+</ul>
+
+
+<h4 class="relative group">参考 
+    <div id="%E5%8F%82%E8%80%83-4" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#%E5%8F%82%E8%80%83-4" aria-label="锚点">#</a>
+    </span>        
+    
+</h4>
+<p><a href="https://blog.csdn.net/hellokandy/article/details/54603055" target="_blank">C/C++ 函数调用约定（__cdecl、__stdcall、__fastcall）-CSDN博客</a></p>
+<p><a href="https://blog.imkasen.com/calling-conventions/" target="_blank">关于调用约定 cdecl、stdcall 和 fastcall 的区别 | 拾遗记</a></p>
+<p><a href="https://www.cnblogs.com/findumars/p/5143948.html" target="_blank">stdcall、cdecl、fastcall、thiscall 、naked call的汇编详解 - findumars - 博客园</a></p>
+
+
+<h3 class="relative group">格式化串攻击 
+    <div id="%E6%A0%BC%E5%BC%8F%E5%8C%96%E4%B8%B2%E6%94%BB%E5%87%BB" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#%E6%A0%BC%E5%BC%8F%E5%8C%96%E4%B8%B2%E6%94%BB%E5%87%BB" aria-label="锚点">#</a>
+    </span>        
+    
+</h3>
+<p>由于调用约定的存在，不定参数的函数是不知道参数的个数与大小的。这在 scanf 和 printf 上会产生漏洞。</p>
+<p>比如，用户在 scanf 输入字符串时，故意包含了格式化字符</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cpp" data-lang="cpp"><span class="line"><span class="cl"><span class="kt">char</span> <span class="n">str</span><span class="p">[</span><span class="mi">100</span><span class="p">];</span>
+</span></span><span class="line"><span class="cl"><span class="n">scanf</span><span class="p">(</span><span class="s">&#34;%s&#34;</span><span class="p">,</span> <span class="n">str</span><span class="p">);</span>  <span class="c1">// 输入 %x\n%x\n%x\n
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="n">printf</span><span class="p">(</span><span class="n">str</span><span class="p">);</span>
+</span></span></code></pre></div><p>printf 只知道你传入了 str 格式串。一旦扫描到了 %x，就将对应偏移量的参数给输出出来，但是调用方并没有传对应的参数，这会导致 printf 输出对应地址上的内容。</p>
+<p>所以，当 printf 传入参数不足格式化串中字符的个数时，就会导致这个漏洞。</p>
+<ul>
+<li>泄露地址</li>
+<li>栈上地址任意写入（通过输入 %n）</li>
+</ul>
+<p>&ndash;</p>
+
+
+<h3 class="relative group">函数重载 
+    <div id="%E5%87%BD%E6%95%B0%E9%87%8D%E8%BD%BD" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#%E5%87%BD%E6%95%B0%E9%87%8D%E8%BD%BD" aria-label="锚点">#</a>
+    </span>        
+    
+</h3>
+<p>原则：</p>
+<ul>
+<li>名同，参数不同（个数、类型、顺序）</li>
+<li>返回值类型不作为区别重载函数的依据</li>
+</ul>
+<p>特殊情况：传入类型没有重载，但是可以隐式转换到多个重载的，编译无法通过</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cpp" data-lang="cpp"><span class="line"><span class="cl"><span class="kt">void</span> <span class="nf">foo</span><span class="p">(</span><span class="kt">char</span> <span class="n">a</span><span class="p">){}</span>
+</span></span><span class="line"><span class="cl"><span class="kt">void</span> <span class="nf">foo</span><span class="p">(</span><span class="kt">double</span> <span class="n">a</span><span class="p">){}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">foo</span><span class="p">(</span><span class="mi">1</span><span class="p">);</span>  <span class="c1">// Call to &#39;foo&#39; is ambiguous
+</span></span></span></code></pre></div>
+
+<h3 class="relative group">默认参数 
+    <div id="%E9%BB%98%E8%AE%A4%E5%8F%82%E6%95%B0" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#%E9%BB%98%E8%AE%A4%E5%8F%82%E6%95%B0" aria-label="锚点">#</a>
+    </span>        
+    
+</h3>
+<p>函数传入的参数可以设置默认参数，在不传默认参数时使用默认参数指定的值。就像 Python 一样。</p>
+<p>注意点：</p>
+<ul>
+<li>默认参数的声明，要在函数原型中给出。如果没有函数原型，就在函数定义中给出。</li>
+<li>默认参数从右到左声明，不能间断</li>
+</ul>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cpp" data-lang="cpp"><span class="line"><span class="cl"><span class="kt">void</span> <span class="nf">foo</span><span class="p">(</span><span class="kt">double</span><span class="p">,</span> <span class="kt">char</span><span class="p">,</span> <span class="kt">int</span><span class="o">=</span><span class="mi">2</span><span class="p">);</span>      <span class="c1">// okay
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="kt">void</span> <span class="nf">foo</span><span class="p">(</span><span class="kt">double</span><span class="o">=</span><span class="mf">1.0</span><span class="p">,</span> <span class="kt">char</span><span class="p">,</span> <span class="kt">int</span><span class="p">);</span>    <span class="c1">// wrong!!!
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="kt">void</span> <span class="nf">foo</span><span class="p">(</span><span class="kt">double</span><span class="o">=</span><span class="mf">1.0</span><span class="p">,</span> <span class="kt">char</span><span class="p">,</span> <span class="kt">int</span><span class="o">=</span><span class="mi">2</span><span class="p">);</span>  <span class="c1">// wrong!!!
+</span></span></span></code></pre></div><ul>
+<li>默认函数和函数重载不能出现 ambiguous</li>
+</ul>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cpp" data-lang="cpp"><span class="line"><span class="cl"><span class="kt">void</span> <span class="nf">f</span><span class="p">(</span><span class="kt">int</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="kt">void</span> <span class="nf">f</span><span class="p">(</span><span class="kt">int</span><span class="p">,</span> <span class="kt">int</span><span class="o">=</span><span class="mi">2</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">f</span><span class="p">(</span><span class="mi">1</span><span class="p">);</span> <span class="c1">// ambiguous!!!
+</span></span></span></code></pre></div>
+
+<h3 class="relative group">内联函数 
+    <div id="%E5%86%85%E8%81%94%E5%87%BD%E6%95%B0" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#%E5%86%85%E8%81%94%E5%87%BD%E6%95%B0" aria-label="锚点">#</a>
+    </span>        
+    
+</h3>
+<p>inline 关键字</p>
+<p>目的</p>
+<ul>
+<li>提高可读性</li>
+<li>提高效率，因为减少了函数调用的过程</li>
+</ul>
+<p>限制</p>
+<ul>
+<li>不能递归</li>
+<li>不能作为函数指针</li>
+</ul>
+<p>适用：频率高、简单、小段的代码</p>
+<p>其他：inline 声明仅仅是请求，编译器可以拒绝</p>
+<p>缺点</p>
+<ul>
+<li>增大目标代码</li>
+<li>换页抖动</li>
+<li>降低指令 cache 的命中率</li>
+</ul>
+<hr>
+
+
+<h3 class="relative group">Namespace 
+    <div id="namespace" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#namespace" aria-label="锚点">#</a>
+    </span>        
+    
+</h3>
+<p>命名空间。限制全局标识符的作用域，方便区分同名函数。</p>
+<p>声明形式：</p>
+<ul>
+<li>declaration</li>
+</ul>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cpp" data-lang="cpp"><span class="line"><span class="cl"><span class="k">using</span> <span class="n">std</span><span class="o">::</span><span class="n">cout</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="k">using</span> <span class="n">std</span><span class="o">::</span><span class="n">cin</span><span class="p">;</span>
+</span></span></code></pre></div><ul>
+<li>directive
+不建议同一文件多次用 directive</li>
+</ul>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cpp" data-lang="cpp"><span class="line"><span class="cl"><span class="k">using</span> <span class="k">namespace</span> <span class="n">std</span><span class="p">;</span>
+</span></span></code></pre></div><ul>
+<li>默认匿名命名空间</li>
+</ul>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cpp" data-lang="cpp"><span class="line"><span class="cl"><span class="k">using</span> <span class="o">::</span><span class="n">variable</span><span class="p">;</span>
+</span></span></code></pre></div><ul>
+<li>别名</li>
+</ul>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cpp" data-lang="cpp"><span class="line"><span class="cl"><span class="k">namespace</span> <span class="n">std_alias</span><span class="o">=</span><span class="n">std</span><span class="p">;</span>
+</span></span></code></pre></div><ul>
+<li>全局
+只要在某个文件里声明了 namespace，其他文件可以直接访问</li>
+<li>开放
+namespace 的内容完全公开</li>
+<li>可嵌套</li>
+</ul>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cpp" data-lang="cpp"><span class="line"><span class="cl"><span class="k">namespace</span> <span class="n">A</span><span class="p">{</span>
+</span></span><span class="line"><span class="cl">	<span class="kt">int</span> <span class="n">a</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">	<span class="k">namespace</span> <span class="n">B</span><span class="p">{</span>
+</span></span><span class="line"><span class="cl">		<span class="kt">int</span> <span class="n">b</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">	<span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="n">A</span><span class="o">::</span><span class="n">a</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="n">A</span><span class="o">::</span><span class="n">B</span><span class="o">::</span><span class="n">b</span><span class="p">;</span>
+</span></span></code></pre></div><ul>
+<li>重载</li>
+</ul>
+
+
+<h3 class="relative group">编译预处理 
+    <div id="%E7%BC%96%E8%AF%91%E9%A2%84%E5%A4%84%E7%90%86" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#%E7%BC%96%E8%AF%91%E9%A2%84%E5%A4%84%E7%90%86" aria-label="锚点">#</a>
+    </span>        
+    
+</h3>
+<p>PPT 上说：与作用域、类型、接口等概念格格不入。</p>
+<p>能理解，但理解得不多🫠。</p>
+
+
+<h4 class="relative group">include 
+    <div id="include" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#include" aria-label="锚点">#</a>
+    </span>        
+    
+</h4>
+<p>作用是复制其中的文件内容到此处。</p>
+<ul>
+<li>包含头文件
+<ul>
+<li>防止重定义：用 <code>#ifdef</code> 等</li>
+</ul>
+</li>
+<li>替换操作</li>
+</ul>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cpp" data-lang="cpp"><span class="line"><span class="cl"><span class="n">printf</span><span class="p">(</span><span class="s">&#34;#&#34;</span><span class="p">)</span>
+</span></span></code></pre></div><ul>
+<li><code>&quot;&quot;</code> 与 <code>&lt;&gt;</code>
+使用 <code>&lt;&gt;</code> 时，预处理器会按如下顺序寻找文件：</li>
+</ul>
+<ol>
+<li>到编译选项 -l 指定的目录</li>
+<li>到环境变量 INCLUDE 指定的目录
+使用 <code>&quot;&quot;</code> 时：</li>
+<li>Current Workspace Directory</li>
+<li>编译选项 -l 目录</li>
+<li>环境变量 INCLUDE 目录</li>
+</ol>
+
+
+<h4 class="relative group">define 
+    <div id="define" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#define" aria-label="锚点">#</a>
+    </span>        
+    
+</h4>
+<p>替换文本宏。<code>define</code> 定义替换，<code>undef</code> 取消定义</p>
+<ul>
+<li>空 define
+多用于防止重复定义</li>
+<li>预定义宏
+比如 c++ 标准版本的宏</li>
+<li>功能特性测试宏
+比如开优化的宏</li>
+<li>仿函数宏
+<ul>
+<li>含参数的宏，比如之前打 oi 常用的省时间宏</li>
+</ul>
+</li>
+</ul>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cpp" data-lang="cpp"><span class="line"><span class="cl"><span class="cp">#define f(q, w, e) for(int q = w; q &lt; e; q++)
+</span></span></span><span class="line"><span class="cl"><span class="cp"></span>
+</span></span><span class="line"><span class="cl"><span class="n">f</span><span class="p">(</span><span class="n">i</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="n">n</span><span class="p">)</span> <span class="p">{...}</span>
+</span></span></code></pre></div><ul>
+<li>还能实现泛型</li>
+</ul>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cpp" data-lang="cpp"><span class="line"><span class="cl"><span class="cp">#define add(x, y) (x + y)
+</span></span></span></code></pre></div><p>加括号是必要的，为了保证加法不受外部运算符优先级的影响。</p>
+<ul>
+<li>对于函数体的替换
+用 do while(0) 保证函数体的独立性与完整性</li>
+</ul>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cpp" data-lang="cpp"><span class="line"><span class="cl"><span class="cp">#define incAndPrint(a) do{\
+</span></span></span><span class="line"><span class="cl"><span class="cp">	a++;\
+</span></span></span><span class="line"><span class="cl"><span class="cp">	a.print();\
+</span></span></span><span class="line"><span class="cl"><span class="cp">} while(0);
+</span></span></span></code></pre></div><p>如果没有 do while(0)，放在无花括号的 if 里就出问题了。</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cpp" data-lang="cpp"><span class="line"><span class="cl"><span class="c1">// with out do while(0)
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="k">if</span><span class="p">(</span><span class="n">a</span><span class="p">)</span> 
+</span></span><span class="line"><span class="cl">	<span class="n">incAndPrint</span><span class="p">(</span><span class="n">a</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="c1">// equals to
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="k">if</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">	<span class="n">a</span><span class="o">++</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">	<span class="n">a</span><span class="p">.</span><span class="n">print</span><span class="p">();</span>  <span class="c1">// outside of if
+</span></span></span></code></pre></div><ul>
+<li><code>#</code> 运算符
+运算符后跟参数名，将这个参数转换成字符串。</li>
+</ul>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cpp" data-lang="cpp"><span class="line"><span class="cl"><span class="cp">#define foo(x) #x
+</span></span></span><span class="line"><span class="cl"><span class="cp"></span>
+</span></span><span class="line"><span class="cl"><span class="n">foo</span><span class="p">(</span><span class="mi">12345</span><span class="p">);</span>  <span class="c1">// &#34;12345&#34;
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="n">foo</span><span class="p">(</span><span class="n">n</span><span class="p">);</span>      <span class="c1">// &#34;n&#34;
+</span></span></span></code></pre></div><ul>
+<li><code>##</code> 运算符
+运算符后跟参数名，将这个参数的名字作为一个 token 拼接到代码中。</li>
+</ul>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cpp" data-lang="cpp"><span class="line"><span class="cl"><span class="cp">#define def_stack(x) typedef stack_##x{}
+</span></span></span><span class="line"><span class="cl"><span class="cp"></span>
+</span></span><span class="line"><span class="cl"><span class="n">def_stack</span><span class="p">(</span><span class="kt">int</span><span class="p">);</span> <span class="c1">// typedef stack_int{}
+</span></span></span></code></pre></div>
+
+<h4 class="relative group">pragma 
+    <div id="pragma" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#pragma" aria-label="锚点">#</a>
+    </span>        
+    
+</h4>
+<p>结构体对齐。没研究过，先跳过。</p>
+
+
+<h3 class="relative group">泛型 
+    <div id="%E6%B3%9B%E5%9E%8B" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#%E6%B3%9B%E5%9E%8B" aria-label="锚点">#</a>
+    </span>        
+    
+</h3>
+<p>前面说过，可以用宏实现泛型：</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cpp" data-lang="cpp"><span class="line"><span class="cl"><span class="cp">#define CREATE_STACK(T) \
+</span></span></span><span class="line"><span class="cl"><span class="cp">typedef struct stack_##T { \
+</span></span></span><span class="line"><span class="cl"><span class="cp">	T* array; \
+</span></span></span><span class="line"><span class="cl"><span class="cp">	int top; \
+</span></span></span><span class="line"><span class="cl"><span class="cp">} stack_##T\
+</span></span></span><span class="line"><span class="cl"><span class="cp">\
+</span></span></span><span class="line"><span class="cl"><span class="cp">void __init(stack_##T *stack, int capacity) {...}\
+</span></span></span><span class="line"><span class="cl"><span class="cp">void __push(stack_##T *stack, T data) {...}\
+</span></span></span><span class="line"><span class="cl"><span class="cp">...
+</span></span></span></code></pre></div><p>但是太麻烦了</p>
+<ul>
+<li>代码可读性查</li>
+<li>难调试</li>
+<li>需要显式写出类型参数</li>
+<li>手动实例化</li>
+</ul>
+<p>使用模板实现：</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cpp" data-lang="cpp"><span class="line"><span class="cl"><span class="k">template</span><span class="o">&lt;</span><span class="k">typename</span> <span class="n">T</span><span class="o">&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="k">struct</span> <span class="nc">Stack</span><span class="p">{</span>
+</span></span><span class="line"><span class="cl">	<span class="n">T</span><span class="o">*</span> <span class="n">array</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">	<span class="kt">int</span> <span class="n">capacity</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">	<span class="kt">int</span> <span class="n">top</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="p">};</span>
+</span></span><span class="line"><span class="cl"><span class="p">...</span>
+</span></span></code></pre></div><p>好写很多。</p>
+
+
+<h4 class="relative group">concept 
+    <div id="concept" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#concept" aria-label="锚点">#</a>
+    </span>        
+    
+</h4>
+<p>约束类模板和函数模板的模板类型和非类型参数的命名要求。</p>
+<p>比如，限制函数模板不能是指针：</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cpp" data-lang="cpp"><span class="line"><span class="cl"><span class="k">template</span><span class="o">&lt;</span><span class="k">typename</span> <span class="n">T</span><span class="o">&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="k">concept</span> <span class="n">DataAvailable</span> <span class="o">=</span> <span class="o">!</span><span class="n">std</span><span class="o">::</span><span class="n">is_pointer</span><span class="o">&lt;</span><span class="n">T</span><span class="o">&gt;::</span><span class="n">value</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">template</span> <span class="o">&lt;</span><span class="n">DataAvailable</span> <span class="n">T</span><span class="o">&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="kt">void</span> <span class="n">function</span><span class="p">(</span><span class="n">T</span> <span class="n">t</span><span class="p">)</span> <span class="p">{...}</span>
+</span></span></code></pre></div><p>其他写法：</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cpp" data-lang="cpp"><span class="line"><span class="cl"><span class="k">template</span> <span class="o">&lt;</span><span class="k">typename</span> <span class="n">T</span><span class="o">&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="k">requires</span> <span class="n">DataAvilable</span>
+</span></span><span class="line"><span class="cl"><span class="kt">void</span> <span class="n">function</span><span class="p">(</span><span class="n">T</span> <span class="n">t</span><span class="p">)</span> <span class="p">{...}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">template</span> <span class="o">&lt;</span><span class="k">typename</span> <span class="n">T</span><span class="o">&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="kt">void</span> <span class="n">function</span><span class="p">(</span><span class="n">T</span> <span class="n">t</span><span class="p">)</span> <span class="k">requires</span> <span class="n">DataAvilable</span><span class="o">&lt;</span><span class="n">T</span><span class="o">&gt;</span> <span class="p">{...}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="kt">void</span> <span class="nf">function</span><span class="p">(</span><span class="n">DataAvilable</span> <span class="k">auto</span> <span class="n">v</span><span class="p">)</span> <span class="p">{...}</span>
+</span></span></code></pre></div><p>可以用 <code>&amp;&amp;</code> 组合多个约束：</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cpp" data-lang="cpp"><span class="line"><span class="cl"><span class="err">```</span><span class="n">cpp</span>
+</span></span><span class="line"><span class="cl"><span class="k">template</span> <span class="o">&lt;</span><span class="k">typename</span> <span class="n">T</span><span class="o">&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="k">concept</span> <span class="n">signed_integral</span> <span class="o">=</span> <span class="n">integral</span><span class="o">&lt;</span><span class="n">T</span><span class="o">&gt;</span> <span class="o">&amp;&amp;</span> <span class="n">std</span><span class="o">::</span><span class="n">is_signed_v</span><span class="o">&lt;</span><span class="n">T</span><span class="o">&gt;</span><span class="p">;</span>
+</span></span></code></pre></div>
+
+<h4 class="relative group">SFINAE 
+    <div id="sfinae" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#sfinae" aria-label="锚点">#</a>
+    </span>        
+    
+</h4>
+<p>Substitution Failure Is Not An Error</p>
+<p>模板的匹配失败不是错误。在匹配类型失败后，编译器还需要尝试其他的可能性</p>
+
+
+<h4 class="relative group">参考 
+    <div id="%E5%8F%82%E8%80%83-5" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#%E5%8F%82%E8%80%83-5" aria-label="锚点">#</a>
+    </span>        
+    
+</h4>
+<p><a href="https://zhuanlan.zhihu.com/p/266086040" target="_blank">C++20: Concept详解以及个人理解 - 知乎</a></p>
+<p><a href="https://zhuanlan.zhihu.com/p/21314708" target="_blank">C++模板进阶指南：SFINAE - 知乎</a></p>
+<hr>
+
+
+<h3 class="relative group">元编程 Meta programming / constexpr 
+    <div id="%E5%85%83%E7%BC%96%E7%A8%8B-meta-programming--constexpr" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#%E5%85%83%E7%BC%96%E7%A8%8B-meta-programming--constexpr" aria-label="锚点">#</a>
+    </span>        
+    
+</h3>
+<p>在编译期就计算出运行时需要的东西。</p>
+<hr>
+
+
+<h2 class="relative group">面向对象部分 
+    <div id="%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E9%83%A8%E5%88%86" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E9%83%A8%E5%88%86" aria-label="锚点">#</a>
+    </span>        
+    
+</h2>
+
+
+<h3 class="relative group">面向对象概念 
+    <div id="%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E6%A6%82%E5%BF%B5" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E6%A6%82%E5%BF%B5" aria-label="锚点">#</a>
+    </span>        
+    
+</h3>
+
+
+<h3 class="relative group">构造函数 
+    <div id="%E6%9E%84%E9%80%A0%E5%87%BD%E6%95%B0" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#%E6%9E%84%E9%80%A0%E5%87%BD%E6%95%B0" aria-label="锚点">#</a>
+    </span>        
+    
+</h3>
+
+
+<h4 class="relative group">构造函数 
+    <div id="%E6%9E%84%E9%80%A0%E5%87%BD%E6%95%B0-1" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#%E6%9E%84%E9%80%A0%E5%87%BD%E6%95%B0-1" aria-label="锚点">#</a>
+    </span>        
+    
+</h4>
+<p>构造函数有三种：</p>
+<ul>
+<li>无参构造函数</li>
+<li>有参构造函数</li>
+<li>拷贝构造函数</li>
+</ul>
+
+
+<h4 class="relative group">没有自定义构造函数时 
+    <div id="%E6%B2%A1%E6%9C%89%E8%87%AA%E5%AE%9A%E4%B9%89%E6%9E%84%E9%80%A0%E5%87%BD%E6%95%B0%E6%97%B6" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#%E6%B2%A1%E6%9C%89%E8%87%AA%E5%AE%9A%E4%B9%89%E6%9E%84%E9%80%A0%E5%87%BD%E6%95%B0%E6%97%B6" aria-label="锚点">#</a>
+    </span>        
+    
+</h4>
+<p>编译器会提供 默认无参构造函数 和 拷贝构造函数。</p>
+<p>默认的无参构造函数是空函数，什么都不干。</p>
+<p>拷贝构造函数，对所有成员进行浅拷贝。</p>
+
+
+<h3 class="relative group">成员初始化表 
+    <div id="%E6%88%90%E5%91%98%E5%88%9D%E5%A7%8B%E5%8C%96%E8%A1%A8" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#%E6%88%90%E5%91%98%E5%88%9D%E5%A7%8B%E5%8C%96%E8%A1%A8" aria-label="锚点">#</a>
+    </span>        
+    
+</h3>
+
+
+<h3 class="relative group">析构函数 
+    <div id="%E6%9E%90%E6%9E%84%E5%87%BD%E6%95%B0" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#%E6%9E%90%E6%9E%84%E5%87%BD%E6%95%B0" aria-label="锚点">#</a>
+    </span>        
+    
+</h3>
+
+
+<h3 class="relative group">拷贝函数 
+    <div id="%E6%8B%B7%E8%B4%9D%E5%87%BD%E6%95%B0" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#%E6%8B%B7%E8%B4%9D%E5%87%BD%E6%95%B0" aria-label="锚点">#</a>
+    </span>        
+    
+</h3>
+
+
+<h3 class="relative group">拷贝构造函数 
+    <div id="%E6%8B%B7%E8%B4%9D%E6%9E%84%E9%80%A0%E5%87%BD%E6%95%B0" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#%E6%8B%B7%E8%B4%9D%E6%9E%84%E9%80%A0%E5%87%BD%E6%95%B0" aria-label="锚点">#</a>
+    </span>        
+    
+</h3>
+
+
+<h3 class="relative group">移动构造函数 
+    <div id="%E7%A7%BB%E5%8A%A8%E6%9E%84%E9%80%A0%E5%87%BD%E6%95%B0" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#%E7%A7%BB%E5%8A%A8%E6%9E%84%E9%80%A0%E5%87%BD%E6%95%B0" aria-label="锚点">#</a>
+    </span>        
+    
+</h3>
+
+
+<h3 class="relative group">动态内存 
+    <div id="%E5%8A%A8%E6%80%81%E5%86%85%E5%AD%98" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#%E5%8A%A8%E6%80%81%E5%86%85%E5%AD%98" aria-label="锚点">#</a>
+    </span>        
+    
+</h3>
+
+
+<h3 class="relative group">const 成员 
+    <div id="const-%E6%88%90%E5%91%98" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#const-%E6%88%90%E5%91%98" aria-label="锚点">#</a>
+    </span>        
+    
+</h3>
+
+
+<h3 class="relative group">static 成员 
+    <div id="static-%E6%88%90%E5%91%98" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#static-%E6%88%90%E5%91%98" aria-label="锚点">#</a>
+    </span>        
+    
+</h3>
+
+
+<h3 class="relative group">友元 
+    <div id="%E5%8F%8B%E5%85%83" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#%E5%8F%8B%E5%85%83" aria-label="锚点">#</a>
+    </span>        
+    
+</h3>
+<hr>
+
+
+<h3 class="relative group">继承概念 
+    <div id="%E7%BB%A7%E6%89%BF%E6%A6%82%E5%BF%B5" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#%E7%BB%A7%E6%89%BF%E6%A6%82%E5%BF%B5" aria-label="锚点">#</a>
+    </span>        
+    
+</h3>
+<p>目的：基于目标代码的复用</p>
+<p>思想：对事物进行分类。派生类是基类的具体化。把事物（概念）以层次结构表示出来，有利于描述和解决问题。</p>
+<p>可用于：增量开发</p>
+
+
+<h3 class="relative group"> 
+    <div id="heading" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#heading" aria-label="锚点">#</a>
+    </span>        
+    
+</h3>
+
+          
+          
+          
+        </div>
+        
+        
+
+          
+
+          
+
+          
+
+        
+
+        
+        
+
+          
+      </div>
+     
+      
+      
+        
+        
+          
+          
+        
+      <script>
+        var oid = "views_posts\\C\u002b\u002b拾遗\\C\u002b\u002b期末复习.md"
+        var oid_likes = "likes_posts\\C\u002b\u002b拾遗\\C\u002b\u002b期末复习.md"
+      </script>
+      
+      
+      <script type="text/javascript" src="/js/page.min.0860cf4e04fa2d72cc33ddba263083464d48f67de06114529043cb4623319efed4f484fd7f1730df5abea0e2da6f3538855634081d02f2d6e920b956f063e823.js" integrity="sha512-CGDPTgT6LXLMM926JjCDRk1I9n3gYRRSkEPLRiMxnv7U9IT9fxcw31q&#43;oOLabzU4hVY0CB0C8tbpILlW8GPoIw=="></script>
+      
+  
+    </section>
+  <footer class="pt-8 max-w-prose print:hidden">
+
+    
+  
+    
+    
+    
+    <div class="pt-8">
+      <hr class="border-dotted border-neutral-300 dark:border-neutral-600" />
+      <div class="flex justify-between pt-3">
+        <span>
+          
+            <a class="flex group mr-3" href="/posts/%E4%BA%BA%E6%9C%BA%E4%BA%A4%E4%BA%92/lec-7-%E8%AF%84%E4%BC%B0%E6%8A%80%E6%9C%AF-%E7%94%A8%E6%88%B7%E6%B5%8B%E8%AF%95/">
+              <span
+                class="mr-3 text-neutral-700 group-hover:text-primary-600 ltr:inline rtl:hidden dark:text-neutral dark:group-hover:text-primary-400"
+                >&larr;</span
+              >
+              <span
+                class="ml-3 text-neutral-700 group-hover:text-primary-600 ltr:hidden rtl:inline dark:text-neutral dark:group-hover:text-primary-400"
+                >&rarr;</span
+              >
+              <span class="flex flex-col">
+                <span
+                  class="mt-[0.1rem] leading-6 group-hover:underline group-hover:decoration-primary-500"
+                  >Lec-7 评估技术-用户测试</span
+                >
+                <span class="mt-[0.1rem] text-xs text-neutral-500 dark:text-neutral-400">
+                  
+                    <time datetime="2024-12-22T16:13:20-08:00">22 December 2024</time>
+                  
+                </span>
+              </span>
+            </a>
+          
+        </span>
+        <span>
+          
+            <a class="flex text-right group ml-3" href="/posts/c&#43;&#43;%E6%8B%BE%E9%81%97/c&#43;&#43;-%E5%BC%BA%E5%88%B6%E7%B1%BB%E5%9E%8B%E8%BD%AC%E6%8D%A2/">
+              <span class="flex flex-col">
+                <span
+                  class="mt-[0.1rem] leading-6 group-hover:underline group-hover:decoration-primary-500"
+                  >C++ 强制类型转换</span
+                >
+                <span class="mt-[0.1rem] text-xs text-neutral-500 dark:text-neutral-400">
+                  
+                    <time datetime="2024-12-24T15:03:25-08:00">24 December 2024</time>
+                  
+                </span>
+              </span>
+              <span
+                class="ml-3 text-neutral-700 group-hover:text-primary-600 ltr:inline rtl:hidden dark:text-neutral dark:group-hover:text-primary-400"
+                >&rarr;</span
+              >
+              <span
+                class="mr-3 text-neutral-700 group-hover:text-primary-600 ltr:hidden rtl:inline dark:text-neutral dark:group-hover:text-primary-400"
+                >&larr;</span
+              >
+            </a>
+          
+        </span>
+      </div>
+    </div>
+  
+
+
+    
+  </footer>
+</article>
+
+      <div id="top-scroller" class="pointer-events-none absolute top-[110vh] bottom-0 w-12 ltr:right-0 rtl:left-0">
+  <a href="#the-top"
+    class="pointer-events-auto sticky top-[calc(100vh-5.5rem)] flex h-12 w-12 mb-16 items-center justify-center rounded-full bg-neutral/50 text-xl text-neutral-700 hover:text-primary-600 dark:bg-neutral-800/50 dark:text-neutral dark:hover:text-primary-400"
+    aria-label="返回顶部" title="返回顶部">
+    &uarr;
+  </a>
+</div>
+    </main><footer id="site-footer" class="py-10 print:hidden">
+  
+  
+    
+  
+  <div class="flex items-center justify-between">
+
+    
+    
+    <p class="text-sm text-neutral-500 dark:text-neutral-400">
+      @ 2024 Runz Liu
+    </p>
+    
+
+    <div class="flex-col items-center space-x-4">
+      
+      
+      <p class="text-xs text-neutral-500 dark:text-neutral-400">
+        
+        
+        由 <a class="hover:underline hover:decoration-primary-400 hover:text-primary-500"
+          href="https://gohugo.io/" target="_blank" rel="noopener noreferrer">Hugo</a> &amp; <a class="hover:underline hover:decoration-primary-400 hover:text-primary-500"
+          href="https://blowfish.page/" target="_blank" rel="noopener noreferrer">Blowfish</a> 强力驱动
+      </p>
+      
+      
+      
+      
+        <div class="busuanzi-footer text-xs text-neutral-500 dark:text-neutral-400">
+          <span id="busuanzi_container_site_uv">
+            Total Visitors: <span id="busuanzi_value_site_uv"></span>
+          </span>
+        </div>
+      
+    </div> 
+
+
+  </div>
+  <script>
+    
+    mediumZoom(document.querySelectorAll("img:not(.nozoom)"), {
+      margin: 24,
+      background: 'rgba(0,0,0,0.5)',
+      scrollOffset: 0,
+    })
+    
+  </script>
+  
+  
+  <script type="text/javascript" src="/js/process.min.ee03488f19c93c2efb199e2e3014ea5f3cb2ce7d45154adb3399a158cac27ca52831db249ede5bb602700ef87eb02434139de0858af1818ab0fb4182472204a4.js" integrity="sha512-7gNIjxnJPC77GZ4uMBTqXzyyzn1FFUrbM5mhWMrCfKUoMdsknt5btgJwDvh&#43;sCQ0E53ghYrxgYqw&#43;0GCRyIEpA=="></script>
+  
+  
+</footer>
+<div
+  id="search-wrapper"
+  class="invisible fixed inset-0 flex h-screen w-screen cursor-default flex-col bg-neutral-500/50 p-4 backdrop-blur-sm dark:bg-neutral-900/50 sm:p-6 md:p-[10vh] lg:p-[12vh]"
+  data-url="https://huoxj.github.io/"
+  style="z-index:500"
+>
+  <div
+    id="search-modal"
+    class="flex flex-col w-full max-w-3xl min-h-0 mx-auto border rounded-md shadow-lg top-20 border-neutral-200 bg-neutral dark:border-neutral-700 dark:bg-neutral-800"
+  >
+    <header class="relative z-10 flex items-center justify-between flex-none px-2">
+      <form class="flex items-center flex-auto min-w-0">
+        <div class="flex items-center justify-center w-8 h-8 text-neutral-400">
+          
+
+  <span class="relative block icon">
+    <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="search" class="svg-inline--fa fa-search fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z"/></svg>
+
+  </span>
+
+
+        </div>
+        <input
+          type="search"
+          id="search-query"
+          class="flex flex-auto h-12 mx-1 bg-transparent appearance-none focus:outline-dotted focus:outline-2 focus:outline-transparent"
+          placeholder="搜索"
+          tabindex="0"
+        />
+      </form>
+      <button
+        id="close-search-button"
+        class="flex items-center justify-center w-8 h-8 text-neutral-700 hover:text-primary-600 dark:text-neutral dark:hover:text-primary-400"
+        title="关闭 (Esc)"
+      >
+        
+
+  <span class="relative block icon">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path fill="currentColor" d="M310.6 361.4c12.5 12.5 12.5 32.75 0 45.25C304.4 412.9 296.2 416 288 416s-16.38-3.125-22.62-9.375L160 301.3L54.63 406.6C48.38 412.9 40.19 416 32 416S15.63 412.9 9.375 406.6c-12.5-12.5-12.5-32.75 0-45.25l105.4-105.4L9.375 150.6c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0L160 210.8l105.4-105.4c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25l-105.4 105.4L310.6 361.4z"/></svg>
+
+  </span>
+
+
+      </button>
+    </header>
+    <section class="flex-auto px-2 overflow-auto">
+      <ul id="search-results">
+        
+      </ul>
+    </section>
+  </div>
+</div>
+
+  </div>
+</body>
+
+</html>

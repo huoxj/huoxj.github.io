@@ -108,7 +108,7 @@
     
     
     "mainEntityOfPage": "true",
-    "wordCount": "777"
+    "wordCount": "1665"
   }]
   </script>
 
@@ -538,7 +538,7 @@ onload="renderMathInElement(document.body, {
 <div class="flex flex-row flex-wrap items-center">
   
   
-  <time datetime="2024-11-21T12:36:40-08:00">21 November 2024</time><span class="px-2 text-primary-500">&middot;</span><span>777 字</span><span class="px-2 text-primary-500">&middot;</span><span title="预计阅读">2 分钟</span>
+  <time datetime="2024-11-21T12:36:40-08:00">21 November 2024</time><span class="px-2 text-primary-500">&middot;</span><span>1665 字</span><span class="px-2 text-primary-500">&middot;</span><span title="预计阅读">4 分钟</span>
   
 
   
@@ -618,6 +618,24 @@ onload="renderMathInElement(document.body, {
     <li><a href="#成员覆盖">成员覆盖</a></li>
     <li><a href="#构造函数">构造函数</a></li>
     <li><a href="#析构函数">析构函数</a></li>
+    <li><a href="#虚函数">虚函数</a>
+      <ul>
+        <li><a href="#前期绑定">前期绑定</a></li>
+        <li><a href="#动态绑定">动态绑定</a></li>
+        <li><a href="#限制">限制</a></li>
+        <li><a href="#实现">实现</a></li>
+        <li><a href="#关键字">关键字</a>
+          <ul>
+            <li><a href="#final">final</a></li>
+            <li><a href="#override">override</a></li>
+          </ul>
+        </li>
+        <li><a href="#纯虚函数">纯虚函数</a></li>
+        <li><a href="#缺省参数值">缺省参数值</a></li>
+        <li><a href="#虚函数的小总结">虚函数的小总结</a></li>
+        <li><a href="#使用规范">使用规范</a></li>
+      </ul>
+    </li>
     <li><a href="#多继承">多继承</a>
       <ul>
         <li><a href="#成员访问">成员访问</a></li>
@@ -648,6 +666,24 @@ onload="renderMathInElement(document.body, {
     <li><a href="#成员覆盖">成员覆盖</a></li>
     <li><a href="#构造函数">构造函数</a></li>
     <li><a href="#析构函数">析构函数</a></li>
+    <li><a href="#虚函数">虚函数</a>
+      <ul>
+        <li><a href="#前期绑定">前期绑定</a></li>
+        <li><a href="#动态绑定">动态绑定</a></li>
+        <li><a href="#限制">限制</a></li>
+        <li><a href="#实现">实现</a></li>
+        <li><a href="#关键字">关键字</a>
+          <ul>
+            <li><a href="#final">final</a></li>
+            <li><a href="#override">override</a></li>
+          </ul>
+        </li>
+        <li><a href="#纯虚函数">纯虚函数</a></li>
+        <li><a href="#缺省参数值">缺省参数值</a></li>
+        <li><a href="#虚函数的小总结">虚函数的小总结</a></li>
+        <li><a href="#使用规范">使用规范</a></li>
+      </ul>
+    </li>
     <li><a href="#多继承">多继承</a>
       <ul>
         <li><a href="#成员访问">成员访问</a></li>
@@ -749,9 +785,6 @@ onload="renderMathInElement(document.body, {
 </span></span><span class="line"><span class="cl"><span class="k">class</span> <span class="nc">child3</span><span class="o">:</span> <span class="k">private</span> <span class="n">parent</span><span class="p">{};</span>
 </span></span></code></pre></div><p>继承方式决定了父类成员在子类中的访问权限，权限高于继承方式的会被限制。</p>
 <p>比如 protected 继承会将父类中 public 的成员变成 protected。</p>
-<blockquote>
-<p>这个机制很难评。没见过用 public 以外的继承方式的。</p>
-</blockquote>
 
 
 <h3 class="relative group">修改父类成员的访问权限 
@@ -833,7 +866,8 @@ onload="renderMathInElement(document.body, {
     
 </h2>
 <p>构造函数无法继承。</p>
-<p>要手动调用父类构造函数实现初始化，必须在<strong>成员初始化表</strong>里调用。</p>
+<p>子类默认会调用父类默认构造函数。</p>
+<p>要手动调用父类的构造函数实现初始化，必须在<strong>成员初始化表</strong>里调用。</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cpp" data-lang="cpp"><span class="line"><span class="cl"><span class="n">parent</span><span class="p">{</span>
 </span></span><span class="line"><span class="cl"><span class="k">public</span><span class="o">:</span>
 </span></span><span class="line"><span class="cl">	<span class="n">parent</span><span class="p">(){};</span>
@@ -859,6 +893,251 @@ onload="renderMathInElement(document.body, {
 </h2>
 <p>子类无法显式调用父类的析构函数。</p>
 <p>至于调用顺序：子类析构 之后 父类析构。与构造的顺序相反。</p>
+
+
+<h2 class="relative group">虚函数 
+    <div id="%E8%99%9A%E5%87%BD%E6%95%B0" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#%E8%99%9A%E5%87%BD%E6%95%B0" aria-label="锚点">#</a>
+    </span>        
+    
+</h2>
+<p>基类的引用或指针可以引用或指向派生类对象。当调用这个指针或者引用的虚函数时，会调用派生类中定义的虚函数。</p>
+
+
+<h3 class="relative group">前期绑定 
+    <div id="%E5%89%8D%E6%9C%9F%E7%BB%91%E5%AE%9A" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#%E5%89%8D%E6%9C%9F%E7%BB%91%E5%AE%9A" aria-label="锚点">#</a>
+    </span>        
+    
+</h3>
+<p>没用 virtual 修饰的函数，是前期绑定。</p>
+<ul>
+<li>编译时绑定</li>
+<li>根据对象的静态类型</li>
+<li>效率高、灵活性差</li>
+</ul>
+
+
+<h3 class="relative group">动态绑定 
+    <div id="%E5%8A%A8%E6%80%81%E7%BB%91%E5%AE%9A" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#%E5%8A%A8%E6%80%81%E7%BB%91%E5%AE%9A" aria-label="锚点">#</a>
+    </span>        
+    
+</h3>
+<p>用 virtual 修饰的函数，是动态绑定。</p>
+<ul>
+<li>运行时刻</li>
+<li>依据对象的实际类型（动态）</li>
+<li>灵活性高、效率低</li>
+<li>需要用 <code>virtual</code> 显式指出</li>
+</ul>
+
+
+<h3 class="relative group">限制 
+    <div id="%E9%99%90%E5%88%B6" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#%E9%99%90%E5%88%B6" aria-label="锚点">#</a>
+    </span>        
+    
+</h3>
+<p>类的成员函数才可以是虚函数</p>
+<ul>
+<li>静态成员函数不能是虚函数</li>
+<li>内联成员函数不能是虚函数</li>
+<li>构造函数不能是虚函数</li>
+<li>析构函数可以（往往）是虚函数</li>
+</ul>
+
+
+<h3 class="relative group">实现 
+    <div id="%E5%AE%9E%E7%8E%B0" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#%E5%AE%9E%E7%8E%B0" aria-label="锚点">#</a>
+    </span>        
+    
+</h3>
+<p>为每一个类的对象添加一个隐藏成员，这个成员是一个指向<strong>虚函数表</strong>的指针。</p>
+<p>而虚函数表存放了这个类所有的虚函数。如果虚函数在这个类中重定义了，表里就放重定义的函数，否则放基类的函数。</p>
+
+
+<h3 class="relative group">关键字 
+    <div id="%E5%85%B3%E9%94%AE%E5%AD%97" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#%E5%85%B3%E9%94%AE%E5%AD%97" aria-label="锚点">#</a>
+    </span>        
+    
+</h3>
+
+
+<h4 class="relative group">final 
+    <div id="final" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#final" aria-label="锚点">#</a>
+    </span>        
+    
+</h4>
+<p>这个函数无法被重写。</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cpp" data-lang="cpp"><span class="line"><span class="cl"><span class="k">class</span> <span class="nc">Base</span><span class="p">{</span>
+</span></span><span class="line"><span class="cl">	<span class="k">virtual</span> <span class="kt">void</span> <span class="nf">foo</span><span class="p">(</span><span class="kt">int</span><span class="p">)</span> <span class="k">final</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="p">};</span>
+</span></span><span class="line"><span class="cl"><span class="k">class</span> <span class="nc">Derived</span><span class="o">:</span> <span class="n">Base</span><span class="p">{</span>
+</span></span><span class="line"><span class="cl">	<span class="kt">void</span> <span class="nf">foo</span><span class="p">(</span><span class="kt">int</span><span class="p">);</span>  <span class="c1">// wrong! foo is final
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="p">};</span>
+</span></span></code></pre></div>
+
+<h4 class="relative group">override 
+    <div id="override" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#override" aria-label="锚点">#</a>
+    </span>        
+    
+</h4>
+<p>显式声明这个函数是基类某个虚函数的重写，参数、返回值等属性必须完全一致（访问权限可以不一样）。</p>
+<p>是可选的关键字，也就是说，override 删掉也能跑。
+但建议加上，以防止错误。</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cpp" data-lang="cpp"><span class="line"><span class="cl"><span class="k">struct</span> <span class="nc">B</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl"><span class="k">virtual</span> <span class="kt">void</span> <span class="nf">f1</span><span class="p">(</span><span class="kt">int</span><span class="p">)</span> <span class="k">const</span> <span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="k">virtual</span> <span class="kt">void</span> <span class="nf">f2</span> <span class="p">();</span>
+</span></span><span class="line"><span class="cl"><span class="kt">void</span> <span class="nf">f3</span> <span class="p">()</span> <span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="p">};</span>
+</span></span><span class="line"><span class="cl"><span class="k">struct</span> <span class="nc">D</span><span class="o">:</span> <span class="n">B</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl"><span class="kt">void</span> <span class="nf">f1</span><span class="p">(</span><span class="kt">int</span><span class="p">)</span> <span class="k">const</span> <span class="k">override</span> <span class="p">;</span>     <span class="c1">// correct
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="kt">void</span> <span class="nf">f2</span><span class="p">(</span><span class="kt">int</span><span class="p">)</span> <span class="k">override</span> <span class="p">;</span>           <span class="c1">// wrong: parameter dosent match
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="kt">void</span> <span class="nf">f3</span> <span class="p">()</span> <span class="k">override</span> <span class="p">;</span>             <span class="c1">// wrong: f3 is not virtual
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="kt">void</span> <span class="nf">f4</span> <span class="p">()</span> <span class="k">override</span> <span class="p">;</span>             <span class="c1">// wrong: no func named f4
+</span></span></span></code></pre></div>
+
+<h3 class="relative group">纯虚函数 
+    <div id="%E7%BA%AF%E8%99%9A%E5%87%BD%E6%95%B0" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#%E7%BA%AF%E8%99%9A%E5%87%BD%E6%95%B0" aria-label="锚点">#</a>
+    </span>        
+    
+</h3>
+<p>接口。基类函数只提供声明，不提供实现。派生类必须重写这个函数接口。</p>
+<p>在虚函数原型后增加 <code>=0</code> 来声明。</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cpp" data-lang="cpp"><span class="line"><span class="cl"><span class="k">class</span> <span class="nc">Base</span><span class="p">{</span>
+</span></span><span class="line"><span class="cl">	<span class="k">virtual</span> <span class="kt">void</span> <span class="nf">foo</span><span class="p">()</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="p">};</span>
+</span></span><span class="line"><span class="cl"><span class="k">class</span> <span class="nc">Derived</span><span class="o">:</span> <span class="n">Base</span><span class="p">{</span>
+</span></span><span class="line"><span class="cl">	<span class="kt">void</span> <span class="nf">foo</span><span class="p">()</span> <span class="k">override</span><span class="p">{</span>
+</span></span><span class="line"><span class="cl">		<span class="c1">// implementation
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>	<span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></div>
+
+<h3 class="relative group">缺省参数值 
+    <div id="%E7%BC%BA%E7%9C%81%E5%8F%82%E6%95%B0%E5%80%BC" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#%E7%BC%BA%E7%9C%81%E5%8F%82%E6%95%B0%E5%80%BC" aria-label="锚点">#</a>
+    </span>        
+    
+</h3>
+<ul>
+<li>不要重新定义继承而来的缺省参数值</li>
+</ul>
+<p>缺省参数值是在编译期确定的（静态绑定），不会进行动态绑定。所以派生类在没指定缺省参数时，会根据当前指针的类型来静态确定缺省参数值。</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cpp" data-lang="cpp"><span class="line"><span class="cl"><span class="k">class</span> <span class="nc">Base</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">	<span class="k">virtual</span> <span class="kt">void</span> <span class="nf">foo</span><span class="p">(</span><span class="kt">int</span> <span class="n">x</span> <span class="o">=</span> <span class="mi">0</span><span class="p">)</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="p">};</span>
+</span></span><span class="line"><span class="cl"><span class="k">class</span> <span class="nc">Derived</span><span class="o">:</span> <span class="n">Base</span><span class="p">{</span>
+</span></span><span class="line"><span class="cl">	<span class="kt">void</span> <span class="nf">foo</span><span class="p">(</span><span class="kt">int</span> <span class="n">x</span> <span class="o">=</span> <span class="mi">1</span><span class="p">)</span> <span class="p">{</span> <span class="n">cout</span><span class="o">&lt;&lt;</span><span class="n">x</span><span class="p">;</span> <span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="p">};</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">Base</span><span class="o">*</span> <span class="n">ptr</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Derived</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl"><span class="n">ptr</span><span class="o">-&gt;</span><span class="n">foo</span><span class="p">();</span>      <span class="c1">// 0
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="n">ptr</span><span class="o">-&gt;</span><span class="n">foo</span><span class="p">(</span><span class="mi">100</span><span class="p">);</span>   <span class="c1">// 100
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="n">Derived</span><span class="o">*</span> <span class="n">ptr_d</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Derived</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl"><span class="n">ptr_d</span><span class="o">-&gt;</span><span class="n">foo</span><span class="p">();</span>    <span class="c1">// 1
+</span></span></span></code></pre></div>
+
+<h3 class="relative group">虚函数的小总结 
+    <div id="%E8%99%9A%E5%87%BD%E6%95%B0%E7%9A%84%E5%B0%8F%E6%80%BB%E7%BB%93" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#%E8%99%9A%E5%87%BD%E6%95%B0%E7%9A%84%E5%B0%8F%E6%80%BB%E7%BB%93" aria-label="锚点">#</a>
+    </span>        
+    
+</h3>
+<ul>
+<li>纯虚函数
+<ul>
+<li>只有函数接口会被继承</li>
+<li>子类<strong>必须</strong>继承函数接口</li>
+<li>（必须）提供实现代码</li>
+</ul>
+</li>
+<li>一般虚函数
+<ul>
+<li>函数的接口及缺省实现代码都会被继承</li>
+<li>子类<strong>必须</strong>继承函数接口</li>
+<li>可以继承缺省实现代码</li>
+</ul>
+</li>
+<li>非虚函数
+<ul>
+<li>函数的接口和其实现代码都会被继承</li>
+<li>必须同时继承接口和实现代码</li>
+</ul>
+</li>
+</ul>
+
+
+<h3 class="relative group">使用规范 
+    <div id="%E4%BD%BF%E7%94%A8%E8%A7%84%E8%8C%83" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#%E4%BD%BF%E7%94%A8%E8%A7%84%E8%8C%83" aria-label="锚点">#</a>
+    </span>        
+    
+</h3>
+<ul>
+<li>确定 public 继承，是真正意义的“is_a”关系</li>
+<li>不要定义与继承而来的非虚成员函数同名的成员函数</li>
+<li>明智地运用 private 继承
+<ul>
+<li>需要使用基类中的 protected 成员，或重载 virtual function</li>
+<li>不希望一个基类被访问派生类的一方使用</li>
+</ul>
+</li>
+</ul>
 
 
 <h2 class="relative group">多继承 

@@ -106,7 +106,7 @@
     
     
     "mainEntityOfPage": "true",
-    "wordCount": "579"
+    "wordCount": "1016"
   }]
   </script>
 
@@ -536,7 +536,7 @@ onload="renderMathInElement(document.body, {
 <div class="flex flex-row flex-wrap items-center">
   
   
-  <time datetime="2024-11-20T10:34:25-08:00">20 November 2024</time><span class="px-2 text-primary-500">&middot;</span><span>579 字</span><span class="px-2 text-primary-500">&middot;</span><span title="预计阅读">2 分钟</span>
+  <time datetime="2024-11-20T10:34:25-08:00">20 November 2024</time><span class="px-2 text-primary-500">&middot;</span><span>1016 字</span><span class="px-2 text-primary-500">&middot;</span><span title="预计阅读">3 分钟</span>
   
 
   
@@ -619,6 +619,12 @@ onload="renderMathInElement(document.body, {
         <li><a href="#const-成员">const 成员</a></li>
       </ul>
     </li>
+    <li><a href="#友元">友元</a>
+      <ul>
+        <li><a href="#友元类">友元类</a></li>
+        <li><a href="#友元函数">友元函数</a></li>
+      </ul>
+    </li>
   </ul>
 </nav>
   </div>
@@ -643,6 +649,12 @@ onload="renderMathInElement(document.body, {
           </ul>
         </li>
         <li><a href="#const-成员">const 成员</a></li>
+      </ul>
+    </li>
+    <li><a href="#友元">友元</a>
+      <ul>
+        <li><a href="#友元类">友元类</a></li>
+        <li><a href="#友元函数">友元函数</a></li>
       </ul>
     </li>
   </ul>
@@ -809,6 +821,95 @@ onload="renderMathInElement(document.body, {
 </span></span></code></pre></div><p>其原理很简单，就是将成员函数的 this 指针加上 const 限定：</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cpp" data-lang="cpp"><span class="line"><span class="cl"><span class="kt">void</span> <span class="nf">get</span><span class="p">();</span>        <span class="o">&lt;=&gt;</span>  <span class="kt">void</span> <span class="n">get</span><span class="p">(</span><span class="n">Test</span> <span class="o">*</span><span class="k">this</span><span class="p">);</span> 
 </span></span><span class="line"><span class="cl"><span class="kt">void</span> <span class="nf">get</span><span class="p">()</span> <span class="k">const</span><span class="p">;</span>  <span class="o">&lt;=&gt;</span>  <span class="kt">void</span> <span class="n">get</span><span class="p">(</span><span class="k">const</span> <span class="n">Test</span> <span class="o">*</span><span class="k">this</span><span class="p">);</span>
+</span></span></code></pre></div>
+
+<h2 class="relative group">友元 
+    <div id="%E5%8F%8B%E5%85%83" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#%E5%8F%8B%E5%85%83" aria-label="锚点">#</a>
+    </span>        
+    
+</h2>
+<p>做朋友。破坏类原有的封装性，使外部能够在尽可能少的改动下，从一个类的外部访问这个类的私有成员。</p>
+
+
+<h3 class="relative group">友元类 
+    <div id="%E5%8F%8B%E5%85%83%E7%B1%BB" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#%E5%8F%8B%E5%85%83%E7%B1%BB" aria-label="锚点">#</a>
+    </span>        
+    
+</h3>
+<p>A 指定 类B 是朋友。B 中就可以随意访问 A 的成员了。</p>
+<p>注意，友元类要处理声明顺序的问题，看代码第一行。</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cpp" data-lang="cpp"><span class="line"><span class="cl"><span class="k">class</span> <span class="nc">B</span><span class="p">;</span> <span class="c1">// A 声明友元需要 B 的定义，B 也需要访问 A 的成员。所以先把 B 声明在这里，方便 A 使用。
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>
+</span></span><span class="line"><span class="cl"><span class="k">class</span> <span class="nc">A</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">	<span class="k">friend</span> <span class="k">class</span> <span class="nc">B</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="k">private</span><span class="o">:</span>
+</span></span><span class="line"><span class="cl">	<span class="kt">int</span> <span class="n">x</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">	<span class="k">static</span> <span class="kt">int</span> <span class="n">y</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">	<span class="kt">void</span> <span class="nf">foo</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl"><span class="p">};</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">class</span> <span class="nc">B</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">	<span class="n">A</span> <span class="n">a</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">	<span class="kt">void</span> <span class="nf">f</span><span class="p">()</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">		<span class="n">a</span><span class="p">.</span><span class="n">x</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">		<span class="n">A</span><span class="o">::</span><span class="n">y</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">		<span class="n">foo</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl">	<span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="p">};</span>
+</span></span></code></pre></div>
+
+<h3 class="relative group">友元函数 
+    <div id="%E5%8F%8B%E5%85%83%E5%87%BD%E6%95%B0" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#%E5%8F%8B%E5%85%83%E5%87%BD%E6%95%B0" aria-label="锚点">#</a>
+    </span>        
+    
+</h3>
+<p>首先是友元成员函数。类 A 和 类 B 的一个成员函数 foo 做朋友。函数内部能随意访问 A 的私有成员，但函数之外都不行。</p>
+<p>注意几点：</p>
+<ul>
+<li>依赖顺序</li>
+<li>foo 的参数只能是 A 的指针或者引用，因为此时 A 只是有了个名字，不知道占空间大小</li>
+<li>friend 定义友元函数语句中，函数前要加类限定符</li>
+</ul>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cpp" data-lang="cpp"><span class="line"><span class="cl"><span class="k">class</span> <span class="nc">A</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="k">class</span> <span class="nc">B</span><span class="p">{</span>
+</span></span><span class="line"><span class="cl">	<span class="kt">void</span> <span class="nf">foo</span><span class="p">(</span><span class="n">A</span> <span class="o">&amp;</span><span class="n">a</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">		<span class="n">a</span><span class="p">.</span><span class="n">x</span><span class="p">;</span>  <span class="c1">// okay
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>	<span class="p">}</span>
+</span></span><span class="line"><span class="cl">	<span class="kt">void</span> <span class="nf">f</span><span class="p">(</span><span class="n">A</span> <span class="o">&amp;</span><span class="n">a</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">		<span class="n">a</span><span class="p">.</span><span class="n">x</span><span class="p">;</span>  <span class="c1">// invalid
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>	<span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="k">class</span> <span class="nc">A</span><span class="p">{</span>
+</span></span><span class="line"><span class="cl">	<span class="k">friend</span> <span class="kt">void</span> <span class="n">B</span><span class="o">::</span><span class="n">foo</span><span class="p">(</span><span class="n">A</span> <span class="o">&amp;</span><span class="n">a</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">	<span class="kt">int</span> <span class="n">x</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="p">};</span>
+</span></span></code></pre></div><p>然后是友元全局函数。类 A 和外部函数 foo 做朋友。foo 能访问 A 所有东西。</p>
+<ul>
+<li>依赖顺序随意。当然，如果函数参数有类的话还是要先声明，如代码中的例子</li>
+<li>函数参数包含类对象时，可以不为指针和引用</li>
+<li>多用于实现<strong>类运算符重载</strong></li>
+</ul>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cpp" data-lang="cpp"><span class="line"><span class="cl"><span class="k">class</span> <span class="nc">A</span><span class="p">{</span>
+</span></span><span class="line"><span class="cl">	<span class="k">friend</span> <span class="kt">void</span> <span class="nf">foo</span><span class="p">(</span><span class="n">A</span> <span class="n">a</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="p">};</span>
+</span></span><span class="line"><span class="cl"><span class="kt">void</span> <span class="nf">foo</span><span class="p">(</span><span class="n">A</span> <span class="n">a</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
 </span></span></code></pre></div>
           
           

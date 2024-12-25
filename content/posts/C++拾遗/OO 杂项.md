@@ -86,3 +86,73 @@ void get();        <=>  void get(Test *this);
 void get() const;  <=>  void get(const Test *this);
 ```
 
+## 友元
+
+做朋友。破坏类原有的封装性，使外部能够在尽可能少的改动下，从一个类的外部访问这个类的私有成员。
+
+### 友元类
+
+A 指定 类B 是朋友。B 中就可以随意访问 A 的成员了。
+
+注意，友元类要处理声明顺序的问题，看代码第一行。
+
+```cpp
+class B; // A 声明友元需要 B 的定义，B 也需要访问 A 的成员。所以先把 B 声明在这里，方便 A 使用。
+
+class A {
+	friend class B;
+private:
+	int x;
+	static int y;
+	void foo();
+};
+
+class B {
+	A a;
+	void f() {
+		a.x;
+		A::y;
+		foo();
+	}
+};
+```
+
+### 友元函数
+
+首先是友元成员函数。类 A 和 类 B 的一个成员函数 foo 做朋友。函数内部能随意访问 A 的私有成员，但函数之外都不行。
+
+注意几点：
+- 依赖顺序
+- foo 的参数只能是 A 的指针或者引用，因为此时 A 只是有了个名字，不知道占空间大小
+- friend 定义友元函数语句中，函数前要加类限定符
+
+```cpp
+class A;
+class B{
+	void foo(A &a) {
+		a.x;  // okay
+	}
+	void f(A &a) {
+		a.x;  // invalid
+	}
+}
+class A{
+	friend void B::foo(A &a);
+	int x;
+};
+
+```
+
+然后是友元全局函数。类 A 和外部函数 foo 做朋友。foo 能访问 A 所有东西。
+- 依赖顺序随意。当然，如果函数参数有类的话还是要先声明，如代码中的例子
+- 函数参数包含类对象时，可以不为指针和引用
+- 多用于实现**类运算符重载**
+
+```cpp
+class A{
+	friend void foo(A a);
+};
+void foo(A a) {
+
+}
+```
