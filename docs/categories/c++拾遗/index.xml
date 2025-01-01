@@ -8,8 +8,18 @@
     <language>zh</language>
     <managingEditor>huoxj_runz@gmail.com (Runz Liu)</managingEditor>
     <webMaster>huoxj_runz@gmail.com (Runz Liu)</webMaster>
-    <copyright>@ 2024 Runz Liu</copyright>
-    <lastBuildDate>Tue, 24 Dec 2024 15:03:25 -0800</lastBuildDate><atom:link href="https://huoxj.github.io/categories/c++%E6%8B%BE%E9%81%97/index.xml" rel="self" type="application/rss+xml" />
+    <copyright>@ 2025 Runz Liu</copyright>
+    <lastBuildDate>Sun, 29 Dec 2024 08:41:10 -0800</lastBuildDate><atom:link href="https://huoxj.github.io/categories/c++%E6%8B%BE%E9%81%97/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>异常处理</title>
+      <link>https://huoxj.github.io/posts/c&#43;&#43;%E6%8B%BE%E9%81%97/%E5%BC%82%E5%B8%B8%E5%A4%84%E7%90%86/</link>
+      <pubDate>Sun, 29 Dec 2024 08:41:10 -0800</pubDate>
+      <author>huoxj_runz@gmail.com (Runz Liu)</author>
+      <guid>https://huoxj.github.io/posts/c&#43;&#43;%E6%8B%BE%E9%81%97/%E5%BC%82%E5%B8%B8%E5%A4%84%E7%90%86/</guid>
+      <description>传统的方法是，使用或者来标识是否发生异常、发生什么异常。 函数检查参数或者返回值来确定异常，并。 这样需要逐层返回。并且对于一些特殊的情况无法处理，比如构造函数发生异常。 &amp;mdash; 语句序列中是否发生异&amp;hellip;</description>
+      
+    </item>
+    
     <item>
       <title>C&#43;&#43; 强制类型转换</title>
       <link>https://huoxj.github.io/posts/c&#43;&#43;%E6%8B%BE%E9%81%97/c&#43;&#43;-%E5%BC%BA%E5%88%B6%E7%B1%BB%E5%9E%8B%E8%BD%AC%E6%8D%A2/</link>

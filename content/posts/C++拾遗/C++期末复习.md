@@ -466,7 +466,7 @@ printf 只知道你传入了 str 格式串。一旦扫描到了 %x，就将对�
 - 泄露地址
 - 栈上地址任意写入（通过输入 %n）
 
---
+---
 
 ### 函数重载
 
@@ -695,6 +695,7 @@ struct Stack{
 约束类模板和函数模板的模板类型和非类型参数的命名要求。
 
 比如，限制函数模板不能是指针：
+
 ```cpp
 template<typename T>
 concept DataAvailable = !std::is_pointer<T>::value;
@@ -704,6 +705,7 @@ void function(T t) {...}
 ```
 
 其他写法：
+
 ```cpp
 template <typename T>
 requires DataAvilable
@@ -728,6 +730,10 @@ concept signed_integral = integral<T> && std::is_signed_v<T>;
 Substitution Failure Is Not An Error
 
 模板的匹配失败不是错误。在匹配类型失败后，编译器还需要尝试其他的可能性
+
+#### 特化
+
+[C++ 模板 全特化与偏特化 - 知乎](https://zhuanlan.zhihu.com/p/346400616)
 
 #### 参考
 
@@ -756,9 +762,14 @@ Substitution Failure Is Not An Error
 - 有参构造函数
 - 拷贝构造函数
 
-#### 没有自定义构造函数时
+#### 默认提供
 
-编译器会提供 默认无参构造函数 和 拷贝构造函数。
+编译器会提供 **默认无参构造函数** 和 **拷贝构造函数**。
+
+```cpp
+Empty();
+Empty(const Empty&);
+```
 
 默认的无参构造函数是空函数，什么都不干。
 
@@ -768,7 +779,7 @@ Substitution Failure Is Not An Error
 
 ### 析构函数
 
-### 拷贝函数
+编译器默认提供空的析构函数。
 
 ### 拷贝构造函数
 
@@ -782,6 +793,25 @@ Substitution Failure Is Not An Error
 
 ### 友元
 
+#### 友元类
+
+#### 友元函数
+
+友元函数不是类的成员函数！！！
+
+### 编译器默认提供的函数
+
+```cpp
+class Empty {
+	Empty();
+	Empty(const Empty&);
+	~Empty();
+	Empty& operator=(const Empty&);
+	Empty* operator &();
+	const Empty* operator &() const;
+}
+```
+
 ---
 
 ### 继承概念
@@ -792,4 +822,68 @@ Substitution Failure Is Not An Error
 
 可用于：增量开发
 
-### 
+--- 
+### 多态
+
+同一论域中一个元素可有多种解释
+-  提高语言灵活性
+-  程序设计语言
+	- 一名多用——函数重载
+	- 类属——模板
+	- OO 程序设计——虚函数
+
+### 运算符重载
+
+- 动机：使用操作符的语义。为自定义数据类型提供类似内置类型的操作方式。
+- 作用：提高可读性、可扩充性
+
+{{< article link="/posts/C++拾遗/运算符重载/" >}}
+
+### 对象切片
+
+将派生类对象赋值给基类对象时，会发生对象切片。派生类对象会变成基类，只有其基类部分的成员被保留。
+
+```cpp
+class Base{
+public:
+	virtual void foo() { cout<<"Base"; }
+};
+class Derived: public Base{
+public:  
+	void foo() override { cout<<"Derived"; }
+}
+
+void function(Base base){
+	base.foo();
+}
+
+Derived derived;
+
+function(derived);  // Base
+```
+
+从结果上来说，把 derived 的数据赋给一个 base 对象的内存是不现实的，因为一般来说 sizeof Derived 比 sizeof Base 大。
+
+避免发生切片的方法是使用引用或者指针。
+
+```cpp
+void function(Base& base){  // use Reference
+	base.foo();
+}
+
+Derived derived;
+
+function(derived);  // Derived
+```
+
+---
+
+## 其他
+
+### 异常处理
+
+{{< article link="/posts/C++拾遗/异常处理/" >}}
+
+### 右值引用
+
+{{< article link="/posts/C++拾遗/移动语义与右值引用/" >}}

@@ -11,7 +11,7 @@
   <title>Lec-7 评估技术-用户测试 &middot; Runz&#39;s blog</title>
   <meta name="title" content="Lec-7 评估技术-用户测试 &middot; Runz&#39;s blog" />
   
-  
+  <meta name="description" content="用户测试主要是指在测量典型用户的情况，目标是获取的性能数据来评价系统的可用性，适合对原型和现有系统进行评估。 1. 决定评估需要完成的总体目标 2. 发掘需要回答的具体问题 3. 选择用于回答具体问题..." />
   
   
   
@@ -71,6 +71,7 @@
   <meta property="og:url" content="https://huoxj.github.io/posts/%E4%BA%BA%E6%9C%BA%E4%BA%A4%E4%BA%92/lec-7-%E8%AF%84%E4%BC%B0%E6%8A%80%E6%9C%AF-%E7%94%A8%E6%88%B7%E6%B5%8B%E8%AF%95/">
   <meta property="og:site_name" content="Runz&#39;s blog">
   <meta property="og:title" content="Lec-7 评估技术-用户测试">
+  <meta property="og:description" content="用户测试主要是指在测量典型用户的情况，目标是获取的性能数据来评价系统的可用性，适合对原型和现有系统进行评估。 1. 决定评估需要完成的总体目标 2. 发掘需要回答的具体问题 3. 选择用于回答具体问题…">
   <meta property="og:locale" content="zh">
   <meta property="og:type" content="article">
     <meta property="article:section" content="posts">
@@ -80,6 +81,7 @@
   
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="Lec-7 评估技术-用户测试">
+  <meta name="twitter:description" content="用户测试主要是指在测量典型用户的情况，目标是获取的性能数据来评价系统的可用性，适合对原型和现有系统进行评估。 1. 决定评估需要完成的总体目标 2. 发掘需要回答的具体问题 3. 选择用于回答具体问题…">
 
   
   <script type="application/ld+json">
@@ -90,7 +92,7 @@
     "name": "Lec-7 评估技术-用户测试",
     "headline": "Lec-7 评估技术-用户测试",
     
-    
+    "abstract": "用户测试主要是指在测量典型用户的情况，目标是获取的性能数据来评价系统的可用性，适合对原型和现有系统进行评估。 1. 决定评估需要完成的总体目标 2. 发掘需要回答的具体问题 3. 选择用于回答具体问题\u0026hellip;",
     "inLanguage": "zh",
     "url" : "https:\/\/huoxj.github.io\/posts\/%E4%BA%BA%E6%9C%BA%E4%BA%A4%E4%BA%92\/lec-7-%E8%AF%84%E4%BC%B0%E6%8A%80%E6%9C%AF-%E7%94%A8%E6%88%B7%E6%B5%8B%E8%AF%95\/",
     "author" : {
@@ -106,7 +108,7 @@
     
     
     "mainEntityOfPage": "true",
-    "wordCount": "0"
+    "wordCount": "918"
   }]
   </script>
 
@@ -515,7 +517,11 @@ onload="renderMathInElement(document.body, {
 
 
 
+  
 
+
+
+  
 
 
 
@@ -532,7 +538,7 @@ onload="renderMathInElement(document.body, {
 <div class="flex flex-row flex-wrap items-center">
   
   
-  <time datetime="2024-12-22T16:13:20-08:00">22 December 2024</time>
+  <time datetime="2024-12-22T16:13:20-08:00">22 December 2024</time><span class="px-2 text-primary-500">&middot;</span><span>918 字</span><span class="px-2 text-primary-500">&middot;</span><span title="预计阅读">2 分钟</span>
   
 
   
@@ -588,7 +594,111 @@ onload="renderMathInElement(document.body, {
   
   <section class="flex flex-col max-w-full mt-0 prose dark:prose-invert lg:flex-row">
     
-    
+     <div
+      class="order-first lg:ml-auto px-0 lg:order-last ltr:lg:pl-8 rtl:lg:pr-8">
+      <div class="toc ltr:pl-5 rtl:pr-5 print:hidden lg:sticky lg:top-[140px]">
+
+         <details open id="TOCView"
+  class="toc-right mt-0 overflow-y-scroll overscroll-contain scrollbar-thin scrollbar-track-neutral-200 scrollbar-thumb-neutral-400 dark:scrollbar-track-neutral-800 dark:scrollbar-thumb-neutral-600 rounded-lg ltr:-ml-5 ltr:pl-5 rtl:-mr-5 rtl:pr-5 hidden lg:block">
+  <summary
+    class="block py-1 text-lg font-semibold cursor-pointer bg-neutral-100 text-neutral-800 ltr:-ml-5 ltr:pl-5 rtl:-mr-5 rtl:pr-5 dark:bg-neutral-700 dark:text-neutral-100 lg:hidden">
+    目录
+  </summary>
+  <div
+    class="min-w-[220px] py-2 border-dotted ltr:-ml-5 ltr:border-l ltr:pl-5 rtl:-mr-5 rtl:border-r rtl:pr-5 dark:border-neutral-600">
+    <nav id="TableOfContents">
+  <ul>
+    <li><a href="#decide-评估框架">DECIDE 评估框架</a>
+      <ul>
+        <li><a href="#六个步骤">六个步骤</a></li>
+        <li><a href="#1-确定目标">1. 确定目标</a></li>
+        <li><a href="#2-发掘问题">2. 发掘问题</a></li>
+        <li><a href="#3-选择评估范型和技术">3. 选择评估范型和技术</a></li>
+        <li><a href="#4-明确实际问题">4. 明确实际问题</a>
+          <ul>
+            <li><a href="#选择参与者">选择参与者</a></li>
+          </ul>
+        </li>
+        <li><a href="#5-处理道德问题">5. 处理道德问题</a>
+          <ul>
+            <li><a href="#指导原则">指导原则</a></li>
+          </ul>
+        </li>
+        <li><a href="#6-评估解释并表示数据">6. 评估、解释并表示数据</a></li>
+      </ul>
+    </li>
+    <li><a href="#小规模试验">小规模试验</a></li>
+    <li><a href="#可用性问题分级">可用性问题分级</a></li>
+  </ul>
+</nav>
+  </div>
+</details>
+<details class="toc-inside mt-0 overflow-hidden rounded-lg ltr:-ml-5 ltr:pl-5 rtl:-mr-5 rtl:pr-5 lg:hidden">
+  <summary
+    class="py-1 text-lg font-semibold cursor-pointer bg-neutral-100 text-neutral-800 ltr:-ml-5 ltr:pl-5 rtl:-mr-5 rtl:pr-5 dark:bg-neutral-700 dark:text-neutral-100 lg:hidden">
+    目录
+  </summary>
+  <div
+    class="py-2 border-dotted border-neutral-300 ltr:-ml-5 ltr:border-l ltr:pl-5 rtl:-mr-5 rtl:border-r rtl:pr-5 dark:border-neutral-600">
+    <nav id="TableOfContents">
+  <ul>
+    <li><a href="#decide-评估框架">DECIDE 评估框架</a>
+      <ul>
+        <li><a href="#六个步骤">六个步骤</a></li>
+        <li><a href="#1-确定目标">1. 确定目标</a></li>
+        <li><a href="#2-发掘问题">2. 发掘问题</a></li>
+        <li><a href="#3-选择评估范型和技术">3. 选择评估范型和技术</a></li>
+        <li><a href="#4-明确实际问题">4. 明确实际问题</a>
+          <ul>
+            <li><a href="#选择参与者">选择参与者</a></li>
+          </ul>
+        </li>
+        <li><a href="#5-处理道德问题">5. 处理道德问题</a>
+          <ul>
+            <li><a href="#指导原则">指导原则</a></li>
+          </ul>
+        </li>
+        <li><a href="#6-评估解释并表示数据">6. 评估、解释并表示数据</a></li>
+      </ul>
+    </li>
+    <li><a href="#小规模试验">小规模试验</a></li>
+    <li><a href="#可用性问题分级">可用性问题分级</a></li>
+  </ul>
+</nav>
+  </div>
+</details>
+
+<script>
+
+  var margin = 200;
+  var marginError = 50;
+
+  (function () {
+    var $window = $(window);
+    var $toc = $('#TOCView');
+    var tocHeight = $toc.height();
+
+    function onResize() {
+      var windowAndMarginHeight = $window.height() - margin;
+      if(tocHeight >= windowAndMarginHeight) {
+        $toc.css("overflow-y", "scroll")
+        $toc.css("max-height", (windowAndMarginHeight + marginError) + "px")
+      } else {
+        $toc.css("overflow-y", "hidden")
+        $toc.css("max-height", "9999999px")
+      }
+    }
+
+    $window.on('resize', onResize);
+    $(document).ready(onResize);
+  })();
+
+
+
+</script>
+   </div>
+      </div>
+      
 
       <div class="min-w-0 min-h-0 max-w-fit">
         
@@ -596,7 +706,263 @@ onload="renderMathInElement(document.body, {
 
 
         <div class="article-content max-w-prose mb-20">
-          
+          <p>用户测试主要是指在<strong>受控环境中</strong>测量典型用户<strong>执行典型任务</strong>的情况，目标是获取<strong>客观</strong>的性能数据来评价系统的可用性，适合对原型和现有系统进行评估。</p>
+
+
+<h2 class="relative group">DECIDE 评估框架 
+    <div id="decide-%E8%AF%84%E4%BC%B0%E6%A1%86%E6%9E%B6" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#decide-%E8%AF%84%E4%BC%B0%E6%A1%86%E6%9E%B6" aria-label="锚点">#</a>
+    </span>        
+    
+</h2>
+
+
+<h3 class="relative group">六个步骤 
+    <div id="%E5%85%AD%E4%B8%AA%E6%AD%A5%E9%AA%A4" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#%E5%85%AD%E4%B8%AA%E6%AD%A5%E9%AA%A4" aria-label="锚点">#</a>
+    </span>        
+    
+</h3>
+<ol>
+<li>决定评估需要完成的总体目标</li>
+<li>发掘需要回答的具体问题</li>
+<li>选择用于回答具体问题的评估范型和技术</li>
+<li>标识必须解决的实际问题，如测试用户的选择</li>
+<li>决定如何处理有关道德的问题</li>
+<li>评估解释并表示数据</li>
+</ol>
+
+
+<h3 class="relative group">1. 确定目标 
+    <div id="1-%E7%A1%AE%E5%AE%9A%E7%9B%AE%E6%A0%87" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#1-%E7%A1%AE%E5%AE%9A%E7%9B%AE%E6%A0%87" aria-label="锚点">#</a>
+    </span>        
+    
+</h3>
+<p>评估目标决定了评估过程，影响<strong>评估范型</strong>的选择。</p>
+<p>评估的 why：</p>
+<ul>
+<li>产品设计是否理解了用户需要</li>
+<li>为概念设计选择最佳隐喻</li>
+<li>界面是否满足一致性需要</li>
+<li>探讨新产品应做的改进</li>
+</ul>
+
+
+<h3 class="relative group">2. 发掘问题 
+    <div id="2-%E5%8F%91%E6%8E%98%E9%97%AE%E9%A2%98" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#2-%E5%8F%91%E6%8E%98%E9%97%AE%E9%A2%98" aria-label="锚点">#</a>
+    </span>        
+    
+</h3>
+<ul>
+<li>根据目标确定问题。</li>
+<li>问题可逐层分解</li>
+</ul>
+
+
+<h3 class="relative group">3. 选择评估范型和技术 
+    <div id="3-%E9%80%89%E6%8B%A9%E8%AF%84%E4%BC%B0%E8%8C%83%E5%9E%8B%E5%92%8C%E6%8A%80%E6%9C%AF" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#3-%E9%80%89%E6%8B%A9%E8%AF%84%E4%BC%B0%E8%8C%83%E5%9E%8B%E5%92%8C%E6%8A%80%E6%9C%AF" aria-label="锚点">#</a>
+    </span>        
+    
+</h3>
+<ul>
+<li>范型决定了技术类型</li>
+<li>必须权衡实际问题和道德问题
+<ul>
+<li>最适合的技术可能成本过高、所需时间过长、不具备必要设备和技能</li>
+</ul>
+</li>
+<li>可结合使用多种技术
+<ul>
+<li>不同技术有助于了解设计的不同方面</li>
+<li>不同类型数据可从不同角度看待问题</li>
+<li>组合有助于全面了解设计的情况</li>
+</ul>
+</li>
+</ul>
+
+
+<h3 class="relative group">4. 明确实际问题 
+    <div id="4-%E6%98%8E%E7%A1%AE%E5%AE%9E%E9%99%85%E9%97%AE%E9%A2%98" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#4-%E6%98%8E%E7%A1%AE%E5%AE%9E%E9%99%85%E9%97%AE%E9%A2%98" aria-label="锚点">#</a>
+    </span>        
+    
+</h3>
+<blockquote>
+<p>即如下因素的选择，以及明确限制等注意事项。</p>
+</blockquote>
+<ul>
+<li>用户
+<ul>
+<li>选择恰当的用户</li>
+<li>用户任务时间</li>
+<li>安排用户熟悉系统</li>
+</ul>
+</li>
+<li>设施及设备</li>
+<li>期限与预算</li>
+<li>技能技术
+<ul>
+<li>是否需要可用性专家</li>
+</ul>
+</li>
+</ul>
+
+
+<h4 class="relative group">选择参与者 
+    <div id="%E9%80%89%E6%8B%A9%E5%8F%82%E4%B8%8E%E8%80%85" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#%E9%80%89%E6%8B%A9%E5%8F%82%E4%B8%8E%E8%80%85" aria-label="锚点">#</a>
+    </span>        
+    
+</h4>
+<ul>
+<li>选择<strong>具有代表性</strong>的典型用户；</li>
+<li>通常需要根据实际情况平衡性别比例。</li>
+<li>至少 4−5 位，5−12 位用户就足够了。</li>
+</ul>
+
+
+<h3 class="relative group">5. 处理道德问题 
+    <div id="5-%E5%A4%84%E7%90%86%E9%81%93%E5%BE%B7%E9%97%AE%E9%A2%98" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#5-%E5%A4%84%E7%90%86%E9%81%93%E5%BE%B7%E9%97%AE%E9%A2%98" aria-label="锚点">#</a>
+    </span>        
+    
+</h3>
+<p>保护个人隐私</p>
+
+
+<h4 class="relative group">指导原则 
+    <div id="%E6%8C%87%E5%AF%BC%E5%8E%9F%E5%88%99" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#%E6%8C%87%E5%AF%BC%E5%8E%9F%E5%88%99" aria-label="锚点">#</a>
+    </span>        
+    
+</h4>
+<ul>
+<li>说明研究的<strong>目的</strong>及要求参与者做的<strong>工作</strong></li>
+<li>说明保密事项</li>
+<li>测试对象是软件，而非个人</li>
+<li>对测试过程的特殊要求，是否边做边说等</li>
+<li>用户可自由表达对产品的意见</li>
+<li>说明是否对过程进行录像
+<ul>
+<li>不能拍摄用户的面部</li>
+</ul>
+</li>
+<li>欢迎用户提问</li>
+<li>用户有随时终止测试的权利</li>
+<li>对用户话语的使用应征得同意，并选择匿名方式</li>
+</ul>
+
+
+<h3 class="relative group">6. 评估、解释并表示数据 
+    <div id="6-%E8%AF%84%E4%BC%B0%E8%A7%A3%E9%87%8A%E5%B9%B6%E8%A1%A8%E7%A4%BA%E6%95%B0%E6%8D%AE" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#6-%E8%AF%84%E4%BC%B0%E8%A7%A3%E9%87%8A%E5%B9%B6%E8%A1%A8%E7%A4%BA%E6%95%B0%E6%8D%AE" aria-label="锚点">#</a>
+    </span>        
+    
+</h3>
+<ul>
+<li>评估技术决定了：搜集什么类型的数据，如何分析，如何表示</li>
+<li>可靠性</li>
+<li>有效性</li>
+<li>偏见</li>
+<li>普遍性</li>
+<li>环境影响</li>
+</ul>
+
+
+<h2 class="relative group">小规模试验 
+    <div id="%E5%B0%8F%E8%A7%84%E6%A8%A1%E8%AF%95%E9%AA%8C" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#%E5%B0%8F%E8%A7%84%E6%A8%A1%E8%AF%95%E9%AA%8C" aria-label="锚点">#</a>
+    </span>        
+    
+</h2>
+<p>对评估计划进行小范围测试</p>
+<ul>
+<li>以确保评估计划的可行性</li>
+<li>如检查设备及使用说明</li>
+<li>练习访谈技巧</li>
+<li>检查问卷中的问题是否明确</li>
+</ul>
+<p>小规模试验可进行多次</p>
+<ul>
+<li>类似迭代设计</li>
+<li>测试——反馈——修改——再测试</li>
+<li>快速、成本低</li>
+</ul>
+
+
+<h2 class="relative group">可用性问题分级 
+    <div id="%E5%8F%AF%E7%94%A8%E6%80%A7%E9%97%AE%E9%A2%98%E5%88%86%E7%BA%A7" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#%E5%8F%AF%E7%94%A8%E6%80%A7%E9%97%AE%E9%A2%98%E5%88%86%E7%BA%A7" aria-label="锚点">#</a>
+    </span>        
+    
+</h2>
+<ul>
+<li>方法一：基于量化数据的分级
+<ul>
+<li>如多少人遇到该问题，耗费多少时间等</li>
+</ul>
+</li>
+<li>方法二：问题严重性的主观打分，取平均值</li>
+<li>方法三：可用性分级的两个因素
+<ul>
+<li>多少用户会遇到这个问题</li>
+<li>用户受该问题影响的程度</li>
+</ul>
+</li>
+<li>该问题只在第一次使用时出现，还是会永远出现</li>
+</ul>
+
           
           
           
@@ -704,7 +1070,13 @@ onload="renderMathInElement(document.body, {
   </footer>
 </article>
 
-      
+      <div id="top-scroller" class="pointer-events-none absolute top-[110vh] bottom-0 w-12 ltr:right-0 rtl:left-0">
+  <a href="#the-top"
+    class="pointer-events-auto sticky top-[calc(100vh-5.5rem)] flex h-12 w-12 mb-16 items-center justify-center rounded-full bg-neutral/50 text-xl text-neutral-700 hover:text-primary-600 dark:bg-neutral-800/50 dark:text-neutral dark:hover:text-primary-400"
+    aria-label="返回顶部" title="返回顶部">
+    &uarr;
+  </a>
+</div>
     </main><footer id="site-footer" class="py-10 print:hidden">
   
   
@@ -715,7 +1087,7 @@ onload="renderMathInElement(document.body, {
     
     
     <p class="text-sm text-neutral-500 dark:text-neutral-400">
-      @ 2024 Runz Liu
+      @ 2025 Runz Liu
     </p>
     
 

@@ -108,7 +108,7 @@
     
     
     "mainEntityOfPage": "true",
-    "wordCount": "1665"
+    "wordCount": "1840"
   }]
   </script>
 
@@ -538,7 +538,7 @@ onload="renderMathInElement(document.body, {
 <div class="flex flex-row flex-wrap items-center">
   
   
-  <time datetime="2024-11-21T12:36:40-08:00">21 November 2024</time><span class="px-2 text-primary-500">&middot;</span><span>1665 字</span><span class="px-2 text-primary-500">&middot;</span><span title="预计阅读">4 分钟</span>
+  <time datetime="2024-11-21T12:36:40-08:00">21 November 2024</time><span class="px-2 text-primary-500">&middot;</span><span>1840 字</span><span class="px-2 text-primary-500">&middot;</span><span title="预计阅读">4 分钟</span>
   
 
   
@@ -612,7 +612,7 @@ onload="renderMathInElement(document.body, {
     <li><a href="#继承权限">继承权限</a>
       <ul>
         <li><a href="#继承方式">继承方式</a></li>
-        <li><a href="#修改父类成员的访问权限">修改父类成员的访问权限</a></li>
+        <li><a href="#修改基类成员的访问权限">修改基类成员的访问权限</a></li>
       </ul>
     </li>
     <li><a href="#成员覆盖">成员覆盖</a></li>
@@ -638,6 +638,7 @@ onload="renderMathInElement(document.body, {
     </li>
     <li><a href="#多继承">多继承</a>
       <ul>
+        <li><a href="#声明顺序">声明顺序</a></li>
         <li><a href="#成员访问">成员访问</a></li>
         <li><a href="#虚继承">虚继承</a></li>
       </ul>
@@ -660,7 +661,7 @@ onload="renderMathInElement(document.body, {
     <li><a href="#继承权限">继承权限</a>
       <ul>
         <li><a href="#继承方式">继承方式</a></li>
-        <li><a href="#修改父类成员的访问权限">修改父类成员的访问权限</a></li>
+        <li><a href="#修改基类成员的访问权限">修改基类成员的访问权限</a></li>
       </ul>
     </li>
     <li><a href="#成员覆盖">成员覆盖</a></li>
@@ -686,6 +687,7 @@ onload="renderMathInElement(document.body, {
     </li>
     <li><a href="#多继承">多继承</a>
       <ul>
+        <li><a href="#声明顺序">声明顺序</a></li>
         <li><a href="#成员访问">成员访问</a></li>
         <li><a href="#虚继承">虚继承</a></li>
       </ul>
@@ -749,7 +751,7 @@ onload="renderMathInElement(document.body, {
 <p>考试必考。所以在网上找一些笔记，记下有价值的部分以供复习。</p>
 <p>继承和派生这对名词基本是一个意思，只是各自用语习惯不一样：</p>
 <ul>
-<li>继承 —— 父类 —— 子类</li>
+<li>继承 —— 基类 —— 派生类</li>
 <li>派生 —— 基类 —— 派生类</li>
 </ul>
 <p>OO 是 Java 学的，所以我倾向于第一种表达。</p>
@@ -783,21 +785,21 @@ onload="renderMathInElement(document.body, {
 </span></span><span class="line"><span class="cl"><span class="k">class</span> <span class="nc">child1</span><span class="o">:</span> <span class="k">public</span> <span class="n">parent</span><span class="p">{};</span>
 </span></span><span class="line"><span class="cl"><span class="k">class</span> <span class="nc">child2</span><span class="o">:</span> <span class="k">protected</span> <span class="n">parent</span><span class="p">{};</span>
 </span></span><span class="line"><span class="cl"><span class="k">class</span> <span class="nc">child3</span><span class="o">:</span> <span class="k">private</span> <span class="n">parent</span><span class="p">{};</span>
-</span></span></code></pre></div><p>继承方式决定了父类成员在子类中的访问权限，权限高于继承方式的会被限制。</p>
-<p>比如 protected 继承会将父类中 public 的成员变成 protected。</p>
+</span></span></code></pre></div><p>继承方式决定了基类成员在派生类中的访问权限，权限高于继承方式的会被限制。</p>
+<p>比如 protected 继承会将基类中 public 的成员变成 protected。</p>
 
 
-<h3 class="relative group">修改父类成员的访问权限 
-    <div id="%E4%BF%AE%E6%94%B9%E7%88%B6%E7%B1%BB%E6%88%90%E5%91%98%E7%9A%84%E8%AE%BF%E9%97%AE%E6%9D%83%E9%99%90" class="anchor"></div>
+<h3 class="relative group">修改基类成员的访问权限 
+    <div id="%E4%BF%AE%E6%94%B9%E5%9F%BA%E7%B1%BB%E6%88%90%E5%91%98%E7%9A%84%E8%AE%BF%E9%97%AE%E6%9D%83%E9%99%90" class="anchor"></div>
     
     <span
         class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
         <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
-            style="text-decoration-line: none !important;" href="#%E4%BF%AE%E6%94%B9%E7%88%B6%E7%B1%BB%E6%88%90%E5%91%98%E7%9A%84%E8%AE%BF%E9%97%AE%E6%9D%83%E9%99%90" aria-label="锚点">#</a>
+            style="text-decoration-line: none !important;" href="#%E4%BF%AE%E6%94%B9%E5%9F%BA%E7%B1%BB%E6%88%90%E5%91%98%E7%9A%84%E8%AE%BF%E9%97%AE%E6%9D%83%E9%99%90" aria-label="锚点">#</a>
     </span>        
     
 </h3>
-<p>使用 using 关键字可以修改父类成员在子类中的访问权限。权限提高和降低都没问题。</p>
+<p>使用 using 关键字可以修改基类成员在派生类中的访问权限。权限提高和降低都没问题。</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cpp" data-lang="cpp"><span class="line"><span class="cl"><span class="k">class</span> <span class="nc">parent</span><span class="p">{</span>
 </span></span><span class="line"><span class="cl"><span class="k">protected</span><span class="o">:</span>
 </span></span><span class="line"><span class="cl">	<span class="kt">int</span> <span class="n">element</span><span class="p">;</span>
@@ -822,10 +824,10 @@ onload="renderMathInElement(document.body, {
     
 </h2>
 <p>继承中的成员覆盖问题，本质是作用域的问题。</p>
-<p>通过子类访问成员时，首先会在子类的作用域下寻找这个名字的成员。如果没找到，再到父类的作用域里找。</p>
+<p>通过派生类访问成员时，首先会在派生类的作用域下寻找这个名字的成员。如果没找到，再到基类的作用域里找。</p>
 <p>主要注意以下情景：</p>
 <ul>
-<li>子类同名成员变量访问权限低于父类时</li>
+<li>派生类同名成员变量访问权限低于基类时</li>
 </ul>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cpp" data-lang="cpp"><span class="line"><span class="cl"><span class="n">parent</span><span class="p">{</span>
 </span></span><span class="line"><span class="cl"><span class="k">public</span><span class="o">:</span>
@@ -840,7 +842,7 @@ onload="renderMathInElement(document.body, {
 </span></span><span class="line"><span class="cl"><span class="n">c</span><span class="p">.</span><span class="n">a</span><span class="p">;</span>         <span class="c1">// cannot access a.
 </span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="n">c</span><span class="p">.</span><span class="n">parent</span><span class="p">.</span><span class="n">a</span><span class="p">;</span>  <span class="c1">// ok
 </span></span></span></code></pre></div><ul>
-<li>子类与父类不会发生函数重载</li>
+<li>派生类与基类不会发生函数重载</li>
 </ul>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cpp" data-lang="cpp"><span class="line"><span class="cl"><span class="n">parent</span><span class="p">{</span>
 </span></span><span class="line"><span class="cl">	<span class="kt">void</span> <span class="nf">foo</span><span class="p">(</span><span class="kt">int</span> <span class="n">a</span><span class="p">);</span>
@@ -866,8 +868,8 @@ onload="renderMathInElement(document.body, {
     
 </h2>
 <p>构造函数无法继承。</p>
-<p>子类默认会调用父类默认构造函数。</p>
-<p>要手动调用父类的构造函数实现初始化，必须在<strong>成员初始化表</strong>里调用。</p>
+<p>派生类默认会调用基类默认构造函数。</p>
+<p>要手动调用基类的构造函数实现初始化，必须在<strong>成员初始化表</strong>里调用。</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cpp" data-lang="cpp"><span class="line"><span class="cl"><span class="n">parent</span><span class="p">{</span>
 </span></span><span class="line"><span class="cl"><span class="k">public</span><span class="o">:</span>
 </span></span><span class="line"><span class="cl">	<span class="n">parent</span><span class="p">(){};</span>
@@ -878,7 +880,7 @@ onload="renderMathInElement(document.body, {
 </span></span><span class="line"><span class="cl"><span class="k">public</span><span class="o">:</span>
 </span></span><span class="line"><span class="cl">	<span class="n">child</span><span class="p">(</span><span class="kt">int</span> <span class="n">a</span><span class="p">,</span> <span class="kt">int</span> <span class="n">b</span><span class="p">)</span><span class="o">:</span> <span class="n">parent</span><span class="p">(</span><span class="n">a</span><span class="p">),</span> <span class="p">...;</span>
 </span></span><span class="line"><span class="cl"><span class="p">}</span>
-</span></span></code></pre></div><p>否则（没有手动调用父类构造函数），子类会调用父类默认构造函数。</p>
+</span></span></code></pre></div><p>否则（没有手动调用基类构造函数），派生类会调用基类默认构造函数。</p>
 
 
 <h2 class="relative group">析构函数 
@@ -891,8 +893,8 @@ onload="renderMathInElement(document.body, {
     </span>        
     
 </h2>
-<p>子类无法显式调用父类的析构函数。</p>
-<p>至于调用顺序：子类析构 之后 父类析构。与构造的顺序相反。</p>
+<p>派生类无法显式调用基类的析构函数。</p>
+<p>至于调用顺序：派生类析构 之后 基类析构。与构造的顺序相反。</p>
 
 
 <h2 class="relative group">虚函数 
@@ -1098,14 +1100,14 @@ onload="renderMathInElement(document.body, {
 <li>纯虚函数
 <ul>
 <li>只有函数接口会被继承</li>
-<li>子类<strong>必须</strong>继承函数接口</li>
+<li>派生类<strong>必须</strong>继承函数接口</li>
 <li>（必须）提供实现代码</li>
 </ul>
 </li>
 <li>一般虚函数
 <ul>
 <li>函数的接口及缺省实现代码都会被继承</li>
-<li>子类<strong>必须</strong>继承函数接口</li>
+<li>派生类<strong>必须</strong>继承函数接口</li>
 <li>可以继承缺省实现代码</li>
 </ul>
 </li>
@@ -1153,6 +1155,23 @@ onload="renderMathInElement(document.body, {
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cpp" data-lang="cpp"><span class="line"><span class="cl"><span class="k">class</span> <span class="nc">child</span><span class="o">:</span> <span class="k">public</span> <span class="n">parent1</span><span class="p">,</span> <span class="k">private</span> <span class="n">parent2</span><span class="p">,</span> <span class="k">protected</span> <span class="n">parent3</span> <span class="p">{};</span>
 </span></span></code></pre></div>
 
+<h3 class="relative group">声明顺序 
+    <div id="%E5%A3%B0%E6%98%8E%E9%A1%BA%E5%BA%8F" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#%E5%A3%B0%E6%98%8E%E9%A1%BA%E5%BA%8F" aria-label="锚点">#</a>
+    </span>        
+    
+</h3>
+<p>基类的声明次序决定：</p>
+<ul>
+<li>对基类构造函数/析构函数的调用次序</li>
+<li>对基类数据成员的存储安排</li>
+</ul>
+
+
 <h3 class="relative group">成员访问 
     <div id="%E6%88%90%E5%91%98%E8%AE%BF%E9%97%AE" class="anchor"></div>
     
@@ -1181,13 +1200,19 @@ onload="renderMathInElement(document.body, {
     </span>        
     
 </h3>
-<p>菱形继承中，子类可能同时继承了有相同父类的两个类，这样子类就会得到这个间接父类的两个副本。</p>
-<p>通过虚继承，子类可以只保留一份间接父类的成员。</p>
+<p>菱形继承中，派生类可能同时继承了有相同基类的两个类，这样派生类就会得到这个间接基类的两个副本。</p>
+<p>通过虚继承，派生类可以只保留一份间接基类的成员。</p>
+<ul>
+<li>虚基类的构造函数由最新派生出的类的构造函数调用</li>
+<li>虚基类的构造函数优先非虚基类的构造函数执行</li>
+<li>调用非虚基类构造函数时，重复的间接基类就不会被构造了</li>
+</ul>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cpp" data-lang="cpp"><span class="line"><span class="cl"><span class="k">class</span> <span class="nc">grand</span><span class="p">{};</span>
 </span></span><span class="line"><span class="cl"><span class="k">class</span> <span class="nc">parent1</span><span class="o">:</span> <span class="k">public</span> <span class="n">grand</span><span class="p">{};</span>
 </span></span><span class="line"><span class="cl"><span class="k">class</span> <span class="nc">parent2</span><span class="o">:</span> <span class="k">public</span> <span class="n">grand</span><span class="p">{};</span>
 </span></span><span class="line"><span class="cl"><span class="k">class</span> <span class="nc">child</span><span class="o">:</span> <span class="k">public</span> <span class="n">parent1</span><span class="p">,</span> <span class="k">virtual</span> <span class="k">public</span> <span class="n">parent2</span><span class="p">{};</span>
-</span></span></code></pre></div>
+</span></span></code></pre></div><p>内存模型：</p>
+
 
 <h2 class="relative group">参考 
     <div id="%E5%8F%82%E8%80%83" class="anchor"></div>
@@ -1200,6 +1225,7 @@ onload="renderMathInElement(document.body, {
     
 </h2>
 <p><a href="https://www.cnblogs.com/cscshi/p/15350328.html" target="_blank">C++ 基础系列——继承与派生 - 锦瑟，无端 - 博客园</a></p>
+<p><a href="https://blog.csdn.net/AgoniAngel/article/details/105893798" target="_blank">图解C++菱形继承、虚继承对象的内存分布_菱形继承 虚函数内存结构图-CSDN博客</a></p>
 
           
           
@@ -1325,7 +1351,7 @@ onload="renderMathInElement(document.body, {
     
     
     <p class="text-sm text-neutral-500 dark:text-neutral-400">
-      @ 2024 Runz Liu
+      @ 2025 Runz Liu
     </p>
     
 
