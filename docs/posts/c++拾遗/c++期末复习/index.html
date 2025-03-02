@@ -108,7 +108,7 @@
     
     
     "mainEntityOfPage": "true",
-    "wordCount": "4694"
+    "wordCount": "4802"
   }]
   </script>
 
@@ -538,7 +538,7 @@ onload="renderMathInElement(document.body, {
 <div class="flex flex-row flex-wrap items-center">
   
   
-  <time datetime="2024-12-24T14:21:51-08:00">24 December 2024</time><span class="px-2 text-primary-500">&middot;</span><span>4694 字</span><span class="px-2 text-primary-500">&middot;</span><span title="预计阅读">10 分钟</span>
+  <time datetime="2024-12-24T14:21:51-08:00">24 December 2024</time><span class="px-2 text-primary-500">&middot;</span><span>4802 字</span><span class="px-2 text-primary-500">&middot;</span><span title="预计阅读">10 分钟</span>
   
 
   
@@ -1148,11 +1148,11 @@ onload="renderMathInElement(document.body, {
 <p>optional 可以理解为包含了两个信息：函数运行信息（成功，失败）、函数返回值</p>
 <p>声明 optional：</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cpp" data-lang="cpp"><span class="line"><span class="cl"><span class="n">std</span><span class="o">::</span><span class="n">optional</span><span class="o">&lt;</span><span class="n">T</span><span class="o">&gt;</span> <span class="n">opt</span><span class="p">;</span>         <span class="c1">// 不包含值的 optional
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="n">nullopt</span><span class="p">;</span>                      <span class="c1">// 不包含值的 optional，宏定义好了
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="n">std</span><span class="o">::</span><span class="n">nullopt</span><span class="p">;</span>                 <span class="c1">// 不包含值的 optional，宏定义好了
 </span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="n">std</span><span class="o">::</span><span class="n">optional</span><span class="o">&lt;</span><span class="n">T</span><span class="o">&gt;</span> <span class="n">opt</span><span class="p">(</span><span class="n">value</span><span class="p">);</span>  <span class="c1">// 包含 value
 </span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="n">make_optional</span><span class="o">&lt;</span><span class="n">T</span><span class="o">&gt;</span><span class="p">(</span><span class="n">value</span><span class="p">);</span>      <span class="c1">// make 方法
 </span></span></span></code></pre></div><p>函数失败：</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cpp" data-lang="cpp"><span class="line"><span class="cl"><span class="k">return</span> <span class="n">nullopt</span><span class="p">;</span>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cpp" data-lang="cpp"><span class="line"><span class="cl"><span class="k">return</span> <span class="n">std</span><span class="o">::</span><span class="n">nullopt</span><span class="p">;</span>
 </span></span></code></pre></div><p>函数成功，返回 result：</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cpp" data-lang="cpp"><span class="line"><span class="cl"><span class="k">return</span> <span class="n">make_optional</span><span class="o">&lt;</span><span class="n">T</span><span class="o">&gt;</span><span class="p">(</span><span class="n">result</span><span class="p">);</span>
 </span></span></code></pre></div><p>函数调用方：
@@ -1210,7 +1210,7 @@ onload="renderMathInElement(document.body, {
 <p>类型安全的 union。但不允许包含引用、数组、void。</p>
 <p>头文件 <code>&lt;variant&gt;</code></p>
 <p>创建与访问：</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cpp" data-lang="cpp"><span class="line"><span class="cl"><span class="n">std</span><span class="o">::</span><span class="n">variant</span><span class="o">&lt;</span><span class="kt">int</span><span class="p">,</span> <span class="kt">float</span><span class="p">,</span> <span class="n">std</span><span class="o">::</span><span class="kt">double</span><span class="o">&gt;</span> <span class="n">var</span><span class="p">;</span>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cpp" data-lang="cpp"><span class="line"><span class="cl"><span class="n">std</span><span class="o">::</span><span class="n">variant</span><span class="o">&lt;</span><span class="kt">int</span><span class="p">,</span> <span class="kt">float</span><span class="p">,</span> <span class="kt">double</span><span class="o">&gt;</span> <span class="n">var</span><span class="p">;</span>
 </span></span><span class="line"><span class="cl"><span class="n">var</span> <span class="o">=</span> <span class="s">&#34;abc&#34;</span><span class="p">;</span>  <span class="c1">// or var.emplace(&#34;abc&#34;)
 </span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="n">std</span><span class="o">::</span><span class="n">get</span><span class="o">&lt;</span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="o">&gt;</span><span class="p">(</span><span class="n">var</span><span class="p">);</span>  <span class="c1">// &#34;abc&#34;
 </span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="n">std</span><span class="o">::</span><span class="n">get</span><span class="o">&lt;</span><span class="kt">int</span><span class="o">&gt;</span><span class="p">(</span><span class="n">var</span><span class="p">);</span>          <span class="c1">// exception std::bad_variant_access
@@ -1878,6 +1878,7 @@ namespace 的内容完全公开</li>
 </h4>
 <p>Substitution Failure Is Not An Error</p>
 <p>模板的匹配失败不是错误。在匹配类型失败后，编译器还需要尝试其他的可能性</p>
+<p><a href="https://zhuanlan.zhihu.com/p/21314708" target="_blank">C++模板进阶指南：SFINAE - 知乎</a></p>
 
 
 <h4 class="relative group">特化 
@@ -1944,6 +1945,35 @@ namespace 的内容完全公开</li>
     </span>        
     
 </h3>
+<ul>
+<li>
+<p>program = Object1 + Object2 +…… + Objectn</p>
+</li>
+<li>
+<p>object: data + operation</p>
+</li>
+<li>
+<p>Message: function call</p>
+</li>
+<li>
+<p>Class</p>
+</li>
+<li>
+<p>OOP classify：</p>
+<ul>
+<li>Object-Oriented
+<ul>
+<li>没有 inbuilt objects，但有所有 OO 的特性。如继承、多态</li>
+</ul>
+</li>
+<li>Object-Based
+<ul>
+<li>基于 inbuilt objects，但没有所有 OO 的特性</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
 
 
 <h3 class="relative group">构造函数 
@@ -2128,9 +2158,11 @@ namespace 的内容完全公开</li>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cpp" data-lang="cpp"><span class="line"><span class="cl"><span class="k">class</span> <span class="nc">Empty</span> <span class="p">{</span>
 </span></span><span class="line"><span class="cl">	<span class="n">Empty</span><span class="p">();</span>
 </span></span><span class="line"><span class="cl">	<span class="n">Empty</span><span class="p">(</span><span class="k">const</span> <span class="n">Empty</span><span class="o">&amp;</span><span class="p">);</span>
-</span></span><span class="line"><span class="cl">	<span class="o">~</span><span class="n">Empty</span><span class="p">();</span>
-</span></span><span class="line"><span class="cl">	<span class="n">Empty</span><span class="o">&amp;</span> <span class="k">operator</span><span class="o">=</span><span class="p">(</span><span class="k">const</span> <span class="n">Empty</span><span class="o">&amp;</span><span class="p">);</span>
-</span></span><span class="line"><span class="cl">	<span class="n">Empty</span><span class="o">*</span> <span class="k">operator</span> <span class="o">&amp;</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl">	<span class="n">Empty</span><span class="p">(</span><span class="k">const</span> <span class="n">Empty</span><span class="o">&amp;&amp;</span><span class="p">);</span>             <span class="c1">// after C++ 11
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>	<span class="o">~</span><span class="n">Empty</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl">	<span class="n">Empty</span><span class="o">&amp;</span> <span class="k">operator</span><span class="o">=</span><span class="p">(</span><span class="k">const</span> <span class="n">Empty</span><span class="o">&amp;</span><span class="p">);</span>          
+</span></span><span class="line"><span class="cl">	<span class="n">Empty</span><span class="o">&amp;</span> <span class="k">operator</span><span class="o">=</span><span class="p">(</span><span class="k">const</span> <span class="n">Empty</span><span class="o">&amp;&amp;</span><span class="p">);</span>  <span class="c1">// after C++ 11
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>	<span class="n">Empty</span><span class="o">*</span> <span class="k">operator</span> <span class="o">&amp;</span><span class="p">();</span>
 </span></span><span class="line"><span class="cl">	<span class="k">const</span> <span class="n">Empty</span><span class="o">*</span> <span class="k">operator</span> <span class="o">&amp;</span><span class="p">()</span> <span class="k">const</span><span class="p">;</span>
 </span></span><span class="line"><span class="cl"><span class="p">}</span>
 </span></span></code></pre></div><hr>

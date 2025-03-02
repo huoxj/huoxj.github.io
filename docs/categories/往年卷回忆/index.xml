@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>往年卷回忆 on Runz&#39;s blog</title>
+    <link>https://huoxj.github.io/categories/%E5%BE%80%E5%B9%B4%E5%8D%B7%E5%9B%9E%E5%BF%86/</link>
+    <description>Recent content in 往年卷回忆 on Runz&#39;s blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh</language>
+    <managingEditor>huoxj_runz@gmail.com (Runz Liu)</managingEditor>
+    <webMaster>huoxj_runz@gmail.com (Runz Liu)</webMaster>
+    <copyright>@ 2025 Runz Liu</copyright>
+    <lastBuildDate>Wed, 01 Jan 2025 15:47:27 -0800</lastBuildDate><atom:link href="https://huoxj.github.io/categories/%E5%BE%80%E5%B9%B4%E5%8D%B7%E5%9B%9E%E5%BF%86/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>形式语言与自动机-2024</title>
+      <link>https://huoxj.github.io/posts/%E5%BE%80%E5%B9%B4%E5%8D%B7%E5%9B%9E%E5%BF%86/%E5%BD%A2%E5%BC%8F%E8%AF%AD%E8%A8%80%E4%B8%8E%E8%87%AA%E5%8A%A8%E6%9C%BA-2024/</link>
+      <pubDate>Wed, 01 Jan 2025 15:47:27 -0800</pubDate>
+      <author>huoxj_runz@gmail.com (Runz Liu)</author>
+      <guid>https://huoxj.github.io/posts/%E5%BE%80%E5%B9%B4%E5%8D%B7%E5%9B%9E%E5%BF%86/%E5%BD%A2%E5%BC%8F%E8%AF%AD%E8%A8%80%E4%B8%8E%E8%87%AA%E5%8A%A8%E6%9C%BA-2024/</guid>
+      <description>考试时间：2024-12-31 1. 以 0 开头，长度为奇数，或以 1 开头，长度为偶数的01串 2. 含 0101 子串的 01 串</description>
+      
+    </item>
+    
+  </channel>
+</rss>

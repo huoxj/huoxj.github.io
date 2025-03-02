@@ -200,7 +200,7 @@ optional 可以理解为包含了两个信息：函数运行信息（成功，�
 
 ```cpp
 std::optional<T> opt;         // 不包含值的 optional
-nullopt;                      // 不包含值的 optional，宏定义好了
+std::nullopt;                 // 不包含值的 optional，宏定义好了
 std::optional<T> opt(value);  // 包含 value
 make_optional<T>(value);      // make 方法
 ```
@@ -208,7 +208,7 @@ make_optional<T>(value);      // make 方法
 函数失败：
 
 ```cpp
-return nullopt;
+return std::nullopt;
 ```
 
 函数成功，返回 result：
@@ -256,7 +256,7 @@ make_pair 来创建一个 pair。通过 tie 来解包。和 tuple 一毛一样�
 创建与访问：
 
 ```cpp
-std::variant<int, float, std::double> var;
+std::variant<int, float, double> var;
 var = "abc";  // or var.emplace("abc")
 std::get<std::string>(var);  // "abc"
 std::get<int>(var);          // exception std::bad_variant_access
@@ -546,7 +546,6 @@ using namespace std;
 using ::variable;
 ```
 
-
 - 别名
 ```cpp
 namespace std_alias=std;
@@ -731,6 +730,8 @@ Substitution Failure Is Not An Error
 
 模板的匹配失败不是错误。在匹配类型失败后，编译器还需要尝试其他的可能性
 
+[C++模板进阶指南：SFINAE - 知乎](https://zhuanlan.zhihu.com/p/21314708)
+
 #### 特化
 
 [C++ 模板 全特化与偏特化 - 知乎](https://zhuanlan.zhihu.com/p/346400616)
@@ -752,6 +753,17 @@ Substitution Failure Is Not An Error
 ## 面向对象部分
 
 ### 面向对象概念
+
+- program = Object1 + Object2 +…… + Objectn
+- object: data + operation
+- Message: function call
+- Class
+
+- OOP classify：
+	- Object-Oriented
+		- 没有 inbuilt objects，但有所有 OO 的特性。如继承、多态
+	- Object-Based
+		- 基于 inbuilt objects，但没有所有 OO 的特性
 
 ### 构造函数
 
@@ -805,8 +817,10 @@ Empty(const Empty&);
 class Empty {
 	Empty();
 	Empty(const Empty&);
+	Empty(const Empty&&);             // after C++ 11
 	~Empty();
-	Empty& operator=(const Empty&);
+	Empty& operator=(const Empty&);          
+	Empty& operator=(const Empty&&);  // after C++ 11
 	Empty* operator &();
 	const Empty* operator &() const;
 }

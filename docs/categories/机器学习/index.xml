@@ -9,7 +9,57 @@
     <managingEditor>huoxj_runz@gmail.com (Runz Liu)</managingEditor>
     <webMaster>huoxj_runz@gmail.com (Runz Liu)</webMaster>
     <copyright>@ 2025 Runz Liu</copyright>
-    <lastBuildDate>Mon, 02 Dec 2024 20:29:40 -0800</lastBuildDate><atom:link href="https://huoxj.github.io/categories/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 06 Jan 2025 10:27:11 -0800</lastBuildDate><atom:link href="https://huoxj.github.io/categories/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>SE-ML-11 高斯混合模型</title>
+      <link>https://huoxj.github.io/posts/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/se-ml-11-%E9%AB%98%E6%96%AF%E6%B7%B7%E5%90%88%E6%A8%A1%E5%9E%8B/</link>
+      <pubDate>Mon, 06 Jan 2025 10:27:11 -0800</pubDate>
+      <author>huoxj_runz@gmail.com (Runz Liu)</author>
+      <guid>https://huoxj.github.io/posts/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/se-ml-11-%E9%AB%98%E6%96%AF%E6%B7%B7%E5%90%88%E6%A8%A1%E5%9E%8B/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>SE-ML08-神经网络</title>
+      <link>https://huoxj.github.io/posts/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/se-ml08-%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C/</link>
+      <pubDate>Sun, 05 Jan 2025 14:45:02 -0800</pubDate>
+      <author>huoxj_runz@gmail.com (Runz Liu)</author>
+      <guid>https://huoxj.github.io/posts/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/se-ml08-%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C/</guid>
+      <description>输入 -&amp;gt; 权值 -&amp;gt; 激活函数 -&amp;gt; 偏置单元</description>
+      
+    </item>
+    
+    <item>
+      <title>SE-ML06-支持向量机</title>
+      <link>https://huoxj.github.io/posts/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/se-ml06-%E6%94%AF%E6%8C%81%E5%90%91%E9%87%8F%E6%9C%BA/</link>
+      <pubDate>Sun, 05 Jan 2025 10:35:58 -0800</pubDate>
+      <author>huoxj_runz@gmail.com (Runz Liu)</author>
+      <guid>https://huoxj.github.io/posts/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/se-ml06-%E6%94%AF%E6%8C%81%E5%90%91%E9%87%8F%E6%9C%BA/</guid>
+      <description>线性 SVM 所有训练样本到决策平面的。 具有最小距离的样本，叫支持向量。 给定模型 $f(textbf{x})=textbf{w}^Ttextbf{x}+b$，和任一样本 $x$ ，求其到超平面的距&amp;hellip;</description>
+      
+    </item>
+    
+    <item>
+      <title>SE-ML03-线性模型</title>
+      <link>https://huoxj.github.io/posts/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/se-ml03-%E7%BA%BF%E6%80%A7%E6%A8%A1%E5%9E%8B/</link>
+      <pubDate>Sun, 05 Jan 2025 09:30:15 -0800</pubDate>
+      <author>huoxj_runz@gmail.com (Runz Liu)</author>
+      <guid>https://huoxj.github.io/posts/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/se-ml03-%E7%BA%BF%E6%80%A7%E6%A8%A1%E5%9E%8B/</guid>
+      <description>任意两个向量，分别属于两个类别。这两个向量和某个确定的权重向量的线性组合得到的标量值，如果一定落在某个标量值的两侧，那么这两个类别是线性可分的。 经典的二分类、线性、判别模型。 $$ f(x)=sig&amp;hellip;</description>
+      
+    </item>
+    
+    <item>
+      <title>SE-ML02-模型评估与选择</title>
+      <link>https://huoxj.github.io/posts/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/se-ml02-%E6%A8%A1%E5%9E%8B%E8%AF%84%E4%BC%B0%E4%B8%8E%E9%80%89%E6%8B%A9/</link>
+      <pubDate>Sun, 05 Jan 2025 08:22:23 -0800</pubDate>
+      <author>huoxj_runz@gmail.com (Runz Liu)</author>
+      <guid>https://huoxj.github.io/posts/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/se-ml02-%E6%A8%A1%E5%9E%8B%E8%AF%84%E4%BC%B0%E4%B8%8E%E9%80%89%E6%8B%A9/</guid>
+      <description>在假设空间中的一个具体假设。是一个需要学习的函数。 如何从假设空间中选择的假设/模型。 怎么判断模型优不优秀？与风险函数。 评估 $f$ 在样本 $X$ 上，与真实值 $Y$ 的差距。 常见的损失函数&amp;hellip;</description>
+      
+    </item>
+    
     <item>
       <title>Pytorch DataLoader 加速</title>
       <link>https://huoxj.github.io/posts/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/pytorch-dataloader-%E5%8A%A0%E9%80%9F/</link>
@@ -21,32 +71,32 @@
     </item>
     
     <item>
-      <title>K 邻近分类器</title>
-      <link>https://huoxj.github.io/posts/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/k-%E9%82%BB%E8%BF%91%E5%88%86%E7%B1%BB%E5%99%A8/</link>
+      <title>SE-ML05-K 邻近</title>
+      <link>https://huoxj.github.io/posts/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/se-ml05-k-%E9%82%BB%E8%BF%91/</link>
       <pubDate>Fri, 25 Oct 2024 20:03:20 -0800</pubDate>
       <author>huoxj_runz@gmail.com (Runz Liu)</author>
-      <guid>https://huoxj.github.io/posts/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/k-%E9%82%BB%E8%BF%91%E5%88%86%E7%B1%BB%E5%99%A8/</guid>
-      <description>对测试样本，找训练样本中最近的 $k$ 个，这 $k$ 个样本中标签最多的就是测试样本的类。 k-NN 的 $k=1$ 的特殊情况。</description>
+      <guid>https://huoxj.github.io/posts/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/se-ml05-k-%E9%82%BB%E8%BF%91/</guid>
+      <description>对测试样本，找训练样本中最近的 $k$ 个，这 $k$ 个样本中的就是测试样本的类。 k-NN 的 $k=1$ 的特殊情况。 泛化错误率，不超过贝叶斯分类器错误率的两倍。 对测试样本，找训练样本中最近&amp;hellip;</description>
       
     </item>
     
     <item>
-      <title>决策树</title>
-      <link>https://huoxj.github.io/posts/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/%E5%86%B3%E7%AD%96%E6%A0%91/</link>
+      <title>SE-ML04-决策树</title>
+      <link>https://huoxj.github.io/posts/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/se-ml04-%E5%86%B3%E7%AD%96%E6%A0%91/</link>
       <pubDate>Mon, 30 Sep 2024 08:54:34 -0800</pubDate>
       <author>huoxj_runz@gmail.com (Runz Liu)</author>
-      <guid>https://huoxj.github.io/posts/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/%E5%86%B3%E7%AD%96%E6%A0%91/</guid>
+      <guid>https://huoxj.github.io/posts/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/se-ml04-%E5%86%B3%E7%AD%96%E6%A0%91/</guid>
       <description>决策树就是一颗 &lt;code&gt;if-else&lt;/code&gt; 树。树的每一个结点代表一个决策（测试），同时也代表了这个决策所对应的一个样本空间。我们的目标就是通过多次产生 &lt;code&gt;if-else&lt;/code&gt; 分支，尽可能地让决策树的叶子结点只&amp;hellip;</description>
       
     </item>
     
     <item>
-      <title>概要</title>
-      <link>https://huoxj.github.io/posts/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/%E6%A6%82%E8%A6%81/</link>
+      <title>SE-ML01-概要</title>
+      <link>https://huoxj.github.io/posts/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/se-ml01-%E6%A6%82%E8%A6%81/</link>
       <pubDate>Fri, 16 Aug 2024 16:39:18 -0800</pubDate>
       <author>huoxj_runz@gmail.com (Runz Liu)</author>
-      <guid>https://huoxj.github.io/posts/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/%E6%A6%82%E8%A6%81/</guid>
-      <description>精度矩阵是二分类下的混淆矩阵 &lt;code&gt;TRUE&lt;/code&gt;/&lt;code&gt;FALSE&lt;/code&gt;: 预测结果与实际相符/不符 &lt;code&gt;POSITIVE&lt;/code&gt;/&lt;code&gt;NEGATIVE&lt;/code&gt;: 预测为真(阳性)/假(阴性) 对于两个样本 $xjin R^d$</description>
+      <guid>https://huoxj.github.io/posts/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/se-ml01-%E6%A6%82%E8%A6%81/</guid>
+      <description>学习是一个蕴含特定目的的知识获取过程。 任何通过的都属于机器学习 ML 算法在学习过程中对某种类型假设的偏好。这种偏好一定存在。 偏好最好与问题本身匹配，不然要用删掉。 No Free Lunch 定&amp;hellip;</description>
       
     </item>
     

@@ -4,8 +4,12 @@ date: 2024-11-20T10:34:25-08:00
 categories: 
 - "C++拾遗"
 featureimage: https://runzblog.oss-cn-hangzhou.aliyuncs.com/universal/background1.jpg
-summary: "```cpp class T {}; class T { T(); // 构造函数 T(const T&); // 拷贝构造 ~T(); // 析构函数 T& operator=(const T&);..."
+summary: "```cpp class T {}; class T { T(); // 构造函数 T(const T&); // 拷贝构造 T(const T&&); // 拷贝构造 rval ~T(); // 析..."
 ---
+
+## 类的内存模型
+
+[What does C++ Object Layout Look Like? | Nimrod's Coding Lab](https://nimrod.blog/posts/what-does-cpp-object-layout-look-like/)
 
 ## 空类默认提供的方法
 
@@ -14,8 +18,10 @@ class T {};
 class T {  
 	T();                            // 构造函数
 	T(const T&);                    // 拷贝构造
+	T(const T&&);                   // 拷贝构造 rval
 	~T();                           // 析构函数
 	T& operator=(const T&);         // 拷贝赋值
+	T& operator=(const T&&);        // 拷贝赋值 rval
 	T *operator &();                // 取地址
 	const T* operator &() const;    // 取地址 const 重载版
 };

@@ -9,7 +9,17 @@
     <managingEditor>huoxj_runz@gmail.com (Runz Liu)</managingEditor>
     <webMaster>huoxj_runz@gmail.com (Runz Liu)</webMaster>
     <copyright>@ 2025 Runz Liu</copyright>
-    <lastBuildDate>Sun, 29 Dec 2024 08:41:10 -0800</lastBuildDate><atom:link href="https://huoxj.github.io/categories/c++%E6%8B%BE%E9%81%97/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 19 Jan 2025 14:33:12 -0800</lastBuildDate><atom:link href="https://huoxj.github.io/categories/c++%E6%8B%BE%E9%81%97/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>STL-算法</title>
+      <link>https://huoxj.github.io/posts/c&#43;&#43;%E6%8B%BE%E9%81%97/stl-%E7%AE%97%E6%B3%95/</link>
+      <pubDate>Sun, 19 Jan 2025 14:33:12 -0800</pubDate>
+      <author>huoxj_runz@gmail.com (Runz Liu)</author>
+      <guid>https://huoxj.github.io/posts/c&#43;&#43;%E6%8B%BE%E9%81%97/stl-%E7%AE%97%E6%B3%95/</guid>
+      <description></description>
+      
+    </item>
+    
     <item>
       <title>异常处理</title>
       <link>https://huoxj.github.io/posts/c&#43;&#43;%E6%8B%BE%E9%81%97/%E5%BC%82%E5%B8%B8%E5%A4%84%E7%90%86/</link>
@@ -171,11 +181,11 @@
     </item>
     
     <item>
-      <title>STL</title>
-      <link>https://huoxj.github.io/posts/c&#43;&#43;%E6%8B%BE%E9%81%97/stl/</link>
+      <title>STL-容器</title>
+      <link>https://huoxj.github.io/posts/c&#43;&#43;%E6%8B%BE%E9%81%97/stl-%E5%AE%B9%E5%99%A8/</link>
       <pubDate>Sat, 12 Oct 2024 10:43:24 -0800</pubDate>
       <author>huoxj_runz@gmail.com (Runz Liu)</author>
-      <guid>https://huoxj.github.io/posts/c&#43;&#43;%E6%8B%BE%E9%81%97/stl/</guid>
+      <guid>https://huoxj.github.io/posts/c&#43;&#43;%E6%8B%BE%E9%81%97/stl-%E5%AE%B9%E5%99%A8/</guid>
       <description>STL 有五大组件： 序列容器实现能按顺序访问的数据结构。 有如下容器： 省略返回类型以及一些无关紧要的参数类型。 没有头部加入和删除元素。 insert，erase 和 clear 复杂度 $O(n&amp;hellip;</description>
       
     </item>

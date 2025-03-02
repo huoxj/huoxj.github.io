@@ -9,7 +9,277 @@
     <managingEditor>huoxj_runz@gmail.com (Runz Liu)</managingEditor>
     <webMaster>huoxj_runz@gmail.com (Runz Liu)</webMaster>
     <copyright>@ 2025 Runz Liu</copyright>
-    <lastBuildDate>Wed, 01 Jan 2025 15:47:27 -0800</lastBuildDate><atom:link href="https://huoxj.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 28 Feb 2025 21:28:58 -0800</lastBuildDate><atom:link href="https://huoxj.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Nvim —— 我的第N代移动开发方案</title>
+      <link>https://huoxj.github.io/posts/%E6%9C%89%E6%84%8F%E6%80%9D%E7%9A%84%E6%8A%98%E8%85%BE/nvim--%E6%88%91%E7%9A%84%E7%AC%ACn%E4%BB%A3%E7%A7%BB%E5%8A%A8%E5%BC%80%E5%8F%91%E6%96%B9%E6%A1%88/</link>
+      <pubDate>Fri, 28 Feb 2025 21:28:58 -0800</pubDate>
+      <author>huoxj_runz@gmail.com (Runz Liu)</author>
+      <guid>https://huoxj.github.io/posts/%E6%9C%89%E6%84%8F%E6%80%9D%E7%9A%84%E6%8A%98%E8%85%BE/nvim--%E6%88%91%E7%9A%84%E7%AC%ACn%E4%BB%A3%E7%A7%BB%E5%8A%A8%E5%BC%80%E5%8F%91%E6%96%B9%E6%A1%88/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>优雅的STL</title>
+      <link>https://huoxj.github.io/posts/%E7%AE%97%E6%B3%95%E4%B8%8E%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/%E4%BC%98%E9%9B%85%E7%9A%84stl/</link>
+      <pubDate>Fri, 28 Feb 2025 21:13:36 -0800</pubDate>
+      <author>huoxj_runz@gmail.com (Runz Liu)</author>
+      <guid>https://huoxj.github.io/posts/%E7%AE%97%E6%B3%95%E4%B8%8E%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/%E4%BC%98%E9%9B%85%E7%9A%84stl/</guid>
+      <description>同属系列。致力于整理优雅、清晰的，以及一些。 本篇记录了使用 C+TL 刷题时的一些心得。 蓦然回首，那迭代器 / 指针已经！等待你的是 &lt;code&gt;heap-use-after-free&lt;/code&gt;。 ```cpp a&amp;hellip;</description>
+      
+    </item>
+    
+    <item>
+      <title>优雅的链表</title>
+      <link>https://huoxj.github.io/posts/%E7%AE%97%E6%B3%95%E4%B8%8E%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/%E4%BC%98%E9%9B%85%E7%9A%84%E9%93%BE%E8%A1%A8/</link>
+      <pubDate>Fri, 28 Feb 2025 20:59:47 -0800</pubDate>
+      <author>huoxj_runz@gmail.com (Runz Liu)</author>
+      <guid>https://huoxj.github.io/posts/%E7%AE%97%E6%B3%95%E4%B8%8E%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/%E4%BC%98%E9%9B%85%E7%9A%84%E9%93%BE%E8%A1%A8/</guid>
+      <description>当然不会讲链表的概念等等。主要收集一些刷力扣过程中，链表题的一些优雅的处理手法。优雅简洁易懂的代码是信仰和追求。 在短小精悍的题中，加一堆特判无疑是往刷好的白墙上。在设计链表的算法时，往往是考虑链表的&amp;hellip;</description>
+      
+    </item>
+    
+    <item>
+      <title>Asst3</title>
+      <link>https://huoxj.github.io/posts/cs149-%E5%B9%B6%E8%A1%8C%E8%AE%A1%E7%AE%97/asst3/</link>
+      <pubDate>Mon, 17 Feb 2025 10:02:48 -0800</pubDate>
+      <author>huoxj_runz@gmail.com (Runz Liu)</author>
+      <guid>https://huoxj.github.io/posts/cs149-%E5%B9%B6%E8%A1%8C%E8%AE%A1%E7%AE%97/asst3/</guid>
+      <description>使用 CUDA 实现 SAXPY。 实现很简单，跟着实验文档和 CUDA 文档做下来就行。 Question 2：为什么观测到的带宽约为 5.3 GB/s，远不及 PCIe 3.0 的理论带宽上限？ &amp;hellip;</description>
+      
+    </item>
+    
+    <item>
+      <title>暗喻幻想</title>
+      <link>https://huoxj.github.io/posts/van-%E6%B8%B8%E6%88%8F/%E6%9A%97%E5%96%BB%E5%B9%BB%E6%83%B3/</link>
+      <pubDate>Fri, 07 Feb 2025 12:37:05 -0800</pubDate>
+      <author>huoxj_runz@gmail.com (Runz Liu)</author>
+      <guid>https://huoxj.github.io/posts/van-%E6%B8%B8%E6%88%8F/%E6%9A%97%E5%96%BB%E5%B9%BB%E6%83%B3/</guid>
+      <description>先说结论：暗喻幻想是一部贯彻了 Atlus 高制作水准的成功之作。阿特拉斯擅长的美术、音乐、节奏、羁绊叙事都还是原来的那个味道。 游戏还未发售时，大胆与前卫的美术（主要指 UI 以及演出）便在宣传片中&amp;hellip;</description>
+      
+    </item>
+    
+    <item>
+      <title>读论文-Vectorized Batch PIR</title>
+      <link>https://huoxj.github.io/posts/%E8%8A%9D%E5%A3%AB%E6%94%B6%E5%AE%B9%E6%89%80/%E8%AF%BB%E8%AE%BA%E6%96%87-vectorized-batch-pir/</link>
+      <pubDate>Mon, 27 Jan 2025 17:36:46 -0800</pubDate>
+      <author>huoxj_runz@gmail.com (Runz Liu)</author>
+      <guid>https://huoxj.github.io/posts/%E8%8A%9D%E5%A3%AB%E6%94%B6%E5%AE%B9%E6%89%80/%E8%AF%BB%E8%AE%BA%E6%96%87-vectorized-batch-pir/</guid>
+      <description>传统的 PIR (Private Information Retrieval) 里，客户端一次 PIR 只会请求数据库中的一个项。但在实际使用中，客户端往往会请求多个项，但为每一个项都单独调用一次 P&amp;hellip;</description>
+      
+    </item>
+    
+    <item>
+      <title>读论文-一种私有信息检索在GPU上的高效实现</title>
+      <link>https://huoxj.github.io/posts/%E8%8A%9D%E5%A3%AB%E6%94%B6%E5%AE%B9%E6%89%80/%E8%AF%BB%E8%AE%BA%E6%96%87-%E4%B8%80%E7%A7%8D%E7%A7%81%E6%9C%89%E4%BF%A1%E6%81%AF%E6%A3%80%E7%B4%A2%E5%9C%A8gpu%E4%B8%8A%E7%9A%84%E9%AB%98%E6%95%88%E5%AE%9E%E7%8E%B0/</link>
+      <pubDate>Wed, 22 Jan 2025 10:46:12 -0800</pubDate>
+      <author>huoxj_runz@gmail.com (Runz Liu)</author>
+      <guid>https://huoxj.github.io/posts/%E8%8A%9D%E5%A3%AB%E6%94%B6%E5%AE%B9%E6%89%80/%E8%AF%BB%E8%AE%BA%E6%96%87-%E4%B8%80%E7%A7%8D%E7%A7%81%E6%9C%89%E4%BF%A1%E6%81%AF%E6%A3%80%E7%B4%A2%E5%9C%A8gpu%E4%B8%8A%E7%9A%84%E9%AB%98%E6%95%88%E5%AE%9E%E7%8E%B0/</guid>
+      <description>原文 title：GPU-Based PIR for On-device ML Inference DPF-PIR 在单次查询中，主要有三个步骤： 1. (client) 生成(gen)密钥 2. (&amp;hellip;</description>
+      
+    </item>
+    
+    <item>
+      <title>STL-算法</title>
+      <link>https://huoxj.github.io/posts/c&#43;&#43;%E6%8B%BE%E9%81%97/stl-%E7%AE%97%E6%B3%95/</link>
+      <pubDate>Sun, 19 Jan 2025 14:33:12 -0800</pubDate>
+      <author>huoxj_runz@gmail.com (Runz Liu)</author>
+      <guid>https://huoxj.github.io/posts/c&#43;&#43;%E6%8B%BE%E9%81%97/stl-%E7%AE%97%E6%B3%95/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>NJUSE-嵌入式期末复习</title>
+      <link>https://huoxj.github.io/posts/%E5%B5%8C%E5%85%A5%E5%BC%8F/njuse-%E5%B5%8C%E5%85%A5%E5%BC%8F%E6%9C%9F%E6%9C%AB%E5%A4%8D%E4%B9%A0/</link>
+      <pubDate>Tue, 07 Jan 2025 08:22:38 -0800</pubDate>
+      <author>huoxj_runz@gmail.com (Runz Liu)</author>
+      <guid>https://huoxj.github.io/posts/%E5%B5%8C%E5%85%A5%E5%BC%8F/njuse-%E5%B5%8C%E5%85%A5%E5%BC%8F%E6%9C%9F%E6%9C%AB%E5%A4%8D%E4%B9%A0/</guid>
+      <description>2024-2025 第一学期嵌入式期末复习 由嵌入式硬件和软件组成 1. 形式多样，面向特定应用 2. 得到多种类型处理器和处理器体系结构的支持 3. 极其关注成本 4. 有实时性和可靠性要求 5. &amp;hellip;</description>
+      
+    </item>
+    
+    <item>
+      <title>SE-ML-11 高斯混合模型</title>
+      <link>https://huoxj.github.io/posts/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/se-ml-11-%E9%AB%98%E6%96%AF%E6%B7%B7%E5%90%88%E6%A8%A1%E5%9E%8B/</link>
+      <pubDate>Mon, 06 Jan 2025 10:27:11 -0800</pubDate>
+      <author>huoxj_runz@gmail.com (Runz Liu)</author>
+      <guid>https://huoxj.github.io/posts/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/se-ml-11-%E9%AB%98%E6%96%AF%E6%B7%B7%E5%90%88%E6%A8%A1%E5%9E%8B/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>SE-ML08-神经网络</title>
+      <link>https://huoxj.github.io/posts/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/se-ml08-%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C/</link>
+      <pubDate>Sun, 05 Jan 2025 14:45:02 -0800</pubDate>
+      <author>huoxj_runz@gmail.com (Runz Liu)</author>
+      <guid>https://huoxj.github.io/posts/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/se-ml08-%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C/</guid>
+      <description>输入 -&amp;gt; 权值 -&amp;gt; 激活函数 -&amp;gt; 偏置单元</description>
+      
+    </item>
+    
+    <item>
+      <title>SE-ML06-支持向量机</title>
+      <link>https://huoxj.github.io/posts/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/se-ml06-%E6%94%AF%E6%8C%81%E5%90%91%E9%87%8F%E6%9C%BA/</link>
+      <pubDate>Sun, 05 Jan 2025 10:35:58 -0800</pubDate>
+      <author>huoxj_runz@gmail.com (Runz Liu)</author>
+      <guid>https://huoxj.github.io/posts/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/se-ml06-%E6%94%AF%E6%8C%81%E5%90%91%E9%87%8F%E6%9C%BA/</guid>
+      <description>线性 SVM 所有训练样本到决策平面的。 具有最小距离的样本，叫支持向量。 给定模型 $f(textbf{x})=textbf{w}^Ttextbf{x}+b$，和任一样本 $x$ ，求其到超平面的距&amp;hellip;</description>
+      
+    </item>
+    
+    <item>
+      <title>SE-ML03-线性模型</title>
+      <link>https://huoxj.github.io/posts/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/se-ml03-%E7%BA%BF%E6%80%A7%E6%A8%A1%E5%9E%8B/</link>
+      <pubDate>Sun, 05 Jan 2025 09:30:15 -0800</pubDate>
+      <author>huoxj_runz@gmail.com (Runz Liu)</author>
+      <guid>https://huoxj.github.io/posts/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/se-ml03-%E7%BA%BF%E6%80%A7%E6%A8%A1%E5%9E%8B/</guid>
+      <description>任意两个向量，分别属于两个类别。这两个向量和某个确定的权重向量的线性组合得到的标量值，如果一定落在某个标量值的两侧，那么这两个类别是线性可分的。 经典的二分类、线性、判别模型。 $$ f(x)=sig&amp;hellip;</description>
+      
+    </item>
+    
+    <item>
+      <title>SE-ML02-模型评估与选择</title>
+      <link>https://huoxj.github.io/posts/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/se-ml02-%E6%A8%A1%E5%9E%8B%E8%AF%84%E4%BC%B0%E4%B8%8E%E9%80%89%E6%8B%A9/</link>
+      <pubDate>Sun, 05 Jan 2025 08:22:23 -0800</pubDate>
+      <author>huoxj_runz@gmail.com (Runz Liu)</author>
+      <guid>https://huoxj.github.io/posts/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/se-ml02-%E6%A8%A1%E5%9E%8B%E8%AF%84%E4%BC%B0%E4%B8%8E%E9%80%89%E6%8B%A9/</guid>
+      <description>在假设空间中的一个具体假设。是一个需要学习的函数。 如何从假设空间中选择的假设/模型。 怎么判断模型优不优秀？与风险函数。 评估 $f$ 在样本 $X$ 上，与真实值 $Y$ 的差距。 常见的损失函数&amp;hellip;</description>
+      
+    </item>
+    
+    <item>
+      <title>08-移动应用众包测试</title>
+      <link>https://huoxj.github.io/posts/%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95/08-%E7%A7%BB%E5%8A%A8%E5%BA%94%E7%94%A8%E4%BC%97%E5%8C%85%E6%B5%8B%E8%AF%95/</link>
+      <pubDate>Fri, 03 Jan 2025 20:08:03 -0800</pubDate>
+      <author>huoxj_runz@gmail.com (Runz Liu)</author>
+      <guid>https://huoxj.github.io/posts/%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95/08-%E7%A7%BB%E5%8A%A8%E5%BA%94%E7%94%A8%E4%BC%97%E5%8C%85%E6%B5%8B%E8%AF%95/</guid>
+      <description>跳过了 07-Web 测试，因为不考。 众包：利用群体力量来完成传统方法中成本高昂或耗时的大规模任务 ：利用群体力量完成移动应用测试任务 Aggregator：将报告做聚类。 Summarizer：一&amp;hellip;</description>
+      
+    </item>
+    
+    <item>
+      <title>06-移动应用自动化 GUI 测试</title>
+      <link>https://huoxj.github.io/posts/%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95/06-%E7%A7%BB%E5%8A%A8%E5%BA%94%E7%94%A8%E8%87%AA%E5%8A%A8%E5%8C%96-gui-%E6%B5%8B%E8%AF%95/</link>
+      <pubDate>Fri, 03 Jan 2025 19:53:30 -0800</pubDate>
+      <author>huoxj_runz@gmail.com (Runz Liu)</author>
+      <guid>https://huoxj.github.io/posts/%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95/06-%E7%A7%BB%E5%8A%A8%E5%BA%94%E7%94%A8%E8%87%AA%E5%8A%A8%E5%8C%96-gui-%E6%B5%8B%E8%AF%95/</guid>
+      <description>传统的脚本驱动的自动化 GUI 测试。代表工具是 &lt;code&gt;selenium&lt;/code&gt; 和 &lt;code&gt;appium&lt;/code&gt; 即便是基于简单的图像匹配，还是存在依赖、适配、成本的问题。 挑战⭐： 解决⭐：基于图像理解技术，录制和回放&amp;hellip;</description>
+      
+    </item>
+    
+    <item>
+      <title>05-测试预言问题</title>
+      <link>https://huoxj.github.io/posts/%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95/05-%E6%B5%8B%E8%AF%95%E9%A2%84%E8%A8%80%E9%97%AE%E9%A2%98/</link>
+      <pubDate>Fri, 03 Jan 2025 19:38:32 -0800</pubDate>
+      <author>huoxj_runz@gmail.com (Runz Liu)</author>
+      <guid>https://huoxj.github.io/posts/%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95/05-%E6%B5%8B%E8%AF%95%E9%A2%84%E8%A8%80%E9%97%AE%E9%A2%98/</guid>
+      <description>测试预言，是一个描述输出与预期是否相符的概念。 预言有啥问题了？。 解决方案，有一种叫使用不完全/有偏测试预言。也看不懂什么意思，反正就是来引出下面的蜕变测试和差分测试的。 充分利用成功测试用例。对成&amp;hellip;</description>
+      
+    </item>
+    
+    <item>
+      <title>03-模糊测试</title>
+      <link>https://huoxj.github.io/posts/%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95/03-%E6%A8%A1%E7%B3%8A%E6%B5%8B%E8%AF%95/</link>
+      <pubDate>Fri, 03 Jan 2025 17:18:31 -0800</pubDate>
+      <author>huoxj_runz@gmail.com (Runz Liu)</author>
+      <guid>https://huoxj.github.io/posts/%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95/03-%E6%A8%A1%E7%B3%8A%E6%B5%8B%E8%AF%95/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>04-测试用例优先级</title>
+      <link>https://huoxj.github.io/posts/%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95/04-%E6%B5%8B%E8%AF%95%E7%94%A8%E4%BE%8B%E4%BC%98%E5%85%88%E7%BA%A7/</link>
+      <pubDate>Fri, 03 Jan 2025 15:55:19 -0800</pubDate>
+      <author>huoxj_runz@gmail.com (Runz Liu)</author>
+      <guid>https://huoxj.github.io/posts/%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95/04-%E6%B5%8B%E8%AF%95%E7%94%A8%E4%BE%8B%E4%BC%98%E5%85%88%E7%BA%A7/</guid>
+      <description>测试用例优先级是解决回归测试的一些问题的。 ：版本迭代之后，重新运行之前的测试用例 但是，之前的测试用例： 要优化回归测试，就要优化测试用例集合。有如下方法 1. 修复 2. 选择⭐ 3. 扩充 4&amp;hellip;.</description>
+      
+    </item>
+    
+    <item>
+      <title>02-变异测试</title>
+      <link>https://huoxj.github.io/posts/%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95/02-%E5%8F%98%E5%BC%82%E6%B5%8B%E8%AF%95/</link>
+      <pubDate>Fri, 03 Jan 2025 14:26:30 -0800</pubDate>
+      <author>huoxj_runz@gmail.com (Runz Liu)</author>
+      <guid>https://huoxj.github.io/posts/%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95/02-%E5%8F%98%E5%BC%82%E6%B5%8B%E8%AF%95/</guid>
+      <description>一言以蔽之，变异测试研究如何编写能够的测试用例，以及如何提升测试。 将这些测试用例应用到待测程序中，就很有可能会发现待测程序的缺陷。 基于一定的语法（Syntax）变换规则，通过对源程序进行程序变换（&amp;hellip;</description>
+      
+    </item>
+    
+    <item>
+      <title>01-软件测试导览</title>
+      <link>https://huoxj.github.io/posts/%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95/01-%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95%E5%AF%BC%E8%A7%88/</link>
+      <pubDate>Fri, 03 Jan 2025 14:14:48 -0800</pubDate>
+      <author>huoxj_runz@gmail.com (Runz Liu)</author>
+      <guid>https://huoxj.github.io/posts/%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95/01-%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95%E5%AF%BC%E8%A7%88/</guid>
+      <description>三个部分，&lt;code&gt;经典测试&lt;/code&gt;、&lt;code&gt;移动应用测试&lt;/code&gt;和&lt;code&gt;AI测试&lt;/code&gt; PIE 模型解释了软件中的 Fault 如何导致 Failure。 测试，并且测试，总有概率低的。</description>
+      
+    </item>
+    
+    <item>
+      <title>形式语言与自动机-2024</title>
+      <link>https://huoxj.github.io/posts/%E5%BE%80%E5%B9%B4%E5%8D%B7%E5%9B%9E%E5%BF%86/%E5%BD%A2%E5%BC%8F%E8%AF%AD%E8%A8%80%E4%B8%8E%E8%87%AA%E5%8A%A8%E6%9C%BA-2024/</link>
+      <pubDate>Wed, 01 Jan 2025 15:47:27 -0800</pubDate>
+      <author>huoxj_runz@gmail.com (Runz Liu)</author>
+      <guid>https://huoxj.github.io/posts/%E5%BE%80%E5%B9%B4%E5%8D%B7%E5%9B%9E%E5%BF%86/%E5%BD%A2%E5%BC%8F%E8%AF%AD%E8%A8%80%E4%B8%8E%E8%87%AA%E5%8A%A8%E6%9C%BA-2024/</guid>
+      <description>考试时间：2024-12-31 1. 以 0 开头，长度为奇数，或以 1 开头，长度为偶数的01串 2. 含 0101 子串的 01 串</description>
+      
+    </item>
+    
+    <item>
+      <title>Lec-12 以用户为中心</title>
+      <link>https://huoxj.github.io/posts/%E4%BA%BA%E6%9C%BA%E4%BA%A4%E4%BA%92/lec-12-%E4%BB%A5%E7%94%A8%E6%88%B7%E4%B8%BA%E4%B8%AD%E5%BF%83/</link>
+      <pubDate>Wed, 01 Jan 2025 15:30:04 -0800</pubDate>
+      <author>huoxj_runz@gmail.com (Runz Liu)</author>
+      <guid>https://huoxj.github.io/posts/%E4%BA%BA%E6%9C%BA%E4%BA%A4%E4%BA%92/lec-12-%E4%BB%A5%E7%94%A8%E6%88%B7%E4%B8%BA%E4%B8%AD%E5%BF%83/</guid>
+      <description>这一节主要是理解，内容不多 使用（情景调查）了解用户。 观察并与用户交流会比仅仅观察的效果要好 四个原则： 相比于民族志观察，上下文询问法 以用户为中心的方法存在一些缺陷： 所以推出以活动为中心的思想&amp;hellip;</description>
+      
+    </item>
+    
+    <item>
+      <title>点子王</title>
+      <link>https://huoxj.github.io/posts/%E9%9A%8F%E8%AE%B0/%E7%82%B9%E5%AD%90%E7%8E%8B/</link>
+      <pubDate>Wed, 01 Jan 2025 14:24:23 -0800</pubDate>
+      <author>huoxj_runz@gmail.com (Runz Liu)</author>
+      <guid>https://huoxj.github.io/posts/%E9%9A%8F%E8%AE%B0/%E7%82%B9%E5%AD%90%E7%8E%8B/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Lec-11 交互模型与理论</title>
+      <link>https://huoxj.github.io/posts/%E4%BA%BA%E6%9C%BA%E4%BA%A4%E4%BA%92/lec-11-%E4%BA%A4%E4%BA%92%E6%A8%A1%E5%9E%8B%E4%B8%8E%E7%90%86%E8%AE%BA/</link>
+      <pubDate>Wed, 01 Jan 2025 13:56:43 -0800</pubDate>
+      <author>huoxj_runz@gmail.com (Runz Liu)</author>
+      <guid>https://huoxj.github.io/posts/%E4%BA%BA%E6%9C%BA%E4%BA%A4%E4%BA%92/lec-11-%E4%BA%A4%E4%BA%92%E6%A8%A1%E5%9E%8B%E4%B8%8E%E7%90%86%E8%AE%BA/</guid>
+      <description>这一节主要讲了，通过这些模型，可以在不对用户做测试的条件下预测用户的执行情况。 最著名的预测模型。 全称： 优点 局限性 简化版本的 GOMS，对用户执行情况进行量化。 用一系列操作符，描述用户执行任&amp;hellip;</description>
+      
+    </item>
+    
+    <item>
+      <title>Lec-10 人机交互系统基础知识</title>
+      <link>https://huoxj.github.io/posts/%E4%BA%BA%E6%9C%BA%E4%BA%A4%E4%BA%92/lec-10-%E4%BA%BA%E6%9C%BA%E4%BA%A4%E4%BA%92%E7%B3%BB%E7%BB%9F%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/</link>
+      <pubDate>Wed, 01 Jan 2025 13:32:26 -0800</pubDate>
+      <author>huoxj_runz@gmail.com (Runz Liu)</author>
+      <guid>https://huoxj.github.io/posts/%E4%BA%BA%E6%9C%BA%E4%BA%A4%E4%BA%92/lec-10-%E4%BA%BA%E6%9C%BA%E4%BA%A4%E4%BA%92%E7%B3%BB%E7%BB%9F%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/</guid>
+      <description>研究人对外界的接收、存储、集成、检索和使用。 预测人执行特定任务的效率。 没有考虑到注意和记忆的重要性 也就是加了注意力和记忆的信息处理机模型。 最著名的信息处理模型。 研究人是如何感知一个良好组织的&amp;hellip;</description>
+      
+    </item>
+    
+    <item>
+      <title>Lec-9 交互式系统的设计</title>
+      <link>https://huoxj.github.io/posts/%E4%BA%BA%E6%9C%BA%E4%BA%A4%E4%BA%92/lec-9-%E4%BA%A4%E4%BA%92%E5%BC%8F%E7%B3%BB%E7%BB%9F%E7%9A%84%E8%AE%BE%E8%AE%A1/</link>
+      <pubDate>Wed, 01 Jan 2025 11:39:11 -0800</pubDate>
+      <author>huoxj_runz@gmail.com (Runz Liu)</author>
+      <guid>https://huoxj.github.io/posts/%E4%BA%BA%E6%9C%BA%E4%BA%A4%E4%BA%92/lec-9-%E4%BA%A4%E4%BA%92%E5%BC%8F%E7%B3%BB%E7%BB%9F%E7%9A%84%E8%AE%BE%E8%AE%A1/</guid>
+      <description>四个策略：删除、组织、隐藏、转移 最明显的简化设计方法 最快捷的简化设计方式 参考就行啦。 隐藏是一种低成本的简化方案 将某些功能转移到其他地方，。 原则是，哪一方擅长什么，就将对应功能转移过去。 解&amp;hellip;</description>
+      
+    </item>
+    
     <item>
       <title>异常处理</title>
       <link>https://huoxj.github.io/posts/c&#43;&#43;%E6%8B%BE%E9%81%97/%E5%BC%82%E5%B8%B8%E5%A4%84%E7%90%86/</link>
@@ -273,12 +543,12 @@
     </item>
     
     <item>
-      <title>K 邻近分类器</title>
-      <link>https://huoxj.github.io/posts/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/k-%E9%82%BB%E8%BF%91%E5%88%86%E7%B1%BB%E5%99%A8/</link>
+      <title>SE-ML05-K 邻近</title>
+      <link>https://huoxj.github.io/posts/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/se-ml05-k-%E9%82%BB%E8%BF%91/</link>
       <pubDate>Fri, 25 Oct 2024 20:03:20 -0800</pubDate>
       <author>huoxj_runz@gmail.com (Runz Liu)</author>
-      <guid>https://huoxj.github.io/posts/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/k-%E9%82%BB%E8%BF%91%E5%88%86%E7%B1%BB%E5%99%A8/</guid>
-      <description>对测试样本，找训练样本中最近的 $k$ 个，这 $k$ 个样本中标签最多的就是测试样本的类。 k-NN 的 $k=1$ 的特殊情况。</description>
+      <guid>https://huoxj.github.io/posts/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/se-ml05-k-%E9%82%BB%E8%BF%91/</guid>
+      <description>对测试样本，找训练样本中最近的 $k$ 个，这 $k$ 个样本中的就是测试样本的类。 k-NN 的 $k=1$ 的特殊情况。 泛化错误率，不超过贝叶斯分类器错误率的两倍。 对测试样本，找训练样本中最近&amp;hellip;</description>
       
     </item>
     
@@ -323,11 +593,11 @@
     </item>
     
     <item>
-      <title>STL</title>
-      <link>https://huoxj.github.io/posts/c&#43;&#43;%E6%8B%BE%E9%81%97/stl/</link>
+      <title>STL-容器</title>
+      <link>https://huoxj.github.io/posts/c&#43;&#43;%E6%8B%BE%E9%81%97/stl-%E5%AE%B9%E5%99%A8/</link>
       <pubDate>Sat, 12 Oct 2024 10:43:24 -0800</pubDate>
       <author>huoxj_runz@gmail.com (Runz Liu)</author>
-      <guid>https://huoxj.github.io/posts/c&#43;&#43;%E6%8B%BE%E9%81%97/stl/</guid>
+      <guid>https://huoxj.github.io/posts/c&#43;&#43;%E6%8B%BE%E9%81%97/stl-%E5%AE%B9%E5%99%A8/</guid>
       <description>STL 有五大组件： 序列容器实现能按顺序访问的数据结构。 有如下容器： 省略返回类型以及一些无关紧要的参数类型。 没有头部加入和删除元素。 insert，erase 和 clear 复杂度 $O(n&amp;hellip;</description>
       
     </item>
@@ -353,11 +623,11 @@
     </item>
     
     <item>
-      <title>决策树</title>
-      <link>https://huoxj.github.io/posts/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/%E5%86%B3%E7%AD%96%E6%A0%91/</link>
+      <title>SE-ML04-决策树</title>
+      <link>https://huoxj.github.io/posts/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/se-ml04-%E5%86%B3%E7%AD%96%E6%A0%91/</link>
       <pubDate>Mon, 30 Sep 2024 08:54:34 -0800</pubDate>
       <author>huoxj_runz@gmail.com (Runz Liu)</author>
-      <guid>https://huoxj.github.io/posts/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/%E5%86%B3%E7%AD%96%E6%A0%91/</guid>
+      <guid>https://huoxj.github.io/posts/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/se-ml04-%E5%86%B3%E7%AD%96%E6%A0%91/</guid>
       <description>决策树就是一颗 &lt;code&gt;if-else&lt;/code&gt; 树。树的每一个结点代表一个决策（测试），同时也代表了这个决策所对应的一个样本空间。我们的目标就是通过多次产生 &lt;code&gt;if-else&lt;/code&gt; 分支，尽可能地让决策树的叶子结点只&amp;hellip;</description>
       
     </item>
@@ -413,12 +683,12 @@
     </item>
     
     <item>
-      <title>概要</title>
-      <link>https://huoxj.github.io/posts/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/%E6%A6%82%E8%A6%81/</link>
+      <title>SE-ML01-概要</title>
+      <link>https://huoxj.github.io/posts/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/se-ml01-%E6%A6%82%E8%A6%81/</link>
       <pubDate>Fri, 16 Aug 2024 16:39:18 -0800</pubDate>
       <author>huoxj_runz@gmail.com (Runz Liu)</author>
-      <guid>https://huoxj.github.io/posts/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/%E6%A6%82%E8%A6%81/</guid>
-      <description>精度矩阵是二分类下的混淆矩阵 &lt;code&gt;TRUE&lt;/code&gt;/&lt;code&gt;FALSE&lt;/code&gt;: 预测结果与实际相符/不符 &lt;code&gt;POSITIVE&lt;/code&gt;/&lt;code&gt;NEGATIVE&lt;/code&gt;: 预测为真(阳性)/假(阴性) 对于两个样本 $xjin R^d$</description>
+      <guid>https://huoxj.github.io/posts/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/se-ml01-%E6%A6%82%E8%A6%81/</guid>
+      <description>学习是一个蕴含特定目的的知识获取过程。 任何通过的都属于机器学习 ML 算法在学习过程中对某种类型假设的偏好。这种偏好一定存在。 偏好最好与问题本身匹配，不然要用删掉。 No Free Lunch 定&amp;hellip;</description>
       
     </item>
     

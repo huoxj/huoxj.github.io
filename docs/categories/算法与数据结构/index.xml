@@ -9,7 +9,27 @@
     <managingEditor>huoxj_runz@gmail.com (Runz Liu)</managingEditor>
     <webMaster>huoxj_runz@gmail.com (Runz Liu)</webMaster>
     <copyright>@ 2025 Runz Liu</copyright>
-    <lastBuildDate>Tue, 08 Oct 2024 15:03:29 -0800</lastBuildDate><atom:link href="https://huoxj.github.io/categories/%E7%AE%97%E6%B3%95%E4%B8%8E%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 28 Feb 2025 21:13:36 -0800</lastBuildDate><atom:link href="https://huoxj.github.io/categories/%E7%AE%97%E6%B3%95%E4%B8%8E%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>优雅的STL</title>
+      <link>https://huoxj.github.io/posts/%E7%AE%97%E6%B3%95%E4%B8%8E%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/%E4%BC%98%E9%9B%85%E7%9A%84stl/</link>
+      <pubDate>Fri, 28 Feb 2025 21:13:36 -0800</pubDate>
+      <author>huoxj_runz@gmail.com (Runz Liu)</author>
+      <guid>https://huoxj.github.io/posts/%E7%AE%97%E6%B3%95%E4%B8%8E%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/%E4%BC%98%E9%9B%85%E7%9A%84stl/</guid>
+      <description>同属系列。致力于整理优雅、清晰的，以及一些。 本篇记录了使用 C+TL 刷题时的一些心得。 蓦然回首，那迭代器 / 指针已经！等待你的是 &lt;code&gt;heap-use-after-free&lt;/code&gt;。 ```cpp a&amp;hellip;</description>
+      
+    </item>
+    
+    <item>
+      <title>优雅的链表</title>
+      <link>https://huoxj.github.io/posts/%E7%AE%97%E6%B3%95%E4%B8%8E%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/%E4%BC%98%E9%9B%85%E7%9A%84%E9%93%BE%E8%A1%A8/</link>
+      <pubDate>Fri, 28 Feb 2025 20:59:47 -0800</pubDate>
+      <author>huoxj_runz@gmail.com (Runz Liu)</author>
+      <guid>https://huoxj.github.io/posts/%E7%AE%97%E6%B3%95%E4%B8%8E%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/%E4%BC%98%E9%9B%85%E7%9A%84%E9%93%BE%E8%A1%A8/</guid>
+      <description>当然不会讲链表的概念等等。主要收集一些刷力扣过程中，链表题的一些优雅的处理手法。优雅简洁易懂的代码是信仰和追求。 在短小精悍的题中，加一堆特判无疑是往刷好的白墙上。在设计链表的算法时，往往是考虑链表的&amp;hellip;</description>
+      
+    </item>
+    
     <item>
       <title>专题定位</title>
       <link>https://huoxj.github.io/posts/%E7%AE%97%E6%B3%95%E4%B8%8E%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/%E4%B8%93%E9%A2%98%E5%AE%9A%E4%BD%8D/</link>

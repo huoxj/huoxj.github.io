@@ -11,7 +11,7 @@
   <title>OO 杂项 &middot; Runz&#39;s blog</title>
   <meta name="title" content="OO 杂项 &middot; Runz&#39;s blog" />
   
-  <meta name="description" content="```cpp class T {}; class T { T(); // 构造函数 T(const T&amp;); // 拷贝构造 ~T(); // 析构函数 T&amp; operator=(const T&amp;);..." />
+  <meta name="description" content="```cpp class T {}; class T { T(); // 构造函数 T(const T&amp;); // 拷贝构造 T(const T&amp;&amp;); // 拷贝构造 rval ~T(); // 析..." />
   
   
   
@@ -106,7 +106,7 @@
     
     
     "mainEntityOfPage": "true",
-    "wordCount": "1046"
+    "wordCount": "1081"
   }]
   </script>
 
@@ -536,7 +536,7 @@ onload="renderMathInElement(document.body, {
 <div class="flex flex-row flex-wrap items-center">
   
   
-  <time datetime="2024-11-20T10:34:25-08:00">20 November 2024</time><span class="px-2 text-primary-500">&middot;</span><span>1046 字</span><span class="px-2 text-primary-500">&middot;</span><span title="预计阅读">3 分钟</span>
+  <time datetime="2024-11-20T10:34:25-08:00">20 November 2024</time><span class="px-2 text-primary-500">&middot;</span><span>1081 字</span><span class="px-2 text-primary-500">&middot;</span><span title="预计阅读">3 分钟</span>
   
 
   
@@ -606,6 +606,7 @@ onload="renderMathInElement(document.body, {
     class="min-w-[220px] py-2 border-dotted ltr:-ml-5 ltr:border-l ltr:pl-5 rtl:-mr-5 rtl:border-r rtl:pr-5 dark:border-neutral-600">
     <nav id="TableOfContents">
   <ul>
+    <li><a href="#类的内存模型">类的内存模型</a></li>
     <li><a href="#空类默认提供的方法">空类默认提供的方法</a></li>
     <li><a href="#const-与-static-成员">const 与 static 成员</a>
       <ul>
@@ -638,6 +639,7 @@ onload="renderMathInElement(document.body, {
     class="py-2 border-dotted border-neutral-300 ltr:-ml-5 ltr:border-l ltr:pl-5 rtl:-mr-5 rtl:border-r rtl:pr-5 dark:border-neutral-600">
     <nav id="TableOfContents">
   <ul>
+    <li><a href="#类的内存模型">类的内存模型</a></li>
     <li><a href="#空类默认提供的方法">空类默认提供的方法</a></li>
     <li><a href="#const-与-static-成员">const 与 static 成员</a>
       <ul>
@@ -702,6 +704,19 @@ onload="renderMathInElement(document.body, {
         <div class="article-content max-w-prose mb-20">
           
 
+<h2 class="relative group">类的内存模型 
+    <div id="%E7%B1%BB%E7%9A%84%E5%86%85%E5%AD%98%E6%A8%A1%E5%9E%8B" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#%E7%B1%BB%E7%9A%84%E5%86%85%E5%AD%98%E6%A8%A1%E5%9E%8B" aria-label="锚点">#</a>
+    </span>        
+    
+</h2>
+<p><a href="https://nimrod.blog/posts/what-does-cpp-object-layout-look-like/" target="_blank">What does C++ Object Layout Look Like? | Nimrod&rsquo;s Coding Lab</a></p>
+
+
 <h2 class="relative group">空类默认提供的方法 
     <div id="%E7%A9%BA%E7%B1%BB%E9%BB%98%E8%AE%A4%E6%8F%90%E4%BE%9B%E7%9A%84%E6%96%B9%E6%B3%95" class="anchor"></div>
     
@@ -716,8 +731,10 @@ onload="renderMathInElement(document.body, {
 </span></span><span class="line"><span class="cl"><span class="k">class</span> <span class="nc">T</span> <span class="p">{</span>  
 </span></span><span class="line"><span class="cl">	<span class="n">T</span><span class="p">();</span>                            <span class="c1">// 构造函数
 </span></span></span><span class="line"><span class="cl"><span class="c1"></span>	<span class="n">T</span><span class="p">(</span><span class="k">const</span> <span class="n">T</span><span class="o">&amp;</span><span class="p">);</span>                    <span class="c1">// 拷贝构造
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>	<span class="n">T</span><span class="p">(</span><span class="k">const</span> <span class="n">T</span><span class="o">&amp;&amp;</span><span class="p">);</span>                   <span class="c1">// 拷贝构造 rval
 </span></span></span><span class="line"><span class="cl"><span class="c1"></span>	<span class="o">~</span><span class="n">T</span><span class="p">();</span>                           <span class="c1">// 析构函数
 </span></span></span><span class="line"><span class="cl"><span class="c1"></span>	<span class="n">T</span><span class="o">&amp;</span> <span class="k">operator</span><span class="o">=</span><span class="p">(</span><span class="k">const</span> <span class="n">T</span><span class="o">&amp;</span><span class="p">);</span>         <span class="c1">// 拷贝赋值
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>	<span class="n">T</span><span class="o">&amp;</span> <span class="k">operator</span><span class="o">=</span><span class="p">(</span><span class="k">const</span> <span class="n">T</span><span class="o">&amp;&amp;</span><span class="p">);</span>        <span class="c1">// 拷贝赋值 rval
 </span></span></span><span class="line"><span class="cl"><span class="c1"></span>	<span class="n">T</span> <span class="o">*</span><span class="k">operator</span> <span class="o">&amp;</span><span class="p">();</span>                <span class="c1">// 取地址
 </span></span></span><span class="line"><span class="cl"><span class="c1"></span>	<span class="k">const</span> <span class="n">T</span><span class="o">*</span> <span class="k">operator</span> <span class="o">&amp;</span><span class="p">()</span> <span class="k">const</span><span class="p">;</span>    <span class="c1">// 取地址 const 重载版
 </span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="p">};</span>

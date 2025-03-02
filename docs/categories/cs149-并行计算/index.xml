@@ -9,7 +9,17 @@
     <managingEditor>huoxj_runz@gmail.com (Runz Liu)</managingEditor>
     <webMaster>huoxj_runz@gmail.com (Runz Liu)</webMaster>
     <copyright>@ 2025 Runz Liu</copyright>
-    <lastBuildDate>Fri, 08 Nov 2024 09:40:53 -0800</lastBuildDate><atom:link href="https://huoxj.github.io/categories/cs149-%E5%B9%B6%E8%A1%8C%E8%AE%A1%E7%AE%97/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 17 Feb 2025 10:02:48 -0800</lastBuildDate><atom:link href="https://huoxj.github.io/categories/cs149-%E5%B9%B6%E8%A1%8C%E8%AE%A1%E7%AE%97/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Asst3</title>
+      <link>https://huoxj.github.io/posts/cs149-%E5%B9%B6%E8%A1%8C%E8%AE%A1%E7%AE%97/asst3/</link>
+      <pubDate>Mon, 17 Feb 2025 10:02:48 -0800</pubDate>
+      <author>huoxj_runz@gmail.com (Runz Liu)</author>
+      <guid>https://huoxj.github.io/posts/cs149-%E5%B9%B6%E8%A1%8C%E8%AE%A1%E7%AE%97/asst3/</guid>
+      <description>使用 CUDA 实现 SAXPY。 实现很简单，跟着实验文档和 CUDA 文档做下来就行。 Question 2：为什么观测到的带宽约为 5.3 GB/s，远不及 PCIe 3.0 的理论带宽上限？ &amp;hellip;</description>
+      
+    </item>
+    
     <item>
       <title>Asst1</title>
       <link>https://huoxj.github.io/posts/cs149-%E5%B9%B6%E8%A1%8C%E8%AE%A1%E7%AE%97/asst1/</link>

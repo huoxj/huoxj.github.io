@@ -9,7 +9,47 @@
     <managingEditor>huoxj_runz@gmail.com (Runz Liu)</managingEditor>
     <webMaster>huoxj_runz@gmail.com (Runz Liu)</webMaster>
     <copyright>@ 2025 Runz Liu</copyright>
-    <lastBuildDate>Fri, 27 Dec 2024 10:28:24 -0800</lastBuildDate><atom:link href="https://huoxj.github.io/categories/%E4%BA%BA%E6%9C%BA%E4%BA%A4%E4%BA%92/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 01 Jan 2025 15:30:04 -0800</lastBuildDate><atom:link href="https://huoxj.github.io/categories/%E4%BA%BA%E6%9C%BA%E4%BA%A4%E4%BA%92/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Lec-12 以用户为中心</title>
+      <link>https://huoxj.github.io/posts/%E4%BA%BA%E6%9C%BA%E4%BA%A4%E4%BA%92/lec-12-%E4%BB%A5%E7%94%A8%E6%88%B7%E4%B8%BA%E4%B8%AD%E5%BF%83/</link>
+      <pubDate>Wed, 01 Jan 2025 15:30:04 -0800</pubDate>
+      <author>huoxj_runz@gmail.com (Runz Liu)</author>
+      <guid>https://huoxj.github.io/posts/%E4%BA%BA%E6%9C%BA%E4%BA%A4%E4%BA%92/lec-12-%E4%BB%A5%E7%94%A8%E6%88%B7%E4%B8%BA%E4%B8%AD%E5%BF%83/</guid>
+      <description>这一节主要是理解，内容不多 使用（情景调查）了解用户。 观察并与用户交流会比仅仅观察的效果要好 四个原则： 相比于民族志观察，上下文询问法 以用户为中心的方法存在一些缺陷： 所以推出以活动为中心的思想&amp;hellip;</description>
+      
+    </item>
+    
+    <item>
+      <title>Lec-11 交互模型与理论</title>
+      <link>https://huoxj.github.io/posts/%E4%BA%BA%E6%9C%BA%E4%BA%A4%E4%BA%92/lec-11-%E4%BA%A4%E4%BA%92%E6%A8%A1%E5%9E%8B%E4%B8%8E%E7%90%86%E8%AE%BA/</link>
+      <pubDate>Wed, 01 Jan 2025 13:56:43 -0800</pubDate>
+      <author>huoxj_runz@gmail.com (Runz Liu)</author>
+      <guid>https://huoxj.github.io/posts/%E4%BA%BA%E6%9C%BA%E4%BA%A4%E4%BA%92/lec-11-%E4%BA%A4%E4%BA%92%E6%A8%A1%E5%9E%8B%E4%B8%8E%E7%90%86%E8%AE%BA/</guid>
+      <description>这一节主要讲了，通过这些模型，可以在不对用户做测试的条件下预测用户的执行情况。 最著名的预测模型。 全称： 优点 局限性 简化版本的 GOMS，对用户执行情况进行量化。 用一系列操作符，描述用户执行任&amp;hellip;</description>
+      
+    </item>
+    
+    <item>
+      <title>Lec-10 人机交互系统基础知识</title>
+      <link>https://huoxj.github.io/posts/%E4%BA%BA%E6%9C%BA%E4%BA%A4%E4%BA%92/lec-10-%E4%BA%BA%E6%9C%BA%E4%BA%A4%E4%BA%92%E7%B3%BB%E7%BB%9F%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/</link>
+      <pubDate>Wed, 01 Jan 2025 13:32:26 -0800</pubDate>
+      <author>huoxj_runz@gmail.com (Runz Liu)</author>
+      <guid>https://huoxj.github.io/posts/%E4%BA%BA%E6%9C%BA%E4%BA%A4%E4%BA%92/lec-10-%E4%BA%BA%E6%9C%BA%E4%BA%A4%E4%BA%92%E7%B3%BB%E7%BB%9F%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/</guid>
+      <description>研究人对外界的接收、存储、集成、检索和使用。 预测人执行特定任务的效率。 没有考虑到注意和记忆的重要性 也就是加了注意力和记忆的信息处理机模型。 最著名的信息处理模型。 研究人是如何感知一个良好组织的&amp;hellip;</description>
+      
+    </item>
+    
+    <item>
+      <title>Lec-9 交互式系统的设计</title>
+      <link>https://huoxj.github.io/posts/%E4%BA%BA%E6%9C%BA%E4%BA%A4%E4%BA%92/lec-9-%E4%BA%A4%E4%BA%92%E5%BC%8F%E7%B3%BB%E7%BB%9F%E7%9A%84%E8%AE%BE%E8%AE%A1/</link>
+      <pubDate>Wed, 01 Jan 2025 11:39:11 -0800</pubDate>
+      <author>huoxj_runz@gmail.com (Runz Liu)</author>
+      <guid>https://huoxj.github.io/posts/%E4%BA%BA%E6%9C%BA%E4%BA%A4%E4%BA%92/lec-9-%E4%BA%A4%E4%BA%92%E5%BC%8F%E7%B3%BB%E7%BB%9F%E7%9A%84%E8%AE%BE%E8%AE%A1/</guid>
+      <description>四个策略：删除、组织、隐藏、转移 最明显的简化设计方法 最快捷的简化设计方式 参考就行啦。 隐藏是一种低成本的简化方案 将某些功能转移到其他地方，。 原则是，哪一方擅长什么，就将对应功能转移过去。 解&amp;hellip;</description>
+      
+    </item>
+    
     <item>
       <title>Lec-8 交互式系统的需求</title>
       <link>https://huoxj.github.io/posts/%E4%BA%BA%E6%9C%BA%E4%BA%A4%E4%BA%92/lec-8-%E4%BA%A4%E4%BA%92%E5%BC%8F%E7%B3%BB%E7%BB%9F%E7%9A%84%E9%9C%80%E6%B1%82/</link>
