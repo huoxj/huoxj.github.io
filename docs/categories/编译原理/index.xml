@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>编译原理 on Runz&#39;s Blog</title>
+    <link>http://localhost:4647/categories/%E7%BC%96%E8%AF%91%E5%8E%9F%E7%90%86/</link>
+    <description>Recent content in 编译原理 on Runz&#39;s Blog</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 11 May 2024 15:06:51 -0800</lastBuildDate>
+    <atom:link href="http://localhost:4647/categories/%E7%BC%96%E8%AF%91%E5%8E%9F%E7%90%86/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>课堂知识点索引</title>
+      <link>http://localhost:4647/posts/%E7%BC%96%E8%AF%91%E5%8E%9F%E7%90%86/%E8%AF%BE%E5%A0%82%E7%9F%A5%E8%AF%86%E7%82%B9%E7%B4%A2%E5%BC%95/</link>
+      <pubDate>Sat, 11 May 2024 15:06:51 -0800</pubDate>
+      <guid>http://localhost:4647/posts/%E7%BC%96%E8%AF%91%E5%8E%9F%E7%90%86/%E8%AF%BE%E5%A0%82%E7%9F%A5%E8%AF%86%E7%82%B9%E7%B4%A2%E5%BC%95/</guid>
+      <description>本文档只包含一些关键的知识点 对应Lecture-3 为什么叫子集构造法: 总结: 根据控制流的来源决定返回值 ``` %3 = phi i32 [1, %1], [2, %2] // 如果从%1控制&amp;hellip;</description>
+    </item>
+    <item>
+      <title>随记</title>
+      <link>http://localhost:4647/posts/%E7%BC%96%E8%AF%91%E5%8E%9F%E7%90%86/%E9%9A%8F%E8%AE%B0/</link>
+      <pubDate>Thu, 09 May 2024 22:03:20 -0800</pubDate>
+      <guid>http://localhost:4647/posts/%E7%BC%96%E8%AF%91%E5%8E%9F%E7%90%86/%E9%9A%8F%E8%AE%B0/</guid>
+      <description>&lt;h1 id=&#34;随记&#34;&gt;随记&lt;/h1&gt;&#xA;&lt;h2 id=&#34;pumping-theorem的理解&#34;&gt;Pumping Theorem的理解&lt;/h2&gt;&#xA;&lt;p&gt;&lt;img src=&#34;https://runzblog.oss-cn-hangzhou.aliyuncs.com/postimg/202409271714016.png&#34; alt=&#34;image-20240509220414719&#34;&gt;&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;一个&lt;strong&gt;足够长&lt;/strong&gt;的，能被正则表达式$r$接受的&lt;strong&gt;字符串&lt;/strong&gt;，一定能分成$xyz$三个部分。因为$r$对应DFA的状态数$p$是有限的，而串的长度大于$p$时，一定有&lt;strong&gt;一个&lt;/strong&gt;状态被经历了&lt;strong&gt;两次及以上&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;其中$y$对应$r$的DFA中起始状态和结束状态是同一个状态&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;由于是同一个状态，我就可以接受任意多个$y$，所以$xy^iz\in L$肯定成立&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;扩展：上下文无关法的Pumping Theorem，具体可见课件里面&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
+    </item>
+    <item>
+      <title>问题收集</title>
+      <link>http://localhost:4647/posts/%E7%BC%96%E8%AF%91%E5%8E%9F%E7%90%86/%E9%97%AE%E9%A2%98%E6%94%B6%E9%9B%86/</link>
+      <pubDate>Wed, 08 May 2024 20:49:02 -0800</pubDate>
+      <guid>http://localhost:4647/posts/%E7%BC%96%E8%AF%91%E5%8E%9F%E7%90%86/%E9%97%AE%E9%A2%98%E6%94%B6%E9%9B%86/</guid>
+      <description>&lt;h1 id=&#34;待解决问题&#34;&gt;待解决问题&lt;/h1&gt;&#xA;&lt;h2 id=&#34;lexer&#34;&gt;Lexer&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;DFA最小化为什么是正确的&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;DFA最小化的结果唯一吗&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;有关自动机的书：《计算理论导引》、J.E.H R.M J.D.U《Automata Theory, Languages, and Computation 第三版》&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
+    </item>
+  </channel>
+</rss>

@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>人机交互 on Runz&#39;s Blog</title>
+    <link>http://localhost:4647/categories/%E4%BA%BA%E6%9C%BA%E4%BA%A4%E4%BA%92/</link>
+    <description>Recent content in 人机交互 on Runz&#39;s Blog</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 01 Jan 2025 15:30:04 -0800</lastBuildDate>
+    <atom:link href="http://localhost:4647/categories/%E4%BA%BA%E6%9C%BA%E4%BA%A4%E4%BA%92/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Lec-12 以用户为中心</title>
+      <link>http://localhost:4647/posts/%E4%BA%BA%E6%9C%BA%E4%BA%A4%E4%BA%92/lec-12-%E4%BB%A5%E7%94%A8%E6%88%B7%E4%B8%BA%E4%B8%AD%E5%BF%83/</link>
+      <pubDate>Wed, 01 Jan 2025 15:30:04 -0800</pubDate>
+      <guid>http://localhost:4647/posts/%E4%BA%BA%E6%9C%BA%E4%BA%A4%E4%BA%92/lec-12-%E4%BB%A5%E7%94%A8%E6%88%B7%E4%B8%BA%E4%B8%AD%E5%BF%83/</guid>
+      <description>这一节主要是理解，内容不多 使用（情景调查）了解用户。 观察并与用户交流会比仅仅观察的效果要好 四个原则： 相比于民族志观察，上下文询问法 以用户为中心的方法存在一些缺陷： 所以推出以活动为中心的思想&amp;hellip;</description>
+    </item>
+    <item>
+      <title>Lec-11 交互模型与理论</title>
+      <link>http://localhost:4647/posts/%E4%BA%BA%E6%9C%BA%E4%BA%A4%E4%BA%92/lec-11-%E4%BA%A4%E4%BA%92%E6%A8%A1%E5%9E%8B%E4%B8%8E%E7%90%86%E8%AE%BA/</link>
+      <pubDate>Wed, 01 Jan 2025 13:56:43 -0800</pubDate>
+      <guid>http://localhost:4647/posts/%E4%BA%BA%E6%9C%BA%E4%BA%A4%E4%BA%92/lec-11-%E4%BA%A4%E4%BA%92%E6%A8%A1%E5%9E%8B%E4%B8%8E%E7%90%86%E8%AE%BA/</guid>
+      <description>这一节主要讲了，通过这些模型，可以在不对用户做测试的条件下预测用户的执行情况。 最著名的预测模型。 全称： 优点 局限性 简化版本的 GOMS，对用户执行情况进行量化。 用一系列操作符，描述用户执行任&amp;hellip;</description>
+    </item>
+    <item>
+      <title>Lec-10 人机交互系统基础知识</title>
+      <link>http://localhost:4647/posts/%E4%BA%BA%E6%9C%BA%E4%BA%A4%E4%BA%92/lec-10-%E4%BA%BA%E6%9C%BA%E4%BA%A4%E4%BA%92%E7%B3%BB%E7%BB%9F%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/</link>
+      <pubDate>Wed, 01 Jan 2025 13:32:26 -0800</pubDate>
+      <guid>http://localhost:4647/posts/%E4%BA%BA%E6%9C%BA%E4%BA%A4%E4%BA%92/lec-10-%E4%BA%BA%E6%9C%BA%E4%BA%A4%E4%BA%92%E7%B3%BB%E7%BB%9F%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/</guid>
+      <description>研究人对外界的接收、存储、集成、检索和使用。 预测人执行特定任务的效率。 没有考虑到注意和记忆的重要性 也就是加了注意力和记忆的信息处理机模型。 最著名的信息处理模型。 研究人是如何感知一个良好组织的&amp;hellip;</description>
+    </item>
+    <item>
+      <title>Lec-9 交互式系统的设计</title>
+      <link>http://localhost:4647/posts/%E4%BA%BA%E6%9C%BA%E4%BA%A4%E4%BA%92/lec-9-%E4%BA%A4%E4%BA%92%E5%BC%8F%E7%B3%BB%E7%BB%9F%E7%9A%84%E8%AE%BE%E8%AE%A1/</link>
+      <pubDate>Wed, 01 Jan 2025 11:39:11 -0800</pubDate>
+      <guid>http://localhost:4647/posts/%E4%BA%BA%E6%9C%BA%E4%BA%A4%E4%BA%92/lec-9-%E4%BA%A4%E4%BA%92%E5%BC%8F%E7%B3%BB%E7%BB%9F%E7%9A%84%E8%AE%BE%E8%AE%A1/</guid>
+      <description>四个策略：删除、组织、隐藏、转移 最明显的简化设计方法 最快捷的简化设计方式 参考就行啦。 隐藏是一种低成本的简化方案 将某些功能转移到其他地方，。 原则是，哪一方擅长什么，就将对应功能转移过去。 解&amp;hellip;</description>
+    </item>
+    <item>
+      <title>Lec-8 交互式系统的需求</title>
+      <link>http://localhost:4647/posts/%E4%BA%BA%E6%9C%BA%E4%BA%A4%E4%BA%92/lec-8-%E4%BA%A4%E4%BA%92%E5%BC%8F%E7%B3%BB%E7%BB%9F%E7%9A%84%E9%9C%80%E6%B1%82/</link>
+      <pubDate>Fri, 27 Dec 2024 10:28:24 -0800</pubDate>
+      <guid>http://localhost:4647/posts/%E4%BA%BA%E6%9C%BA%E4%BA%A4%E4%BA%92/lec-8-%E4%BA%A4%E4%BA%92%E5%BC%8F%E7%B3%BB%E7%BB%9F%E7%9A%84%E9%9C%80%E6%B1%82/</guid>
+      <description>心理学原理部分，假设每个人都有相似的能力和局限性。 交互产品设计人员应该意识到个性的差异。 用户的主要体现在： 特点 设计要求 特点 设计要求 特点 设计要求 老年人和儿童 使用人物角色 (Perso&amp;hellip;</description>
+    </item>
+    <item>
+      <title>Lec-7 评估技术-用户测试</title>
+      <link>http://localhost:4647/posts/%E4%BA%BA%E6%9C%BA%E4%BA%A4%E4%BA%92/lec-7-%E8%AF%84%E4%BC%B0%E6%8A%80%E6%9C%AF-%E7%94%A8%E6%88%B7%E6%B5%8B%E8%AF%95/</link>
+      <pubDate>Sun, 22 Dec 2024 16:13:20 -0800</pubDate>
+      <guid>http://localhost:4647/posts/%E4%BA%BA%E6%9C%BA%E4%BA%A4%E4%BA%92/lec-7-%E8%AF%84%E4%BC%B0%E6%8A%80%E6%9C%AF-%E7%94%A8%E6%88%B7%E6%B5%8B%E8%AF%95/</guid>
+      <description>用户测试主要是指在测量典型用户的情况，目标是获取的性能数据来评价系统的可用性，适合对原型和现有系统进行评估。 1. 决定评估需要完成的总体目标 2. 发掘需要回答的具体问题 3. 选择用于回答具体问题&amp;hellip;</description>
+    </item>
+    <item>
+      <title>Lec-6 评估技术-询问用户与专家</title>
+      <link>http://localhost:4647/posts/%E4%BA%BA%E6%9C%BA%E4%BA%A4%E4%BA%92/lec-6-%E8%AF%84%E4%BC%B0%E6%8A%80%E6%9C%AF-%E8%AF%A2%E9%97%AE%E7%94%A8%E6%88%B7%E4%B8%8E%E4%B8%93%E5%AE%B6/</link>
+      <pubDate>Sun, 22 Dec 2024 15:44:12 -0800</pubDate>
+      <guid>http://localhost:4647/posts/%E4%BA%BA%E6%9C%BA%E4%BA%A4%E4%BA%92/lec-6-%E8%AF%84%E4%BC%B0%E6%8A%80%E6%9C%AF-%E8%AF%A2%E9%97%AE%E7%94%A8%E6%88%B7%E4%B8%8E%E4%B8%93%E5%AE%B6/</guid>
+      <description>有目的的对话过程。 问卷调查是用于搜集统计数据和用户意见的常用方法。 QUIS: questionnaire for user interaction satisfaction 内容： 有助于提高回复&amp;hellip;</description>
+    </item>
+    <item>
+      <title>Lec-5 评估技术-观察用户</title>
+      <link>http://localhost:4647/posts/%E4%BA%BA%E6%9C%BA%E4%BA%A4%E4%BA%92/lec-5-%E8%AF%84%E4%BC%B0%E6%8A%80%E6%9C%AF-%E8%A7%82%E5%AF%9F%E7%94%A8%E6%88%B7/</link>
+      <pubDate>Sun, 22 Dec 2024 14:22:33 -0800</pubDate>
+      <guid>http://localhost:4647/posts/%E4%BA%BA%E6%9C%BA%E4%BA%A4%E4%BA%92/lec-5-%E8%AF%84%E4%BC%B0%E6%8A%80%E6%9C%AF-%E8%A7%82%E5%AF%9F%E7%94%A8%E6%88%B7/</guid>
+      <description>&lt;h2 id=&#34;观察方式-二者差别不大两者经常互为补充互相参考-----以下是具体的观察方法-在专门为可用性测试而安装配置的固定设备的环境下进行的观察-测试区观察区-二者分开防止互相干扰-&#34;&gt;观察方式 二者差别不大（？）。两者经常互为补充、互相参考。 &amp;mdash; 以下是具体的观察方法。 在专门为可用性测试而安装配置的固定设备的环境下进行的观察。 测试区、观察区 二者分开，防止互相干扰。 &amp;hellip;&lt;/h2&gt;&#xA;</description>
+    </item>
+    <item>
+      <title>Lec-4 评估的基础知识</title>
+      <link>http://localhost:4647/posts/%E4%BA%BA%E6%9C%BA%E4%BA%A4%E4%BA%92/lec-4-%E8%AF%84%E4%BC%B0%E7%9A%84%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/</link>
+      <pubDate>Mon, 25 Nov 2024 14:28:54 -0800</pubDate>
+      <guid>http://localhost:4647/posts/%E4%BA%BA%E6%9C%BA%E4%BA%A4%E4%BA%92/lec-4-%E8%AF%84%E4%BC%B0%E7%9A%84%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/</guid>
+      <description>&amp;mdash; &amp;mdash; “范型”与“技术”： 1. 范型与具体学科相关，对如何评估有很大影响：可用性测试是一种评估范型 2. 每种范型有特定的技术：可用性测试的技术有观察、问卷调查、访谈等 设计人员非正式地向&amp;hellip;</description>
+    </item>
+    <item>
+      <title>Lec-3 交互设计原则与目标</title>
+      <link>http://localhost:4647/posts/%E4%BA%BA%E6%9C%BA%E4%BA%A4%E4%BA%92/lec-3-%E4%BA%A4%E4%BA%92%E8%AE%BE%E8%AE%A1%E5%8E%9F%E5%88%99%E4%B8%8E%E7%9B%AE%E6%A0%87/</link>
+      <pubDate>Mon, 25 Nov 2024 10:04:15 -0800</pubDate>
+      <guid>http://localhost:4647/posts/%E4%BA%BA%E6%9C%BA%E4%BA%A4%E4%BA%92/lec-3-%E4%BA%A4%E4%BA%92%E8%AE%BE%E8%AE%A1%E5%8E%9F%E5%88%99%E4%B8%8E%E7%9B%AE%E6%A0%87/</guid>
+      <description>不知道为什么没有 Lec-2，往年这个标题是 Lec-2 来着，但是今年老师发的 PPT 直接跳过 2 了。具体什么情况无从知晓，因为上课根本没听嘛。 &amp;mdash; 交互框架是提供理解或定义某种事务的一种结&amp;hellip;</description>
+    </item>
+    <item>
+      <title>Lec-1 人机交互概述</title>
+      <link>http://localhost:4647/posts/%E4%BA%BA%E6%9C%BA%E4%BA%A4%E4%BA%92/lec-1-%E4%BA%BA%E6%9C%BA%E4%BA%A4%E4%BA%92%E6%A6%82%E8%BF%B0/</link>
+      <pubDate>Mon, 25 Nov 2024 09:46:53 -0800</pubDate>
+      <guid>http://localhost:4647/posts/%E4%BA%BA%E6%9C%BA%E4%BA%A4%E4%BA%92/lec-1-%E4%BA%BA%E6%9C%BA%E4%BA%A4%E4%BA%92%E6%A6%82%E8%BF%B0/</guid>
+      <description>By ACM 孤立地从一个学科出发不可能设计出有效的交互式系统</description>
+    </item>
+  </channel>
+</rss>

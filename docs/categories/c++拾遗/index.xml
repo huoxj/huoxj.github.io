@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>C&#43;&#43;拾遗 on Runz&#39;s Blog</title>
+    <link>http://localhost:4647/categories/c&#43;&#43;%E6%8B%BE%E9%81%97/</link>
+    <description>Recent content in C&#43;&#43;拾遗 on Runz&#39;s Blog</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 19 Jan 2025 14:33:12 -0800</lastBuildDate>
+    <atom:link href="http://localhost:4647/categories/c++%E6%8B%BE%E9%81%97/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>STL-算法</title>
+      <link>http://localhost:4647/posts/c&#43;&#43;%E6%8B%BE%E9%81%97/stl-%E7%AE%97%E6%B3%95/</link>
+      <pubDate>Sun, 19 Jan 2025 14:33:12 -0800</pubDate>
+      <guid>http://localhost:4647/posts/c&#43;&#43;%E6%8B%BE%E9%81%97/stl-%E7%AE%97%E6%B3%95/</guid>
+      <description>&lt;h2 id=&#34;谓词&#34;&gt;谓词&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;std::all_of&lt;/li&gt;&#xA;&lt;li&gt;std::any_of&lt;/li&gt;&#xA;&lt;li&gt;std::none_of&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
+    </item>
+    <item>
+      <title>异常处理</title>
+      <link>http://localhost:4647/posts/c&#43;&#43;%E6%8B%BE%E9%81%97/%E5%BC%82%E5%B8%B8%E5%A4%84%E7%90%86/</link>
+      <pubDate>Sun, 29 Dec 2024 08:41:10 -0800</pubDate>
+      <guid>http://localhost:4647/posts/c&#43;&#43;%E6%8B%BE%E9%81%97/%E5%BC%82%E5%B8%B8%E5%A4%84%E7%90%86/</guid>
+      <description>传统的方法是，使用或者来标识是否发生异常、发生什么异常。 函数检查参数或者返回值来确定异常，并。 这样需要逐层返回。并且对于一些特殊的情况无法处理，比如构造函数发生异常。 &amp;mdash; 语句序列中是否发生异&amp;hellip;</description>
+    </item>
+    <item>
+      <title>C&#43;&#43; 强制类型转换</title>
+      <link>http://localhost:4647/posts/c&#43;&#43;%E6%8B%BE%E9%81%97/c&#43;&#43;-%E5%BC%BA%E5%88%B6%E7%B1%BB%E5%9E%8B%E8%BD%AC%E6%8D%A2/</link>
+      <pubDate>Tue, 24 Dec 2024 15:03:25 -0800</pubDate>
+      <guid>http://localhost:4647/posts/c&#43;&#43;%E6%8B%BE%E9%81%97/c&#43;&#43;-%E5%BC%BA%E5%88%B6%E7%B1%BB%E5%9E%8B%E8%BD%AC%E6%8D%A2/</guid>
+      <description>C 中的强制类型转换是通过在表达式前面加类型名实现的。 C+，强制类型转换被细分成了四个运算符： 原因如下： 比如，int 转成 double 是风险不大的；但是将 const 指针转换成非 cons&amp;hellip;</description>
+    </item>
+    <item>
+      <title>C&#43;&#43;期末复习</title>
+      <link>http://localhost:4647/posts/c&#43;&#43;%E6%8B%BE%E9%81%97/c&#43;&#43;%E6%9C%9F%E6%9C%AB%E5%A4%8D%E4%B9%A0/</link>
+      <pubDate>Tue, 24 Dec 2024 14:21:51 -0800</pubDate>
+      <guid>http://localhost:4647/posts/c&#43;&#43;%E6%8B%BE%E9%81%97/c&#43;&#43;%E6%9C%9F%E6%9C%AB%E5%A4%8D%E4%B9%A0/</guid>
+      <description>根据上课 PPT 和同学与学长的笔记整理而成。 先跳过。。。 {{}} 副作用，就是一个过程是否会修改参与的变量的性质。 在表达式中，有副作用的运算符：&lt;code&gt;=&lt;/code&gt; &lt;code&gt;+=&lt;/code&gt; &lt;code&gt;++&lt;/code&gt; &lt;code&gt;&amp;lt;&amp;lt;&lt;/code&gt; 等等 无副&amp;hellip;</description>
+    </item>
+    <item>
+      <title>三剑客</title>
+      <link>http://localhost:4647/posts/c&#43;&#43;%E6%8B%BE%E9%81%97/%E4%B8%89%E5%89%91%E5%AE%A2/</link>
+      <pubDate>Sat, 21 Dec 2024 15:02:27 -0800</pubDate>
+      <guid>http://localhost:4647/posts/c&#43;&#43;%E6%8B%BE%E9%81%97/%E4%B8%89%E5%89%91%E5%AE%A2/</guid>
+      <description>std::optional std::tuple std::any</description>
+    </item>
+    <item>
+      <title>流</title>
+      <link>http://localhost:4647/posts/c&#43;&#43;%E6%8B%BE%E9%81%97/%E6%B5%81/</link>
+      <pubDate>Thu, 12 Dec 2024 16:03:02 -0800</pubDate>
+      <guid>http://localhost:4647/posts/c&#43;&#43;%E6%8B%BE%E9%81%97/%E6%B5%81/</guid>
+      <description>&lt;h2 id=&#34;输入输出处理&#34;&gt;输入、输出处理&lt;/h2&gt;&#xA;&lt;h2 id=&#34;用流替代-sprintf--sscanf&#34;&gt;用流替代 sprintf / sscanf&lt;/h2&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://blog.csdn.net/Hodors/article/details/136045381&#34;&gt;C++如何理解 sprintf 函数 ，寻找更好的替代方案_c++ sprintf-CSDN博客&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>锁与条件变量</title>
+      <link>http://localhost:4647/posts/c&#43;&#43;%E6%8B%BE%E9%81%97/%E9%94%81%E4%B8%8E%E6%9D%A1%E4%BB%B6%E5%8F%98%E9%87%8F/</link>
+      <pubDate>Wed, 11 Dec 2024 21:40:53 -0800</pubDate>
+      <guid>http://localhost:4647/posts/c&#43;&#43;%E6%8B%BE%E9%81%97/%E9%94%81%E4%B8%8E%E6%9D%A1%E4%BB%B6%E5%8F%98%E9%87%8F/</guid>
+      <description>&lt;ul&gt;&#xA;&lt;li&gt;std::mutex&lt;/li&gt;&#xA;&lt;li&gt;std::condition_variable&lt;/li&gt;&#xA;&lt;li&gt;std::unique_lock&lt;/li&gt;&#xA;&lt;li&gt;std::atomic&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;参考&#34;&gt;参考&lt;/h2&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://blog.csdn.net/u012507022/article/details/85909567&#34;&gt;C++11多线程 unique_lock详解_uniquelock-CSDN博客&lt;/a&gt;&#xA;&lt;a href=&#34;https://blog.csdn.net/qq_38210354/article/details/107168532&#34;&gt;C++11多线程条件变量std::condition_variable详解（转 ）_while (!ready) cv.wait(lck);-CSDN博客&lt;/a&gt;&#xA;&lt;a href=&#34;https://blog.csdn.net/m0_75215937/article/details/135074541&#34;&gt;【C++入门到精通】condition_variable（条件变量）C++11 [ C++入门 ]_c++ condition variable-CSDN博客&lt;/a&gt;&#xA;&lt;a href=&#34;https://www.runoob.com/cplusplus/cpp-libs-atomic.html&#34;&gt;C++ 标准库 atomic | 菜鸟教程&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>运算符重载</title>
+      <link>http://localhost:4647/posts/c&#43;&#43;%E6%8B%BE%E9%81%97/%E8%BF%90%E7%AE%97%E7%AC%A6%E9%87%8D%E8%BD%BD/</link>
+      <pubDate>Thu, 05 Dec 2024 15:09:54 -0800</pubDate>
+      <guid>http://localhost:4647/posts/c&#43;&#43;%E6%8B%BE%E9%81%97/%E8%BF%90%E7%AE%97%E7%AC%A6%E9%87%8D%E8%BD%BD/</guid>
+      <description>大部分运算符都可重载： | 双目算术运算符 | 加)，-(减)，*(乘)，/(除)，% (取模) | | &amp;mdash;&amp;mdash; | 关系运算符 | ==(等于)，!= (不等于)， (大于)，=(大于等于) &amp;hellip;</description>
+    </item>
+    <item>
+      <title>OO-继承与派生</title>
+      <link>http://localhost:4647/posts/c&#43;&#43;%E6%8B%BE%E9%81%97/oo-%E7%BB%A7%E6%89%BF%E4%B8%8E%E6%B4%BE%E7%94%9F/</link>
+      <pubDate>Thu, 21 Nov 2024 12:36:40 -0800</pubDate>
+      <guid>http://localhost:4647/posts/c&#43;&#43;%E6%8B%BE%E9%81%97/oo-%E7%BB%A7%E6%89%BF%E4%B8%8E%E6%B4%BE%E7%94%9F/</guid>
+      <description>考试必考。所以在网上找一些笔记，记下有价值的部分以供复习。 继承和派生这对名词基本是一个意思，只是各自用语习惯不一样： OO 是 Java 学的，所以我倾向于第一种表达。 C+神奇地提供了三种继承方式&amp;hellip;</description>
+    </item>
+    <item>
+      <title>OO 杂项</title>
+      <link>http://localhost:4647/posts/c&#43;&#43;%E6%8B%BE%E9%81%97/oo-%E6%9D%82%E9%A1%B9/</link>
+      <pubDate>Wed, 20 Nov 2024 10:34:25 -0800</pubDate>
+      <guid>http://localhost:4647/posts/c&#43;&#43;%E6%8B%BE%E9%81%97/oo-%E6%9D%82%E9%A1%B9/</guid>
+      <description>&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-cpp&#34; data-lang=&#34;cpp&#34;&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
+    </item>
+    <item>
+      <title>杂项</title>
+      <link>http://localhost:4647/posts/c&#43;&#43;%E6%8B%BE%E9%81%97/%E6%9D%82%E9%A1%B9/</link>
+      <pubDate>Sun, 17 Nov 2024 20:12:19 -0800</pubDate>
+      <guid>http://localhost:4647/posts/c&#43;&#43;%E6%8B%BE%E9%81%97/%E6%9D%82%E9%A1%B9/</guid>
+      <description>RAII： Resource acquisition is initialization 将资源管理交给其本身的思想。 尽量使用对象的生命周期来管理资源，初始化时调用构造函数进行资源分配，离开作用域时&amp;hellip;</description>
+    </item>
+    <item>
+      <title>可变参数</title>
+      <link>http://localhost:4647/posts/c&#43;&#43;%E6%8B%BE%E9%81%97/%E5%8F%AF%E5%8F%98%E5%8F%82%E6%95%B0/</link>
+      <pubDate>Fri, 15 Nov 2024 17:22:58 -0800</pubDate>
+      <guid>http://localhost:4647/posts/c&#43;&#43;%E6%8B%BE%E9%81%97/%E5%8F%AF%E5%8F%98%E5%8F%82%E6%95%B0/</guid>
+      <description>向函数传不定个数的参数就是可变参数。标识符为 &lt;code&gt;...&lt;/code&gt;。 举例： &lt;code&gt;c int printf(const char *format, ...); &lt;/code&gt; C 中使用可变参数需要引入头文件 `st&amp;hellip;</description>
+    </item>
+    <item>
+      <title>移动语义与右值引用</title>
+      <link>http://localhost:4647/posts/c&#43;&#43;%E6%8B%BE%E9%81%97/%E7%A7%BB%E5%8A%A8%E8%AF%AD%E4%B9%89%E4%B8%8E%E5%8F%B3%E5%80%BC%E5%BC%95%E7%94%A8/</link>
+      <pubDate>Sun, 10 Nov 2024 15:55:56 -0800</pubDate>
+      <guid>http://localhost:4647/posts/c&#43;&#43;%E6%8B%BE%E9%81%97/%E7%A7%BB%E5%8A%A8%E8%AF%AD%E4%B9%89%E4%B8%8E%E5%8F%B3%E5%80%BC%E5%BC%95%E7%94%A8/</guid>
+      <description>&lt;h2 id=&#34;参考&#34;&gt;参考&lt;/h2&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://www.cprogramming.com/c++11/rvalue-references-and-move-semantics-in-c++11.html#google_vignette&#34;&gt;Rvalue References and Move Semantics in C++11 - Cprogramming.com&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://zhuanlan.zhihu.com/p/347977300&#34;&gt;认识C++移动语义与右值引用 - 知乎&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>关键字</title>
+      <link>http://localhost:4647/posts/c&#43;&#43;%E6%8B%BE%E9%81%97/%E5%85%B3%E9%94%AE%E5%AD%97/</link>
+      <pubDate>Sun, 20 Oct 2024 23:29:02 -0800</pubDate>
+      <guid>http://localhost:4647/posts/c&#43;&#43;%E6%8B%BE%E9%81%97/%E5%85%B3%E9%94%AE%E5%AD%97/</guid>
+      <description>字面意思，给类型取别名。 ```cpp int main() { typedef int size_t; size_t s = 3; fun(); } int fun() { size_t t = 2&amp;hellip;</description>
+    </item>
+    <item>
+      <title>类型解释</title>
+      <link>http://localhost:4647/posts/c&#43;&#43;%E6%8B%BE%E9%81%97/%E7%B1%BB%E5%9E%8B%E8%A7%A3%E9%87%8A/</link>
+      <pubDate>Sun, 13 Oct 2024 10:15:01 -0800</pubDate>
+      <guid>http://localhost:4647/posts/c&#43;&#43;%E6%8B%BE%E9%81%97/%E7%B1%BB%E5%9E%8B%E8%A7%A3%E9%87%8A/</guid>
+      <description>写这部分是为了： 记住要： 推荐这个网站，能帮你把 C 类型声明翻译成自然语言： 本文中，我们只关心如下几种说明符，因为这几种说明符是最困难的部分： ```text 括号括住的部分 &amp;gt; 后缀说明符 &amp;gt;&amp;hellip;</description>
+    </item>
+    <item>
+      <title>String</title>
+      <link>http://localhost:4647/posts/c&#43;&#43;%E6%8B%BE%E9%81%97/string/</link>
+      <pubDate>Sat, 12 Oct 2024 11:20:30 -0800</pubDate>
+      <guid>http://localhost:4647/posts/c&#43;&#43;%E6%8B%BE%E9%81%97/string/</guid>
+      <description>在以前打竞赛的时候，基本都是用字符数组配合&lt;code&gt;string.h&lt;/code&gt;里的函数去处理字符串。现在开始系统地接触C++，所以来记录一下&lt;code&gt;string&lt;/code&gt;类的知识。 &lt;code&gt;string&lt;/code&gt; 是 C+格的字符串类，也是一种&amp;hellip;</description>
+    </item>
+    <item>
+      <title>指针、引用与数组</title>
+      <link>http://localhost:4647/posts/c&#43;&#43;%E6%8B%BE%E9%81%97/%E6%8C%87%E9%92%88%E5%BC%95%E7%94%A8%E4%B8%8E%E6%95%B0%E7%BB%84/</link>
+      <pubDate>Sat, 12 Oct 2024 10:43:45 -0800</pubDate>
+      <guid>http://localhost:4647/posts/c&#43;&#43;%E6%8B%BE%E9%81%97/%E6%8C%87%E9%92%88%E5%BC%95%E7%94%A8%E4%B8%8E%E6%95%B0%E7%BB%84/</guid>
+      <description>以我的粗浅且可能有很大错误的理解，引用就是有着一些限制、有一些封装的指针，这些限制在编译器层面解决，底层就是以指针形式实现。 限制在如下几点： 引用带来的方便： 指针是指向一块内存首地址的变量。指针的&amp;hellip;</description>
+    </item>
+    <item>
+      <title>STL-容器</title>
+      <link>http://localhost:4647/posts/c&#43;&#43;%E6%8B%BE%E9%81%97/stl-%E5%AE%B9%E5%99%A8/</link>
+      <pubDate>Sat, 12 Oct 2024 10:43:24 -0800</pubDate>
+      <guid>http://localhost:4647/posts/c&#43;&#43;%E6%8B%BE%E9%81%97/stl-%E5%AE%B9%E5%99%A8/</guid>
+      <description>STL 有五大组件： 序列容器实现能按顺序访问的数据结构。 有如下容器： 省略返回类型以及一些无关紧要的参数类型。 没有头部加入和删除元素。 insert，erase 和 clear 复杂度 $O(n&amp;hellip;</description>
+    </item>
+  </channel>
+</rss>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>CS149-并行计算 on Runz&#39;s Blog</title>
+    <link>http://localhost:4647/categories/cs149-%E5%B9%B6%E8%A1%8C%E8%AE%A1%E7%AE%97/</link>
+    <description>Recent content in CS149-并行计算 on Runz&#39;s Blog</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 17 Feb 2025 10:02:48 -0800</lastBuildDate>
+    <atom:link href="http://localhost:4647/categories/cs149-%E5%B9%B6%E8%A1%8C%E8%AE%A1%E7%AE%97/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Asst3</title>
+      <link>http://localhost:4647/posts/cs149-%E5%B9%B6%E8%A1%8C%E8%AE%A1%E7%AE%97/asst3/</link>
+      <pubDate>Mon, 17 Feb 2025 10:02:48 -0800</pubDate>
+      <guid>http://localhost:4647/posts/cs149-%E5%B9%B6%E8%A1%8C%E8%AE%A1%E7%AE%97/asst3/</guid>
+      <description>使用 CUDA 实现 SAXPY。 实现很简单，跟着实验文档和 CUDA 文档做下来就行。 Question 2：为什么观测到的带宽约为 5.3 GB/s，远不及 PCIe 3.0 的理论带宽上限？ &amp;hellip;</description>
+    </item>
+    <item>
+      <title>Asst1</title>
+      <link>http://localhost:4647/posts/cs149-%E5%B9%B6%E8%A1%8C%E8%AE%A1%E7%AE%97/asst1/</link>
+      <pubDate>Fri, 08 Nov 2024 09:40:53 -0800</pubDate>
+      <guid>http://localhost:4647/posts/cs149-%E5%B9%B6%E8%A1%8C%E8%AE%A1%E7%AE%97/asst1/</guid>
+      <description>使用 &lt;code&gt;std::thread&lt;/code&gt; 来绘制分形图像。 默认策略是将图像分成高度相同的几块，每一块分给一个线程画。 这样其实做不到负载均衡，因为每一块画的工作量是不同的。 特别是 view1，很明显发现画&amp;hellip;</description>
+    </item>
+  </channel>
+</rss>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>AscendC on Runz&#39;s Blog</title>
+    <link>https://huoxj.github.io/series/ascendc/</link>
+    <description>Recent content in AscendC on Runz&#39;s Blog</description>
+    <generator>Hugo</generator>
+    <language>cn</language>
+    <lastBuildDate>Wed, 19 Mar 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://huoxj.github.io/series/ascendc/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>AscendC-Tiling</title>
+      <link>https://huoxj.github.io/posts/ascendc/ascendc-tiling/</link>
+      <pubDate>Wed, 19 Mar 2025 00:00:00 +0000</pubDate>
+      <guid>https://huoxj.github.io/posts/ascendc/ascendc-tiling/</guid>
+      <description>&lt;h2 id=&#34;32-字节对齐&#34;&gt;32 字节对齐&lt;/h2&gt;&#xA;&lt;p&gt;数据的 shapeLength 需要 32 字节对齐。&lt;/p&gt;&#xA;&lt;h2 id=&#34;系统信息&#34;&gt;系统信息&lt;/h2&gt;</description>
+    </item>
+    <item>
+      <title>AscendC-开发环境</title>
+      <link>https://huoxj.github.io/posts/ascendc/ascendc-%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83/</link>
+      <pubDate>Wed, 19 Mar 2025 00:00:00 +0000</pubDate>
+      <guid>https://huoxj.github.io/posts/ascendc/ascendc-%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83/</guid>
+      <description>&lt;p&gt;bisheng -x cce -I ${tikcpp_path} -I ${tikcpp_path}/tikcfw -I ${tikcpp_path}/tikcfw/impl -I ${tikcpp_path}/tikcfw/interface&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>华为昇腾挑战赛南京大学专场-赛前培训</title>
+      <link>https://huoxj.github.io/posts/ascendc/%E5%8D%8E%E4%B8%BA%E6%98%87%E8%85%BE%E6%8C%91%E6%88%98%E8%B5%9B%E5%8D%97%E4%BA%AC%E5%A4%A7%E5%AD%A6%E4%B8%93%E5%9C%BA-%E8%B5%9B%E5%89%8D%E5%9F%B9%E8%AE%AD/</link>
+      <pubDate>Wed, 19 Mar 2025 00:00:00 +0000</pubDate>
+      <guid>https://huoxj.github.io/posts/ascendc/%E5%8D%8E%E4%B8%BA%E6%98%87%E8%85%BE%E6%8C%91%E6%88%98%E8%B5%9B%E5%8D%97%E4%BA%AC%E5%A4%A7%E5%AD%A6%E4%B8%93%E5%9C%BA-%E8%B5%9B%E5%89%8D%E5%9F%B9%E8%AE%AD/</guid>
+      <description>&lt;h1 id=&#34;day-1&#34;&gt;Day 1&lt;/h1&gt;&#xA;&lt;p&gt;基本照着 AscendC 文档讲。主要内容是一些入门知识。&lt;/p&gt;&#xA;&lt;h1 id=&#34;day-2&#34;&gt;Day 2&lt;/h1&gt;&#xA;&lt;h2 id=&#34;算子生成-run-包注意事项&#34;&gt;算子生成 run 包注意事项&lt;/h2&gt;&#xA;&lt;p&gt;&lt;img src=&#34;https://runzblog.oss-cn-hangzhou.aliyuncs.com/postimg/202503191909014.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;要改两个点：&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;芯片改成 &lt;code&gt;ascend910b&lt;/code&gt;&lt;/li&gt;&#xA;&lt;li&gt;改 Cann 包路径&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;msopgen-在哪&#34;&gt;msopgen 在哪&lt;/h2&gt;&#xA;&lt;p&gt;&lt;img src=&#34;https://runzblog.oss-cn-hangzhou.aliyuncs.com/postimg/202503191911437.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;在 toolkit 的 Python package 里面。&lt;/p&gt;&#xA;&lt;h2 id=&#34;考题&#34;&gt;考题&lt;/h2&gt;&#xA;&lt;p&gt;ScatterReduce&lt;/p&gt;&#xA;&lt;h2 id=&#34;gather&#34;&gt;Gather&lt;/h2&gt;&#xA;&lt;p&gt;&lt;code&gt;Gather Api&lt;/code&gt; 取 from_idx 的数据，放到 to_idx 位置。&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;https://runzblog.oss-cn-hangzhou.aliyuncs.com/postimg/202503192027923.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;&#xA;&lt;h2 id=&#34;tiling-key&#34;&gt;Tiling key&lt;/h2&gt;&#xA;&lt;p&gt;对于不同输入 shape，可能有不同的 tiling 逻辑。如果在 device 端进行判断，会造成比较大的开销（因为 GPU 不适合干这个事）。所以在 CPU 里提前判断并设置好 tiling key，device 侧只需根据 tiling key 判断就可以了。&lt;/p&gt;&#xA;&lt;p&gt;图没截到 QAQ&lt;/p&gt;&#xA;&lt;h2 id=&#34;workspace&#34;&gt;Workspace&lt;/h2&gt;&#xA;&lt;p&gt;是 gm 上的一块内存。分为系统 workspace 和用户 workspace。&lt;/p&gt;&#xA;&lt;p&gt;在计算过程中需要的临时 gm 存储空间就从用户 workspace 来。&lt;/p&gt;&#xA;&lt;p&gt;设置 workspace 为 0 时，系统会自动帮你申请系统 workspace，用户 workspace 为 0；否则，你需要同时手动设置系统和用户 workspace。&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

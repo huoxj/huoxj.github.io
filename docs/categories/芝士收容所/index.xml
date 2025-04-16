@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>芝士收容所 on Runz&#39;s Blog</title>
+    <link>http://localhost:4647/categories/%E8%8A%9D%E5%A3%AB%E6%94%B6%E5%AE%B9%E6%89%80/</link>
+    <description>Recent content in 芝士收容所 on Runz&#39;s Blog</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 27 Jan 2025 17:36:46 -0800</lastBuildDate>
+    <atom:link href="http://localhost:4647/categories/%E8%8A%9D%E5%A3%AB%E6%94%B6%E5%AE%B9%E6%89%80/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>读论文-Vectorized Batch PIR</title>
+      <link>http://localhost:4647/posts/%E8%8A%9D%E5%A3%AB%E6%94%B6%E5%AE%B9%E6%89%80/%E8%AF%BB%E8%AE%BA%E6%96%87-vectorized-batch-pir/</link>
+      <pubDate>Mon, 27 Jan 2025 17:36:46 -0800</pubDate>
+      <guid>http://localhost:4647/posts/%E8%8A%9D%E5%A3%AB%E6%94%B6%E5%AE%B9%E6%89%80/%E8%AF%BB%E8%AE%BA%E6%96%87-vectorized-batch-pir/</guid>
+      <description>传统的 PIR (Private Information Retrieval) 里，客户端一次 PIR 只会请求数据库中的一个项。但在实际使用中，客户端往往会请求多个项，但为每一个项都单独调用一次 P&amp;hellip;</description>
+    </item>
+    <item>
+      <title>读论文-一种私有信息检索在GPU上的高效实现</title>
+      <link>http://localhost:4647/posts/%E8%8A%9D%E5%A3%AB%E6%94%B6%E5%AE%B9%E6%89%80/%E8%AF%BB%E8%AE%BA%E6%96%87-%E4%B8%80%E7%A7%8D%E7%A7%81%E6%9C%89%E4%BF%A1%E6%81%AF%E6%A3%80%E7%B4%A2%E5%9C%A8gpu%E4%B8%8A%E7%9A%84%E9%AB%98%E6%95%88%E5%AE%9E%E7%8E%B0/</link>
+      <pubDate>Wed, 22 Jan 2025 10:46:12 -0800</pubDate>
+      <guid>http://localhost:4647/posts/%E8%8A%9D%E5%A3%AB%E6%94%B6%E5%AE%B9%E6%89%80/%E8%AF%BB%E8%AE%BA%E6%96%87-%E4%B8%80%E7%A7%8D%E7%A7%81%E6%9C%89%E4%BF%A1%E6%81%AF%E6%A3%80%E7%B4%A2%E5%9C%A8gpu%E4%B8%8A%E7%9A%84%E9%AB%98%E6%95%88%E5%AE%9E%E7%8E%B0/</guid>
+      <description>原文 title：GPU-Based PIR for On-device ML Inference DPF-PIR 在单次查询中，主要有三个步骤： 1. (client) 生成(gen)密钥 2. (&amp;hellip;</description>
+    </item>
+    <item>
+      <title>读论文-YOLO v1</title>
+      <link>http://localhost:4647/posts/%E8%8A%9D%E5%A3%AB%E6%94%B6%E5%AE%B9%E6%89%80/%E8%AF%BB%E8%AE%BA%E6%96%87-yolo-v1/</link>
+      <pubDate>Fri, 08 Nov 2024 21:56:06 -0800</pubDate>
+      <guid>http://localhost:4647/posts/%E8%8A%9D%E5%A3%AB%E6%94%B6%E5%AE%B9%E6%89%80/%E8%AF%BB%E8%AE%BA%E6%96%87-yolo-v1/</guid>
+      <description>大创要做一个基于两个特征矩阵的信号分割与分类（不知道该不该这么描述），精确度要求不高，但对实时性要求比较高。我想到了借鉴 YOLO 来解决这个问题，所以顺便就来读一下 YOLO 初代的论文，太复杂了猪&amp;hellip;</description>
+    </item>
+  </channel>
+</rss>
