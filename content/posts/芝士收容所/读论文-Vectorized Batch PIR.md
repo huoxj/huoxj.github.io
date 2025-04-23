@@ -1,8 +1,8 @@
 ---
-title: "读论文-Vectorized Batch PIR"
-date: 2025-01-27
-series: 
-- "芝士收容所"
+date: '2025-01-27'
+series:
+- 芝士收容所
+title: 读论文-Vectorized Batch PIR
 ---
 
 传统的 PIR (Private Information Retrieval) 里，客户端一次 PIR 只会请求数据库中的一个项。但在实际使用中，客户端往往会请求多个项，但为每一个项都单独调用一次 PIR 显然不够并行，而且会暴露用户请求的次数，所以诞生了 Batch PIR。这篇论文提出了一个基于向量化优化的 Batch PIR。相较传统的 Batch PIR，沟通开销有 7.5x ~ 98.5x 的提升。
@@ -43,4 +43,3 @@ series:
 Warm up 协议实现了一个**非** Batch 的 PIR，同时将请求与回复**向量化**。
 
 本质是升维。将数据库的一维线性访问变成三维。相应地，客户端的请求也要变成三个维度。为了向量化，客户端请求进行了 one-hot 编码。
-

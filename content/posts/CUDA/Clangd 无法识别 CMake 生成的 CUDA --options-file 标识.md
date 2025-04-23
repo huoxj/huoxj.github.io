@@ -1,8 +1,8 @@
 ---
-title: "Clangd 无法识别 CMake 生成的 CUDA --options-file 标识"
-date: 2025-03-13
-series: 
-- "CUDA"
+date: '2025-03-13'
+series:
+- CUDA
+title: Clangd 无法识别 CMake 生成的 CUDA --options-file 标识
 ---
 
 # tl.dr

@@ -1,8 +1,8 @@
 ---
-title: "Lab3"
-date: 2024-05-22
-series: 
-- "SE操作系统"
+date: '2024-05-22'
+series:
+- SE操作系统
+title: Lab3
 ---
 
 > 1. 解释中断向量

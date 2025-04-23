@@ -1,8 +1,8 @@
 ---
-title: "OO 杂项"
-date: 2024-11-20
-series: 
-- "C++拾遗"
+date: '2024-11-20'
+series:
+- C++拾遗
+title: OO 杂项
 ---
 
 ## 类的内存模型

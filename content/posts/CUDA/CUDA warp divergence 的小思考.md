@@ -1,8 +1,8 @@
 ---
-title: "CUDA warp divergence 的小思考"
-date: 2025-03-08
-series: 
-- "CUDA"
+date: '2025-03-08'
+series:
+- CUDA
+title: CUDA warp divergence 的小思考
 ---
 
 CUDA 的执行是以 warp 为单位的，一个 warp 内的线程的运行像是一排阵列士兵一样齐刷刷地踢正步。warp 扮演的角色就是给这一排士兵下指令的军官。
@@ -17,4 +17,3 @@ CUDA 的执行是以 warp 为单位的，一个 warp 内的线程的运行像是
 这个方法的弊端是将两个分支的执行串行化了，非 active 的线程没有完全利用，浪费了性能。
 
 CUDA 早期（pre volta）的 warp divergence 大致是以这样的思路解决的。不过即使是现在的 CUDA，对于这种 divergence 还是会造成一定程度的性能浪费。
-

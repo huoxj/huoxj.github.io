@@ -1,8 +1,8 @@
 ---
-title: "SE-ML06-支持向量机"
-date: 2025-01-05
-series: 
-- "机器学习"
+date: '2025-01-05'
+series:
+- 机器学习
+title: SE-ML06-支持向量机
 ---
 
 ## 线性 SVM

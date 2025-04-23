@@ -1,8 +1,8 @@
 ---
-title: "C3-SQL"
-date: 2024-04-22
-series: 
-- "数据库管理基础"
+date: '2024-04-22'
+series:
+- 数据库管理基础
+title: C3-SQL
 ---
 
 # 第三章-关系数据库标准语言SQL

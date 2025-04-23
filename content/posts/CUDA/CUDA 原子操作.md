@@ -1,8 +1,8 @@
 ---
-title: "CUDA 原子操作"
-date: 2025-03-05
-series: 
-- "CUDA"
+date: '2025-03-05'
+series:
+- CUDA
+title: CUDA 原子操作
 ---
 
 CUDA 原子操作和 C++ 的原子操作概念基本是一样的。
@@ -70,4 +70,3 @@ __device__ __inline__ int myAtomicAdd(int *dest, int src) {
 如果很多线程在一小段时间内对同一使用原子操作，这些线程会串行执行而损失并行度。
 
 可以使用线程局部变量作为缓存，最后再将局部变量使用原子操作同步到目标地址。
-

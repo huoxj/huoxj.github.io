@@ -1,8 +1,8 @@
 ---
-title: "SE-ML01-概要"
-date: 2024-08-16
-series: 
-- "机器学习"
+date: '2024-08-16'
+series:
+- 机器学习
+title: SE-ML01-概要
 ---
 
 ## 定义

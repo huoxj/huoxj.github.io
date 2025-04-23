@@ -1,8 +1,8 @@
 ---
-title: "Asst1"
-date: 2024-11-08
-series: 
-- "CS149-并行计算"
+date: '2024-11-08'
+series:
+- CS149-并行计算
+title: Asst1
 ---
 
 ## Prog1-mandelbrot_threads
@@ -265,4 +265,3 @@ Wrote image file mandelbrot-task-ispc.ppm
 ```
 
 计算开销变大后，CPU 主要精力就能花在正道上了。所以加速比自然增大到了一个合理的值。
-

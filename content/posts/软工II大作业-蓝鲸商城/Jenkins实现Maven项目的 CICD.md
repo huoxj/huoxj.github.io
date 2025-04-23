@@ -1,11 +1,10 @@
 ---
-title: "Jenkins部署Maven项目到Docker"
-date: 2024-05-10
-series: 
-- "软工II大作业-蓝鲸商城"
+date: '2024-05-10'
+draft: 'true'
+series:
+- 软工II大作业-蓝鲸商城
+title: Jenkins实现Maven项目的 CICD
 ---
-
-# 使用Jenkins部署Maven项目到Docker
 
 > Jenkins：能够自动配置、自动部署项目。通过Webhook可以实现项目一旦被Push就会自动重新配置项目并且部署，以实现更新
 
@@ -143,4 +142,3 @@ CONTAINER ID   IMAGE                 COMMAND                  CREATED           
 记得把公钥复制到仓库的凭据设置里面
 
 ## 3 部署Maven项目
-

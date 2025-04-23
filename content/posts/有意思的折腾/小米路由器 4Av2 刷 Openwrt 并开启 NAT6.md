@@ -1,10 +1,9 @@
 ---
-title: "小米路由器 4Av2 刷 Openwrt 并开启 NAT6"
-date: 2024-11-03
-series: 
-- "有意思的折腾"
+date: '2024-11-03'
+series:
+- 有意思的折腾
+title: 小米路由器 4Av2 刷 Openwrt 并开启 NAT6
 ---
-
 
 ## 需求
 - 校园网 128 位前缀的 IPV6 地址做 NAT6
@@ -135,7 +134,7 @@ make V=s -j1
 
 ## 开启 NAT6
 
-
+TODO。先看 reference 里面是如何操作的吧。等我换路由器了可能会补这一块，现在忘得差不多了。
 
 ## 参考
 [小米路由R4A千兆版安装breed+OpenWRT教程以及救砖（全脚本无需硬改） - 哔哩哔哩](https://www.bilibili.com/read/cv25114361/)

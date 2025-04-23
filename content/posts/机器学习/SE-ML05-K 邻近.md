@@ -1,8 +1,8 @@
 ---
-title: "SE-ML05-K 邻近"
-date: 2024-10-25
-series: 
-- "机器学习"
+date: '2024-10-25'
+series:
+- 机器学习
+title: SE-ML05-K 邻近
 ---
 
 ## k-NN 分类器

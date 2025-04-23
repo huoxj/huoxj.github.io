@@ -1,8 +1,8 @@
 ---
-title: "Ex6 信号量与PV操作习题"
-date: 2024-05-24
-series: 
-- "SE操作系统"
+date: '2024-05-24'
+series:
+- SE操作系统
+title: Ex6 信号量与PV操作习题
 ---
 
 # 信号量与PV操作习题

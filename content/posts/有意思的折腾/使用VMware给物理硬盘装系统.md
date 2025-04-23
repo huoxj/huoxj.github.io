@@ -1,8 +1,8 @@
 ---
-title: "使用VMware给物理硬盘装系统"
-date: 2024-09-27
-series: 
-- "有意思的折腾"
+date: '2024-09-27'
+series:
+- 有意思的折腾
+title: 使用VMware给物理硬盘装系统
 ---
 
 ## 起因
@@ -57,4 +57,4 @@ I/O控制器选VMware推荐的`LSI Logic`，其他的应该也没差。
 
 ![Pasted image 20240913161135](https://runzblog.oss-cn-hangzhou.aliyuncs.com/postimg/Pasted%20image%2020240913161135.png)
 
-然后就是正常的安装流程了。基本会一点英文就能顺利通过啦~
+然后就是正常的系统安装流程。

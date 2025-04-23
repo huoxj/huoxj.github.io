@@ -1,8 +1,8 @@
 ---
-title: "读论文-一种私有信息检索在GPU上的高效实现"
-date: 2025-01-22
-series: 
-- "芝士收容所"
+date: '2025-01-22'
+series:
+- 芝士收容所
+title: 读论文-一种私有信息检索在GPU上的高效实现
 ---
 
 原文 title：GPU-Based PIR for On-device ML Inference

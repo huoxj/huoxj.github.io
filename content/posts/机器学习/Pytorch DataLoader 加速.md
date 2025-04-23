@@ -1,8 +1,8 @@
 ---
-title: "Pytorch DataLoader 加速"
-date: 2024-12-02
-series: 
-- "机器学习"
+date: '2024-12-02'
+series:
+- 机器学习
+title: Pytorch DataLoader 加速
 ---
 
 ## 问题

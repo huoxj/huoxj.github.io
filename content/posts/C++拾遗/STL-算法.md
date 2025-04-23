@@ -1,8 +1,9 @@
 ---
-title: "STL-算法"
-date: 2025-01-19
-series: 
-- "C++拾遗"
+date: '2025-01-19'
+draft: 'true'
+series:
+- C++拾遗
+title: STL-算法
 ---
 
 ## 谓词

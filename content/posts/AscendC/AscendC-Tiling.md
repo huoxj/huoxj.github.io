@@ -1,8 +1,9 @@
 ---
-title: "AscendC-Tiling"
-date: 2025-03-19
-series: 
-- "AscendC"
+date: '2025-03-19'
+draft: 'true'
+series:
+- AscendC
+title: AscendC-Tiling
 ---
 
 ## 32 字节对齐
@@ -10,4 +11,3 @@ series:
 数据的 shapeLength 需要 32 字节对齐。
 
 ## 系统信息
-

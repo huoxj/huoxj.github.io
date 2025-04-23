@@ -1,8 +1,8 @@
 ---
-title: "String"
-date: 2024-10-12
-series: 
-- "C++拾遗"
+date: '2024-10-12'
+series:
+- C++拾遗
+title: String
 ---
 
 ## 前言
