@@ -36,7 +36,9 @@ jobs:
         run: |
           cd blog-docs
           python process.py
-          cp -r posts ../content/
+          rm -rf ../content/posts
+          mkdir -p ../content/posts
+          cp -r posts/* ../content/posts/
   
   build:
     runs-on: ubuntu-latest
