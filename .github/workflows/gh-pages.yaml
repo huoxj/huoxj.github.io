@@ -4,7 +4,8 @@ on:
   push:
     branches:
       - photophobia
-  pull_request:
+  repository_dispatch:
+    types: [hugo-deploy]
 
 permissions:
   contents: read
@@ -12,8 +13,29 @@ permissions:
   id-token: write
 
 jobs:
+  prepare-posts:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout hugo repo
+        uses: actions/checkout@v4
+      
+      - name: Clone posts repo
+        run: |
+          git clone https://github.com/huoxj/blog-docs.git blog-docs
+      
+      - name: Install python deps
+        run: |
+          pip install frontmatter
+        
+      - name: Process posts
+        run: |
+          cd blog-docs
+          python process.py
+          cp -r posts ../content/
+  
   build:
     runs-on: ubuntu-latest
+    needs: prepare-posts
     concurrency:
       group: ${{ github.workflow }}-${{ github.ref }}
     steps:

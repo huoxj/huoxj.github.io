@@ -25,10 +25,14 @@ menu:
       name: Series
       url: /series/
       weight: 3
-    - identifier: about
-      name: About
-      url: /about/
-      weight: 4
+    # - identifier: about
+    #   name: About
+    #   url: /about/
+    #   weight: 4
+    - identifier: links
+      name: Links
+      url: /links/
+      weight: 5
 
 taxonomies:
   series: series
