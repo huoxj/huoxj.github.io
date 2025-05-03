@@ -33,12 +33,14 @@ jobs:
         run: |
           cd blog-docs
           python process.py
+          ls .
+          ls posts
       
       - name: Save posts
         uses: actions/upload-artifact@v4
         with:
           name: processed-posts
-          path: ./posts
+          path: posts
   
   build:
     runs-on: ubuntu-latest
