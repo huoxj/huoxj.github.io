@@ -1,9 +1,6 @@
 name: GitHub Pages
 
 on:
-  push:
-    branches:
-      - photophobia
   repository_dispatch:
     types: [hugo-deploy]
 
