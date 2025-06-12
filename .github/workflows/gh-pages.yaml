@@ -3,6 +3,7 @@ name: GitHub Pages
 on:
   repository_dispatch:
     types: [hugo-deploy]
+  workflow_dispatch:
 
 permissions:
   contents: read
