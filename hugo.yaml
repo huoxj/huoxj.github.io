@@ -10,6 +10,7 @@ params:
   site_logo: null
   recent_posts_number: 20
   taxonomy_list_number: 3
+  math: true
 
 menu:
   main:
